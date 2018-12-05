@@ -1,0 +1,62 @@
+2018-12-02 17:42:11,290 - my_bank - INFO - wrapper - 39 - 已冻结账户 xg 尝试进行ATM操作，请管理员留意！
+2018-12-02 17:42:20,377 - my_bank - INFO - wrapper - 39 - 已冻结账户 xg 尝试进行ATM操作，请管理员留意！
+2018-12-02 19:31:31,505 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 1999 元！
+2018-12-02 19:32:46,798 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 1999 元！
+2018-12-02 19:33:05,391 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 8888 元！
+2018-12-02 19:33:15,367 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 20 元！
+2018-12-02 19:33:16,444 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 998 元！
+2018-12-02 19:54:48,747 - my_bank - INFO - transfer_amount - 60 - xg 成功转账给 admin 金额 100.0 元！
+2018-12-02 19:54:48,748 - my_bank - INFO - transfer_amount - 61 - admin 账户收入手续费金额 5.0 元！
+2018-12-02 19:54:54,351 - my_bank - INFO - withdraw_amount - 83 - xg 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-02 19:54:54,352 - my_bank - INFO - withdraw_amount - 84 - admin 账户收入手续费金额 5.0 元！
+2018-12-02 19:55:05,512 - my_bank - INFO - repay_amount - 100 - xg 成功还款金额 100.0 元！
+2018-12-02 19:55:05,512 - my_bank - INFO - repay_amount - 101 - admin 账户收入 xg 的还款金额 100.0 元！
+2018-12-02 19:55:27,031 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 1999 元！
+2018-12-02 19:55:47,936 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 10 元！
+2018-12-02 19:55:48,727 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 20 元！
+2018-12-02 19:55:49,733 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 998 元！
+2018-12-02 19:56:16,618 - my_bank - INFO - consume_amount - 115 - xg 成功扣款金额 8888 元！
+2018-12-02 20:10:03,233 - my_bank - INFO - transfer_amount - 55 - xg 成功转账给 admin 金额 1.0 元！
+2018-12-02 20:10:03,233 - my_bank - INFO - transfer_amount - 56 - admin 账户收入手续费金额 0.05 元！
+2018-12-02 20:10:37,907 - my_bank - INFO - withdraw_amount - 78 - xg 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-02 20:10:37,908 - my_bank - INFO - withdraw_amount - 79 - admin 账户收入手续费金额 5.0 元！
+2018-12-02 20:11:01,351 - my_bank - INFO - repay_amount - 95 - xg 成功还款金额 100.0 元！
+2018-12-02 20:11:01,351 - my_bank - INFO - repay_amount - 96 - admin 账户收入 xg 的还款金额 100.0 元！
+2018-12-02 20:11:21,809 - my_bank - INFO - repay_amount - 95 - xg 成功还款金额 23.0 元！
+2018-12-02 20:11:21,809 - my_bank - INFO - repay_amount - 96 - admin 账户收入 xg 的还款金额 23.0 元！
+2018-12-02 20:16:55,676 - my_bank - INFO - consume_amount - 110 - xg 成功扣款金额 10 元！
+2018-12-02 20:16:56,122 - my_bank - INFO - consume_amount - 110 - xg 成功扣款金额 20 元！
+2018-12-02 20:16:56,747 - my_bank - INFO - consume_amount - 110 - xg 成功扣款金额 998 元！
+2018-12-03 00:04:43,635 - my_bank - INFO - add_user - 36 - 管理员添加用户 asd 成功
+2018-12-03 00:05:53,022 - my_bank - INFO - add_user - 36 - 管理员添加用户 asd 成功
+2018-12-03 00:06:38,181 - my_bank - WARNING - change_limit - 61 - 管理员修改 xg 额度成功！修改前 xg 额度：15000；修改后 xg 额度：115000
+2018-12-03 00:06:54,991 - my_bank - INFO - change_status - 79 - 管理员修改 xg 用户状态成功！修改后的状态为 0
+2018-12-03 00:07:11,681 - my_bank - INFO - change_status - 79 - 管理员修改 xg 用户状态成功！修改后的状态为 1
+2018-12-03 00:08:20,528 - my_bank - INFO - transfer_amount - 55 - asd 成功转账给 xg 金额 100.0 元！
+2018-12-03 00:08:20,528 - my_bank - INFO - transfer_amount - 56 - admin 账户收入手续费金额 5.0 元！
+2018-12-03 00:08:35,392 - my_bank - INFO - withdraw_amount - 78 - asd 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-03 00:08:35,392 - my_bank - INFO - withdraw_amount - 79 - admin 账户收入手续费金额 5.0 元！
+2018-12-03 00:08:40,721 - my_bank - INFO - repay_amount - 95 - asd 成功还款金额 100.0 元！
+2018-12-03 00:08:40,721 - my_bank - INFO - repay_amount - 96 - admin 账户收入 asd 的还款金额 100.0 元！
+2018-12-03 00:09:20,421 - my_bank - INFO - consume_amount - 110 - asd 成功扣款金额 1999 元！
+2018-12-03 00:09:23,467 - my_bank - INFO - consume_amount - 110 - asd 成功扣款金额 10 元！
+2018-12-03 00:09:56,348 - my_bank - INFO - consume_amount - 110 - asd 成功扣款金额 8888 元！
+2018-12-03 00:29:12,206 - my_bank - INFO - add_user - 37 - 管理员 admin 添加用户 qwe 成功
+2018-12-03 00:33:48,631 - my_bank - INFO - add_user - 37 - 管理员 admin 添加用户 zxc 成功
+2018-12-03 00:35:03,488 - my_bank - INFO - add_user - 37 - 管理员 admin 添加用户 as 成功
+2018-12-03 00:35:10,715 - my_bank - WARNING - change_limit - 73 - 输入用户和金额格式有误，管理员 admin 修改用户的额度失败！
+2018-12-03 00:35:15,173 - my_bank - WARNING - change_limit - 73 - 输入用户和金额格式有误，管理员 admin 修改用户的额度失败！
+2018-12-03 00:35:38,230 - my_bank - WARNING - change_limit - 73 - 输入用户和金额格式有误，管理员 admin 修改用户的额度失败！
+2018-12-03 00:35:46,468 - my_bank - WARNING - change_limit - 66 - 管理员 admin 修改 xg 额度成功！修改前 xg 额度：115000；修改后 xg 额度：125086
+2018-12-03 00:36:42,760 - my_bank - INFO - change_status - 87 - 管理员 admin 修改 as 用户状态成功！修改后的状态为 0
+2018-12-03 00:51:02,412 - my_bank - INFO - transfer_amount - 59 - zxc 成功转账给 xg 金额 123.0 元！手续费用 6.15 !
+2018-12-03 00:51:02,412 - my_bank - INFO - transfer_amount - 60 - admin 账户收入手续费金额 6.15 元！
+2018-12-03 00:51:38,360 - my_bank - INFO - withdraw_amount - 85 - zxc 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-03 00:51:38,360 - my_bank - INFO - withdraw_amount - 86 - admin 账户收入手续费金额 5.0 元！
+2018-12-03 00:51:43,770 - my_bank - INFO - repay_amount - 105 - zxc 成功还款金额 100.0 元！
+2018-12-03 00:51:43,770 - my_bank - INFO - repay_amount - 106 - admin 账户收入 zxc 的还款金额 100.0 元！
+2018-12-03 00:51:57,030 - my_bank - INFO - consume_amount - 123 - zxc 成功扣款金额 1999 元！
+2018-12-03 00:52:04,186 - my_bank - INFO - consume_amount - 123 - zxc 成功扣款金额 20 元！
+2018-12-03 00:52:06,817 - my_bank - INFO - consume_amount - 123 - zxc 成功扣款金额 998 元！
+2018-12-03 00:52:40,234 - my_bank - INFO - consume_amount - 123 - zxc 成功扣款金额 10 元！
+2018-12-03 00:52:44,531 - my_bank - INFO - consume_amount - 123 - zxc 成功扣款金额 8888 元！

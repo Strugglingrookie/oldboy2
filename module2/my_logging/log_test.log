@@ -1,0 +1,4 @@
+2018-11-30 02:24:35 PM root mylog.py mylog func 1300 140735801226112 13 hello world!
+2018-11-30 02:24:35 PM root mylog.py mylog <module> 1300 140735801226112 15 This message should go to the log file
+2018-11-30 02:24:35 PM root mylog.py mylog <module> 1300 140735801226112 16 So should this
+2018-11-30 02:24:35 PM root mylog.py mylog <module> 1300 140735801226112 17 And this, too

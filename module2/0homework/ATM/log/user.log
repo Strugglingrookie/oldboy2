@@ -1,0 +1,181 @@
+2018-12-02 17:42:07,391 - my_user - INFO - login_func - 45 - xg登陆系统
+2018-12-02 17:42:11,289 - my_user - INFO - wrapper - 38 - xg 账户已被冻结，不可进行此次操作，请联系管理员解冻！
+2018-12-02 17:42:20,377 - my_user - INFO - wrapper - 38 - xg 账户已被冻结，不可进行此次操作，请联系管理员解冻！
+2018-12-02 19:30:05,050 - my_user - INFO - login_func - 45 - xg登陆系统
+2018-12-02 19:30:05,051 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:31:29,565 - my_user - INFO - login_func - 45 - xg登陆系统
+2018-12-02 19:31:29,566 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:31:31,504 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 1999 元！
+2018-12-02 19:32:44,318 - my_user - INFO - login_func - 45 - xg登陆系统
+2018-12-02 19:32:44,318 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:32:46,798 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 1999 元！
+2018-12-02 19:33:05,391 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 8888 元！
+2018-12-02 19:33:15,366 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 20 元！
+2018-12-02 19:33:16,444 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 998 元！
+2018-12-02 19:33:21,461 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:35:38,330 - my_user - INFO - login_func - 45 - xg登陆系统
+2018-12-02 19:35:38,330 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:54:35,039 - my_user - INFO - login_func - 45 - xg登陆系统
+2018-12-02 19:54:38,981 - my_user - DEBUG - look_info - 66 - xg 查询余额！
+2018-12-02 19:54:48,747 - my_user - INFO - transfer_amount - 59 - xg 成功转账给 admin 金额 100.0 元！
+2018-12-02 19:54:54,351 - my_user - INFO - withdraw_amount - 82 - xg 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-02 19:55:05,511 - my_user - INFO - repay_amount - 99 - xg 成功还款金额 100.0 元！
+2018-12-02 19:55:11,548 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:55:11,554 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:16,164 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:55:16,165 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:22,679 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:55:24,584 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:55:24,584 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:27,031 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 1999 元！
+2018-12-02 19:55:27,032 - my_user - INFO - buy_product - 50 - xg 用户成功购买商品： 电脑 
+2018-12-02 19:55:27,032 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:47,931 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 10 元！
+2018-12-02 19:55:47,937 - my_user - INFO - buy_product - 50 - xg 用户成功购买商品： 鼠标 
+2018-12-02 19:55:47,937 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:48,726 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 20 元！
+2018-12-02 19:55:48,727 - my_user - INFO - buy_product - 50 - xg 用户成功购买商品： 游艇 
+2018-12-02 19:55:48,727 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:49,733 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 998 元！
+2018-12-02 19:55:49,734 - my_user - INFO - buy_product - 50 - xg 用户成功购买商品： 美女 
+2018-12-02 19:55:49,734 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:54,840 - my_user - WARNING - consume_amount - 111 - xg扣款时，扣款金额 20000 大于可用金额11863.0 元！请即使还款！
+2018-12-02 19:55:54,840 - my_user - INFO - buy_product - 53 - xg 用户因为钱不足购买商品：火箭 失败
+2018-12-02 19:55:54,840 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:55:59,923 - my_user - WARNING - consume_amount - 111 - xg扣款时，扣款金额 20000 大于可用金额11863.0 元！请即使还款！
+2018-12-02 19:55:59,923 - my_user - INFO - buy_product - 53 - xg 用户因为钱不足购买商品：火箭 失败
+2018-12-02 19:55:59,924 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:56:11,551 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:56:15,157 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:56:16,618 - my_user - INFO - consume_amount - 114 - xg 成功扣款金额 8888 元！
+2018-12-02 19:56:16,618 - my_user - INFO - buy_product - 50 - xg 用户成功购买商品： 特斯拉 
+2018-12-02 19:56:16,619 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:56:22,105 - my_user - WARNING - consume_amount - 111 - xg扣款时，扣款金额 20000 大于可用金额2975.0 元！请即使还款！
+2018-12-02 19:56:22,105 - my_user - INFO - buy_product - 53 - xg 用户因为钱不足购买商品：火箭 失败
+2018-12-02 19:56:22,106 - my_user - INFO - show_products - 31 - xg 查看商品列表！
+2018-12-02 19:56:26,819 - my_user - INFO - show_cart - 22 - xg 查看购物车！
+2018-12-02 19:56:29,953 - my_user - INFO - run - 37 - xg 退出系统！
+2018-12-02 20:09:50,894 - my_user - INFO - login_func - 39 - xg登陆系统
+2018-12-02 20:09:53,114 - my_user - DEBUG - look_info - 61 - xg 查询余额！
+2018-12-02 20:10:03,232 - my_user - INFO - transfer_amount - 54 - xg 成功转账给 admin 金额 1.0 元！
+2018-12-02 20:10:37,901 - my_user - INFO - withdraw_amount - 77 - xg 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-02 20:11:01,351 - my_user - INFO - repay_amount - 94 - xg 成功还款金额 100.0 元！
+2018-12-02 20:11:06,062 - my_user - WARNING - repay_amount - 87 - xg还款时，输入的还款金额非正数
+2018-12-02 20:11:21,809 - my_user - INFO - repay_amount - 94 - xg 成功还款金额 23.0 元！
+2018-12-02 20:11:26,404 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 20:11:26,404 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:11:51,660 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:11:55,126 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:11:59,894 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:12:03,099 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 20:12:06,817 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 20:12:06,817 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:12:08,232 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 20:12:08,232 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:12:19,914 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 20:15:25,188 - my_user - INFO - login_func - 39 - xg登陆系统
+2018-12-02 20:16:06,186 - my_user - INFO - login_func - 39 - xg登陆系统
+2018-12-02 20:16:48,793 - my_user - INFO - login_func - 39 - xg登陆系统
+2018-12-02 20:16:50,871 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 20:16:50,872 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:16:55,675 - my_user - INFO - consume_amount - 109 - xg 成功扣款金额 10 元！
+2018-12-02 20:16:55,676 - my_user - INFO - buy_product - 44 - xg 用户成功购买商品： 鼠标 
+2018-12-02 20:16:55,676 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:16:56,122 - my_user - INFO - consume_amount - 109 - xg 成功扣款金额 20 元！
+2018-12-02 20:16:56,122 - my_user - INFO - buy_product - 44 - xg 用户成功购买商品： 游艇 
+2018-12-02 20:16:56,122 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:16:56,746 - my_user - INFO - consume_amount - 109 - xg 成功扣款金额 998 元！
+2018-12-02 20:16:56,747 - my_user - INFO - buy_product - 44 - xg 用户成功购买商品： 美女 
+2018-12-02 20:16:56,747 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:16:57,803 - my_user - WARNING - consume_amount - 106 - xg扣款时，扣款金额 20000 大于可用金额1963.9499999999998 元！请即使还款！
+2018-12-02 20:16:57,803 - my_user - INFO - buy_product - 47 - xg 用户因为钱不足购买商品：火箭 失败
+2018-12-02 20:16:57,803 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:16:58,755 - my_user - WARNING - consume_amount - 106 - xg扣款时，扣款金额 8888 大于可用金额1963.9499999999998 元！请即使还款！
+2018-12-02 20:16:58,755 - my_user - INFO - buy_product - 47 - xg 用户因为钱不足购买商品：特斯拉 失败
+2018-12-02 20:16:58,755 - my_user - INFO - show_products - 25 - xg 查看商品列表！
+2018-12-02 20:17:02,776 - my_user - INFO - show_cart - 16 - xg 查看购物车！
+2018-12-02 23:28:41,392 - my_user - INFO - change_limit - 62 - 管理员修改 xg 额度成功！修改前 xg 额度：15000；修改后 xg 额度：35000
+2018-12-02 23:29:03,041 - my_user - WARNING - change_limit - 67 - 输入用户和金额格式有误，管理员修改 %s 用户的额度失败！
+2018-12-02 23:29:22,737 - my_user - WARNING - change_limit - 65 - 被修改的用户不存在或者额度减小过多，管理员修改 %s 用户的额度失败！
+2018-12-03 00:00:02,916 - my_user - INFO - login_func - 38 - 欢迎 xg 登陆系统
+2018-12-03 00:00:32,076 - my_user - INFO - login_func - 38 - 欢迎 admin 登陆系统
+2018-12-03 00:04:43,634 - my_user - INFO - add_user - 35 - 管理员添加用户 asd 成功
+2018-12-03 00:05:36,963 - my_user - INFO - login_func - 38 - 欢迎 admin 登陆系统
+2018-12-03 00:05:39,930 - my_user - WARNING - add_user - 41 - 管理员添加用户时，用户输入信息用户有误！
+2018-12-03 00:05:53,018 - my_user - INFO - add_user - 35 - 管理员添加用户 asd 成功
+2018-12-03 00:06:38,178 - my_user - INFO - change_limit - 59 - 管理员修改 xg 额度成功！修改前 xg 额度：15000；修改后 xg 额度：115000
+2018-12-03 00:06:54,987 - my_user - INFO - change_status - 78 - 管理员修改 xg 用户状态成功！修改后的状态为 0
+2018-12-03 00:07:11,681 - my_user - INFO - change_status - 78 - 管理员修改 xg 用户状态成功！修改后的状态为 1
+2018-12-03 00:07:40,928 - my_user - INFO - login_func - 38 - 欢迎 asd 登陆系统
+2018-12-03 00:07:43,943 - my_user - DEBUG - look_info - 61 - asd 查询余额！
+2018-12-03 00:08:12,015 - my_user - WARNING - transfer_amount - 45 - asd转账时，输入的金额非正数
+2018-12-03 00:08:20,523 - my_user - INFO - transfer_amount - 54 - asd 成功转账给 xg 金额 100.0 元！
+2018-12-03 00:08:35,391 - my_user - INFO - withdraw_amount - 77 - asd 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-03 00:08:40,721 - my_user - INFO - repay_amount - 94 - asd 成功还款金额 100.0 元！
+2018-12-03 00:08:55,390 - my_user - INFO - repay_amount - 90 - asd还款时，输入的还款金额大于已用金额，只需还款 110.0 元！
+2018-12-03 00:09:11,047 - my_user - INFO - show_cart - 16 - asd 查看购物车！
+2018-12-03 00:09:11,048 - my_user - INFO - show_products - 25 - asd 查看商品列表！
+2018-12-03 00:09:20,417 - my_user - INFO - consume_amount - 109 - asd 成功扣款金额 1999 元！
+2018-12-03 00:09:20,421 - my_user - INFO - buy_product - 44 - asd 用户成功购买商品： 电脑 
+2018-12-03 00:09:20,422 - my_user - INFO - show_products - 25 - asd 查看商品列表！
+2018-12-03 00:09:23,467 - my_user - INFO - consume_amount - 109 - asd 成功扣款金额 10 元！
+2018-12-03 00:09:23,467 - my_user - INFO - buy_product - 44 - asd 用户成功购买商品： 鼠标 
+2018-12-03 00:09:23,467 - my_user - INFO - show_products - 25 - asd 查看商品列表！
+2018-12-03 00:09:25,330 - my_user - WARNING - consume_amount - 106 - asd扣款时，扣款金额 20000 大于可用金额17881.0 元！请即使还款！
+2018-12-03 00:09:25,331 - my_user - INFO - buy_product - 47 - asd 用户因为钱不足购买商品：火箭 失败
+2018-12-03 00:09:25,331 - my_user - INFO - show_products - 25 - asd 查看商品列表！
+2018-12-03 00:09:56,341 - my_user - INFO - consume_amount - 109 - asd 成功扣款金额 8888 元！
+2018-12-03 00:09:56,348 - my_user - INFO - buy_product - 44 - asd 用户成功购买商品： 特斯拉 
+2018-12-03 00:09:56,349 - my_user - INFO - show_products - 25 - asd 查看商品列表！
+2018-12-03 00:09:57,661 - my_user - INFO - show_cart - 16 - asd 查看购物车！
+2018-12-03 00:27:55,259 - my_user - INFO - login_func - 38 - 欢迎 admin 登陆系统
+2018-12-03 00:28:52,595 - my_user - INFO - login_func - 38 - 欢迎 admin 登陆系统
+2018-12-03 00:29:12,206 - my_user - INFO - add_user - 36 - 管理员 admin 添加用户 qwe 成功
+2018-12-03 00:33:17,903 - my_user - INFO - login_func - 38 - 欢迎 admin 登陆系统
+2018-12-03 00:33:48,630 - my_user - INFO - add_user - 36 - 管理员 admin 添加用户 zxc 成功
+2018-12-03 00:34:07,028 - my_user - WARNING - add_user - 44 - 管理员添加用户时，用户输入用户信息格式有误！
+2018-12-03 00:35:03,488 - my_user - INFO - add_user - 36 - 管理员 admin 添加用户 as 成功
+2018-12-03 00:35:27,970 - my_user - WARNING - change_limit - 70 - 被修改的用户不存在或者额度减小过多，管理员 admin 修改 zxc 用户的额度失败！
+2018-12-03 00:35:46,467 - my_user - INFO - change_limit - 64 - 管理员 admin 修改 xg 额度成功！修改前 xg 额度：115000；修改后 xg 额度：125086
+2018-12-03 00:36:04,917 - my_user - WARNING - change_status - 93 - 输入用户和状态格式有误,修改 %s 用户的状态失败！
+2018-12-03 00:36:04,921 - my_user - WARNING - change_status - 94 - 输入用户和状态格式有误,管理员 admin 修改的状态失败！
+2018-12-03 00:36:07,262 - my_user - WARNING - change_status - 93 - 输入用户和状态格式有误,修改 %s 用户的状态失败！
+2018-12-03 00:36:07,262 - my_user - WARNING - change_status - 94 - 输入用户和状态格式有误,管理员 admin 修改的状态失败！
+2018-12-03 00:36:42,760 - my_user - INFO - change_status - 86 - 管理员 admin 修改 as 用户状态成功！修改后的状态为 0
+2018-12-03 00:37:37,334 - my_user - WARNING - login_func - 43 - zxc 登陆时，输错登陆账户信息！
+2018-12-03 00:37:40,345 - my_user - INFO - login_func - 38 - 欢迎 zxc 登陆系统
+2018-12-03 00:50:50,164 - my_user - INFO - login_func - 39 - zxc 登陆系统
+2018-12-03 00:50:53,514 - my_user - DEBUG - look_info - 65 - zxc 查询余额！
+2018-12-03 00:51:02,411 - my_user - INFO - transfer_amount - 58 - zxc 成功转账给 xg 金额 123.0 元！手续费用 6.15 !
+2018-12-03 00:51:38,360 - my_user - INFO - withdraw_amount - 84 - zxc 成功提现金额 100.0 元！手续费用 5.0 元
+2018-12-03 00:51:43,769 - my_user - INFO - repay_amount - 104 - zxc 成功还款金额 100.0 元！
+2018-12-03 00:51:53,325 - my_user - INFO - show_cart - 16 - zxc 查看购物车！
+2018-12-03 00:51:53,338 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:51:57,030 - my_user - INFO - consume_amount - 122 - zxc 成功扣款金额 1999 元！
+2018-12-03 00:51:57,031 - my_user - INFO - buy_product - 44 - zxc 用户成功购买商品： 电脑 
+2018-12-03 00:51:57,031 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:04,186 - my_user - INFO - consume_amount - 122 - zxc 成功扣款金额 20 元！
+2018-12-03 00:52:04,186 - my_user - INFO - buy_product - 44 - zxc 用户成功购买商品： 游艇 
+2018-12-03 00:52:04,186 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:06,816 - my_user - INFO - consume_amount - 122 - zxc 成功扣款金额 998 元！
+2018-12-03 00:52:06,817 - my_user - INFO - buy_product - 44 - zxc 用户成功购买商品： 美女 
+2018-12-03 00:52:06,817 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:08,458 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:10,725 - my_user - WARNING - consume_amount - 118 - zxc扣款时，扣款金额 20000 大于可用金额13648.849999999999 元！扣款失败！
+2018-12-03 00:52:10,726 - my_user - INFO - buy_product - 47 - zxc 用户因为余额不足,购买商品：火箭 失败
+2018-12-03 00:52:10,726 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:30,714 - my_user - INFO - show_cart - 16 - zxc 查看购物车！
+2018-12-03 00:52:30,720 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:40,234 - my_user - INFO - consume_amount - 122 - zxc 成功扣款金额 10 元！
+2018-12-03 00:52:40,234 - my_user - INFO - buy_product - 44 - zxc 用户成功购买商品： 鼠标 
+2018-12-03 00:52:40,234 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:44,530 - my_user - INFO - consume_amount - 122 - zxc 成功扣款金额 8888 元！
+2018-12-03 00:52:44,531 - my_user - INFO - buy_product - 44 - zxc 用户成功购买商品： 特斯拉 
+2018-12-03 00:52:44,531 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:47,734 - my_user - WARNING - consume_amount - 118 - zxc扣款时，扣款金额 20000 大于可用金额4750.8499999999985 元！扣款失败！
+2018-12-03 00:52:47,741 - my_user - INFO - buy_product - 47 - zxc 用户因为余额不足,购买商品：火箭 失败
+2018-12-03 00:52:47,741 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:56,840 - my_user - INFO - show_cart - 16 - zxc 查看购物车！
+2018-12-03 00:52:56,841 - my_user - INFO - show_products - 25 - zxc 查看商品列表！
+2018-12-03 00:52:58,678 - my_user - INFO - show_cart - 16 - zxc 查看购物车！
+2018-12-03 00:53:01,803 - my_user - DEBUG - look_info - 65 - zxc 查询余额！

@@ -1,0 +1,15 @@
+2018-11-30 15:34:13,071 - web - INFO - test info
+2018-11-30 15:34:13,071 - web - WARNING - test warning
+2018-11-30 15:34:13,071 - web - ERROR - test error
+2018-11-30 15:34:20,266 - web - WARNING - test warning
+2018-11-30 15:34:20,266 - web - ERROR - test error
+2018-11-30 16:00:40,898 - web - WARNING - test warning
+2018-11-30 16:00:40,898 - web - ERROR - test error
+2018-11-30 16:00:49,991 - web - WARNING - test warning
+2018-11-30 16:00:49,992 - web - ERROR - test error
+2018-11-30 16:00:57,992 - web - WARNING - test warning
+2018-11-30 16:00:57,992 - web - ERROR - test error
+2018-11-30 16:00:57,992 - web - ERROR - test shi error
+2018-11-30 16:01:05,812 - web - WARNING - test warning
+2018-11-30 16:01:05,812 - web - ERROR - test error
+2018-11-30 16:01:24,415 - web - ERROR - test shit error
