@@ -25,7 +25,7 @@ ch.setLevel(logging.DEBUG)
 #当日志文件达到10bytes的时候，之前的日志重命名，最多存在3个，超过3个删除
 fh = handlers.RotatingFileHandler("web.log",maxBytes=10,backupCount=3)
 #每5秒生成一个新的日志文件，之前的日志重命名，最多存在3个，超过3个删除
-fh = handlers.TimedRotatingFileHandler("web.log",when="S",interval=5,backupCount=3)
+fh2 = handlers.TimedRotatingFileHandler("web.log",when="S",interval=5,backupCount=3)
 fh.setLevel(logging.DEBUG)
 
 #2.1.生成handler绑定loger 对象

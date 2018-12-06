@@ -6,6 +6,8 @@
 
 import xlrd,xlwt,xlutils,os
 from xlutils.copy import copy
+
+
 book=xlrd.open_workbook('stu.xls')#打开一个excel文件对象
 sheet=book.sheet_by_name('Sheet1')#通过sheet 名称指定工作sheet
 # sheet=book.sheet_by_index(0)#通过sheet 索引指定工作sheet
