@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<p id="box">
+		wusir
+	</p>
+	<div class="box">
+		女盆友
+		<span>alex</span>
+	</div>
+	<input type="text" value="123">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//只 获取文本的内容  text() innerText
+			// trim()清除前后的空格
+			// console.log($('#box').text().trim());
+
+			// 设置文本的内容
+			// $('#box').text('<h2>武sir 女朋友</h2>');
+
+			// 获取标签和文本的内容 html() innerHTML
+			// console.log($('.box').html().trim());
+			// 设置
+			// $('.box').html('<h2>我女pengyou 呢</h2>');
+
+
+			// val()         value
+			console.log($('input').val());
+			// 清空input输入框中的内容
+			$('input').val('');
+
+			$('input').val('哈哈哈哈');
+
+		});
+	</script>
+	
+</body>
+</html>

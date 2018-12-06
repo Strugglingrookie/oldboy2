@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div class="box"></div>
+	<!-- <div class="box"></div> -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		// 动态页面，在不重载整个网页的情况下，AJAX通过后台加载数据，并在网页上进行显示。
+
+		// 数据===》 页面
+
+		// 数据驱动视图
+		// 数据可不是 无缘无故的显示到视图 ，是通过控制器来显示到视图上
+
+		// 架构模式 设计模式
+		// 常用设计模式 
+		// MVC
+		// Model  View  Controller
+
+		// 数据    视图     控制器
+		// 是否跟数据库的数据有关  有
+		// var name = 'wusir';
+
+		// 方法 就是控制器
+		// $('.box').text(name);
+
+		$(function(){
+			/*
+			// 最简单的ajax请求就实现了
+			$.ajax({
+				url:'http://localhost:8800/',
+				type:'get',
+				success:function(data){
+					console.log(data);
+					$('body').html(data);
+				},
+				error:function(err){
+					console.log(err);
+				}
+			});
+			*/
+			$.ajax({
+				url:'http://localhost:8800/course',
+				type:'get',
+				dataType:'json',
+				success:function(data){
+					console.log(data);
+					// // $('body').html(data);
+					// $('.box').text(data.name);
+				},
+				error:function(err){
+					console.log(err);
+				}
+			});
+
+
+		})
+	</script>
+	
+</body>
+</html>

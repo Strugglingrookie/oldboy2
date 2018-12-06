@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<button id="create">创建</button>
+	<button id="remove">移除</button>
+	<div id="box">
+		<!-- <h2>alex</h2> -->
+		<h3 id="haha">哈哈哈哈</h3>
+	</div>
+	<script type="text/javascript">
+		
+		window.onload = function(){
+
+
+			function $(id){
+				return document.getElementById(id);
+			};
+			var oP  = null;
+			$('create').onclick = function(){
+				// 创建p节点元素
+				oP= document.createElement('h2');
+				// 设置文本内容
+				oP.innerText = 'alex';
+
+				// 追加元素  父子   父.appendChild(子)
+				// $('box').appendChild(oP);
+
+
+				// 兄弟之间插入新节点
+				// 父.insertBefore(新的子节点,做为参考的节点)
+				$('box').insertBefore(oP,$('haha'));
+
+
+			};
+
+			// 创建===》 销毁  人 活着  从一出生  死    页面性能是有损耗。 如果页面中出现频繁性的切换，不要使用这种方式  登录 注册   ===》 生命周期
+
+			$('remove').onclick = function(){
+				// 父.removeChild(子节点)
+
+				$('box').removeChild(oP);
+			}
+
+			
+
+
+		}
+	</script>
+	
+</body>
+</html>

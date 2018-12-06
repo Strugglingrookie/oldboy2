@@ -1,0 +1,27 @@
+
+
+#员工信息表在内存里的结构
+COLUMNS = ['id','age','name',...]
+db = [
+    [1,33,name,phone...],
+    [2,24,name,phone...],
+    [3,23,name,phone...],
+]
+
+db2 = {
+    'id':[1,2,3,4,5,26,27],
+    'age':[33,24,23...],
+    'name':[],
+    ...
+}
+
+find name , age from staff_table where age > 22
+update staff_table set age=20 where name=Alex Li
+update staff_table set dept=开发部 where dept=技术部
+matched records [
+['2', 'Jack Wang', '28', '13451024608', 'HR', '2015-01-07\n'],
+['4', 'Mack Qiao', '44', '15653354208', 'Sales', '2016-02-01\n'],
+['5', 'Rachel Chen', '23', '13351024606', 'IT', '2013-03-16\n'],
+['10', 'Shanshan Du', '26', '13698424612', 'Operation', '2017-07-02']]
+
+

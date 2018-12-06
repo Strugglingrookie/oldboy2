@@ -1,0 +1,64 @@
+auto_increment
+
+create table t20(
+	id int primary key auto_increment,
+	name char(16)
+);
+
+insert into t20(name) values
+('egon'),
+('alex'),
+('wxx');
+
+
+
+insert into t20(id,name) values
+(7,'yuanhao');
+
+insert into t20(name) values
+('egon1'),
+('egon2'),
+('egon3');
+
+
+#了解
+	show variables like 'auto_inc%';
+
+	#步长：
+	auto_increment_increment默认为1
+	#起始偏移量
+	auto_increment_offset默认1
+	
+	#设置步长
+	set session auto_increment_increment=5;
+	set global auto_increment_increment=5;
+	
+	#设置起始偏移量
+	set global auto_increment_offset=3;
+	强调：起始偏移量<=步长
+	
+	create table t21(
+		id int primary key auto_increment,
+		name char(16)
+	);
+	
+	insert into t21(name) values
+	('egon'),
+	('alex'),
+	('wxx'),
+	('yxx');
+	
+	
+
+清空表：
+	delete from t20;
+	delete from t20 where id = 3;
+	insert into t20(name) values
+	('xxx');
+	
+	truncate t20; #应该用它来清空表
+	
+	
+	
+
+

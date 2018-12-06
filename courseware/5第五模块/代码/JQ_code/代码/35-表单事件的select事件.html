@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<form action="http://www.baidu.com/s" method="get">
+		<input type="text" name="wd">
+		<input type="submit" value="🔍">
+	</form>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 文本选中的时候会调用
+			$('input[type=text]').select(function(){
+				console.log('内容选中了');
+			});
+			// 原生js的onsubmit事件
+			$('form').submit(function(e){
+				e.preventDefault();
+				// 未来 自己去发请求  往百度发请求 ajax技术
+				console.log('form被submit了');
+			});
+		});
+	</script>
+	
+</body>
+</html>

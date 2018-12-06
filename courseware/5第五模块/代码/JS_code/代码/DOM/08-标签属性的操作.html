@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		a{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<!-- <img src="" alt="">
+	<a href=""></a> -->
+	<a href="javascript:void(0);">
+		<img src="./images/image.png" alt="上一张" id="prev">
+	</a>
+
+	<!-- 
+
+	id  class title src href等等
+	 -->
+	<script type="text/javascript">
+		
+		window.onload = function(){
+			// 1.获取事件源
+			var oImg = document.getElementById('prev');
+
+			// 2.事件  onmouseover
+			oImg.onmouseover = function(){
+				// console.log(oImg);
+				// 好比是python中self  谁调用的事件 this指的就是谁
+				// console.log(this);
+				// ./images/image.png 相对路径
+				console.log(this.getAttribute('src'));
+				console.log(this.getAttribute('id'));
+				console.log(this.getAttribute('alt'));
+
+				// 获取的绝对路径
+				console.log(this.src);
+				console.log(this.id);
+				console.log(this.alt);
+
+
+
+
+				// 属性的设置
+				// this.setAttribute('src', './images/image-hover.png');
+				this.src  = './images/image-hover.png';
+
+
+			};
+
+			oImg.onmouseout = function(){
+				this.setAttribute('src', './images/image.png');
+
+			}
+
+
+		}
+	</script>
+</body>
+</html>

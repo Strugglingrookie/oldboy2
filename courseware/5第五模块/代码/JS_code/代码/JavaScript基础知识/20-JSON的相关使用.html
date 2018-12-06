@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+
+		/*
+		// json 是一个轻量级的数据交换格式，json有两种结构：对象 和数组
+
+		// 1.对象
+		// var person = {
+		// 	name:'zhangsan '
+		// }
+
+		// var packJSON = {"name":"alex","pwd":123};
+		// console.log(packJSON);
+
+		// 2.数组  是值的有序集合
+		var packJSON = [{"name":"alex","pwd":123},{"name":"wusir","pwd":123}]
+		console.log(packJSON);
+		*/
+		// json对象和json字符串转换
+		// 在数据传输过程中，JSON通常是以字符串的形式传递，但是js更喜欢操作JSON对象，所以Jjson对象和json字符串转换非常重要
+
+		/*重要
+		var jsonStr = '{"name":"alex","pwd":123}';
+
+		// (1)json字符串=》json
+
+		var jsonobject = JSON.parse(jsonStr);
+		console.log(jsonobject);
+
+		// (2) 将json对象=》 json字符串
+		var jsonStr2 = JSON.stringify(jsonobject)
+		console.log(jsonStr2);
+		console.log(typeof jsonStr2);
+		*/
+		// 3.遍历JSON对象和JSON数组
+		// （1）遍历JSON对象
+
+		/*
+		var packJSON = {"name":"alex","pwd":123};
+
+		// for  in
+
+		for(var k in packJSON){
+			// k指的是键值的索引
+			console.log(k+' '+packJSON[k])
+		}
+		
+		*/
+		// (2) 遍历JSON数组
+		var packJSON = [{"name":"alex","pwd":123},{"name":"wusir","pwd":123}];
+
+		for(var i in packJSON){
+			console.log(i+'  ' + packJSON[i].name + ' ' + packJSON[i].pwd );
+
+		}
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

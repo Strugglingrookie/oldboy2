@@ -1,0 +1,11 @@
+create table t15(
+	id int(11) unsigned zerofill
+);
+
+create table t16(
+	id int,
+	name char(6),
+	sex enum('male','female') not null default 'male'
+);
+
+insert into t16(id,name) values(1,'egon');

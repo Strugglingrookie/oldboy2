@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	<!-- window.onload() 1.覆盖现象 2.等待图片资源加载完成之后才调用脚本代码  用户体验不好 -->
+	
+	<!-- jquery框架 封装的时候 模仿着 咱们之间所说的伪数组对象   属性：索引和length  +n个fn -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		// 1.jquery入口函数
+
+		// 返回的是jquery对象  如果你像获取js的document文档对象
+		// jquery对象 === js对象的转换
+		// console.log($(document)[0]);
+		console.log($(document));
+
+		// 等待文档资源加载完成之后调用此方法
+		$(document).ready(function(){
+			alert(1);
+		});
+
+		// 2.jquery简便写法入口函数
+		$(function(){
+			alert(2);
+		});
+
+		$(window).ready(function(){
+			// 表示图片资源加载完成之后调用
+			console.log(3);
+		});
+		$(window).ready(function(){
+			// 表示图片资源加载完成之后调用
+			console.log(4);
+		});
+	</script>
+
+</body>
+</html>

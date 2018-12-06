@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<ul class="lists">
+		<li>
+			女友
+			<ol>
+			    <li>alex</li>
+			</ol>
+		</li>
+		<li class="item">
+			<a href="#">alex2</a>
+		</li>
+		<li class="item2">wusir</li>
+		<li>日天</li>
+		<li>村长</li>
+		<li>小马哥</li>
+
+	</ul>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 后代选择器  修改 样式属性
+			$('.lists li').css('color','red');
+			// 子代选择器 亲儿子
+			$('.item>a').css({
+				'color':'yellow',
+				'background-color':'red'
+			});
+
+			// + 紧邻  只选中挨着最近的兄弟
+			$('.item + li').css('color','green');
+
+			// ~ 兄弟选择器
+			$('.item2~li').css('color','purple');
+
+
+
+		});
+	</script>
+	
+</body>
+</html>

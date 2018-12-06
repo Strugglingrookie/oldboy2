@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			/*background-color: red;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box" style="background-color: red;"></div>
+	<!-- 1 盒子  初始化的时候是红色 ，点击这个盒子 切换成绿色 -->
+
+	<script type="text/javascript">
+		
+		// 1.获取事件源
+		var oDiv = document.getElementsByClassName('box')[0];
+		var isRed = true;
+		// 2.事件  后执行的操作   异步的操作
+		oDiv.onclick = function(){
+			if (isRed) { //盒子是红色
+				oDiv.style.backgroundColor = 'green';
+				isRed = false;
+			}else{
+				oDiv.style.backgroundColor = 'red';
+				isRed = true;
+			}
+		};
+		console.log(22222);
+	</script>
+
+
+	
+</body>
+</html>

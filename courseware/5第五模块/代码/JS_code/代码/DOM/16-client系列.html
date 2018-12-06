@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            .box{
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                border: 10px solid red;
+                /*margin: 10px 0px 0px 0px;*/
+                padding: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            专业丰富的课程体系，博学多闻的实力讲师以及风趣生动的课堂，在路飞，不是灌输知识，而是点燃你的学习火焰。专业丰富的课程体系，博学多闻的实力讲师以及风趣生动的课堂，在路飞，不是灌输知识，而是点燃你的学习火焰。
+        </div>
+    </body>
+    <script type="text/javascript">
+        /*
+         *      clientTop 内容区域到边框顶部的距离 ，说白了，就是边框的高度
+         *      clientLeft 内容区域到边框左部的距离，说白了就是边框的乱度
+         *      clientWidth 内容区域+左右padding   可视宽度
+         *      clientHeight 内容区域+ 上下padding   可视高度
+         * */
+        
+        var oBox = document.getElementsByClassName('box')[0];
+        console.log(oBox.clientTop); //10
+        console.log(oBox.clientLeft); //10
+        console.log(oBox.clientWidth); //360
+        console.log(oBox.clientHeight); //360
+        
+    </script>
+    
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<input type="text" name="user">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 加载页面时 让输入框 获得焦点
+			// $('input[type=text]').focus();
+
+			// setTimeout(function(){
+			// 	$('input[type=text]').blur();
+			// },2000)
+
+			// $('input[type=text]').focus(function(){
+			// 	console.log('获取焦点');
+			// });
+			// $('input[type=text]').blur(function(){
+			// 	console.log('失去焦点');
+			// });
+
+
+			// 键盘按键事件 
+
+			$('input').keyup(function(e){
+				console.log(e.keyCode);
+				// 键码
+				switch (e.keyCode) {
+					case 13:
+						console.log('回车键调用了');
+						console.log($(this).val());
+						// 未来与后端进行交互
+						break;
+					case 27:
+						console.log('回车键调用了');
+						console.log($(this).val());
+						// 未来与后端进行交互
+						break;
+					default:
+						// statements_def
+						break;
+				}
+			})
+		});
+	</script>
+	
+</body>
+</html>

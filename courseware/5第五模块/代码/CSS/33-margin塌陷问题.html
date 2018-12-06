@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin的塌陷</title>
+
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father{
+			width: 400px;
+			overflow: hidden;
+			border: 1px solid gray;
+		}
+		.box1{
+			width: 300px;
+			height: 200px;
+			background-color: red;
+			margin-bottom: 20px;
+			float: left
+		}
+		.box2{
+			width: 400px;
+			height: 300px;
+			background-color: green;
+			margin-top: 50px;
+			float: left;
+		}
+		span{
+			background-color: red;
+		}
+		span.a{
+			margin-right: 20px;
+		}
+		span.b{
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+
+		<!-- 当给两个兄弟盒子 设置垂直方向上的margin 那么以较大的为准，那么我们称这种现象叫塌陷 
+
+		浮动的盒子垂直方向 不塌陷
+		-->
+		<div class="box1"></div>
+		
+		
+		<div class="box2"></div>
+		
+
+	</div>
+	<span class="a">内容</span>
+	<span class="b">内容</span>
+	
+</body>
+</html>

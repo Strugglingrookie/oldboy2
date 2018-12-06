@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		div{
+			width: 400px;
+
+			/*给父盒子设置高度，这种方式不灵活。如果哪天公司产品突然要改，要求父盒子高度变大，而且不仅一个地方哦，那么我们不可能去找源码去手动修改*/
+
+			/*固定导航栏*/
+			/*height: 40px;*/
+		}
+		ul{
+			list-style: none;
+			height: 40px;
+		}
+
+		div ul li {
+			float: left;
+			width: 100px;
+			height: 40px;
+			background-color: red;
+		}
+		.box{
+			width: 200px;
+			height: 100px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<ul>
+			<li>Python</li>
+			<li>web</li>
+			<li>linux</li>
+
+		</ul>
+	</div>
+	<div class="box">
+		
+	</div>
+</body>
+</html>

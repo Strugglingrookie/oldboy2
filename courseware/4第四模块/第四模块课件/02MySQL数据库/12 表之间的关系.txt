@@ -1,0 +1,49 @@
+两张表之间的关系：
+	1、多对一
+		出版社    书（foreign key(press_id) references press(id)）
+	2、多对多
+		作者       书
+		egon: 
+			九阳神功
+			九阴真经
+		alex: 
+			九阳神功
+			葵花宝典
+		yuanhao:
+			独孤九剑
+			降龙十巴掌
+			葵花宝典
+		wpq:
+			九阳神功
+			
+		insert into author2book(author_id,book_id) values
+		(1,1),
+		(1,2),
+		(2,1),
+		(2,6);
+			
+		
+	3、一对一
+		customer表       student表
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

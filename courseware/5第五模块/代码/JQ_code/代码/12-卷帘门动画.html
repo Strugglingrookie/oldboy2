@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <button id="slideDown">卷帘门下拉</button>
+    <button id="slideUp">卷帘门下拉</button>
+    <button id="toggleSlide">开关式动画</button>
+    <div class="box"></div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // 显示动画
+        $('#slideDown').click(function() {
+        		$('.box').slideDown(200);
+
+        });
+        // 隐藏
+        $('#slideUp').click(function() {
+
+     		$('.box').slideUp(200);
+
+        });
+
+        // 开关式的显示隐藏动画
+        $('#toggleSlide').click(function() {
+          	$('.box').stop().slideToggle(1000);
+        })
+    });
+    </script>
+</body>
+
+</html>

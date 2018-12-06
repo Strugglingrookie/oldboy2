@@ -1,0 +1,30 @@
+char:定长
+varchar：变长
+
+#宽度指的是字符的个数
+create table t13(name char(5));
+create table t14(name varchar(5));
+
+insert into t13 values('李杰 '); #'李杰   '
+insert into t14 values('李杰 '); #'李杰 '
+
+
+select char_length(name) from t13; #5
+select char_length(name) from t14; #3
+
+
+select name from t13 where name='李杰';
+select name from t13 where name like '李杰';
+
+
+
+
+name char(5)
+egon |alex |wxx  |
+
+
+name varchar(5)
+1bytes+egon|1bytes+alex|1bytes+wxx|
+4+egon|4+alex|3+wxx|
+
+

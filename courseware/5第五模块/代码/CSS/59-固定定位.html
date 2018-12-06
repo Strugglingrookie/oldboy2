@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			/*固定定位：固定当前的元素不会随着页面滚动而滚动，
+			特性：1.脱标 2.提升层级 3.固定不变 不会随页面滚动而滚动
+				
+			参考点：设置固定定位，用top描述。那么是以浏览器的左上角为参考点
+			如果用bottom描述，那么是以浏览器的左下角为参考点
+
+			作用： 1.返回顶部栏 2.固定导航栏 3.小广告
+
+			*/
+			position: fixed;
+			bottom: 30px;
+			right: 40px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<p></p>
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+
+	</div>
+</body>
+</html>

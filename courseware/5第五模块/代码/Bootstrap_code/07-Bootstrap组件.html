@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 媒体查询 视口设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>路飞学城</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7/css/bootstrap.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    body {
+        padding-top: 70px;
+    }
+
+    .ttt {
+        position: relative;
+        top: -5px;
+    }
+    </style>
+</head>
+
+<body style="height: 2000px">
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">路飞学城</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">
+                            首页 
+                            <!-- .sr-only 表示隐藏元素 -->
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">免费课程</a>
+                        <!-- <span class="sr-only">啊哈哈哈</span> -->
+                    </li>
+                    <li>
+                        <a href="#">轻课</a>
+                    </li>
+                    <li>
+                        <a href="#">学位课</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-zoom-in"></span>
+                    </button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">alex <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">我的账户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></a></li>
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">我的优惠券</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">下拉菜单</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="dropdown">
+                            <!-- 在bootstrap中 凡是看到data-xxx的属性 表示与js有很大关联 -->
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Dropdown
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="disabled"><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <!-- 按钮组 -->
+                        <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">左</button>
+                            <button type="button" class="btn btn-default">中</button>
+                            <button type="button" class="btn btn-default">右</button>
+                        </div>
+                        <!-- 按钮式的下拉菜单 -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="nav nav-tabs">
+                                <li role="presentation" class="active"><a href="#">Home</a></li>
+                                <li role="presentation"><a href="#">Profile</a></li>
+                                <li role="presentation"><a href="#">Messages</a></li>
+                            </ul>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li role="presentation" class="active"><a href="#">Home</a></li>
+                                <li role="presentation"><a href="#">Profile</a></li>
+                                <li role="presentation">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单<span class="caret"></span>
+                                 </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">火腿</a></li>
+                                        <li><a href="#">肠</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">路径导航、分页等</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li class="active">Data</li>
+                        </ol>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                     </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li class="disabled"><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <h3>Example heading <span class="label label-default ttt">New</span></h3>
+                        <button class="btn btn-primary" type="button">
+                            Messages <span class="badge">4</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">警告框、进度条</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-success" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            ...</div>
+                        <div class="alert alert-info" role="alert">
+                            <a href="#" class="alert-link">路飞学城</a>
+                        </div>
+                        <div class="alert alert-warning" role="alert">...</div>
+                        <div class="alert alert-danger" role="alert">...</div>
+                        <!-- 进度条 -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                60%
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped  active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                40%
+                            </div>
+                        </div>
+                        <!-- 媒体 -->
+                        <!-- <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                 <img class="media-object" src="..." alt="...">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Middle aligned media</h4> ...
+                            </div>
+                        </div> -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge">14</span> Cras justo odio
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">路飞学城人员分布图</div>
+                    <div class="panel-body">
+                        <p class="lead">这是我们的核心人员</p>
+                    </div>
+                    <!-- Table -->
+                    <table class="table">
+                            <tr>
+                                <td>id</td>
+                                <td>name</td>
+                                <td>age</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>alex</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>小马哥</td>
+                                <td>20</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

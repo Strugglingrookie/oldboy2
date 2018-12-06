@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<ul>
+	    <li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	    <li>4</li>
+	</ul>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 写法 $('ul li:eq(0)')
+			// 1.:eq(index) 选择序号为index的元素
+			$('ul li:eq(0)').css('background','red');
+			$('ul li:gt(0)').css('color','green');
+			$('ul li:lt(3)').css('color','yellow');
+			// 选取的奇数和偶数
+			$('ul li:odd').css('background','black');
+			$('ul li:even').css('background','green');
+			// 选取第一个和最后一个
+			$('ul li:first').css('background','red');
+			$('ul li:last').css('background','red');
+
+
+
+
+
+
+
+
+
+
+
+
+		});
+	</script>
+	
+</body>
+</html>

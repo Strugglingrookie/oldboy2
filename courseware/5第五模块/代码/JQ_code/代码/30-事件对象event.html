@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<button>按钮</button>
+	<input type="text" name="user" value="123">
+	<p class="content"></p>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// jquery中没有监听输入框输入内容的方法
+			// $('input').change(function(e){
+			// 	console.log(e.target.value);
+			// })
+			$('.content').text($('input').val());
+
+			// 原生oninput的事件
+
+			// 双向的数据绑定  单向数据绑定（data==>view）
+			$('input')[0].oninput = function(e){
+				console.log(e.target.value);
+				$('.content').text(e.target.value);
+			}
+
+
+			$('button').click(function(e){
+				// currentTaget  当前事件的目标对象
+				console.log(e.currentTarget);
+				// 事件的触发对象  js对象
+				console.log(e.target);	
+				console.dir(e.target.innerText);
+				console.log($(e.target).text());
+				console.log($(this).text());
+
+				console.log(this===e.currentTarget);
+				console.log(this===e.target);
+
+				// 在用事件的时候  99%都需要 阻止冒泡
+				e.stopPropagation();
+
+
+			});
+			$('body').click(function(e){
+				// console.log(e.currentTarget);
+				console.log(e.target);
+				console.log(this===e.currentTarget);
+				console.log(this===e.target);
+
+
+			});
+			$('html').click(function(e){
+				// console.log(e.currentTarget);
+				console.log(e.target);
+				console.log(this===e.currentTarget);
+				console.log(this===e.target);
+
+			});
+		});
+	</script>
+	
+</body>
+</html>

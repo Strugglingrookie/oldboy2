@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father{
+			position: relative;
+			top: 10px;
+		}
+
+		.box{
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			border: 1px solid red;
+			position: absolute;
+			top: 100px;
+			left: 200px;
+		}
+	</style>
+</head>
+<body style="height: 2000px">
+	<div class="father">
+		<div class="box"></div>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// width() heigth()
+			// 获取宽
+			// console.log($('.box').width());
+			// 设置宽
+			// $('.box').width('300');
+
+			// 内部宽 和内部  innerWidth() innerHeight   包含内部宽+padding  不包含border
+			// console.log($('.box').innerWidth());
+
+			// 改变的是内部的宽度  不去修改padding和border
+			// $('.box').innerWidth('500');
+
+			//外部宽 outerWidth()  outerHeight  包含内部宽 + padding + border
+			//$('.box').outerWidth();//222
+
+			// 它的返回值 是一个对象 对象中包含了top和left属性
+			// 距离页面顶部的距离 与父相子绝定位没有任何关系
+			console.log($('.box').offset().top);
+			console.log($('.box').offset().left);
+
+			// 它的属性是只读
+			// $('.box').offset().top
+
+			// 滚动的偏移的距离 ===》  页面卷起的高度 和宽度
+			// $(document).scrollTop(110); 
+			// 监听文档的滚动事件 jquery的事件方法
+			$(document).scroll(function(){
+				console.log($(this).scrollTop());
+				var scrollTopHeight = $(this).scrollTop();
+				var boxOffsetTop = $('.box').offset().top;
+				if (scrollTopHeight >boxOffsetTop ) {
+					$('.box').stop().hide(1000);
+				}
+
+
+			})
+			
+
+
+
+
+		});
+	</script>
+</body>
+</html>

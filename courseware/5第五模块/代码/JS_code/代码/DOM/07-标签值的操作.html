@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<button id="btn">设置值</button>
+	<div id="box">
+		哈哈哈哈
+		<h3>wusir</h3>
+	</div>
+	<input type="text" name="user" value="123" id="oinput">
+	<script type="text/javascript">
+
+		
+		window.onload = function(){
+
+			// 函数  解决冗余性的代码  “僵尸代码”
+			/*
+			var oBtn = document.getElementById('btn');
+			var oDiv = document.getElementById('box');
+			var oInput = document.getElementById('oinput');
+			*/
+
+			function  $(id){
+				return document.getElementById(id);
+
+			};
+
+			$('btn').onclick = function(){
+				// 只获取文本
+				console.log($('box').innerText);
+				// 对标签文本内容的设置
+				// oDiv.innerText = 'alex';
+
+				// console.log(oDiv.innerHTML.trim());
+
+				// 获取的是所有的节点 （文本和标签 换行）
+				console.log($('box').innerHTML);
+
+				$('box').innerHTML = '<h2>alex</h2>';
+
+				// 表单控件  中有value属性的  必须通过 value来设置值和赋值
+				console.log($('oinput').value);
+				$('oinput').value = '321';
+
+			}
+		}
+
+	</script>
+</body>
+</html>

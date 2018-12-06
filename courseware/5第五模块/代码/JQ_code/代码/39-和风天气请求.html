@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div class="tmp"></div>
+	<div class="city"></div>
+	<img src="" alt="">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.ajax({
+				url:'https://free-api.heweather.com/s6/weather/now?location=beijing&key=4693ff5ea653469f8bb0c29638035976',
+				type:"get",
+				success:function (data) {
+					console.log(data.HeWeather6[0].now.tmp);
+					// 温度
+					var tmp = data.HeWeather6[0].now.tmp;
+					// 城市
+					var city = data.HeWeather6[0].basic.location;
+					// 天气状况码
+					var cond_code= data.HeWeather6[0].now.cond_code;
+
+					// 后面方法的参数使用的是es6的模板字符串拼接的变量
+					$('.tmp').text(`${tmp}℃`);
+					$('.city').text(city);
+					// 后面的地址是使用的和风天气的天气状况cdn资源。您也可以使用本地图片加载
+					$('img').attr('src',`https://cdn.heweather.com/cond_icon/${cond_code}.png`);
+
+				}
+			})
+		});
+	</script>
+</body>
+</html>

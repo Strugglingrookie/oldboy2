@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+
+<body>
+	<div>
+		<input type="text" name="user" id="user">
+		<input type="button" id="btn" value="保存">
+	</div>
+
+	<ul id="lists">
+	  
+	</ul>
+	<button id='clear'>清除</button>
+	<script type="text/javascript">
+
+		var oBtn = document.getElementById('btn');
+		var oUser = document.getElementById('user');
+		var oLists = document.getElementById('lists');
+
+		var li  = document.createElement('li');
+
+		oBtn.onclick = function(){
+
+			var val = oUser.value
+			localStorage.setItem('name', val);
+			oUser.value = '';
+			li.innerHTML = val;
+			oLists.appendChild(li)
+		}
+
+		window.onload = function(){
+
+			if (localStorage.getItem('name')) { //有值
+				var value = localStorage.getItem('name');
+				li.innerHTML = value;
+				oLists.appendChild(li);
+
+			}
+
+			// document.getElementById('clear').onclick = function(){
+			// 	localStorage.clear();
+			// 	window.location.reload();
+			// }
+
+			document.getElementById('clear').addEventListener('click',function(){
+					localStorage.clear();
+					window.location.reload();
+			},false);
+
+			// removeEventListener(type: DOMString, callback: EventListener, capture?: boolean)
+
+		}
+
+
+		
+
+		
+
+		
+		// localStorage
+		// var arr = [{"title":"adad","done":false}];
+		// var name = 'alex'
+
+		
+
+	</script>
+</body>
+</html>

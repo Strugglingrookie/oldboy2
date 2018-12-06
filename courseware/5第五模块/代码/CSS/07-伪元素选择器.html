@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素选择器</title>
+
+	<style type="text/css">
+		
+		/*设置第一个首字母的样式*/
+		p:first-letter{
+			color: red;
+			font-size: 30px;
+
+		}
+		
+		/* 在....之前 添加内容   这个属性使用不是很频繁 了解  使用此伪元素选择器一定要结合content属性*/
+		p:before{
+			content:'alex';
+		}
+		
+		
+		/*在....之后 使用非常频繁 通常与咱们后面要讲到布局 有很大的关联（清除浮动）*/
+		p:after{
+			content:'&';
+			color: red;
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+
+	<p>
+		我是一个段落
+
+	</p>
+	
+</body>
+</html>

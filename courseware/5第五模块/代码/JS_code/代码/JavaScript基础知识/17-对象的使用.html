@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <!-- js中创建对象的方式跟 很多语言不同  class -->
+    <script type="text/javascript">
+    /*
+            // 1.使用Object或对象字面量创建对象
+
+            // 对象 是属性和方法
+            var person =  new Object();
+            console.log(person);
+            console.log(typeof person);
+
+            // 给对象赋值
+            person.name = 'alex';
+            person.age = 20;
+            person.fav2 = function(){
+
+            }
+            console.log(person);
+            // var favfn = function(){
+            // 	// this 指的是当前的对象 跟python中的self类似
+            // 	console.log(this.name);
+            // }
+            var person2 = {
+            	name:'wusir',
+            	age:26,
+            	fav:function(){
+            	// this 指的是当前的对象 跟python中的self类似
+            	console.log(this.name);
+           	 }
+            }
+
+            console.log(person2);
+
+            person2.fav();
+            */
+    // 提问： 能不能像工厂车间一样，车床 不断生产对象  ？ 工厂模式创建对象
+
+
+    /*
+    // 2.工厂模式创建对象
+    function createPerson(name, age) {
+        var o = new Object();
+        o.name = name;
+        o.age = age;
+
+        return o;
+    }
+
+    var person1 = createPerson('alex', 20);
+    var person2 = createPerson('alex2', 20);
+    var person3 = createPerson('alex3', 20);
+    var person4 = createPerson('alex4', 20);
+
+    // instanceof
+    console.log(person1 instanceof Object);
+    console.log(person2 instanceof Object);
+
+    function createFruit(name, age) {
+        var o = new Object();
+        o.name = name;
+        o.age = age;
+
+        return o;
+    }
+
+    var f = createFruit('苹果',.2);
+    console.log(f instanceof Object)
+
+*/
+
+
+
+    // 3.构造函数模式创建对象  构造函数可以创建对象  使用new 关键字来创建对象   函数名首字母大写
+    // new Array()
+    // new Object()
+    // new String()
+
+    /*
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        this.alertName = function() {
+            alert(this.name);
+        }
+    }
+
+    function Fruit(name, age) {
+        this.name = name;
+        this.age = age;
+        this.alertName = function() {
+            alert(this.name);
+        }
+    }
+
+    var p1 = new Person('alex1', 20);
+    p1.alertName();
+
+    var f1 = new Fruit('香蕉',30);
+    f1.alertName();
+
+    console.log(p1 instanceof Person);
+    console.log(f1 instanceof Fruit);
+
+    console.log(p1 instanceof Object);
+    */
+
+
+
+
+
+
+    // 4.原型模式创建对象 propotype  它是当前对象的父类
+
+
+    function Person(name,age){
+    	this.name  = name;
+    	this.age = age;
+
+    }
+
+    Person.prototype.alertName = function(){	
+    	alert(this.name);
+    };
+
+    var p1  = new Person('alex',20);
+    var p2  = new Person('alex2',23);
+
+    // 内存地址 和值
+    console.log(p1===p2);
+
+    p1.alertName();
+    p2.alertName();
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

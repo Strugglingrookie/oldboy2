@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div title = 'alex' class="active"></div>
+	<!-- <img src="" alt=""> -->
+	<a href="">百度一下</a>
+	<!-- <input type="text" name="" value="" placeholder="" id="" > -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+
+		/*1.样式属性操作 css('color') 获取值
+		css('color','red') 设置单个值
+		css({
+			key1:value1,
+			key2:value2
+		});
+		key 既可以是驼峰  又可以是margin-left 要给margin-left 加引号
+
+		   2. 标签的属性操作
+		   attr(key) 获取属性值
+		   attr(key,value) 设置单个值
+		   attr({key1:value1,key2:value2});设置多个值
+
+
+		   3.DOM对象属性操作
+
+		   4.类样式属性操作
+		   addClass()  removeClass() toggleClass()
+
+		   5.对值的操作
+		   text() html()  val()
+
+		   innerText
+		   innerHTML
+		   value
+
+		   6.对DOM的操作 CRUD
+
+		*/
+
+		
+		// js中
+		// setAttribute(key,value)
+		// getAttribute()
+		// removeAttribute(name: DOMString)
+		$(function(){
+
+			// attr() 有一个参数表示获取属性值
+			console.log($('div').attr('title'));
+			$('div').attr('id','box');
+
+			// 设置 属性的时候 不要使用此方式来设置类名  不建议
+			// $('div').attr('class','box1 box2');
+
+			$('a').attr({
+				"href":"http://www.baidu.com",
+				title:'哈哈哈哈'
+			});
+
+			// 移除标签的属性
+			$('div').removeAttr('title id');
+
+
+			// 
+
+		});
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		ul{
+			width: 400px;
+			height: 100px;
+			overflow: hidden;
+		}
+		ul li{
+			list-style: none;
+			float: left;
+			width: 80px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			background-color: red;
+			margin-right: 10px;
+
+		}
+		ul li a{
+			padding: 20px;
+			/*background-color: green;*/
+			color:#fff;
+		}
+		p{
+			display: none;
+		}
+		p.active{
+			display: block;
+		}
+	</style>
+<body>
+	<ul>
+	    <li>
+	    	<a href="javascript:void(0)">
+	    		alex1
+	    	</a>
+	    </li>
+	    <li>
+	    	<a href="javascript:void(0)">
+	    		alex2
+	    	</a>
+	    </li>
+	    <li>
+	    	<a href="javascript:void(0)">
+	    		alex3
+	    	</a>
+	    </li>
+	    <li>
+	    	<a href="javascript:void(0)">
+	    		alex4
+	    	</a>
+	    </li>
+	</ul>
+	<p>alex1</p>
+	<p>alex2</p>
+	<p>alex3</p>
+	<p>alex4</p>
+
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('ul li a').click(function() {
+				// 选项卡的完整版
+				$(this).css('background','green').parent('li').siblings('li').find('a').css('background','transparent');
+
+				// 得获取到点击的 dom的索引 通过 index()方法获取  注意 这个要找的是有兄弟元素的索引
+				var i = $(this).parent('li').index();
+				// addClass()  removeClass()
+				$('p').eq(i).addClass('active').siblings('p').removeClass('active');
+			});
+		})
+	</script>
+	
+	
+</body>
+</html>
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		button{
+			width: 100px;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<button>按钮1</button>
+	<button>按钮2</button>
+	<button>按钮3</button>
+	<button>按钮4</button>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 内部遍历
+			$('button').click(function(event) {
+				// 选项卡
+				$(this).css('background','red').siblings('button').css('background','transparent');
+				console.log($(this).css('background','red'));
+			});
+		});
+	</script>
+	
+	
+</body>
+</html>

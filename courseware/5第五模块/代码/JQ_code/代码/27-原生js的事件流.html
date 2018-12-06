@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <button id='btn'>按钮</button>
+    <script type="text/javascript">
+    var oBtn = document.getElementById('btn')
+    // oBtn.onclick = function(){
+    // 	alert(1);
+    // };
+    // 如果是true 则表示有捕获
+    oBtn.addEventListener('click', function() {
+        console.log('按钮处于捕获阶段');
+        alert(1);
+    }, true)
+    document.body.addEventListener('click', function() {
+        console.log('body处于捕获阶段');
+    }, true)
+    document.documentElement.addEventListener('click', function() {
+        console.log('html处于捕获阶段');
+    }, true)
+    document.addEventListener('click', function() {
+        console.log('文档处于捕获阶段');
+    }, true)
+     oBtn.addEventListener('click', function() {
+        console.log('按钮处于冒泡阶段');
+    }, false)
+    document.body.addEventListener('click', function() {
+        console.log('body处于冒泡阶段');
+    }, false)
+    document.documentElement.addEventListener('click', function() {
+        console.log('html处于冒泡阶段');
+    }, false)
+    document.addEventListener('click', function() {
+        console.log('文档处于冒泡阶段');
+    }, false)
+    </script>
+</body>
+
+</html>

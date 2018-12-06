@@ -1,0 +1,58 @@
+
+#1、无参存储过程
+	delimiter //
+	create procedure p1()
+	BEGIN
+		select * from db7.teacher;
+	END //
+	delimiter ;
+
+
+	# MySQL中调用
+	call p1();
+
+
+	# Python中调用
+	cursor.callproc('p1')
+	
+	
+#2、有参存储过程
+	delimiter //
+	create procedure p2(in n1 int,in n2 int,out res int)
+	BEGIN
+		select * from db7.teacher where tid > n1 and tid < n2;
+		set res = 1;
+	END //
+	delimiter ;
+
+
+	# MySQL中调用
+	set @x=0
+	call p2(2,4,@x);
+	select @x;
+
+	# Python中调用
+	cursor.callproc('p2',(2,4,0))# @_p2_0=2,@_p2_1=4,@_p2_2=0
+	cursor.execute('select @_p3_2')
+	cursor.fetchone()
+	
+	
+
+	
+应用程序与数据库结合使用
+方式一：
+	Python:调用存储过程
+	MySQL:编写存储过程
+
+	
+方式二：
+	Python：编写纯生SQL
+	MySQL：
+	
+方式三：
+	Python：ORM->纯生SQL
+	MySQL：
+
+
+
+	

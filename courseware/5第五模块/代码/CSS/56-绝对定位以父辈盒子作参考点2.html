@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border: 5px solid red;
+			margin: 100px;
+			/*父盒子设置相对定位*/
+			position: absolute;
+			padding: 50px;
+		}
+		
+
+		.box p{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			/*子元素设置了绝对定位*/
+			position: absolute;
+			top: 10px;
+			left: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<!-- 不仅仅是父相子绝，父绝子绝 ，父固子绝,都是以父辈元素为参考点 。
+
+		注意了：父绝子绝，没有实战意义，做站的时候不会出现父绝子绝。因为绝对定位脱离标准流，影响页面的布局。相反‘父相子绝’在我们页面布局中，是常用的布局方案。因为父亲设置相对定位，不脱离标准流，子元素设置绝对定位，仅仅的是在当前父辈元素内调整位置信息。
+
+	-->
+	<div class="box">
+
+			<p></p>
+
+	</div>
+	
+</body>
+</html>

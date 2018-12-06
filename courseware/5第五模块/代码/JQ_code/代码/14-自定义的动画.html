@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	
+	<div></div>
+	<button>动画吧</button>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+				$('button').click(function(event) {
+					/* Act on the event */
+					// animate({队列的属性},时间,fn)
+						var  json = {
+							width:200,
+							height: 200,
+							top: 200,
+							left : 500,
+							"border-radius":200
+							
+						};
+						var json2 = {
+							width: 0,
+							height: 0,
+							top: 10,
+							left: 1000
+						}
+
+						$('div').stop().animate(json,2000,function(){
+							$('div').stop().animate(json2,1000,function(){
+								alert('已添加购物车')
+							})
+						});
+				});
+				
+		});
+	</script>
+	
+</body>
+</html>

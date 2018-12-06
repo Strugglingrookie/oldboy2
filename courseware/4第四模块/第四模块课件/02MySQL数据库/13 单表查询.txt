@@ -1,0 +1,160 @@
+单表查询
+
+select distinct 字段1,字段2,字段3 from 库.表 
+	where 条件
+	group by 分组条件
+	having 过滤
+	order by 排序字段
+	limit n;
+	
+	
+#where
+select id,name,age from employee where id > 7;
+	
+select name,post,salary from employee where post='teacher' and salary > 8000;
+
+select name,salary from employee where salary >= 20000 and salary <= 30000;
+select name,salary from employee where salary between 20000 and 30000;
+
+select name,salary from employee where salary < 20000 or salary > 30000;
+select name,salary from employee where salary not between 20000 and 30000;
+
+
+select * from employee where age = 73 or age = 81 or age = 28;
+select * from employee where age in (73,81,28);
+
+select * from employee where post_comment is Null;
+select * from employee where post_comment is not Null;
+
+select * from employee where name like "jin%";
+select * from employee where name like "jin___";
+
+
+#group by
+mysql> set global sql_mode="ONLY_FULL_GROUP_BY"; 
+分组之后，只能取分组的字段，以及每个组聚合结果
+
+select post from employee group by post;
+
+#聚合函数
+max
+min
+avg
+sum
+count
+
+#每个职位有多少个员工
+select post,count(id) as emp_count from employee group by post;
+select post,max(salary) as emp_count from employee group by post;
+select post,min(salary) as emp_count from employee group by post;
+select post,avg(salary) as emp_count from employee group by post;
+select post,sum(age) as emp_count from employee group by post;
+
+#没有group by则默认整体算作一组
+select max(salary) from employee;
+
+#group_concat
+select post,group_concat(name) from employee group by post;
+
+
+#练习：
+select post,group_concat(name) from employee group by post;
+
+select post,count(id) from employee where age > 50 group by post;
+
+select sex,count(id) from employee group by sex;
+
+
+select sex,avg(salary) from employee group by sex
+
+
+#having
+select post,group_concat(name),count(id) from employee group by post;
+
+select post,group_concat(name),count(id) from employee group by post having count(id) < 2;
+
+
+select post,avg(salary) from employee group by post having avg(salary) > 10000;
+
+
+#order by
+select * from employee order by age asc; #升序
+select * from employee order by age desc; #降序
+
+select * from employee order by age asc,id desc; #先按照age升序排，如果age相同则按照id降序排
+
+
+select distinct post,count(id) as emp_count from employee
+	where salary > 1000
+	group by post
+	having count(id) > 1
+	order by emp_count desc
+	;
+
+
+#limit
+select * from employee limit 3;
+select * from employee order by salary desc limit 1;
+
+
+select * from employee limit 0,5;
+select * from employee limit 5,5;
+select * from employee limit 10,5;
+select * from employee limit 15,5;
+
+
+#总结：
+	语法顺序：
+		select distinct 字段1,字段2,字段3 from 库.表 
+			where 条件
+			group by 分组条件
+			having 过滤
+			order by 排序字段
+			limit n;
+
+	执行顺序：
+
+def from(db,table):
+		f=open(r'%s\%s' %(db,table))
+		return f
+	
+def where(condition,f):
+	for line in f:
+		if condition:
+			yield line
+
+def group(lines):
+	pass
+	
+def having(group_res):
+	pass
+
+def distinct(having_res):
+	pass
+
+def order(distinct_res):
+	pass
+	
+def limit(order_res)
+	pass
+	
+def select():
+	f=from('db1','t1')
+	lines=where('id>3',f)
+	group_res=group(lines)
+	having_res=having(group_res)
+	distinct_res=distinct(having_res)
+	order_res=order(distinct_res)
+	res=limit(order_res)
+	print(res)
+	return res
+	
+#正则表达式
+select * from employee where name like 'jin%';
+select * from employee where name regexp '^jin';
+select * from employee where name regexp '^jin.*(g|n)$';
+
+
+	
+	
+	

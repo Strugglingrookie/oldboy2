@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <button id="fadeIn">淡入动画</button>
+    <button id="fadeOut">淡出动画</button>
+    <button id="fadeToggle">开关式动画</button>
+    <div class="box"></div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // 显示动画
+        $('#fadeIn').click(function() {
+        		$('.box').fadeIn(1000);
+
+        });
+        // 隐藏
+        $('#fadeOut').click(function() {
+                // 第二个参数都是有回调函数
+     		$('.box').fadeOut(1000);
+        });
+
+        // 开关式的显示隐藏动画
+        $('#fadeToggle').click(function() {
+          	$('.box').stop().fadeToggle(1000);
+        })
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+INFO:root:So should this
+WARNING:root:And this, too
+10/11/2017 04:26:24 PM So should this
+10/11/2017 04:26:24 PM And this, too
+10/11/2017 04:27:22 PM-logger模块- So should this
+10/11/2017 04:27:22 PM-logger模块- And this, too

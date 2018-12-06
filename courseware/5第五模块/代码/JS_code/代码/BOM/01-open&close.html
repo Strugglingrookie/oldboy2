@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!-- 需求： 点击按钮 打开新的窗口  路飞学城 -->
+	<!-- a标签默认是在当前窗口打开新的网址 -->
+	<a href="http://www.luffycity.com" target="_blank">路飞</a>
+	<button>luffy</button>
+	<script type="text/javascript">
+		
+		var oBtn = document.getElementsByTagName('button')[0];
+
+		oBtn.onclick = function(){
+			// 默认在新的窗口打开 网址  _blank  
+			// window.open('http://www.luffycity.com','_self');
+			// window可以省略不写
+			open('http://www.luffycity.com','_self');
+			// 关闭窗口
+			// window.close();
+
+		}
+	</script>
+	
+</body>
+</html>

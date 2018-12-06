@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		button{
+			margin: 10px;
+			width: 100px;
+			height: 40px;
+			cursor: pointer;
+		}
+		button.active{
+			background-color: green;
+		}
+
+	</style>
+</head>
+<body>
+	<button class="active">按钮1</button>
+	<button>按钮2</button>
+	<button>按钮3</button>
+	<button>按钮4</button>
+	<button>按钮5</button>
+	<script type="text/javascript">
+		
+		// 需求： 鼠标悬浮 哪个button上，该button变成绿色的背景（添加类 active）
+
+		var oBtns = document.getElementsByTagName('button');
+
+		for(var i  = 0; i < oBtns.length; i++){
+			oBtns[i].onmouseover = function(){
+
+				// 重要：  排他思想: 先把所有按钮的className设置为空，然后把（this）当前这个按钮的className设置active
+				for(var j = 0;j < oBtns.length; j++){
+					oBtns[j].className = '';
+				}
+				
+				this.className = 'active';
+			}
+		}
+
+		for(var i = 0;i < oBtns.length; i++){
+			oBtns[i].onmouseout = function(){
+				this.className = '';
+			}
+		}
+
+
+	</script>
+
+	
+</body>
+</html>

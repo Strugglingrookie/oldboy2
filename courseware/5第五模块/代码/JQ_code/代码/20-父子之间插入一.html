@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div class="wusir">wusir</div>
+	<div class="box">
+		
+	</div>
+
+	
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			var oP = document.createElement('p');
+			oP.innerText = '女朋友';
+			oP.id = 'tt'
+			// 1.父子之间 父.append(子)  子.appendTo(父)
+
+			/*
+			// 子元素 ： 可以是 一个string  、jsDOM对象 、jquery对象
+			$('.box').append('alex');//可以插入普通的文本
+			$('.box').append('<h2>alex</h2>');//可以插入标签+文本
+			$('.box').append(oP); //插入一个jsDom对象
+			$('.box').append($('.wusir')); //如果插入的是一个jquery对象 相当于是一个移动操作
+			*/
+			/*
+			// console.log();
+			$('.box').append(oP);
+			console.log($('#tt'));
+			$('#tt').click(function(){
+
+				alert($(this).text());
+			})
+			*/
+			$('<p>日天</p>').appendTo('.box').click(function(event) {
+				$(this).css({
+					width:100,
+					height:100,
+					backgroundColor:'red'
+				}).text('wusir');
+
+			});;
+
+			// jquery有链式编程 简化我们的代码
+		});
+	</script>
+	
+</body>
+</html>

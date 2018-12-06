@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		
+		
+		
+		/*1 1 1 */
+		/*#box2 .wrap3 p{
+			color: yellow;
+		}*/
+		/*1 1 1*/
+		/*#box1 .wrap2 p{
+			color: red;
+		}*/
+		
+		/* 0*/
+
+		/*继承来的*/
+		#box1 #box2 .wrap3{
+			color: red;
+		}
+		 .wrap1 #box2 .wrap3{
+			color: green;
+		}
+
+
+		
+			
+		/*选中来的*/
+		/*1 1 1*/
+		/*#box2 .wrap3 p{
+			color: green;
+		}*/
+
+
+
+	</style>
+</head>
+<body>
+
+	<!-- 当权重一样的时候 是以后设置的属性为准。  前提权重一样 ，后来者居上 
+
+		继承来的属性 权重为0
+
+
+		总结：
+		1.先看标签元素有没有被选中，如果选中了，就数数 （id,class,标签的数量） 谁的权重大 就显示谁的属性。权重一样大，后来者居上
+		2.如果没有被选中标签元素，权重为0。
+		如果属性都是被继承下来的 权重都是0 。权重都是0:"就近原则" ： 谁描述的近，就显示谁的属性
+
+	-->
+	<div id='box1' class="wrap1">
+		<div id="box2" class="wrap2">
+			<div id="box3" class="wrap3">
+				<p>再来猜猜我是什么颜色？</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

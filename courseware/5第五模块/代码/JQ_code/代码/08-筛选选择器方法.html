@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div class="box">
+		<p>
+			<span class="child">alex</span>
+		</p>
+		<p>
+			<span class="active">alex2</span>
+		</p>
+		<p class="item3">alex3</p>
+		<p>alex4</p>
+		<p>alex5</p>
+		<div class="child">哈哈哈哈哈</div>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+
+			// find(selector)
+			// 查找后代 包括子子孙孙
+			$('.box').find('p').css('color','red');
+			$('.box').find('.item3').css('color','green');
+
+			//   在jquery中 叫链式编程  就因为有这个链式编程 所有我们书写的就少
+			$('.box').find('p>.active').css('color','yellow').click(function() {
+				alert($(this).text());
+			});
+			console.log($('.box').find('p>.active').css('color','yellow'))
+			console.log($('.box').find('p'));
+
+			// 子代children(selector) 获取的是亲儿子
+			$('.box').children('.child').css('color','purple');
+
+			// parent  不说了 获取的是亲爹	
+
+			// eq(index) index是从0 开始的
+
+			$('.box').children('p').eq(1).css('font-size',30);
+
+		});
+	</script>
+</body>
+</html>

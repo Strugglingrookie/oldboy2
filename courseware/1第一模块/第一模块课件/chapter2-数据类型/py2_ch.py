@@ -1,0 +1,4 @@
+#coding:gbk
+
+s = 'Â··ÉÑ§³Ç' #unicode
+print(s)

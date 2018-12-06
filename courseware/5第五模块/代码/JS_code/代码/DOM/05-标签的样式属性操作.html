@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			/*background-color: red;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box" style="background-color: red;"></div>
+	<!-- 1 盒子  初始化的时候是红色 ，点击这个盒子 切换成绿色 -->
+
+	<script type="text/javascript">
+		
+		// 1.获取事件源
+
+		var oDiv = document.getElementsByClassName('box')[0];
+
+		// 2.事件
+		oDiv.onclick = function(){
+
+			//3.事件驱动 CSSStyleDeclaration对象
+			console.log(oDiv.style);
+
+			// 点语法  get和set方法
+			//获取值   get方法  获取的是行内样式的属性  与内接和外接没有任何关系
+			console.log(oDiv.style.backgroundColor);
+			// 设置值  set方法
+
+			//  在style中书写的比如 backgroun-color  通过js设置的时候 要写成驼峰标识
+			oDiv.style.backgroundColor = 'green';
+			oDiv.style.width = '300px';
+			oDiv.style.marginLeft = '30px';
+		}
+	</script>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		// switch
+		var gameScore = 'good';
+
+		/*
+		if (gameScore  == 'better') {
+
+		}else if(gameScore == 'good'){
+
+		}else if(gameScore == 'best'){
+
+		}else{
+			
+		}
+		*/
+		switch (gameScore) {
+			case 'good':
+				console.log('玩的很好');
+				// switch语句 case表示一个条件，满足这个条件就会输出，直到遇到break跳出，如果你的breakb不写，那么程序会遇到下一个break停止。这个就是‘case穿透’
+				break;
+			case 'better':
+				console.log('玩的老牛逼');
+				break;
+			case 'best':
+				console.log('恭喜你，吃鸡成功');
+				break;
+			default:
+				console.log('很遗憾，被淘汰了');
+				break;
+		}
+
+
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.box1{
+			/*将块元素转化成行内元素*/
+			display: inline-block;
+			width: 200px;
+			height: 40px;
+			border: 1px solid red;
+		}
+		.box2{
+			margin-top: 20px;
+			width: 200px;
+			height: 40px;
+			font-size: 40px;
+			border: 1px solid green;
+		}
+		span{
+			background-color: yellow;
+			width: 100px;
+			height: 40px;
+			/*将行内元素转化成块级元素*/
+			display: block;
+
+			/*隐藏当前的标签 不占位置*/
+			/*display: none;*/
+			
+			/*隐藏当前的标签，占位置*/
+			visibility: hidden;
+		}
+		img{
+			width: 300px;
+			height: 300px;
+			/*隐藏当前的标签*/
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box1">内容</div>
+	<div class="box1">内容</div>
+	<div class="box2">内容</div>
+
+	<span>alex</span>
+	<span>alex</span>
+
+	<!-- form表单中 input textarea select -->
+	<img src="./images/企业1.png" alt="">
+	<img src="./images/企业2.png" alt="">
+
+
+
+</body>
+</html>

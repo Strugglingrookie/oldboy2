@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border: 5px solid red;
+			margin: 100px;
+			/*父盒子设置相对定位*/
+			position: relative;
+			padding: 50px;
+		}
+		.box2{
+			width: 300px;
+			height: 300px;
+			background-color: green;
+			position: relative;
+			
+		}
+
+		.box p{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			/*子元素设置了绝对定位*/
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		/*父辈元素设置相对定位，子元素设置绝对定位，那么会以父辈元素左上角为参考点
+		这个父辈元素不一定是爸爸，它也可以是爷爷，曾爷爷。 如果父亲设置了定位，那么以父亲为参考点。那么如果父亲没有设置定位，那么以父辈元素设置定位的为参考点
+		*/
+
+	</style>
+</head>
+<body>
+	<div class="box">
+
+		<div class="box2">
+			<p></p>
+		</div>
+	</div>
+	
+</body>
+</html>

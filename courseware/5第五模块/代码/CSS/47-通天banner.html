@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超链接美化</title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		ul{
+			list-style: none;
+		}
+		body{
+			/*background-image: url(./images/banner.jpg);*/
+			/*background-repeat: no-repeat;*/
+
+			/*水平居中通天banner图*/
+			/*background-position: center top;*/
+			
+			/*综合属性设置*/
+			background:  red  url('./images/banner.jpg')  no-repeat   center top;
+		}
+		.nav{
+			width: 960px;
+			/*height: 40px;*/
+			overflow: hidden;
+			margin: 100px auto ;
+			background-color: purple;
+			/*设置圆角*/
+			border-radius: 5px;
+		}
+		.nav ul li{
+			float: left;
+			width: 160px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+		.nav ul li a{
+			display: block;
+			width: 160px;
+			height: 40px;
+			color: white;
+			font-size: 20px;
+			text-decoration: none;
+			font-family: 'Hanzipen SC';
+		}
+		/*a标签除外，不继承父元素的color*/
+
+
+		.nav ul li a:hover{
+			background-color: red;
+			font-size: 22px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="nav">
+		<ul>
+			<li>
+				<a href="">网站导航</a>
+			</li>
+			<li>
+				<a href="">网站导航</a>
+			</li>
+			<li>
+				<a href="">网站导航</a>
+			</li>
+			<li>
+				<a href="">网站导航</a>
+			</li>
+			<li>
+				<a href="">网站导航</a>
+			</li>
+			<li>
+				<a href="">网站导航</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

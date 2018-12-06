@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>字体</title>
+
+    <style>
+        p{
+            width: 300px;
+            height: 60px;
+            /* 等价于
+            font-size: 14px;
+            line-height: 30px;
+            font-family: '宋体';
+             */
+             font:14px/30px  "Arial","Hanzipen SC","微软雅黑"; 
+        
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        使用font-family注意几点：
+
+        1.网页中不是所有字体都能用哦，因为这个字体要看用户的电脑里面装没装，
+        比如你设置： font-family: "华文彩云"; 如果用户电脑里面没有这个字体，
+        那么就会变成宋体
+        页面中，中文我们只使用： 微软雅黑、宋体、黑体。 
+        如果页面中，需要其他的字体，那么需要切图。 英语：Arial 、 Times New Roman
+
+        2.为了防止用户电脑里面，没有微软雅黑这个字体。
+        就要用英语的逗号，隔开备选字体，就是说如果用户电脑里面，
+        没有安装微软雅黑字体，那么就是宋体：
+         font-family: "微软雅黑","宋体"; 备选字体可以有无数个，用逗号隔开。
+        3.我们要将英语字体，放在最前面，这样所有的中文，就不能匹配英语字体，
+         就自动的变为后面的中文字体： 
+         font-family: "Times New Roman","微软雅黑","宋体";
+
+        4.所有的中文字体，都有英语别名，
+        我们也要知道： 微软雅黑的英语别名：
+         font-family: "Microsoft YaHei";
+          宋体的英语别名： font-family: "SimSun";
+         font属性能够将font-size、line-height、font-family合三为一： font:12px/30px "Times New Roman","Microsoft YaHei","SimSun";
+
+        5.行高可以用百分比，表示字号的百分之多少。
+         一般来说，都是大于100%的，因为行高一定要大于字号。 
+         font:12px/200% “宋体” 等价于 font:12px/24px “宋体”; 
+         反过来，比如： font:16px/48px “宋体”;
+         等价于 font:16px/300% “宋体”
+
+
+
+
+
+
+
+
+     -->
+
+    <p> 我是文本</p>
+    
+</body>
+</html>

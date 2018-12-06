@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<form >
+		<input type="text" name="user">
+		<input type="submit" name="">
+	</form>
+	<!-- <div class="box"></div> -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+
+			$('form').submit(function(e){
+				// 阻止form表单的默认事件
+				e.preventDefault();
+				var userVal = $('input[name=user]').val();
+				console.log(userVal);
+				
+				// 与你后端交互
+				$.ajax({
+					url:"http://localhost:8800/create",
+					type:'post',
+					data:{
+						"name":userVal
+					},
+					success:function(data){
+						console.log(data);
+					},
+					error:function(err){
+						console.log(err);
+					}
+				})
+			})
+
+		})
+	</script>
+	
+</body>
+</html>

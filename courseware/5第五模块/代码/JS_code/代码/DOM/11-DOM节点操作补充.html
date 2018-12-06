@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div id="box">
+        <button id="btn">
+        		<span>哈哈
+			<span>嘿嘿</span>
+        		</span>
+        		<span>哈哈</span>
+
+        </button>
+    </div>
+    <script type="text/javascript">
+    window.onload = function() {
+        function $(id) {
+            return document.getElementById(id);
+        };
+
+
+        // 获取父节点  亲爹
+        console.log($('btn').parentNode);
+        console.log($('btn').parentNode.parentNode.parentNode.parentNode);
+
+
+        // 获取的是复数  亲儿子
+        console.log($('btn').children);
+
+
+        $('btn').onclick = function(){
+	        	  // 自己删除自己
+	        this.parentNode.removeChild(this);
+        }
+      
+
+
+    }
+    </script>
+</body>
+
+</html>

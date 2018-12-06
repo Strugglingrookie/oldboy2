@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		// 1.将number类型转换成string类型
+
+		//1>隐式转换 小技巧
+		var n1 = 123;
+		var n2  = '123';
+		console.log(n1+n2);
+
+
+		//2> 强制转换
+
+		// String() toString()
+		var  str1 = String(n1);
+		console.log(typeof str1);
+
+		var num  = 2334;
+		var numStr = num.toString();
+		console.log(typeof numStr);
+		*/
+
+		//2.将字符串类型转换成number类型
+
+		var stringNum = '131313';
+		var num = Number(stringNum);
+		console.log(num);
+		console.log(typeof num);
+
+
+		var stringNum2 = '13.1313fjkafbh13233dkjf';
+		var num2 = Number(stringNum2);
+		console.log(num2);// NaN Not a Number
+		console.log(typeof num2);
+
+		// parseInt() parseFloat() 解析字符串，并且返回整数和浮点型
+		console.log(parseInt(stringNum2));//13
+		console.log(parseFloat(stringNum2));//13.1313
+	</script>
+	
+</body>
+</html>

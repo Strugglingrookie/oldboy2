@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<a href="./index.html">新网页</a>
+	<button id="forward">前进</button>
+	<button id="refresh">刷新</button>
+	<script type="text/javascript">
+		alert(1);
+		
+		function $(id){
+			return document.getElementById(id);
+		}
+
+		$('forward').onclick = function(){
+
+			// 表示前进
+			window.history.go(1);
+		}
+		$('refresh').onclick =  function(){
+			// 表示刷新
+
+			// 不常用  因为因为全局刷新
+			// window.history.go(0);
+			window.location.reload();
+			// 局部作用域刷新  使用的技术 ajax后面 介绍
+		}
+
+
+	</script>
+
+	
+	
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css的选择器</title>
+	<style type="text/css">
+
+		body{
+			color:gray;
+			font-size: 12px;
+		}
+		/*标签选择器*/
+		/*p{
+			color: red;
+			font-size: 20px;
+		}
+		span{
+			color: yellow;
+		}*/
+		#box{
+			background:green;
+		}
+			
+		#s1{
+			color: red;
+		}
+
+		#s2{
+			font-size: 30px;
+		}
+		
+		.title{
+			color: yellowgreen;
+			font-size: 12px;
+		}
+		.alex{
+			color: red;
+		}
+		.active{
+			color: yellow;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<!-- 
+		css的选择器：1.基本选择器  2.高级选择器
+
+		1.标签选择器
+			标签选择器可以选中所有的标签元素，比如div，ul，li ，p等等
+			不管标签藏的多深，都能选中
+			选中的是所有的，而不是某一个，所以说 "共性"  而不是 ”特性“
+
+		2.id选择器
+			# 选中id
+
+			同一个页面中id不能重复。
+			任何的标签都可以设置id  
+			id命名规范 要以字母 可以有数字 下划线 -  大小写严格区分  aa和AA
+
+
+		3.类选择器
+
+		1.所谓类 就是class  . class与id非常相似 任何的标签都可以加类
+		但是类是可以重复    归类
+
+		2.同一个标签中可以携带多个类 用空格隔开
+
+
+		类的使用 能够决定前端工程师的css水平到底有多牛逼？
+
+		一定要有”公共类“的概念
+
+
+		总结：
+
+		1.不要去试图用一个类将我们的页面写完。这个标签要携带多个类，共同设置样式
+		2.每个类要尽可能的小，有公共的概念，能够让更多的标签使用
+
+		玩好了类 就等于玩好了css中的1/2
+
+		到底使用id还是用class？
+		答案：尽可能的用class。除非一些特殊情况可以用id
+
+		原因：id一般是用在js的。也就是说  js是通过id来获取到标签
+
+	 -->
+
+	<div>
+		<p>我是一个段落</p>
+		<ul>
+			<li>
+				<p>1</p>
+				<span>
+					哈哈哈
+				</span>
+			</li>
+		</ul>
+		<p>路飞</p>
+
+	</div>
+	<div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<p>我是另一个段落</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="box">
+		<span id="s1">123</span>
+		<span id="s2">234</span>
+	</div>
+
+	<div class="box2">
+		<h3 id="h" class="title xiaoma egon alex">我是一个三级标题</h3>
+		<h3>我是一个三级标题</h3>
+		<h3 class="title">我是一个三级标题</h3>
+		<h3>我是一个三级标题</h3>
+		<h3>我是一个三级标题</h3>
+	</div>
+
+</body>
+</html>

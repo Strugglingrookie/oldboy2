@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// 列表  内置对象
+
+		// Array 
+
+		/*
+		// 1.字面量方式  推荐大家使用这种方式 简单粗暴
+
+		// 所有的变量 都挂载到了全局对象window
+		var colors = ['red','green','blue'];
+		var a = 10;
+		var b  = '20';
+		console.log(colors);
+		console.log(window.colors);
+		*/
+
+
+		// 2.使用构造函数（js中创建对象）的方式来创建
+
+		var colors = new Array();
+		console.log(colors);
+
+		colors[0] = 'red';
+		colors[1] = 'green';
+		colors[2] = 'blue';
+		console.log(colors);
+
+		// for循环 遍历列表
+		for(var i = 0; i < colors.length; i++){
+			console.log(i,colors[i]);
+		}
+
+
+	</script>
+	
+</body>
+</html>

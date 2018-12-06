@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <ul>
+        <li class="item">alex</li>
+    </ul>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        // es6的模板字符串   tab键 上面那个符号  反引号 ``,使用${变量名} 插入变量
+        var title = "百度一下";
+        $('.item').after(`<li>
+			<a href="#">${title}</a>
+		</li>`);
+
+	$('<li>wusir</li>').insertAfter('.item');
+
+	// before
+	 $('.item').before(`<li>
+			<a href="#">${title}</a>
+		</li>`);
+	 $('<li>wusir</li>').insertBefore('.item');
+
+
+
+
+    });
+    </script>
+</body>
+
+</html>

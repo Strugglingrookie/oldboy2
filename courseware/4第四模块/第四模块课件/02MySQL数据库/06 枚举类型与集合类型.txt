@@ -1,0 +1,14 @@
+create table consumer(
+	id int,
+	name char(16),
+	sex enum('male','female','other'),
+	level enum('vip1','vip2','vip3'),
+	hobbies set('play','music','read','run')
+);
+
+
+insert into consumer values
+(1,'egon','male','vip2','music,read');
+
+insert into consumer values
+(1,'egon','xxxxx','vip2','music,read');

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定导航栏</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			/*给body设置导航栏的高度，来显示下方图片的整个内容*/
+			padding-top: 49px;
+		}
+		.wrap{
+			width: 100%;
+			height: 49px;
+			background-color: #000;
+			/*设置固定定位之后，一定一定要加top属性和left属性*/
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 9999999;
+			
+			
+		}
+		.wrap .nav{
+			width: 960px;
+			height: 49px;
+			margin: 0 auto;
+
+		}
+		.wrap .nav ul li{
+			float: left;
+			width: 160px;
+			height: 49px;
+			
+			text-align: center;
+		}
+		.wrap .nav ul li a{
+			width: 160px;
+			height: 49px;	
+			display: block;
+			color: #fff;
+			font: 20px/49px "Hanzipen SC";
+			background-color: purple;
+		}
+		.wrap .nav ul li a:hover{
+			background-color: red;
+			font-size: 22px;
+		}
+		.app{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<ul>
+				<li>
+					<a href="#">网页开发</a>
+				</li>
+				<li>
+					<a href="#">网页开发</a>
+				</li>
+				<li>
+					<a href="#">网页开发</a>
+				</li>
+				<li>
+					<a href="#">网页开发</a>
+				</li>
+				<li>
+					<a href="#">网页开发</a>
+				</li>
+				<li>
+					<a href="#">网页开发</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+
+	<div class="app"></div>
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+	<img src="./bojie.jpg" alt="">
+
+	
+</body>
+</html>

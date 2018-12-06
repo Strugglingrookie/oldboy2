@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			margin-top: 10px;
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">wusir</div>
+	<div id="box">日天</div>
+	<div>alex</div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+
+		$(function(){
+
+			// 事件三步走： 事件源  事件  事件驱动程序
+
+			// jquery如何获取dom   
+			// jquery的标签选择器
+
+			console.log($('div'));
+
+
+			// js对象
+			// $('div')[0].onclick
+
+			// jquery内部自己遍历 
+			$('div').click(function(){
+
+				// alert(1);
+
+				// this指的是js对象
+				console.log(this.innerText);
+				console.log($(this).text())
+
+				// $(this).hide(300);
+			});
+
+			// 2.类选择器
+			console.log($('.box'))
+			// 3.id选择器
+			console.log($('#box'))
+
+
+		});
+	</script>
+	
+</body>
+</html>

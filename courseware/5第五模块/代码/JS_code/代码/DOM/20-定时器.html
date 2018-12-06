@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		#box{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">我的盒子</div>
+	<button id="animate">动画吧</button>
+	<button id="clear">清除定时器</button>
+	<script type="text/javascript">
+		
+		/*
+		console.log('开始');
+
+		// 一次性定时器  2秒之后会执行回调函数   console.log(22222); 如果它先调用了，证明 setTimeout()可以做异步操作
+
+		// 未来  如果对于数据的请求 出现数据阻塞的问题，那么可以考虑使用setTimeout()来执行异步操作
+		setTimeout(function(){
+			console.log('走到尽头了');
+		}, 2000);
+		console.log(22222);
+		*/
+		var oDiv = document.getElementById('box');
+		var oAnimate = document.getElementById('animate');
+
+
+		var num =  0;
+		let timer;
+		oAnimate.onclick = function(){
+			// 用定时器的时候 要先清定时器 再开定时器 页面不会出现问题
+			clearInterval(timer);
+			 timer = setInterval(function(){
+		         		// 控制盒子的步伐
+				num+=3;
+				console.log(num);
+				oDiv.style.marginLeft = num +'px';
+
+			},100);
+		}
+
+	         
+
+		// clearInterval(handle?: long)
+		// clearTimeout(handle?: long)
+
+		var oClear = document.getElementById('clear');
+
+		oClear.onclick = function(){
+			clearInterval(timer);
+		}
+
+
+	</script>
+	
+</body>
+</html>

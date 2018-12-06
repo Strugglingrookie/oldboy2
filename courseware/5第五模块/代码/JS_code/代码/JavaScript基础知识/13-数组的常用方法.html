@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    console.log([]);
+
+    // 1.数组的合并 concat
+
+    var north = ['北京', '山东', '天津'];
+    var south = ['东莞', '深圳', '上海'];
+
+    var newCity = north.concat(south);
+    console.log(newCity);
+
+    // 2.join  将数组中的元素使用指定得字符串连接起来，它会返回一个新的字符串
+
+    var score = [92, 342, 42, 52];
+    var str = score.join('|');
+    console.log(str);
+
+    // 3.slice (start,end) 返回数组的一段记录，相当于切片，顾腚不顾尾
+
+    var arr = ['张三', '李四', '王文', '赵六'];
+    var newArr = arr.slice(1, 3);
+    console.log(newArr); //["李四", "王文"]
+
+    // 4.push  向数组最后添加一个元素
+    arr.push('小马哥');
+    console.log(arr); //["张三", "李四"，"王文"，"赵六"，"小马哥"]
+
+    // 5.pop() 移除数组的最后一个元素
+    arr.pop();
+    console.log(arr);
+
+    // 6.reverse 翻转数组
+    var names = ['alex', 'xiaoma', 'tanhuang', 'angle'];
+    //4.反转数组
+    names.reverse();
+    console.log(names);
+
+    // 7 sort 对数组排序
+    var names2 = ['alex', 'xiaoma', 'tanhuang', 'abngel'];
+    names2.sort();
+    console.log(names2); // ["abngel", "alex", "tanhuang", "xiaoma"]
+    var a = 2;
+    // isArray() 判断是否为数组  返回为ture|false
+    var iArray = Array.isArray(a);
+
+    if (iArray) {
+    	console.log('是数组');
+
+    }else{
+    	console.log('不是数组')
+    }
+
+    // 补充：
+    // forEach（fn）==回调函数  匿名函数  通过forEach遍历数组的每一项内容  回调函数中的参数 第一个参数为item (每一项内容) 第二个参数 是数组的索引
+    names2.forEach(function(item,index){
+    	console.log(item);
+    	console.log(index);
+    })
+
+
+
+
+    </script>
+</body>
+
+</html>

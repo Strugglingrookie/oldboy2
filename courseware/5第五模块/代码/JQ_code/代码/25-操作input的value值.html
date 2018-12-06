@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<form>
+		男<input type="radio" name="sex">
+		女<input type="radio" name="sex">
+
+		<select>
+			<option>alex</option>
+			<option>wusir</option>
+			<option selected="">黑girl</option>
+		</select>
+
+	</form>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 原生js  onchange
+
+			// jquery  change()
+			// 设置值 加载页面时默认选中第一个
+			$('input[type=radio]').eq(0).attr('checked',true);
+
+			$('input[type=radio]').change(function(){
+				alert(1);
+				// 获取值  on
+				console.log($(this).val());
+				console.log($('input[type=radio]:checked').val())
+
+			});
+
+			// 加载页面时 获取值
+			console.log($('select option:selected').text());
+			// 加载页面时 获取选中项的索引
+			console.dir($('select').get(0).selectedIndex);
+			// 设置select 的值
+
+			// 加载页面时 设置第二个当做选中值
+			// $('select option').get(1).selected = true;
+			// selectedIndex 是select 对象的属性
+			// $('select').get(0).selectedIndex = 0;
+			// index() 只读的  不能使用这个方法 来设置值
+			console.log($('select option:selected').index());
+
+			$('select').change(function(){
+
+				// 1.获取选中项的值
+				console.log($('select option:selected').text());
+
+				// 2.获取选中项的值
+				console.log($('select').find('option:selected').text());
+
+				// 3.获取选中项的索引   $('select').get(0) 将jquery对象转化 js对象 
+				console.log($('select').get(0).selectedIndex);
+				console.log($('select option:selected').index());
+
+			});
+
+
+
+
+
+		});
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="back">后退</button>
+	<script type="text/javascript">
+		function $(id){
+			return document.getElementById(id);
+		}
+
+		$('back').onclick = function(){
+
+			// 表示后退
+			window.history.go(-1);
+		}
+
+	</script>
+	
+</body>
+</html>

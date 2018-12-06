@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: fixed;
+			bottom: 30px;
+			right: 40px;
+			line-height: 100px;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	
+	<div>
+		<p>返回顶部</p>
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+		<img src="./bojie.jpg" alt="">
+
+	</div>
+
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script type='text/javascript'>
+		
+		// 这下面的代码后面咱们会讲，大家不用在这个初学阶段去纠结下面的代码。
+		$(function(){
+			$('p').click(function(){
+			
+				$('html').animate({
+					"scrollTop":0
+				},2000)
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+内连接：只取两张表的共同部分
+select * from employee inner join department on employee.dep_id = department.id ;
+
+左连接:在内连接的基础上保留左表的记录
+select * from employee left join department on employee.dep_id = department.id ;
+
+右连接：在内连接的基础上保留右表的记录
+select * from employee right join department on employee.dep_id = department.id ;
+
+全外连接：在内连接的基础上保留左右两表没有对应关系的记录
+select * from employee full join department on employee.dep_id = department.id ;
+
+
+select * from employee left join department on employee.dep_id = department.id
+union
+select * from employee right join department on employee.dep_id = department.id ;
+

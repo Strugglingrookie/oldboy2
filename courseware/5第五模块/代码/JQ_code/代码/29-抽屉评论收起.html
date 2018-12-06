@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+
+		}
+		/*body{
+			width: 100%;
+			height: 2000px;
+		}*/
+		.commentBtn{
+			font-size: 30px;
+			color: #fff;
+		}
+	         .box{
+	         		width: 300px;
+	         		background-color: red;
+	         		position: relative;
+	         }
+	         .comment{
+	         		position: relative;
+	         		width: 300px;
+	         		height: 500px;
+	         		background-color: yellow;
+	         }
+	         .comment span.close{
+	         		position: absolute;
+	         		right: 0;
+	         		top:0;
+	         		color: #000;
+	         		cursor: pointer;
+	         }
+	         .comment button.showQi{
+	         		position: absolute;
+	         		bottom: 0;
+	         		right: 0;
+
+	         }
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<span class="commentBtn">评论</span>
+		<div class="comment" style="display: none;">
+			<span class="close active">X</span>
+			<button class="showQi active">收起</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+	<script type="text/javascript">
+		
+		$(function(){
+			// 点击评论 展开评论列表
+			$('.commentBtn').click(function(e){
+				e.stopPropagation();
+				$('.comment').delay(1000).slideDown(50);
+
+			});
+			$('.comment span.active,.comment button.active').click(function(e){
+				e.stopPropagation();
+				$('.comment').delay(300).slideUp(50);
+			});
+			$('.box').click(function(event) {
+				/* Act on the event */
+				return false;
+			});
+			$('body').click(function(e){
+				alert(1);
+
+				// alert(1);
+				$('.comment').delay(300).slideUp(50);
+
+
+			})
+
+		});
+	</script>
+
+	
+</body>
+</html>

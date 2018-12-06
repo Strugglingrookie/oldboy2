@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// Math
+
+		// 1.向上取整   “天花板函数”Math.ceil()
+
+		 var x = 1.2334;
+		 var a = Math.ceil(x);
+		 console.log(a);
+
+		 // 分页   12345   30
+		 var pageNum = 12345 / 30;
+		 console.log(Math.ceil(pageNum));
+
+		 // 2.向下取整 “地板函数” Math.floor()
+		 console.log(Math.floor(x));
+
+		 // 3.求两个数的最大值和最小值
+		 console.log(Math.max(2,5));
+		 console.log(Math.min(2,5));
+
+		 // 4.求随机数 Math.random()   [0,1)   200~ 500之间的随机数
+		 console.log(Math.random());
+
+		 // 200~ 500   求min~max之间的随机数  min + Math.random()*(max-min);
+		 console.log(200+Math.random()*(500-200));
+
+
+	</script>
+	
+</body>
+</html>

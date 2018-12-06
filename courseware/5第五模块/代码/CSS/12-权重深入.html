@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		p{
+			color: red !important;
+			font-size: 30px;
+		}
+		.spe1{
+			color: yellow ;
+			font-size: 40px;
+		}
+		.spe2{
+			color: green;
+			font-size: 40px;
+		}
+
+		ul{
+			color: red;
+		}
+		.list{
+			color: purple !important;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- ！important:设置权重为无限大 
+		!important 不影响继承来的权重，只影响选中的元素
+
+	-->
+	
+	<div>
+		<p class="spe1 spe2">我是什么颜色</p>
+		<p class="spe2 spe1">我是什么颜色</p>
+	</div>
+
+	<div class="list">
+		<ul>
+			<li>
+				我是一个li标签
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

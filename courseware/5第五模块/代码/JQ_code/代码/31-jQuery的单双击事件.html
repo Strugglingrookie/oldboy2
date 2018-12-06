@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<button>按钮</button>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+
+			// 两次 单击中间的时间差是300毫秒 ，如果小于300毫秒 表示双击
+			// 遇到的问题：是双击  调用了两次单击
+			var timer = null;
+			var count  = 0;
+			// 解决这个单双击冲突问题
+			$('button').click(function(event) {
+				// console.log(1);
+				console.log(timer);
+				// 取消第一次延时未执行的 方法
+				clearTimeout(timer);
+				// 如果是双击事件 要阻止 两次单击事件的调用 
+				timer = setTimeout(function(){
+					count++;
+					// console.log(count);
+					// console.log('单击了');
+				},300)
+			});
+			$('button').dblclick(function(event) {
+				// 取消的是第二次延时未执行方法
+				console.log(timer);
+				clearTimeout(timer);
+				console.log('双击了');
+			});
+
+
+		});
+	</script>
+</body>
+</html>

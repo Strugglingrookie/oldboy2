@@ -1,0 +1,46 @@
+INFO:root:So should this
+WARNING:root:And this, too
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+10/19/2017 08:55:48 PM This message should go to the log file
+10/19/2017 08:55:48 PM So should this
+10/19/2017 08:55:48 PM And this, too
+2017-10-19 08:56:19 PM This message should go to the log file
+2017-10-19 08:56:19 PM So should this
+2017-10-19 08:56:19 PM And this, too
+2017-10-19 08:57:29 PM-10- This message should go to the log file
+2017-10-19 08:57:29 PM-20- So should this
+2017-10-19 08:57:29 PM-30- And this, too
+2017-10-19 08:58:23 PM-DEBUG- This message should go to the log file
+2017-10-19 08:58:23 PM-INFO- So should this
+2017-10-19 08:58:23 PM-WARNING- And this, too
+2017-10-19 08:59:27 PM:DEBUG:/Users/alex/Documents/work/PyProjects/luffy_py_courseware/21天入门/chapter4-常用模块/logging mod/log_test.py This message should go to the log file
+2017-10-19 08:59:27 PM:INFO:/Users/alex/Documents/work/PyProjects/luffy_py_courseware/21天入门/chapter4-常用模块/logging mod/log_test.py So should this
+2017-10-19 08:59:27 PM:WARNING:/Users/alex/Documents/work/PyProjects/luffy_py_courseware/21天入门/chapter4-常用模块/logging mod/log_test.py And this, too
+2017-10-19 09:00:39 PM:DEBUG:log_test.py This message should go to the log file
+2017-10-19 09:00:39 PM:INFO:log_test.py So should this
+2017-10-19 09:00:39 PM:WARNING:log_test.py And this, too
+2017-10-19 09:01:48 PM:DEBUG:log_test.py:log_test This message should go to the log file
+2017-10-19 09:01:48 PM:INFO:log_test.py:log_test So should this
+2017-10-19 09:01:48 PM:WARNING:log_test.py:log_test And this, too
+2017-10-19 09:02:16 PM:ERROR:log_test.py:log_test from sayhi....
+2017-10-19 09:02:16 PM:DEBUG:log_test.py:log_test This message should go to the log file
+2017-10-19 09:02:16 PM:INFO:log_test.py:log_test So should this
+2017-10-19 09:02:16 PM:WARNING:log_test.py:log_test And this, too
+2017-10-19 09:03:13 PM:ERROR:log_test.py:sayhi from sayhi....
+2017-10-19 09:03:13 PM:DEBUG:log_test.py:<module> This message should go to the log file
+2017-10-19 09:03:13 PM:INFO:log_test.py:<module> So should this
+2017-10-19 09:03:13 PM:WARNING:log_test.py:<module> And this, too
+2017-10-19 09:04:03 PM:ERROR:log_test.py:sayhi:19 from sayhi....
+2017-10-19 09:04:03 PM:DEBUG:log_test.py:<module>:22 This message should go to the log file
+2017-10-19 09:04:03 PM:INFO:log_test.py:<module>:23 So should this
+2017-10-19 09:04:03 PM:WARNING:log_test.py:<module>:24 And this, too
+2017-10-19 09:05:23 PM:ERROR:log_test.py:sayhi:19:0 from sayhi....
+2017-10-19 09:05:23 PM:DEBUG:log_test.py:<module>:22:0 This message should go to the log file
+2017-10-19 09:05:23 PM:INFO:log_test.py:<module>:23:0 So should this
+2017-10-19 09:05:23 PM:WARNING:log_test.py:<module>:24:1 And this, too
+2017-10-19 09:06:15 PM:ERROR:log_test.py:sayhi:19:38399 from sayhi....
+2017-10-19 09:06:15 PM:DEBUG:log_test.py:<module>:22:38399 This message should go to the log file
+2017-10-19 09:06:15 PM:INFO:log_test.py:<module>:23:38399 So should this
+2017-10-19 09:06:15 PM:WARNING:log_test.py:<module>:24:38399 And this, too

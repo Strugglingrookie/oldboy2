@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		#box2{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div id="box2"></div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			// 获取jquery对象
+			console.log($('#box2'));
+
+			// 获取js对象
+			var oDiv2 = document.getElementById('box2');
+			console.log(oDiv2);
+
+			// jquery==>js对象
+			console.log($('#box2')[0]);
+			console.log($('#box2').get(0));
+
+			// js对象==>jquery对象 $(js对象)
+			console.log($(oDiv2));
+
+			// 如果是js对象 更加希望转换成jquery才操作简便的dom
+			// 因为js是包含jquery，jquery只是封装 DOM  事件 ajax 动画， 就要将jquery对象转化成js对象
+
+			// 总结： 如果是jquery对象一定要调用jquery的属性和方法
+			// 如果是js对象一定要调用的是js的属性和方法
+			// 千万不要将 这两个对象混淆
+			// 在jquery 大部分的都是api（方法） length 和索引 是它 的属性
+
+		});
+	</script>
+</body>
+</html>

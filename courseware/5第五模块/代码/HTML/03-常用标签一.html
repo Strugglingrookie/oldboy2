@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8" >
+	<title>常用标签一</title>
+</head>
+<body>
+	<div id="wrap">
+		<div class="para">
+			<p style="height: 1000px" id="p1">段落</p>
+		</div>
+		
+		<div class="anchor">
+			<!-- 标题标签  h1为1级标题 一般页面中只有唯一的一个h1标题，比如可以定义logo-->
+			我是普通的文本
+			<h1>
+				<!-- a链接 超链接  
+				target:_blank 在新的网站打开链接的资源地址
+						_self 在当前网站打开链接的资源地址
+				title: 鼠标悬停时显示的标题
+				-->
+				<a href="http://www.baidu.com" target="_blank" title="路飞学城">路飞学城</a>
+				<a href="a.zip">下载包</a>
+				<a href="mailto:zhaoxu@tedu.cn">联系我们</a>
+				<!-- 返回页面顶部的内容 -->
+				<a href="#">跳转到顶部</a>
+
+				<!-- 返回某个id -->
+				<a href="#p1">跳转到p1</a>
+				<!-- javascript:是表示在触发<a>默认动作时，执行一段JavaScript代码，而 javascript:; 表示什么都不执行，这样点击<a>时就没有任何反应。 -->
+				<a href="javascript:alert(1)">内容</a>
+				<a href="javascript:;">内容</a>
+			</h1>
+		</div>
+
+		<div class="lyffy_img">
+			<span>我是一个span标签</span>
+			<img src="./machine-right.png" alt="金融量化分析" style="width:200px;height:200px">
+			<img src="./finance-right.png" alt="人工智能实战"  style="width: 200px;height: 200px">
+			<ul>
+				<li>
+					
+				</li>
+				<li>
+					
+				</li>
+			</ul>
+
+		</div>
+		<!-- <h2>路飞学城</h2>
+		<h3>路飞学城</h3>
+		<h4>路飞学城</h4>
+		<h5>路飞学城</h4>
+		<h6>路飞学城</h6> -->
+		<div class="para">
+		<!-- 定义段落 通常指文章一段内容 -->
+		<p>路飞学城立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,金融分析,人工智能等互联网最前沿技术,开启职业生涯新可能</p>
+		<p>路飞学城立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,金融分析,人工智能等互联网最前沿技术,开启职业生涯新可能</p>
+		<p>路飞学城立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,金融分析,人工智能等互联网最前沿技术,开启职业生涯新可能</p>
+		</div>
+
+		<div class="lists">
+			<!-- 无序列表 -->
+			<ul type="circle">
+				<li>我的账户</li>
+				<li>我的订单</li>
+				<li>我的优惠券</li>
+				<li>我的收藏</li>
+				<li>退出</li>
+			</ul>
+			<!-- 有序列表 -->
+			<ol type="a">
+				<li>我的账户</li>
+				<li>我的订单</li>
+				<li>我的优惠券</li>
+				<li>我的收藏</li>
+				<li>退出</li>
+			</ol>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

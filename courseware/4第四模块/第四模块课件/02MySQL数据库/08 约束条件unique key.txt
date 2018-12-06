@@ -1,0 +1,55 @@
+unique key
+
+单列唯一
+	#方式一
+	create table department(
+		id int unique,
+		name char(10) unique
+	);
+	#方式二：
+	create table department(
+		id int,
+		name char(10)，
+		unique(id),
+		unique(name)
+	);
+
+
+
+
+	insert into department values
+	(1,'IT'),
+	(2,'Sale');
+
+
+联合唯一
+create table services(
+	id int,
+	ip char(15),
+	port int,
+	unique(id),
+	unique(ip,port)
+);
+
+
+
+insert into services values
+(1,'192.168.11.10',80),
+(2,'192.168.11.10',81),
+(3,'192.168.11.13',80);
+
+
+
+
+insert into services values
+(4,'192.168.11.10',80);
+
+
+
+
+
+
+
+
+
+

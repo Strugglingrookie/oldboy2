@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>继承性</title>
+	<style type="text/css">
+		
+		.father{
+			
+			font-size: 30px;
+			background-color: green;
+		}
+		.child{
+			color: purple;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<!-- 继承：给父级设置一些属性，子级继承了父级的该属性，这就是我们的css中的继承
+
+	有一些属性是可以继承下来 ： color 、 font-*、 text-*、line-*   文本元素
+
+	像一些盒子元素，定位的元素（浮动，绝对定位，固定定位）不能继承
+	 -->
+	<div class="father" id="egon">
+		<div class="child">
+			<p>alex</p>
+		</div>	
+	</div>
+	<p>小马哥</p>
+</body>
+</html>

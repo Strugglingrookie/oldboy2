@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<input type="radio" name="sex" checked > 男
+	<input type="radio" name="sex"> 女
+
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		// prop() removeProp()
+
+		$(function(){
+
+			// js对input单选按钮checked的默认设置
+			// console.log($('input[type = radio]').attr('checked')); //checked
+			var oInput = document.getElementsByTagName('input')[1];
+			console.dir(oInput);
+			console.log($('input[type=radio]').eq(0).prop('checked'));
+			$('input[type=radio]').eq(0).prop('aaaaa','11121111');
+
+			// console.log($('input[type=radio]').eq(0))
+
+			$('input[type=radio]').eq(0).removeProp('aaaaa');
+			console.log($('input[type=radio]').eq(0))
+
+		});
+	</script>
+	
+</body>
+</html>

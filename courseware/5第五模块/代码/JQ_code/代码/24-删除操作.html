@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <div class="box">
+        <p style="font-size: 20px;font-weight: 600;">alex</p>
+    </div>
+    <button>删除</button>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        $('button').click(function() {
+        	  alert(1);
+            // remove() 删除节点后 事件也会删除  删除了整个标签
+            // console.log($(this).remove());
+            // var jqBtn = $(this).remove();
+            // $('.box').prepend(jqBtn);
+
+
+            // detach() 删除节点后 事件会保留
+            // var jqBtn = $(this).detach();
+            // $('.box').prepend(jqBtn);
+            $('.box').empty();
+
+        })
+    });
+    </script>
+</body>
+
+</html>

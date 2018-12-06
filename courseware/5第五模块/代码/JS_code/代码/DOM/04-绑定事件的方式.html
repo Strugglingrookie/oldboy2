@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    	#box{
+    		width: 100px;
+    		height: 100px;
+    		background-color: red;
+    	}
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script type="text/javascript">
+    // onload
+    // 入口函数
+    // window.onload()
+    //1.等待着文档和图片资源加载完成之后，会触发onload事件
+    // 2.  window.onload  有事件覆盖现象
+    window.onload = function() {
+    	// 1.获取事件源
+        var oDiv = document.getElementById('box');
+        console.log(oDiv);
+        /*
+        // 2.事件    （1）直接绑定匿名函数
+        oDiv.onclick = function(){
+        		// 3.事件驱动
+        		alert(1);
+        }
+        */
+
+        /*
+        // (2) 先单独定义函数 再绑定
+         // fn()  获取的是函数的返回值  fn获取的函数
+        oDiv.onclick = fn;
+
+
+        console.log(fn());
+        console.log(fn);
+
+
+        function fn(){
+        		// alert(1);
+        		console.log(1);
+        		// return 1;
+        }
+        */
+
+       
+    };
+
+    // window.onload = function() {
+    //     // var oDiv = document.getElementById('box');
+    //     // console.log(oDiv);
+    //     console.log(2);
+    // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    // var str  = '';
+    /*
+    var str = new String();
+    str[0]  = 'a';
+
+
+    console.log(str);
+    */
+
+
+
+    // 1.charAt() 返回指定索引位置的字符
+    var str = 'alex';
+    var charset = str.charAt(1);
+    console.log(charset); //l
+
+    // 2.concat() 返回字符串值，表示两个或者多个字符串拼接
+    var str1 = 'al';
+    var str2 = 'ex';
+    console.log(str1.concat(str2, '|', str1, str2)); //alexex
+
+
+    // 3.replace(a,b) 将字符串b替换成了字符串a
+    var a = '1234567755';
+    var newStr = a.replace("4567", "****");
+    console.log(newStr); //123****755
+
+    // 4.indexof() 查找字符的下标，如果找到返回字符串的下标，找不到则返回-1 
+    var str = 'alex';
+    console.log(str.indexOf('e')); //2
+    console.log(str.indexOf('p')); //-1
+
+    // 5.slice(start，end) 左闭右开 分割字符串 切分
+
+    var str2 = '小马哥';
+    console.log(str2.slice(1, 2)); //马
+
+    // 6.split('a',1) 以字符串a分割字符串，并返回新的数组。如果第二个参数没写，表示返回整个数组，如果定义了个数，
+    var str3 = '我的天呢,a是嘛,你在说什么呢?a哈哈哈';
+    console.log(str3.split('a', 3)); //["我的天呢,", "是嘛,你在说什么呢?", "哈哈哈"]
+
+    var str4 = '我的天呢,a是嘛,你在说什么呢?a哈哈哈';
+    console.log(str4.substr(0, 4)); //我的天呢
+
+    //特殊：
+	var num = 132.32572;
+	//四舍五入
+	var newNum = num.toFixed(3);
+	console.log(newNum);
+
+	var str10 = '                 alex                   ';
+
+	// trim() 清除 字符串的前后空格
+	console.log(str10.trim());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color:red;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="show">显示</button>
+	<button id="hide">隐藏</button>
+	<button id="toggle">开关式动画</button>
+	<div class="box"></div>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 显示动画
+			$('#show').click(function(){
+				// 如果是一个按钮控制盒子显示隐藏 那么得需要去控制isShow这个变量
+
+				// show(动画的时间，fn)   
+				// 默认是normal  400ms   slow  600ms  fast 200ms
+				$('.box').show(2000,function(){
+					$(this).text('alex');
+				});
+
+			});
+			// 隐藏
+			$('#hide').click(function(){
+
+				$('.box').hide('slow');
+
+			});
+
+			// 开关式的显示隐藏动画
+			$('#toggle').click(function(){
+				// 玩动画 就跟玩定时器一样  先关动画 再开动画
+				$('.box').stop().toggle(2000);
+			})
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+foreign key:建立表之间的关系
+
+#1、建立表关系：
+	#先建被关联的表,并且保证被关联的字段唯一
+	create table dep(
+		id int primary key,
+		name char(16),
+		comment char(50)
+	);
+
+
+	#再建立关联的表
+	create table emp(
+		id int primary key,
+		name char(10),
+		sex enum('male','female'),
+		dep_id int,
+		foreign key(dep_id) references dep(id) 
+		on delete cascade 
+		on update cascade
+	);
+
+#2、插入数据
+#先往被关联表插入记录
+insert into dep values
+(1,"IT","技术能力有限部门"),
+(2,"销售","销售能力不足部门"),
+(3,"财务","花钱特别多部门");
+
+#再往关联表插入记录
+insert into emp values
+(1,'egon','male',1);
+
+insert into emp values
+(2,'alex','male',1),
+(3,'wupeiqi','female',2),
+(4,'yuanhao','male',3),
+(5,'jinximn','male',2);
+
+
+
+
+delete from emp where dep_id=1;
+delete from dep where id=1;
+
+
+
+delete from dep where id=3;
+
+
+
+
+
+
+
+
+

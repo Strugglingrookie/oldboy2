@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<ul>
+		<li>alex</li>
+	</ul>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// prepend()   prependTo()
+			//1. prepend() 插入 子级的第一个元素
+			$('ul').prepend('<li>wusir</li>');
+			$('<li>村长</li>').prependTo('ul').click(function() {
+				alert(this.innerText);
+			});
+
+
+		});
+	</script>
+	
+</body>
+</html>

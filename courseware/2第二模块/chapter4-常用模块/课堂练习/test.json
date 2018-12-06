@@ -1,0 +1,5 @@
+{"roles":
+  [{"role": "monster", "life": 50, "type": "pig"},
+    {"role": "hero", "life": 80, "type": "\u5173\u7fbd"}
+  ]
+}
