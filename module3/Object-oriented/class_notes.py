@@ -126,6 +126,7 @@ print(stu1.school,id(stu1.school))                      # beijing_university 455
 print(stu2.school,id(stu2.school))                      # beijing_university 4556931120
 
 #类中的函数属性：是绑定给对象使用的，绑定到不同的对象是不同的绑定方法，对象在调用方法时，会把对象本身当作第一个参数传给self
+#类中定义的函数（没有被任何装饰器装饰的）是类的函数属性，类可以使用，但必须遵循函数的参数规则，有几个参数需要传几个参数
 print(BeijingStudent.learn) #<function BeijingStudent.learn at 0x10f179730>
 print(stu1.learn)    #<bound method BeijingStudent.learn of <__main__.BeijingStudent object at 0x10f19a6a0>>
 print(stu2.learn)    #<bound method BeijingStudent.learn of <__main__.BeijingStudent object at 0x10f19a9b0>>
