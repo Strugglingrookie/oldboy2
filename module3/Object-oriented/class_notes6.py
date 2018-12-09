@@ -6,7 +6,7 @@
 # 内置方法：
 
 
-# # isinstance(obj,cls)检查是否obj是否是类 cls 的对象
+# # isinstance(obj,cls)检查是否obj是否是类 -cls 的对象
 # class Foo(object):
 #     pass
 # obj = Foo()
