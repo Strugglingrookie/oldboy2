@@ -38,7 +38,14 @@ c.call()
 # 找名词 加属性 连关系
 
 # 17.请写一个小游戏，人狗大站，2 个角色，人和狗，游戏开始后，生成2个人，3 条狗，互相混战，人被狗咬了会掉血，狗被人打了也掉血，狗和人的攻击力，具备的功能都不一样。注意，请按题14领域建模的方式来设计类。
-# 名词 人 狗
+# people name sex age life attack_value
+# dog name life attack_value
+# 人打了狗 攻击力10，狗掉血 10
+# 狗咬了人 攻击力5，人掉血 5
+# 关系  人大狗   狗咬人
+class People:
+    def __init__(self,name,age,life,attack_value):
+        self.name = name
 
 # 18.编写程序, 在元类中控制把自定义类的数据属性都变成大写.
 
