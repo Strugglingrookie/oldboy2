@@ -52,5 +52,5 @@
    │   └── myschools.pkl #学校信息
    │   └── mystudents.pkl #学生信息
    │   └── myteachers.pkl #教师信息
-   │── 数据结构.png #数据结构
-   │── 流程图.png #流程图
+   │── 数据结构.png # 数据结构
+   │── 流程图.png # 流程图
