@@ -76,4 +76,3 @@ class Mycourse:
 if __name__ == "__main__":
     t = Mycourse()
     t.admin()
-

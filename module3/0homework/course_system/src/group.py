@@ -79,4 +79,3 @@ class Myclass:
 if __name__ == "__main__":
     t = Myclass()
     t.admin()
-

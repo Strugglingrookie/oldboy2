@@ -15,12 +15,12 @@ from config.settings import MYSTUDENT_FILE
 
 class Myteacher:
     def __init__(self):
-        self.teachers = read_datas(MYTEACHER_FILE)
-        self.groups = read_datas(MYCLASS_FILE)
-        self.stus = read_datas(MYSTUDENT_FILE)
         self.group = Myclass()
         self.school = Myschool()
         self.student = Mystudent()
+        self.teachers = read_datas(MYTEACHER_FILE)
+        self.groups = self.group.myclasses
+        self.stus = self.student.stus
 
     def show_myteacher(self):
         if self.teachers:
@@ -159,4 +159,4 @@ class Myteacher:
 if __name__ == "__main__":
     t = Myteacher()
     t.admin()
-    t.myteacher_operation("1")
+    t.myteacher_operation("T1")

@@ -63,4 +63,3 @@ class Myschool:
 if __name__ == "__main__":
     t = Myschool()
     t.admin()
-

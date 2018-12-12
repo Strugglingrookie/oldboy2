@@ -21,8 +21,8 @@ course = Mycourse()
 def admin_run():
     choices = [school, group, course, teacher, student]
     while True:
-        choice = input("0.学校 1.班级 2.课程 3.教师 4.学生 5.退出管理 \n 请输入您要管理的方向:\n")
-        if choice == "5":
+        choice = input("0.学校 1.班级 2.课程 3.教师 4.学生 q.退出 \n 请输入您要管理的方向:\n")
+        if choice.lower() == "q":
             break
         elif choice in [str(i) for i in range(len(choices))]:
             choices[int(choice)].admin()
@@ -32,7 +32,7 @@ def admin_run():
 
 def run():
     while True:
-        choice = input("1.注册 2.登录 3.退出程序 \nyour choice:\n")
+        choice = input("1.注册 2.登录 q.退出程序 \nyour choice:\n")
         if choice == "1":
             stu_id = student.add_stu()
             student.mystudent_operation(stu_id)
@@ -43,16 +43,16 @@ def run():
                 student.mystudent_operation(user_id)
             else:
                 while True:
-                    teacher_choice = input("1.管理基础信息 2.教学操作 3.退出 \nyour choice:\n")
+                    teacher_choice = input("1.管理基础信息 2.教学操作 q.退出 \nyour choice:\n")
                     if teacher_choice == "1":
                         admin_run()
                     elif teacher_choice == "2":
                         teacher.myteacher_operation(user_id)
-                    elif teacher_choice == "3":
+                    elif teacher_choice.lower() == "q":
                         break
                     else:
                         print("没有这个选项！")
-        elif choice == "3":
+        elif choice.lower() == "q":
             exit("886")
         else:
             print("没有这个选项！")

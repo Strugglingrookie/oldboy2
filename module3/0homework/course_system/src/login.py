@@ -3,14 +3,16 @@
 # @Author  : Xiao
 
 
-from src.tools import read_datas
-from config.settings import MYTEACHER_FILE
-from config.settings import MYSTUDENT_FILE
+from src.teacher import Myteacher
+from src.student import Mystudent
 
 
-stus = read_datas(MYSTUDENT_FILE)
-teachers = read_datas(MYTEACHER_FILE)
+teacher = Myteacher()
+student = Mystudent()
+stus = student.stus
+teachers = teacher.teachers
 teachers.update(stus)
+
 
 def login_func():
     while True:
@@ -22,4 +24,3 @@ def login_func():
             return user_id,role
         else:
             print("账号或密码错误！")
-

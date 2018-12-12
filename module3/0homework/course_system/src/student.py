@@ -12,7 +12,6 @@ from config.settings import MYSTUDENT_FILE
 from config.settings import MYCLASS_FILE
 
 
-
 class Mystudent:
     def __init__(self):
         self.stus = read_datas(MYSTUDENT_FILE)
@@ -81,7 +80,6 @@ class Mystudent:
                 self.group.myclasses[choice]["students"].append(stu_id)
                 write_datas(MYSTUDENT_FILE, self.stus)
                 write_datas(MYCLASS_FILE, self.group.myclasses)
-                self.group.write_myclass()
                 print("选择班级 %s 成功，赶快去缴费吧！" % self.stus[stu_id]["group_name"])
                 break
             print("选择的班级序号不存在！")
@@ -143,5 +141,3 @@ if __name__ == "__main__":
     t = Mystudent()
     t.admin()
     t.mystudent_operation("1")
-
-
