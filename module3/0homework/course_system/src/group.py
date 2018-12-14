@@ -10,8 +10,9 @@ from config.settings import MYCLASS_FILE
 
 
 class Myclass:
+    myclasses = read_datas(MYCLASS_FILE)
+
     def __init__(self):
-        self.myclasses = read_datas(MYCLASS_FILE)
         self.course = Mycourse()
 
     def show_myclass(self):

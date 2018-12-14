@@ -14,13 +14,14 @@ from config.settings import MYSTUDENT_FILE
 
 
 class Myteacher:
+    stus = Mystudent().stus
+    groups = Myclass().myclasses
+    teachers = read_datas(MYTEACHER_FILE)
+
     def __init__(self):
         self.group = Myclass()
         self.school = Myschool()
         self.student = Mystudent()
-        self.teachers = read_datas(MYTEACHER_FILE)
-        self.groups = self.group.myclasses
-        self.stus = self.student.stus
 
     def show_myteacher(self):
         if self.teachers:

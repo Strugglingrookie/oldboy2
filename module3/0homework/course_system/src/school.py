@@ -9,8 +9,7 @@ from config.settings import MYSCHOOL_FILE
 
 
 class Myschool:
-    def __init__(self):
-        self.myschooles = read_datas(MYSCHOOL_FILE)
+    myschooles = read_datas(MYSCHOOL_FILE)
 
     def show_myschool(self):
         if self.myschooles:

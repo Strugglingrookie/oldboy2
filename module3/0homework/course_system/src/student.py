@@ -13,8 +13,8 @@ from config.settings import MYCLASS_FILE
 
 
 class Mystudent:
+    stus = read_datas(MYSTUDENT_FILE)
     def __init__(self):
-        self.stus = read_datas(MYSTUDENT_FILE)
         self.school = Myschool()
         self.group = Myclass()
         self.course = Mycourse()
