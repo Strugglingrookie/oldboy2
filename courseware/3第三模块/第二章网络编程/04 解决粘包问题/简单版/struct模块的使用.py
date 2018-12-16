@@ -5,7 +5,7 @@ import struct
 # print(res,type(res),len(res))
 #
 #
-# #client.recv(4)
+# #file_client.recv(4)
 # obj=struct.unpack('i',res)
 # print(obj[0])
 

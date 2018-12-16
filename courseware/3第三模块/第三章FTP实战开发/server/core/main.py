@@ -41,7 +41,7 @@ class FTPServer(object):
             try:
                 self.handle()
             except Exception as e:
-                print("Error happend with client,close connection.",e)
+                print("Error happend with file_client,close connection.",e)
                 self.request.close()
 
 
@@ -137,7 +137,7 @@ class FTPServer(object):
 
 
     def _get(self,data):
-        """client downloads file through this method
+        """file_client downloads file through this method
             1. 拿到文件名
             2. 判断文件是否存在
                 2.1 如果存在， 返回状态码+文件大小
@@ -164,7 +164,7 @@ class FTPServer(object):
             self.send_response(300)
 
     def _re_get(self,data):
-        """re-send file to client
+        """re-send file to file_client
         1. 拼接文件路径
         2. 判断文件是否存在
             2.1 如果存在，判断文件大小是否与客户端发过来的一致
@@ -196,7 +196,7 @@ class FTPServer(object):
             self.send_response(300)
 
     def _put(self,data):
-        """client uploads file to server
+        """file_client uploads file to server
         1. 拿到local文件名+大小
         2. 检查本地是否已经有相应的文件。self.user_cuurent_dir/local_file
             2.1 if file exist , create a new file with file.timestamp suffix.
@@ -228,7 +228,7 @@ class FTPServer(object):
 
 
     def _ls(self,data):
-        """run dir command and send result to client"""
+        """run dir command and send result to file_client"""
         cmd_obj = subprocess.Popen('dir %s' %self.user_current_dir,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         stdout = cmd_obj.stdout.read()
         stderr = cmd_obj.stderr.read()

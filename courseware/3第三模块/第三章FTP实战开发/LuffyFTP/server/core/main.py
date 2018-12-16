@@ -125,7 +125,7 @@ class FTPServer(object):
 
 
     def _get(self,data):
-        """client downloads file through this method
+        """file_client downloads file through this method
             1. 拿到文件名
             2. 判断文件是否存在
                 2.1 如果存在， 返回状态码+文件大小

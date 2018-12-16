@@ -2,7 +2,7 @@ import socket
 import struct
 import json
 
-download_dir=r'/Users/linhaifeng/PycharmProjects/网络编程/05_文件传输/优化版本/client/download'
+download_dir=r'/Users/linhaifeng/PycharmProjects/网络编程/05_文件传输/优化版本/file_client/download'
 
 def get(phone,cmds):
     # 2、以写的方式打开一个新文件，接收服务端发来的文件的内容写入客户的新文件

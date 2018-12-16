@@ -84,7 +84,7 @@ import subprocess
 # 9.通过configparser模块完成以下功能
 # 文件名my.cnf
 # [DEFAULT]
-# [client]
+# [file_client]
 # port = 3306
 # socket = /data/mysql_3306/mysql.sock
 # [mysqld]

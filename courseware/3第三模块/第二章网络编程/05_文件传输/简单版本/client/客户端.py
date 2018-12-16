@@ -2,7 +2,7 @@ import socket
 import struct
 import json
 
-download_dir=r'/Users/linhaifeng/PycharmProjects/网络编程/05_文件传输/简单版本/client/download'
+download_dir=r'/Users/linhaifeng/PycharmProjects/网络编程/05_文件传输/简单版本/file_client/download'
 
 phone=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
