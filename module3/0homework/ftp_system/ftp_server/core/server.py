@@ -39,7 +39,7 @@ class Myserver():
         users.read(DATA_PATH)
         return users
 
-    def _login(self, user_info):
+    def login(self, user_info):
         info_lis = user_info.split(",")
         if len(info_lis) == 2:
             user, pwd = info_lis
@@ -85,17 +85,17 @@ class Myserver():
                 recv_size += len(line)  # 实时记录当前接收到的数据长度s
 
     def _ls(self, dirname):
-        res = subprocess.Popen("ls %s" % self.cur, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+        new_dirname = os.path.join(self.cur, dirname) if dirname != "." else self.cur
+        res = subprocess.Popen("ls %s" % new_dirname, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         err = res.stderr.read()
         out = res.stdout.read()
         print(err, out)
         if err:
-            err = err.decode()
             res_code = {"code": "1", "msg": err}
             self.send_code(res_code)
-        else:
+        elif out:
             print(out.decode())
-            res_code = {"code": "0", "msg": "%s current dir has follow files or dirs..."}
+            res_code = {"code": "0", "msg": "%s dir has follow files or dirs..." % dirname}
             self.send_code(res_code)
             header = {"file_size": len(out)}
             header_bytes = bytes(json.dumps(header), encoding='utf-8')
@@ -103,6 +103,22 @@ class Myserver():
             self.conn.send(header_len_bytes)
             self.conn.send(header_bytes)
             self.conn.send(out)
+        else:
+            res_code = {"code": "3", "msg": "%s current dir is empty..." % dirname}
+            self.send_code(res_code)
+
+    def _cd(self, dirname):
+        new_dirname = os.path.join(self.cur, dirname)
+        if os.path.exists(new_dirname) and not os.path.isfile(new_dirname):
+            res_code = {"code": "0", "msg": "切换成功，当前目录为 %s " % dirname}
+            self.send_code(res_code)
+            self.cur = new_dirname
+        else:
+            res_code = {"code": "1", "msg": "切换失败， %s 目录不存在" % dirname}
+            self.send_code(res_code)
+
+
+
 
     @property
     def get_msg(self):
@@ -136,6 +152,8 @@ class Myserver():
                         res_code = {"code": "2", "msg": "please login first!"}
                         self.send_code(res_code)
                     elif hasattr(self, "_%s" % method.lower()) and args:
+                        res_code = {"code": "0", "msg": "wait moment,it's working now"}
+                        self.send_code(res_code)
                         func = getattr(self, "_%s" % method.lower())
                         func(args)
                     else:

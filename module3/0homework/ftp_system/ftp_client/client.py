@@ -31,27 +31,19 @@ class Myclient():
                 msg_bytes = msg.encode("utf-8")
                 self.send_msg(msg_bytes)
                 res_code, res_msg = self.get_code
-                print(res_msg)
                 if res_code == "0":
-                    Myclient.online = 1
-                    break
+                    login_code, login_msg = self.get_code
+                    print(login_msg)
+                    if login_code == "0":
+                        Myclient.online = 1
+                        break
                 count += 1
             else:
                 print("账号或密码不能为空！")
         else:
             exit("too many login!")
 
-    def check_online(func):
-        def wrapper(*args, **kwargs):
-            if Myclient.online:
-                return func(*args, **kwargs)
-            else:
-                args[0].login()
-                return func(*args, **kwargs)
-        return wrapper
-
-    @check_online
-    def _sz(self, *args):
+    def _sz(self, file_name):
         file_abspath = os.path.join(self.download_path, file_name)
         header_len_bytes = self.server_socket.recv(4)  # 接收4个字节的数据头信息
         header_len = struct.unpack("i", header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
@@ -66,8 +58,7 @@ class Myclient():
                 f.write(line)  # 将每次接收到的数据拼接
                 recv_size += len(line)  # 实时记录当前接收到的数据长度
 
-    @check_online
-    def _rz(self, *args):
+    def _rz(self, file_name):
         if os.path.exists(file_name):
             file_size = os.path.getsize(file_name)
             header = {"file_size": file_size, "file_name": file_name, "md5": "123456"}
@@ -81,19 +72,22 @@ class Myclient():
         else:
             print("上传文件不存在！")
 
-    def _ls(self, *args):
-        header_len_bytes = self.server_socket.recv(4)
-        header_len = struct.unpack("i", header_len_bytes)[0]
-        header_str = self.server_socket.recv(header_len).decode("utf-8")
-        header = json.loads(header_str, encoding="utf-8")
-        file_size = header["file_size"]
-        recv_size = 0
-        res = b''
-        while recv_size < file_size:
-            res += self.server_socket.recv(1024)
-            recv_size = len(res)
-        res = res.decode("utf-8")
-        print(res)
+    def _ls(self, dirname):
+        res_code, res_msg = self.get_code
+        print(res_msg)
+        if res_code == "0":
+            header_len_bytes = self.server_socket.recv(4)
+            header_len = struct.unpack("i", header_len_bytes)[0]
+            header_str = self.server_socket.recv(header_len).decode("utf-8")
+            header = json.loads(header_str, encoding="utf-8")
+            file_size = header["file_size"]
+            recv_size = 0
+            res = b''
+            while recv_size < file_size:
+                res += self.server_socket.recv(1024)
+                recv_size = len(res)
+            res = res.decode("utf-8")
+            print(res)
 
     def send_msg(self, msg_bytes):
         """发送本次请求的指令，服务端根据指令返回数据"""
@@ -111,14 +105,13 @@ class Myclient():
         code_len = struct.unpack("i", code_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
         code_str = self.server_socket.recv(code_len).decode("utf-8")  # 根据上面的长度接收数据头信息
         code_dic = json.loads(code_str, encoding="utf-8")
-        print(code_dic)
         code = code_dic["code"]
         msg = code_dic["msg"]
         return code, msg
 
-    @check_online
     def run(self):
         """反复向服务器发送请求，当请求的返回操作码为0成功时，调用相应属性，失败时不做任何处理直接循环"""
+        self.login()
         while True:
             msg = input(">>>>:").strip()
             msg_lis = msg.split(" ", 1)
