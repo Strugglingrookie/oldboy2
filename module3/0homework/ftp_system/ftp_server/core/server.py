@@ -6,6 +6,9 @@
 import socket
 import struct
 import json
+import hashlib
+import configparser
+import subprocess
 from conf.settings import *
 
 
@@ -13,40 +16,93 @@ class Myserver():
 
     def __init__(self):
         """实例化时自动启动文件服务"""
+        self.online = 0
         self.server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
         self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.server_socket.bind((SERVER_IP, SERVER_PORT))
         self.server_socket.listen(MAX_CONNECT)
+        self.users = self.get_users()
+        self.home = None
+        self.cur = None
+        self.quota = None
         print("starting....")
 
-    def _sz(self, conn, file_name):
+    def get_md5(self, var):
+        salt = "123456"
+        new_var = salt + var
+        m = hashlib.md5()
+        m.update(new_var.encode())
+        return m.hexdigest()
+
+    def get_users(self):
+        users = configparser.ConfigParser()
+        users.read(DATA_PATH)
+        return users
+
+    def _login(self, user_info):
+        info_lis = user_info.split(",")
+        if len(info_lis) == 2:
+            user, pwd = info_lis
+            pwd = self.get_md5(pwd)
+            if user in self.users and pwd == self.users[user].get("password"):
+                code_dic = {"code": "0", "msg": "login success!"}
+                self.send_code(code_dic)
+                self.home = os.path.join(HOME_PATH, self.users[user].get("home_dir"))
+                self.cur = self.home
+                self.quota = self.users[user].get("quota")
+                self.online = 1
+                return True
+        code_dic = {"code": "1", "msg": "error username or password!"}
+        self.send_code(code_dic)
+
+    def _sz(self, file_name):
         """发送文件"""
         file_path = os.path.join(self.send_path, file_name)
         file_size = os.path.getsize(file_path)
         header = {"file_size": file_size, "file_name": file_name, "md5": "123456"}
         header_bytes = bytes(json.dumps(header), encoding='utf-8')
         header_len_bytes = struct.pack("i", len(header_bytes))
-        conn.send(header_len_bytes)
-        conn.send(header_bytes)
+        self.conn.send(header_len_bytes)
+        self.conn.send(header_bytes)
         with open(file_path, "rb") as f:
             for line in f:
-                conn.send(line)
+                self.conn.send(line)
 
-    def _rz(self, conn, file_name):
+    def _rz(self, file_name):
         """保存文件"""
         file_name = os.path.basename(file_name)
         file_abspath = os.path.join(self.recv_path, file_name)
-        header_len_bytes = conn.recv(4)  # 接收4个字节的数据头信息
+        header_len_bytes = self.conn.recv(4)  # 接收4个字节的数据头信息
         header_len = struct.unpack("i", header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
-        header_str = conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
+        header_str = self.conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
         header = json.loads(header_str, encoding="utf-8")
         file_size = header["file_size"]  # 根据数据头信息得到本次要接收的数据大小
         recv_size = 0
         with open(file_abspath, "wb") as f:
             while recv_size < file_size:  # 当接收到的数据小于本次数据长度时就一直接收
-                line = conn.recv(1024)
+                line = self.conn.recv(1024)
                 f.write(line)  # 将每次接收到的数据拼接
-                recv_size += len(line)  # 实时记录当前接收到的数据长度
+                recv_size += len(line)  # 实时记录当前接收到的数据长度s
+
+    def _ls(self, dirname):
+        res = subprocess.Popen("ls %s" % self.cur, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+        err = res.stderr.read()
+        out = res.stdout.read()
+        print(err, out)
+        if err:
+            err = err.decode()
+            res_code = {"code": "1", "msg": err}
+            self.send_code(res_code)
+        else:
+            print(out.decode())
+            res_code = {"code": "0", "msg": "%s current dir has follow files or dirs..."}
+            self.send_code(res_code)
+            header = {"file_size": len(out)}
+            header_bytes = bytes(json.dumps(header), encoding='utf-8')
+            header_len_bytes = struct.pack("i", len(header_bytes))
+            self.conn.send(header_len_bytes)
+            self.conn.send(header_bytes)
+            self.conn.send(out)
 
     @property
     def get_msg(self):
@@ -76,11 +132,14 @@ class Myserver():
                     msg = self.get_msg
                     print(msg)
                     method, args = msg.split(" ", 1)
-                    if hasattr(self, "_%s" % method.lower()):
+                    if not self.online and method != "login":
+                        res_code = {"code": "2", "msg": "please login first!"}
+                        self.send_code(res_code)
+                    elif hasattr(self, "_%s" % method.lower()) and args:
                         func = getattr(self, "_%s" % method.lower())
                         func(args)
                     else:
-                        res_code = {"code": "1", "msg": "error method %s !" % method}
+                        res_code = {"code": "1", "msg": "error request %s !" % msg}
                         self.send_code(res_code)
                 self.conn.close()
             except Exception as e:
