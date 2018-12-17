@@ -13,7 +13,6 @@ import re
 class Myclient():
     ip = "127.0.0.1"
     port = 8083
-    max_connect = 1  # 最对只接收5个连接，超过时直接拒绝
     ip_port = (ip, port)
     download_path = r"/Users/yangyiyi/Documents/oldboy/module3/mySocket/socket_class/file_client/download"
 
@@ -52,7 +51,6 @@ class Myclient():
 
     def run(self):
         while True:
-            methods = {"get": self.get_file, "put": self.put_file}
             msg = input(">>>>:").strip()
             if re.fullmatch(r"(get|put){1}\s{1}\S+", msg, re.I):
                 msg_lis = msg.split()

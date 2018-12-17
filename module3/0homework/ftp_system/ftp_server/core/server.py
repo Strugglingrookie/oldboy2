@@ -11,11 +11,6 @@ from conf.settings import *
 
 class Myserver():
 
-    res_code = {
-        "0": "success!",
-        "1": "error request method!"
-    }
-
     def __init__(self):
         """实例化时自动启动文件服务"""
         self.server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
@@ -53,48 +48,41 @@ class Myserver():
                 f.write(line)  # 将每次接收到的数据拼接
                 recv_size += len(line)  # 实时记录当前接收到的数据长度
 
-    def file_fun(self, conn):
-        """文件操作的分发"""
-        while True:
-            header_len_bytes = conn.recv(4)  # 接收4个字节的数据头信息
-            if not header_len_bytes:
-                break
-            header_len = struct.unpack("i", header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
-            header_str = conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
-            header = json.loads(header_str, encoding="utf-8")
-            msg_size = header["msg_size"]  # 根据数据头信息得到本次要接收的数据大小
-            rec = conn.recv(msg_size).decode("utf-8")
-            print(rec)
-            file_method = rec.split()[0].lower()
-            file_name = rec.split()[1]
-            methods[file_method](conn, file_name)
-        conn.close()
+    @property
+    def get_msg(self):
+        """拿到客户端发来的请求"""
+        header_len = struct.unpack("i", self.header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
+        header_str = self.conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
+        header = json.loads(header_str, encoding="utf-8")
+        msg_size = header["msg_size"]  # 根据数据头信息得到本次要接收的数据大小
+        msg = self.conn.recv(msg_size).decode("utf-8")
+        return msg
+
+    def send_code(self,code_dic):
+        """发送本次请求的结果状态，客户端根据这些状态做下一步操作"""
+        res_code_bytes = bytes(json.dumps(code_dic), encoding='utf-8')
+        res_code_len_bytes = struct.pack("i", len(res_code_bytes))
+        self.conn.send(res_code_len_bytes)
+        self.conn.send(res_code_bytes)
 
     def run(self):
         while True:
             try:
-                conn, client_addr = self.server_socket.accept()
+                self.conn, self.client_addr = self.server_socket.accept()
                 while True:
-                    header_len_bytes = conn.recv(4)  # 接收4个字节的数据头信息
-                    if not header_len_bytes:
+                    self.header_len_bytes = self.conn.recv(4)  # 接收4个字节的数据头信息
+                    if not self.header_len_bytes:
                         break
-                    header_len = struct.unpack("i", header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
-                    header_str = conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
-                    header = json.loads(header_str, encoding="utf-8")
-                    msg_size = header["msg_size"]  # 根据数据头信息得到本次要接收的数据大小
-                    msg = conn.recv(msg_size).decode("utf-8")
+                    msg = self.get_msg
                     print(msg)
                     method, args = msg.split(" ", 1)
                     if hasattr(self, "_%s" % method.lower()):
                         func = getattr(self, "_%s" % method.lower())
                         func(args)
                     else:
-                        res_data = {"code": "0", "msg": "success!"}
-                        res_data_bytes = bytes(json.dumps(res_data), encoding='utf-8')
-                        res_data_len_bytes = struct.pack("i", len(res_data_bytes))
-                        conn.send(res_data_len_bytes)
-                        conn.send(res_data_bytes)
-                conn.close()
+                        res_code = {"code": "1", "msg": "error method %s !" % method}
+                        self.send_code(res_code)
+                self.conn.close()
             except Exception as e:
                 print(e)
 
