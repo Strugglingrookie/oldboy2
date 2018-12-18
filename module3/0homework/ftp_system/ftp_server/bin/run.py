@@ -3,6 +3,9 @@
 # Date:2018/12/16
 
 
+from core.server import Myserver
+
 
 def start():
-    pass
+    server1 = Myserver()
+    server1.run()

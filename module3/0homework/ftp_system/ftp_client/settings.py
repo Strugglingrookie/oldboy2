@@ -3,3 +3,10 @@
 # @Author  : Xiao
 
 
+import os
+
+
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+DOWNLOAD_PATH = os.path.join(PROJECT_PATH, "download")
+SERVER_IP = "localhost"
+SERVER_PORT = 8083

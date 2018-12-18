@@ -4,21 +4,16 @@
 
 
 import socket
-import os
 import struct
 import json
+import os
+from settings import *
 
 
 class Myclient():
-    online = 0
-    ip = "127.0.0.1"
-    port = 8083
-    ip_port = (ip, port)
-    download_path = r"E:\Study\oldboy\module3\0homework\ftp_system\ftp_client\download"
-
     def __init__(self):
         self.server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
-        self.server_socket.connect(self.ip_port)  # 主动初始化TCP服务器连接
+        self.server_socket.connect((SERVER_IP, SERVER_PORT))  # 主动初始化TCP服务器连接
 
     def send_msg(self, msg_bytes):
         """发送本次请求的指令，服务端根据指令返回数据"""
@@ -71,7 +66,7 @@ class Myclient():
             exit("too many login!")
 
     def _sz(self, file_name):
-        file_abspath = os.path.join(self.download_path, file_name)
+        file_abspath = os.path.join(DOWNLOAD_PATH, file_name)
         if not os.path.exists(file_abspath):
             data_code = {"code": "0", "msg": file_name}
             self.send_code(data_code)
@@ -168,9 +163,10 @@ class Myclient():
     def run(self):
         """反复向服务器发送请求，当请求的返回操作码为0成功时，调用相应属性，失败时不做任何处理直接循环"""
         self.login()
-        print("attention please : input: ls . to see file or dir in the current dir！")
         while True:
             msg = input(">>>>:").strip()
+            if msg.lower() == "ls":
+                msg = msg + " ."
             msg_lis = msg.split(" ", 1)
             if len(msg_lis) == 2 and hasattr(self, "_%s" % msg_lis[0].lower()):
                 method = msg_lis[0].lower()
