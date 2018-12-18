@@ -29,6 +29,7 @@ class Myserver():
         print("starting....")
 
     def get_md5(self, var):
+        """"加密，盐值为123456"""
         salt = "123456"
         new_var = salt + var
         m = hashlib.md5()
@@ -36,6 +37,7 @@ class Myserver():
         return m.hexdigest()
 
     def get_users(self):
+        """"初始化用户信息"""
         users = configparser.ConfigParser()
         users.read(DATA_PATH)
         return users
@@ -52,6 +54,7 @@ class Myserver():
         return code, msg
 
     def _login(self, user_info):
+        """登陆逻辑"""
         info_lis = user_info.split(",")
         if len(info_lis) == 2:
             user, pwd = info_lis
@@ -68,7 +71,11 @@ class Myserver():
         self.send_code(code_dic)
 
     def _sz(self, file_name):
-        """发送文件"""
+        """发送文件给客户端
+           1.首先拿到客户端的确认信息，是否上传
+           2.确定后，判断文件是否存在，并告诉客户端接下来是传文件还是通知文件不存在
+           3.文件存在则开始发送文件
+        """
         res_code, res_msg = self.get_code
         if res_code == "0":
             file_path = os.path.join(self.cur, file_name)
@@ -89,7 +96,11 @@ class Myserver():
                 self.send_code(code_dic)
 
     def _rz(self, file_name):
-        """保存文件"""
+        """保存来自文件
+           1.首先确认客户端是否要传文件
+           2.确定后，判断文件是否存在，并告诉客户端接下来是接收文件还是通知文件已存在
+           3.用户当前目录文件不存在则开始接收文件
+        """
         res_code, res_msg = self.get_code
         if res_code == "0":
             file_name = os.path.basename(file_name)
@@ -120,6 +131,13 @@ class Myserver():
                 self.send_code(res_code)
 
     def _ls(self, dirname):
+        """
+        1.接收客户端需要查看的是哪个目录
+        2.判断目录是否存在，存在继续往下走，不存在则直接告诉客户端失败，目录不存在
+        3.执行命令，如果服务器端是linux系统，则用ls，如果是windows则用dir
+        4.如果命令执行结果为空，返回客户端当前目录下没有文件
+        5.如果不为空，则开始发送目录下的文件夹或文件信息
+        """
         new_dirname = os.path.join(self.cur, dirname) if dirname != "." else self.cur
         print(new_dirname)
         if os.path.exists(new_dirname) and not os.path.isfile(new_dirname):
@@ -143,6 +161,10 @@ class Myserver():
             self.send_code(res_code)
 
     def _cd(self, dirname):
+        """
+        1.接收到客户端的需要进入的目录信息，跟当前目录进行拼接
+        2.如果目录存在，则修改当前目录的变量值，如果不存在则告诉客户端，目录不存在
+        """
         new_dirname = os.path.join(self.cur, dirname)
         if os.path.exists(new_dirname) and not os.path.isfile(new_dirname):
             res_code = {"code": "0", "msg": "切换成功，当前目录为 %s " % dirname}
@@ -170,6 +192,11 @@ class Myserver():
         self.conn.send(res_code_bytes)
 
     def run(self):
+        """
+        1.先判断用户的是否登陆，如果没有登陆而且请求不是login，则返回客户端让其登陆，如果已登陆则往下走
+        2.判断用户请求的方法是否正确，不正确则返回客户端，请求方法有误，如果方法存在则往下走
+        3.调用具体的方法
+        """
         while True:
             try:
                 self.conn, self.client_addr = self.server_socket.accept()

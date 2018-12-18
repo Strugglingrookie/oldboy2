@@ -43,6 +43,7 @@ class Myclient():
         return code, msg
 
     def login(self):
+        """登陆函数"""
         count = 0
         while count < 3:
             user = input("your name:").strip()
@@ -66,6 +67,10 @@ class Myclient():
             exit("too many login!")
 
     def _sz(self, file_name):
+        """下载文件
+        1.首先判断客户端本地是否存在文件，存在则告诉服务端不用传了，不存在则往下走
+        2.接收服务器端返回的文件操作结果，是否可以下载，不可以现在则打印服务端的msg，可以下载则开始接收文件
+        """
         file_abspath = os.path.join(DOWNLOAD_PATH, file_name)
         if not os.path.exists(file_abspath):
             data_code = {"code": "0", "msg": file_name}
@@ -101,6 +106,10 @@ class Myclient():
             print("%s is already exists" % file_name)
 
     def _rz(self, file_path):
+        """上传文件
+        1.首先判断客户端本地是否存在文件，不存在则告诉服务端不传了，存在则往下走
+        2.接收服务器端返回的文件操作结果，是否可以上传，不可以现在则打印服务端的msg，可以上传则开始发送文件
+        """
         if os.path.exists(file_path) and os.path.isfile(file_path):
             file_name = os.path.basename(file_path)
             res_code = {"code": "0", "msg": file_name}
@@ -157,6 +166,7 @@ class Myclient():
             print(res)
 
     def _cd(self, dirname):
+        """切换目录"""
         res_code, res_msg = self.get_code
         print(res_msg)
 
@@ -188,7 +198,7 @@ class Myclient():
 
 
 if __name__ == "__main__":
-    try :
+    try:
         client = Myclient()
         client.run()
     except Exception as e:
