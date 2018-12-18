@@ -24,7 +24,7 @@ class Myserver():
         self.users = self.get_users()
         self.home = None
         self.cur = None
-        self.quota = None
+        self.quota = 0
         print("starting....")
 
     def get_md5(self, var):
@@ -39,7 +39,18 @@ class Myserver():
         users.read(DATA_PATH)
         return users
 
-    def login(self, user_info):
+    @property
+    def get_code(self):
+        """拿到客户端上传文件的操作结果"""
+        code_len_bytes = self.conn.recv(4)
+        code_len = struct.unpack("i", code_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
+        code_str = self.conn.recv(code_len).decode("utf-8")  # 根据上面的长度接收数据头信息
+        code_dic = json.loads(code_str, encoding="utf-8")
+        code = code_dic["code"]
+        msg = code_dic["msg"]
+        return code, msg
+
+    def _login(self, user_info):
         info_lis = user_info.split(",")
         if len(info_lis) == 2:
             user, pwd = info_lis
@@ -49,7 +60,7 @@ class Myserver():
                 self.send_code(code_dic)
                 self.home = os.path.join(HOME_PATH, self.users[user].get("home_dir"))
                 self.cur = self.home
-                self.quota = self.users[user].get("quota")
+                self.quota = float(self.users[user].get("quota"))*(1024**3)
                 self.online = 1
                 return True
         code_dic = {"code": "1", "msg": "error username or password!"}
@@ -57,54 +68,77 @@ class Myserver():
 
     def _sz(self, file_name):
         """发送文件"""
-        file_path = os.path.join(self.send_path, file_name)
-        file_size = os.path.getsize(file_path)
-        header = {"file_size": file_size, "file_name": file_name, "md5": "123456"}
-        header_bytes = bytes(json.dumps(header), encoding='utf-8')
-        header_len_bytes = struct.pack("i", len(header_bytes))
-        self.conn.send(header_len_bytes)
-        self.conn.send(header_bytes)
-        with open(file_path, "rb") as f:
-            for line in f:
-                self.conn.send(line)
+        res_code, res_msg = self.get_code
+        if res_code == "0":
+            file_path = os.path.join(self.cur, file_name)
+            if os.path.exists(file_path) and os.path.isfile(file_path):
+                code_dic = {"code": "0", "msg": "start to download %s " % file_name}
+                self.send_code(code_dic)
+                file_size = os.path.getsize(file_path)
+                header = {"file_size": file_size, "file_name": file_name, "md5": "123456"}
+                header_bytes = bytes(json.dumps(header), encoding='utf-8')
+                header_len_bytes = struct.pack("i", len(header_bytes))
+                self.conn.send(header_len_bytes)
+                self.conn.send(header_bytes)
+                with open(file_path, "rb") as f:
+                    for line in f:
+                        self.conn.send(line)
+            else:
+                code_dic = {"code": "1", "msg": "%s is a directory or file doesn't exist!" % file_name}
+                self.send_code(code_dic)
 
     def _rz(self, file_name):
         """保存文件"""
-        file_name = os.path.basename(file_name)
-        file_abspath = os.path.join(self.recv_path, file_name)
-        header_len_bytes = self.conn.recv(4)  # 接收4个字节的数据头信息
-        header_len = struct.unpack("i", header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
-        header_str = self.conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
-        header = json.loads(header_str, encoding="utf-8")
-        file_size = header["file_size"]  # 根据数据头信息得到本次要接收的数据大小
-        recv_size = 0
-        with open(file_abspath, "wb") as f:
-            while recv_size < file_size:  # 当接收到的数据小于本次数据长度时就一直接收
-                line = self.conn.recv(1024)
-                f.write(line)  # 将每次接收到的数据拼接
-                recv_size += len(line)  # 实时记录当前接收到的数据长度s
+        res_code, res_msg = self.get_code
+        if res_code == "0":
+            file_name = os.path.basename(file_name)
+            file_abspath = os.path.join(self.cur, file_name)
+            if not os.path.exists(file_abspath):
+                res_code = {"code": "0", "msg": "start to upload file %s..." % file_name}
+                self.send_code(res_code)
+                header_len_bytes = self.conn.recv(4)  # 接收4个字节的数据头信息
+                header_len = struct.unpack("i", header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
+                header_str = self.conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
+                header = json.loads(header_str, encoding="utf-8")
+                file_size = header["file_size"]  # 根据数据头信息得到本次要接收的数据大小
+                empty_size =float(self.quota) - os.path.getsize(self.home)
+                if empty_size < file_size:
+                    res_code = {"code": "1", "msg": "only %s space left,no space to accept file %s" % (empty_size,file_name)}
+                    self.send_code(res_code)
+                else:
+                    res_code = {"code": "0", "msg": "uploading file %s..." % file_name}
+                    self.send_code(res_code)
+                    recv_size = 0
+                    with open(file_abspath, "wb") as f:
+                        while recv_size < file_size:  # 当接收到的数据小于本次数据长度时就一直接收
+                            line = self.conn.recv(1024)
+                            f.write(line)  # 将每次接收到的数据拼接
+                            recv_size += len(line)  # 实时记录当前接收到的数据长度
+            else:
+                res_code = {"code": "1", "msg": "%s is already exists..." % file_name}
+                self.send_code(res_code)
 
     def _ls(self, dirname):
         new_dirname = os.path.join(self.cur, dirname) if dirname != "." else self.cur
-        res = subprocess.Popen("ls %s" % new_dirname, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-        err = res.stderr.read()
-        out = res.stdout.read()
-        print(err, out)
-        if err:
-            res_code = {"code": "1", "msg": err}
-            self.send_code(res_code)
-        elif out:
-            print(out.decode())
-            res_code = {"code": "0", "msg": "%s dir has follow files or dirs..." % dirname}
-            self.send_code(res_code)
-            header = {"file_size": len(out)}
-            header_bytes = bytes(json.dumps(header), encoding='utf-8')
-            header_len_bytes = struct.pack("i", len(header_bytes))
-            self.conn.send(header_len_bytes)
-            self.conn.send(header_bytes)
-            self.conn.send(out)
+        print(new_dirname)
+        if os.path.exists(new_dirname) and not os.path.isfile(new_dirname):
+            res = subprocess.Popen("dir %s" % new_dirname, shell=True, stdout=subprocess.PIPE)
+            out = res.stdout.read()
+            if out:
+                print(out.decode("GBK"))
+                res_code = {"code": "0", "msg": "%s dir has follow files or dirs..." % dirname}
+                self.send_code(res_code)
+                header = {"file_size": len(out)}
+                header_bytes = bytes(json.dumps(header), encoding='utf-8')
+                header_len_bytes = struct.pack("i", len(header_bytes))
+                self.conn.send(header_len_bytes)
+                self.conn.send(header_bytes)
+                self.conn.send(out)
+            else:
+                res_code = {"code": "3", "msg": "%s current dir is empty..." % dirname}
+                self.send_code(res_code)
         else:
-            res_code = {"code": "3", "msg": "%s current dir is empty..." % dirname}
+            res_code = {"code": "1", "msg": "%s no such directory" % dirname}
             self.send_code(res_code)
 
     def _cd(self, dirname):
@@ -116,9 +150,6 @@ class Myserver():
         else:
             res_code = {"code": "1", "msg": "切换失败， %s 目录不存在" % dirname}
             self.send_code(res_code)
-
-
-
 
     @property
     def get_msg(self):
