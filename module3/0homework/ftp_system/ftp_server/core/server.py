@@ -4,6 +4,7 @@
 
 
 import socket
+import os
 import struct
 import json
 import hashlib
