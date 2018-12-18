@@ -5,6 +5,7 @@
 
 import socket
 import os
+import sys
 import struct
 import json
 import hashlib
@@ -140,8 +141,9 @@ class Myserver():
         """
         new_dirname = os.path.join(self.cur, dirname) if dirname != "." else self.cur
         print(new_dirname)
+        cmd = "dir" if sys.platform.lower().startswith("win") else "ls"
         if os.path.exists(new_dirname) and not os.path.isfile(new_dirname):
-            res = subprocess.Popen("dir %s" % new_dirname, shell=True, stdout=subprocess.PIPE)
+            res = subprocess.Popen("%s %s" % (cmd, new_dirname), shell=True, stdout=subprocess.PIPE)
             out = res.stdout.read()
             if out:
                 print(out.decode("GBK"))
