@@ -3,9 +3,10 @@
 # Date:2018/12/8
 
 '''
-# 绑定方法  绑定给谁就给谁调用，调用时会自动将调用者作为第一个参数传递给函数
-# 1.绑定到对象的方法(不被任何装饰器装饰的函数) 2.绑定到类的方法 @classmethod 装饰的函数
-# 非绑定方法 没有自动传值的功能 @staticmethod
+非绑定方法 没有自动传值的功能 @staticmethod
+绑定方法  绑定给谁就给谁调用，调用时会自动将调用者作为第一个参数传递给函数
+1.绑定到对象的方法(不被任何装饰器装饰的函数) 2.绑定到类的方法 @classmethod 装饰的函数
+
 class A:
     def __init__(self, name):
         self.name = name
@@ -75,44 +76,44 @@ obj.run()
 # 内置方法：
 
 
-# # isinstance(obj,cls)检查是否obj是否是类 -cls 的对象
-# class Foo(object):
-#     pass
-# obj = Foo()
-# isinstance(obj, Foo)
-#
-# # issubclass(sub, super)检查sub类是否是 super 类的派生类
-# class Foo(object):
-#     pass
-# class Bar(Foo):
-#     pass
-# issubclass(Bar, Foo)
+# isinstance(obj,cls)检查是否obj是否是类 -cls 的对象
+class Foo(object):
+    pass
+obj = Foo()
+isinstance(obj, Foo)
+
+# issubclass(sub, super)检查sub类是否是 super 类的派生类
+class Foo(object):
+    pass
+class Bar(Foo):
+    pass
+issubclass(Bar, Foo)
 
 
 # item 将对象变成一个字典形式
-# class A:
-#     def __init__(self, name):
-#         self.name = name
-#
-#     def __getitem__(self, item):  # 当用字典形式查对象的属性时，会自动调用该方法
-#         print("getitem ....")
-#         return self.__dict__.get(item)
-#
-#     def __setitem__(self, key, value):  # 当用字典形式设置对象的属性时，会自动调用该方法
-#         print("setitem ....")
-#         self.__dict__[key] = value
-#
-#     def __delitem__(self, key):  # 当用字典形式删除对象的属性时，会自动调用该方法
-#         print("delitem ....")
-#         self.__dict__.pop(key)
-#
-#
-# a = A("xg")
-# print(a["name"])
-# a["sex"] = 'male'
-# print(a["sex"])
-# del a["sex"]
-# print(a["sex"])
+class A:
+    def __init__(self, name):
+        self.name = name
+
+    def __getitem__(self, item):  # 当用字典形式查对象的属性时，会自动调用该方法
+        print("getitem ....")
+        return self.__dict__.get(item)
+
+    def __setitem__(self, key, value):  # 当用字典形式设置对象的属性时，会自动调用该方法
+        print("setitem ....")
+        self.__dict__[key] = value
+
+    def __delitem__(self, key):  # 当用字典形式删除对象的属性时，会自动调用该方法
+        print("delitem ....")
+        self.__dict__.pop(key)
+
+
+a = A("xg")
+print(a["name"])
+a["sex"] = 'male'
+print(a["sex"])
+del a["sex"]
+print(a["sex"])
 
 
 # __str__ 在print(对象) 的时候自动触发
