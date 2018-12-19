@@ -11,7 +11,7 @@
 应用：实用于一些不会轻易变化的场景，比如需要写一些简单的脚本做些一次性任务，面向过程实用。但如果处理非常复杂且需求多变的任务时就不好使了。
 
 面向对象：
-定义：万物皆对象，对象就是特征于技能的集合（比如孙悟空，毛脸雷公嘴是特征，七十二变是技能）
+定义：万物皆对象，对象就是特征与技能的集合（比如孙悟空，毛脸雷公嘴是特征，七十二变是技能）
 优点：可扩展性强
 缺点：编程复杂度高，极容易出现过度设计的问题，而且在一些扩展性要求低的场景使用面向对象会徒增编程难度
 应用：实用于客户需求频繁变化，如互联网/游戏/企业应用
@@ -42,11 +42,13 @@ print(stu1)  #  <__main__.BeijingStudent object at 0x10bc56080>  生成的是一
 print(stu2)  #  <__main__.BeijingStudent object at 0x10db5f048>  都是同一个类生成的对象，内存地址不一样
 
 # 查看类的名称空间  类内部：变量就是上面说的特征  函数就是上面说的技能
-print(BeijingStudent.__dict__)  # 类的名称空间是一个字典形式 「'school': 'beijing_university', 'learn': <function BeijingStudent.learn at 0x109c152f0>」
+print(BeijingStudent.__dict__)  
+# 类的名称空间是一个字典形式 「'school': 'beijing_university', 'learn': <function BeijingStudent.learn at 0x109c152f0>」
+
 # 查属性
 print(BeijingStudent.__dict__['school'])  # 既然名称空间是一个字典，那么就可以用字典的方式拿到数据
 print(BeijingStudent.__dict__['learn'])  # 既然名称空间是一个字典，那么就可以用字典的方式拿到数据，函数也一样，只要是属性就可以这样访问
-#只是python提供了特别的访问方式，直接点就可以访问类里的属性
+#python提供了特别的访问方式，直接点就可以访问类里的属性
 print(BeijingStudent.school)  # 实质就是上面那种访问方式，只是python简化了，跟模块一样，直接time.time()，本质都是一样的
 print(BeijingStudent.learn)
 # 增
@@ -71,7 +73,7 @@ class BeijingStudent:
         self.Sex = sex
         self.Age = age
 
-        # stu1.Name = name  # 实际就是做了这步操作
+        # stu1.Name = name  # 实例化时，实际就是做了这步操作
         # stu1.Sex = sex
         # stu1.Age = age
 
@@ -126,7 +128,7 @@ print(stu1.school,id(stu1.school))                      # beijing_university 455
 print(stu2.school,id(stu2.school))                      # beijing_university 4556931120
 
 #类中的函数属性：是绑定给对象使用的，绑定到不同的对象是不同的绑定方法，对象在调用方法时，会把对象本身当作第一个参数传给self
-#类中定义的函数（没有被任何装饰器装饰的）是类的函数属性，类可以使用，但必须遵循函数的参数规则，有几个参数需要传几个参数
+#类中定义的函数（没有被任何装饰器装饰的）是类的函数属性，类也可以调用，但必须遵循函数的参数规则，有几个参数需要传几个参数
 print(BeijingStudent.learn) #<function BeijingStudent.learn at 0x10f179730>
 print(stu1.learn)    #<bound method BeijingStudent.learn of <__main__.BeijingStudent object at 0x10f19a6a0>>
 print(stu2.learn)    #<bound method BeijingStudent.learn of <__main__.BeijingStudent object at 0x10f19a9b0>>
@@ -201,9 +203,3 @@ obj=MySQLHandler('127.0.0.1',3306,'db1')
 obj.exc1('select * from tb1;')
 obj.exc2('存储过程的名字')
 '''
-
-
-
-
-
-
