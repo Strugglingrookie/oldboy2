@@ -73,7 +73,9 @@ obj.run()
 '''
 
 # 内置方法：
-# # isinstance(obj,cls)检查是否obj是否是类 cls 的对象
+
+
+# # isinstance(obj,cls)检查是否obj是否是类 -cls 的对象
 # class Foo(object):
 #     pass
 # obj = Foo()
@@ -85,6 +87,7 @@ obj.run()
 # class Bar(Foo):
 #     pass
 # issubclass(Bar, Foo)
+
 
 # item 将对象变成一个字典形式
 # class A:
@@ -110,3 +113,30 @@ obj.run()
 # print(a["sex"])
 # del a["sex"]
 # print(a["sex"])
+
+
+# __str__ 在print(对象) 的时候自动触发
+# class A:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def __str__(self):
+#         return "这是类A"
+#
+#
+# a = A("xg")
+# print(a)  # 没有 __str__ 的时候打印的是 <__main__.A object at 0x10e883630> 有了后打印的是__str__里的return的内容
+
+
+# __del__ 析构函数 对象被销毁的时候，自动触发，比如一些关闭数据库链接
+class Open:
+    def __init__(self,filename):
+        print('open file.......')
+        self.filename=filename
+
+    def __del__(self):
+        print('回收操作系统资源：self.close()')
+
+f=Open('settings.py')
+# del f #f.__del__()
+print('----main------') #del f #f.__del__()

@@ -11,6 +11,7 @@ class XgError(BaseException):
     def __str__(self):
         return self.msg
 
+
 try:
     raise XgError("自定义的异常！")
 

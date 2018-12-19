@@ -14,14 +14,15 @@
 # 类的三个特性    类名 基类(类的父类) 类的名称空间
 # class_name = "Student"
 # class_bases = (object,)
-# class_body = """
-# school = 'beijing_university'
-# def __init__(self,name):
-#     self.name = name
-# def call(self):
-#     print('my name is %s' % self.name)
-# """
+class_body = """
+school = 'beijing_university'
+def __init__(self,name):
+    self.name = name
+def call(self):
+    print('my name is %s' % self.name)
+"""
 # class_dict = {}
+
 # exec(str,globals,locals) exec在globals的作用域执行str代码，将执行产生的变量放到局部变量locals里。注意globals,locals必须都是字典
 # exec(class_body,globals(),class_dict)  # exec 生成类的名称空间
 # Student = type(class_name,class_bases,class_dict) # type 接类的三要素 类名 基类(类的父类) 类的名称空间  实例化生成一个类

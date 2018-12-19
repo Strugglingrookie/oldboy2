@@ -101,6 +101,8 @@ a = ATM()
 a.withdraw()
 '''
 # property 将函数属性变成数据属性，但只是像数据属性，并不是真的数据属性，在重新赋值的时候会报错。
+
+
 class People:
     def __init__(self,name,weight,height):
         self.name=name
@@ -117,6 +119,8 @@ p=People('xg',60,168)
 # p.bmi=3333 #报错AttributeError: can't set attribute
 
 # 但是有一些方法可以修改和删除这些属性。
+
+
 class A:
     def __init__(self, name):
         self.__name = name

@@ -23,7 +23,7 @@ class b(a):
 print(b.__bases__)  #父类列表
 c = b()
 c.f1()  #from b f111
-c.f2()  #from a f222  from b f111  调用f1的本质是 c.f1(),按照属性查找规则，现在子类本身找
+c.f2()  #from a f222  from b f111  调用f1的本质是 c.f1(),按照属性查找规则，先在子类本身找
 '''
 
 
