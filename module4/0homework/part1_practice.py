@@ -79,8 +79,9 @@ print("all over")
 # pass
 
 # 12、写一个程序，使用socketserver模块，实现一个支持同时处理多个客户端请求的服务器，要求每次启动一个新线程处理客户端请求；
-
 import socketserver
+
+
 class Myhandler(socketserver.BaseRequestHandler):
     def handle(self):
         try:
@@ -94,6 +95,7 @@ class Myhandler(socketserver.BaseRequestHandler):
         except Exception as e:
             print(e)
 
+
 if __name__ == "__main__":
-    server = socketserver.ThreadingTCPServer(("127.0.0.1", 8089),Myhandler)
+    server = socketserver.ThreadingTCPServer(("127.0.0.1", 8089), Myhandler)
     server.serve_forever()
