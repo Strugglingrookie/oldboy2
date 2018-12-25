@@ -12,8 +12,8 @@ def send_msg():
     client.connect(("127.0.0.1", 8089))
     count = 1
     while True:
-        # msg = input(">>>>:")
-        msg = "%s say hello %s " % (currentThread().getName(), count)
+        msg = input(">>>>:")
+        # msg = "%s say hello %s " % (currentThread().getName(), count)
         print("%s trying to send datas..." % currentThread().getName())
         client.send(msg.encode())
         print("%s trying to resv datas..." % currentThread().getName())
@@ -23,7 +23,7 @@ def send_msg():
 
 
 if __name__ == "__main__":
-    for i in range(100):
-        t = Thread(target=send_msg)
-        t.start()
-    # send_msg()
+    # for i in range(100):
+        # t = Thread(target=send_msg)
+        # t.start()
+    send_msg()

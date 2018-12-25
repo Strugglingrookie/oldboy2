@@ -7,5 +7,4 @@ from core.server import Myserver
 
 
 def start():
-    server1 = Myserver()
-    server1.run()
+    Myserver.run()

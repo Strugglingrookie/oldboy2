@@ -194,6 +194,7 @@ class Myclient(object):
                 print("输入格式不正确，请重新输入！")
 
     def __del__(self):
+        '''析构函数，当程序结束时自动关闭socket'''
         self.server_socket.close()
 
 

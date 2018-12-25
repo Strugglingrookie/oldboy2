@@ -11,25 +11,32 @@ import json
 import hashlib
 import configparser
 import subprocess
+import queue
+from threading import Thread
 from conf.settings import *
 
 
 class Myserver(object):
+    server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
+    server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    server_socket.bind((SERVER_IP, SERVER_PORT))
+    server_socket.listen(MAX_CONNECT)
+    q = queue.Queue(MAX_QUEUE)  # 初始化队列大小，最对只能有多少个等待链接
 
-    def __init__(self):
+    def __init__(self, conn):
         """实例化时自动启动文件服务"""
-        self.online = 0
-        self.server_socket = socket.socket(family=socket.AF_INET, type=socket.SOCK_STREAM)
-        self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        self.server_socket.bind((SERVER_IP, SERVER_PORT))
-        self.server_socket.listen(MAX_CONNECT)
-        self.users = self.get_users()
-        self.home = None
-        self.cur = None
-        self.quota = 0
+        self.conn = conn  # 接收到的客户连接信息
+        self.client_addr = None  # 接收到的客户连接地址信息
+        self.header_len_bytes = None  # 发送数据的报文头信息
+        self.users = self.get_users()  # 拿到用户信息，登录的时候用来判断
+        self.online = 0  # 用户的登录状态，每次接收到客户端的命令都要判断用户是否已经登录，未登录需要先登录
+        self.home = None  # 用户的家目录，用户登录的时候会更新家目录
+        self.cur = None  # 用户的当前目录，用户登录的时候当前目录就是家目录，随着用户cd命令执行更新
+        self.quota = 0  # 用户的家目录的大小限制，用户上传时会先判断目录大小是否够接收文件
         print("starting....")
 
-    def get_md5(self, var):
+    @staticmethod
+    def get_md5(var):
         """"加密，盐值为123456"""
         salt = "123456"
         new_var = salt + var
@@ -37,7 +44,9 @@ class Myserver(object):
         m.update(new_var.encode())
         return m.hexdigest()
 
-    def get_users(self):
+    @staticmethod
+    def get_users():
+        '''拿到用户基础信息'''
         """"初始化用户信息"""
         users = configparser.ConfigParser()
         users.read(DATA_PATH)
@@ -54,8 +63,25 @@ class Myserver(object):
         msg = code_dic["msg"]
         return code, msg
 
+    @property
+    def get_msg(self):
+        """拿到客户端发来的请求"""
+        header_len = struct.unpack("i", self.header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
+        header_str = self.conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
+        header = json.loads(header_str, encoding="utf-8")
+        msg_size = header["msg_size"]  # 根据数据头信息得到本次要接收的数据大小
+        msg = self.conn.recv(msg_size).decode("utf-8")
+        return msg
+
+    def send_code(self,code_dic):
+        """发送本次请求的结果状态，客户端根据这些状态做下一步操作"""
+        res_code_bytes = bytes(json.dumps(code_dic), encoding='utf-8')
+        res_code_len_bytes = struct.pack("i", len(res_code_bytes))
+        self.conn.send(res_code_len_bytes)
+        self.conn.send(res_code_bytes)
+
     def _login(self, user_info):
-        """登陆逻辑"""
+        """登陆逻辑，登录成功后初始化用户的家目录、当前目录、登录状态等信息"""
         info_lis = user_info.split(",")
         if len(info_lis) == 2:
             user, pwd = info_lis
@@ -176,58 +202,69 @@ class Myserver(object):
             res_code = {"code": "1", "msg": "切换失败， %s 目录不存在" % dirname}
             self.send_code(res_code)
 
-    @property
-    def get_msg(self):
-        """拿到客户端发来的请求"""
-        header_len = struct.unpack("i", self.header_len_bytes)[0]  # struct.unpack解压数据，得到数据头信息长度
-        header_str = self.conn.recv(header_len).decode("utf-8")  # 根据上面的长度接收数据头信息
-        header = json.loads(header_str, encoding="utf-8")
-        msg_size = header["msg_size"]  # 根据数据头信息得到本次要接收的数据大小
-        msg = self.conn.recv(msg_size).decode("utf-8")
-        return msg
-
-    def send_code(self,code_dic):
-        """发送本次请求的结果状态，客户端根据这些状态做下一步操作"""
-        res_code_bytes = bytes(json.dumps(code_dic), encoding='utf-8')
-        res_code_len_bytes = struct.pack("i", len(res_code_bytes))
-        self.conn.send(res_code_len_bytes)
-        self.conn.send(res_code_bytes)
-
-    def run(self):
+    def comunication(self):
         """
+        通信主程序，每个实例都是通过这个方法和客户端通信的。
         1.先判断用户的是否登陆，如果没有登陆而且请求不是login，则返回客户端让其登陆，如果已登陆则往下走
         2.判断用户请求的方法是否正确，不正确则返回客户端，请求方法有误，如果方法存在则往下走
         3.调用具体的方法
         """
         while True:
             try:
-                self.conn, self.client_addr = self.server_socket.accept()
-                while True:
-                    self.header_len_bytes = self.conn.recv(4)  # 接收4个字节的数据头信息
-                    if not self.header_len_bytes:
-                        break
-                    msg = self.get_msg
-                    print(msg)
-                    method, args = msg.split(" ", 1)
-                    if not self.online and method != "login":
-                        res_code = {"code": "2", "msg": "please login first!"}
-                        self.send_code(res_code)
-                    elif hasattr(self, "_%s" % method.lower()) and args:
-                        res_code = {"code": "0", "msg": "wait moment,it's working now"}
-                        self.send_code(res_code)
-                        func = getattr(self, "_%s" % method.lower())
-                        func(args)
-                    else:
-                        res_code = {"code": "1", "msg": "error request %s !" % msg}
-                        self.send_code(res_code)
-                self.conn.close()
+                self.header_len_bytes = self.conn.recv(4)  # 接收4个字节的数据头信息
+                if not self.header_len_bytes:
+                    break
+                msg = self.get_msg
+                print(msg)
+                method, args = msg.split(" ", 1)
+                if not self.online and method != "login":
+                    res_code = {"code": "2", "msg": "please login first!"}
+                    self.send_code(res_code)
+                elif hasattr(self, "_%s" % method.lower()) and args:
+                    res_code = {"code": "0", "msg": "wait moment,it's working now"}
+                    self.send_code(res_code)
+                    func = getattr(self, "_%s" % method.lower())
+                    func(args)
+                else:
+                    res_code = {"code": "1", "msg": "error request %s !" % msg}
+                    self.send_code(res_code)
             except Exception as e:
                 print(e)
+                self.q.task_done()
+                self.conn.close()
+                break
 
-    def __del__(self):
-        self.server_socket.close()
+    @classmethod
+    def start(cls):
+        """
+        循环拿队列q里的链接，拿到一个实例化一个，然后启动comunication方法，开始和客户端交互
+        """
+        while True:
+            conn = cls.q.get()
+            client = Myserver(conn)
+            client.comunication()
+
+    @classmethod
+    def create_thread(cls):
+        '''
+        开启多线程，线程数为settings设置的最大并发数
+        '''
+        for i in range(MAX_RUN):
+            t = Thread(target=cls.start)
+            t.daemon = True
+            t.start()
+
+    @classmethod
+    def run(self):
+        """
+       启动，循环等链接，每来一个链接就赛到队列里
+       """
+        self.create_thread()
+        while True:
+            print("waiting for connection...")
+            conn, client_addr = self.server_socket.accept()
+            self.q.put(conn)
 
 
 if __name__ == "__main__":
-    server1 = Myserver()
-    server1.run()
+    Myserver.run()

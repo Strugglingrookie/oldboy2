@@ -89,7 +89,7 @@ def consumer(name, q):
         time.sleep(0.2)
         res = q.get()
         print("%s 吃了 %s" % (name, res))
-        q.task_done()  # 没消费一个数据，调用一次task_done方法，为了给join方法用
+        q.task_done()  # 每消费一个数据，调用一次task_done方法，为了给join方法用
 
 
 if __name__ == "__main__":
