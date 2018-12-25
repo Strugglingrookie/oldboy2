@@ -193,10 +193,11 @@ if __name__ == '__main__':
 '''
 
 
-# 互斥锁，下面的代码如果不加互斥锁的话，会n结果是99，因为每个线程都到了time.sleep(0.1)之前拿到的n都是100
+# 互斥锁，
+
+# 下面的代码如果不加互斥锁的话，会n结果是99，因为每个线程都到了time.sleep(0.1)之前拿到的n都是100
 from threading import Thread,Lock
 import time
-
 n = 100
 
 

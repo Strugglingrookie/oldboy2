@@ -64,6 +64,7 @@ print("all over!")
 # 而time.sleep(2)或其他的阻塞,gevent是不能直接识别的需要用下面一行代码,打补丁,就可以识别了
 # from gevent import monkey;monkey.patch_all()必须放到被打补丁者的前面，如time，socket模块之前
 # 或者我们干脆记忆成：要用gevent，需要将from gevent import monkey;monkey.patch_all()放到文件的开头
+'''
 from gevent import monkey;monkey.patch_all()
 import gevent, time
 
@@ -84,4 +85,4 @@ g2 = gevent.spawn(sayhello, "xg")
 g1.join()
 g2.join()
 print("all over!")
-
+'''

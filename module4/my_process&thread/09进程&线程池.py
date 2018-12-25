@@ -46,10 +46,10 @@ if __name__ == "__main__":
 '''
 
 
-# 钓鱼大赛，参赛者钓鱼，然后称重。
 
 # 同步回调  开启的多线程变成了串行，拿到第一个线程的执行结果才继续往下继续运行
 """
+# 钓鱼大赛，参赛者钓鱼，然后称重。
 from concurrent.futures import ThreadPoolExecutor
 import time, random, os
 

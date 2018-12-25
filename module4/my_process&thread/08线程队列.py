@@ -25,6 +25,7 @@ print(q.get())
 print(q.full())
 print(q.empty())
 
+
 # 后进先出  同堆栈原理
 q = queue.LifoQueue(3)
 

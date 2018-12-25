@@ -2,20 +2,19 @@
 # __author__="X1gang"
 # Date:2018/12/22
 
-
+# 进程：正在进行的一个过程或者说一个任务。而负责执行任务则是cpu。
+# 程序仅仅只是一堆代码而已，而进程指的是程序的运行过程
 # 开启进程的两种方式：
 
 from multiprocessing import Process
 import time
 import os
 
-
 # 方式一：
 def task(name):
     print("%s is running...,pid: %s; ppid: %s " % (name, os.getpid(), os.getppid()))  # 拿到进程pid以及父进程pid
     time.sleep(1)
     print("%s is done..." % name)
-
 
 # 方式二
 class CreateProcess(Process):
