@@ -55,8 +55,7 @@
 -- (SELECT * FROM (SELECT * FROM score a WHERE a.course_id=1 ORDER BY a.num DESC LIMIT 2) a UNION ALL
 -- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=2 ORDER BY a.num DESC LIMIT 2) b UNION ALL
 -- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=3 ORDER BY a.num DESC LIMIT 2) c UNION ALL
--- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=4 ORDER BY a.num DESC LIMIT 2) d) e on g.cid = e.course_id
--- ) h on f.sid = h.student_id;
+-- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=4 ORDER BY a.num DESC LIMIT 2) d) e on g.cid = e.course_id) h on f.sid = h.student_id;
 -- 21、查询不同课程但成绩相同的学号，课程号，成绩
 
 -- 22、查询没学过“叶平”老师课程的学生姓名以及选修的课程名称；
