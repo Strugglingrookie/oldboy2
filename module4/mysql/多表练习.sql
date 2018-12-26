@@ -1,0 +1,66 @@
+-- 1、查询所有的课程的名称以及对应的任课老师姓名
+-- SELECT c.cname,t.tname from course c left join teacher t on c.teacher_id = t.tid;
+-- 2、查询学生表中男女生各有多少人
+-- SELECT gender,count(sid) count from student GROUP BY gender;
+-- 3、查询物理成绩等于100的学生的姓名
+-- SELECT a.sid,b.sname from score a LEFT JOIN student b on a.student_id = b.sid WHERE a.num=100 and a.course_id = (SELECT c.cid from course c where c.cname = "物理");
+-- 4、查询平均成绩大于八十分的同学的姓名和平均成绩
+-- SELECT a.sname,c.avg_score FROM student a INNER JOIN (SELECT b.*,AVG(b.num) avg_score from score b GROUP BY b.student_id HAVING avg_score>80) c on a.sid = c.student_id;
+-- 5、查询所有学生的学号，姓名，选课数，总成绩
+-- SELECT a.sid,a.sname,c.count_course,c.sum_score FROM student a LEFT JOIN
+-- (SELECT b.student_id,count(b.course_id) count_course,SUM(b.num) sum_score FROM score b GROUP BY b.student_id) c on a.sid = c.student_id;
+-- 6、 查询姓李老师的个数
+-- SELECT count(tid) from teacher t WHERE t.tname like "李%";
+-- 7、 查询没有报李平老师课的学生姓名
+-- SELECT a.sname FROM student a where a.sid not in (SELECT b.student_id FROM score b WHERE course_id in (SELECT c.cid from course c WHERE c.teacher_id in (SELECT d.tid FROM teacher d WHERE d.tname="李平老师")));
+-- 8、 查询物理课程比生物课程高的学生的学号
+-- SELECT c.student_id FROM (SELECT * from score a WHERE a.course_id=(SELECT b.cid FROM course b where b.cname = "物理")) c inner JOIN
+-- (SELECT * from score d WHERE d.course_id=(SELECT f.cid FROM course f where f.cname = "生物")) g on c.student_id = g.student_id and c.num > g.num;
+-- 9、 查询没有同时选修物理课程和体育课程的学生姓名
+-- SELECT a.sname FROM student a WHERE a.sid not in (
+-- SELECT d.student_id FROM (SELECT * FROM score b WHERE b.course_id = (SELECT c.cid FROM course c where c.cname="物理")) d INNER JOIN
+-- (SELECT * FROM score f WHERE f.course_id = (SELECT g.cid FROM course g where g.cname="体育")) h ON d.student_id = h.student_id);
+-- 10、查询挂科超过两门(包括两门)的学生姓名和班级
+-- SELECT c.sname,c.caption FROM (SELECT * FROM student a LEFT JOIN class b ON a.class_id = b.cid) c INNER JOIN
+-- (SELECT d.student_id,count(d.student_id) count FROM score d where d.num<60 GROUP BY d.student_id HAVING count>=2) e on c.sid=e.student_id;
+-- 11、查询选修了所有课程的学生姓名
+-- SELECT s.sname FROM student s INNER JOIN
+-- (SELECT a.student_id,count(a.course_id) count_course FROM score a GROUP BY a.student_id HAVING count_course = (SELECT count(*) from course)) b on s.sid = b.student_id;
+-- 12、查询李平老师教的课程的所有成绩记录
+-- SELECT a.* FROM score a WHERE a.course_id IN (SELECT b.cid from course b where b.teacher_id = (SELECT c.tid from teacher c WHERE c.tname = "李平老师" ))
+-- 13、查询全部学生都选修了的课程号和课程名
+-- SELECT c.cid,c.cname FROM course c INNER JOIN
+-- (SELECT a.course_id,count(a.student_id) count_student FROM score a GROUP BY a.course_id HAVING count_student = (SELECT count(*) from student)) b ON c.cid=b.course_id;
+-- 14、查询每门课程被选修的次数
+-- SELECT c.cid,c.cname,b.count_student FROM course c left JOIN
+-- (SELECT a.course_id,count(a.student_id) count_student FROM score a GROUP BY a.course_id) b ON c.cid=b.course_id;
+-- 15、查询只选修了一门课程的学生姓名和学号
+-- SELECT s.sname FROM student s INNER JOIN
+-- (SELECT a.student_id,count(a.course_id) count_course FROM score a GROUP BY a.student_id HAVING count_course = 1) b on s.sid = b.student_id;
+-- 16、查询所有学生考出的成绩并按从高到低排序（成绩去重）
+-- SELECT DISTINCT(num) FROM score a ORDER BY a.num DESC
+-- 17、查询平均成绩大于85的学生姓名和平均成绩
+-- SELECT a.sname FROM student a INNER JOIN (SELECT b.student_id,avg(b.num) avg_num from score b GROUP BY b.student_id HAVING avg_num > 85) c ON a.sid = c.student_id;
+-- 18、查询生物成绩不及格的学生姓名和对应生物分数
+-- SELECT a.sname,c.num FROM student a INNER JOIN (SELECT b.student_id,b.num from score b where b.course_id=(SELECT cid from course where cname="生物") and b.num<60) c ON a.sid = c.student_id;
+-- 19、查询在所有选修了李平老师课程的学生中，这些课程(李平老师的课程，不是所有课程)平均成绩最高的学生姓名
+-- SELECT sname FROM student WHERE sid =
+-- (SELECT e.student_id FROM (SELECT d.student_id,avg(d.num) avg_num FROM
+-- (SELECT a.* FROM score a WHERE a.course_id IN (SELECT b.cid from course b where b.teacher_id = (SELECT c.tid from teacher c WHERE c.tname = "李平老师" ))) d GROUP BY d.student_id) e
+-- WHERE e.avg_num = (SELECT max(f.avg_num) FROM(SELECT d.student_id,avg(d.num) avg_num FROM
+-- (SELECT a.* FROM score a WHERE a.course_id IN (SELECT b.cid from course b where b.teacher_id = (SELECT c.tid from teacher c WHERE c.tname = "李平老师" ))) d GROUP BY d.student_id) f))
+-- 20、查询每门课程成绩最好的前两名学生姓名
+-- SELECT f.sname,h.cname,h.num from student f inner JOIN
+-- (SELECT g.cname,e.student_id,e.num from course g inner JOIN
+-- (SELECT * FROM (SELECT * FROM score a WHERE a.course_id=1 ORDER BY a.num DESC LIMIT 2) a UNION ALL
+-- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=2 ORDER BY a.num DESC LIMIT 2) b UNION ALL
+-- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=3 ORDER BY a.num DESC LIMIT 2) c UNION ALL
+-- SELECT * FROM (SELECT * FROM score a WHERE a.course_id=4 ORDER BY a.num DESC LIMIT 2) d) e on g.cid = e.course_id
+-- ) h on f.sid = h.student_id;
+-- 21、查询不同课程但成绩相同的学号，课程号，成绩
+
+-- 22、查询没学过“叶平”老师课程的学生姓名以及选修的课程名称；
+--
+-- 23、查询所有选修了学号为1的同学选修过的一门或者多门课程的同学学号和姓名；
+--
+-- 24、任课最多的老师中学生单科成绩最高的学生姓名
