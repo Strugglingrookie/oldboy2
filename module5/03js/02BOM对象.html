@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BOM浏览器对象模型</title>
+</head>
+<body>
+    <!--BOM浏览器对象模型-->
+    <script type="text/javascript">
+    // 1.window
+    // 系统对话框alert confirm prompt   延时操作setTimeout(fun,time)  没多少秒执行一次setInterval(fun,time)
+    /*
+    window.alert(12345);
+    var res = window.confirm("are you sure?");
+    console.log(res);
+    var str = window.prompt("吃了没","shit?");  // 接收用户输入的值
+    console.log(str);
+    window.setTimeout(function () {
+        console.log(1234)
+    },2000);
+
+    // window.setInterval(function () { console.log(1) },1000);
+
+    var num = 0;
+    var timer = null;
+    timer = setInterval(function () {
+        num += 1;
+        if(num > 3){
+            clearInterval(timer);  //清除定时器
+            return;  //   结束函数运行
+        }
+        console.log("num:"+num);
+    },1000)
+
+    // window.open(url="https://www.baidu.com",target="_blank"); // target 新窗口的位置， _blank  _self _parent
+    // window.close();
+    */
+
+    // 2.location
+    /*
+    console.log(location.host);
+    console.log(location.hostname);
+    console.log(location.port);
+    console.log(location.href);
+    console.log(location.pathname);
+    console.log(location.protocol);
+    console.log(location.search);
+    setTimeout(function () {
+        location.href = "https://www.baidu.com";  // 会有历史记录
+        // location.replace("https://www.baidu.com");// 不会有历史记录
+        // location.reload(); // 重新加载网页
+    },2000)
+    */
+
+    // 3.navigator
+    /*
+    console.log(navigator);
+    console.log(navigator.plugins);
+    function hasPlugin(name) {
+        name = name.toLowerCase();
+        for(var i = 0; i < navigator.plugins.length; i ++){
+            var pluginsName = navigator.plugins[i].name.toLowerCase()
+            if(pluginsName.indexOf(name) != -1){
+                console.log(name);
+                console.log(pluginsName);
+                return "有插件！"
+            }
+        }
+        return "没有插件！"
+    }
+    alert(hasPlugin("flash"))
+    */
+
+    // 4.history
+    /*
+        console.log(history);
+        history.go(0);  // 刷新页面
+        history.go(-1);  // 后退页面
+        history.go(1);  // 前进页面
+        history.back();  // 前进页面
+    */
+
+
+    </script>
+
+
+
+
+</body>
+</html>

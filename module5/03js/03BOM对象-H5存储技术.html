@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>H5存储技术</title>
+</head>
+<body>
+    <!--sessionStorage(临时存储)  为每一个数据源维持一个存储区域，在浏览器打开期间存在，包括页面重新加载。关闭浏览器后清除。-->
+    <!--localStorage(长期存储)  与 sessionStorage 一样，但是浏览器关闭后，数据依然会一直存在。-->
+    <!--存储和提取数据时，需要json格式化和解析-->
+    <script type="text/javascript">
+        var person = {
+            name:"xiaogang",
+            age:18
+        };
+        sessionStorage.setItem("personStorage",JSON.stringify(person));
+        var getPerson = JSON.parse(sessionStorage.getItem("personStorage"));
+        console.log(getPerson);
+        //监听本地存储的变化  Storage 发生变化（增加、更新、删除）时的 触发，同一个页面发生的改变不会触发，只会监听同一域名下其他页面改变 Storage
+        window.addEventListener('personStorage', function (e) {
+            console.log('key', e.key);
+            console.log('oldValue', e.oldValue);
+            console.log('newValue', e.newValue);
+            console.log('url', e.url);
+        });
+        sessionStorage.removeItem("personStorage");  // 删除指定的数据
+        sessionStorage.clear(); // 删除所有的数据
+
+    </script>
+</body>
+</html>

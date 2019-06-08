@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        // for(var i = 1;i <= 10;i++){
+        //     for(var j = 1;j <= i;j++){
+        //         document.write('*')
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // for(var i = 1;i <= 10;i++) {
+        //     if(i%2==1){
+        //         for (var k = 1; k < (10 - i) / 2; k++) {
+        //             document.write("&nbsp")
+        //         }
+        //         for (var j = 1; j <= i; j++) {
+        //             document.write('*')
+        //         }
+        //         document.write("<br>")
+        //     }
+        // }
+
+        /*
+            for(var i=1;i<=6;i++){ //控制行数，一共显示6行 记得换行document.write('<br>');
+
+        //控制我们的空格数
+        for(var s=i;s<6;s++){
+            document.write('&nbsp;');
+        }
+        //控制每行的输出*数
+        for(var j=1;j<=2*i-1;j++){
+            document.write('*');
+        }
+        document.write('<br>');
+        }
+        */
+
+        // var names = ["晓钢","小红"];
+        // var nameStr = names.join("&&");
+        // var newNames = nameStr.split("&&");
+        // console.log(names);
+        // console.log(nameStr);
+        // console.log(newNames);
+        // console.log(typeof newNames);
+
+        // var name = names.pop();
+        // names.push("小小");
+        // console.log(name,names);
+
+        // var fn = names.shift();
+        // names.unshift("小康");
+        // console.log(fn,names);
+
+        // names.splice(0,1);  // 删除
+        // names.splice(0,0,"heihei");  // 插入
+        // names.splice(0,1,"heihei");  // 替换
+        // console.log(names);
+
+        // var numbers = [1,2,3,4,5,6,7,8,9];
+        // var newnumbers = numbers.filter(function (item) {
+        //     return item%2;
+        // });
+        // console.log(newnumbers);
+        //
+        // var newnumbers2 = numbers.map(function (value) {
+        //     return value*2;
+        // });
+        // console.log(newnumbers2);
+        //
+        // numbers.forEach(function (value, index) {
+        //     console.log(value, index);
+        // })
+
+        // var str = 'He unfolded the map and set it on the floor';
+        // var index = [];
+        // for (var i = 0; i < str.length ; i++){
+        //     var num = str.indexOf("e",i);
+        //     if(num !== -1){
+        //         index.push(num);
+        //         i = num + 1;
+        //     }
+        // }
+        // console.log(index);
+
+        // 时分秒 APM
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        var newhours = hours<13 ? [hours," A.M"] : [hours-12," P.M"];
+        var newminutes = minutes < 10 ? '0'+minutes : minutes;
+        var newseconds = seconds < 10 ? '0'+seconds : seconds;
+        console.log(newhours[0]+":"+newminutes+":"+newseconds+newhours[1]);
+
+
+
+    </script>
+
+</body>
+</html>
