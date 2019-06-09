@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery属性选择器</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="name">
+        <input type="password" placeholder="password">
+    </form>
+    <script type="text/javascript">
+        // 入口函数
+        $(function () {
+            $("input[type=password]").css("background","green")  // 通过type的属性选择，不需要加引号。
+        })
+    </script>
+</body>
+</html>

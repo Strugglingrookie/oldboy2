@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>siblings应用</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        ul li{
+            background: yellowgreen;
+            margin-bottom: 10px;
+        }
+        a{
+            color: #000;
+        }
+        p{
+            display: none;
+        }
+        .active{
+            display: block;
+            color:#ff6700;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>ul1</h3>
+        <ul id="ul1">
+            <li>晓钢</li>
+            <li>晓康</li>
+            <li>晓红</li>
+            <li>晓明</li>
+        </ul>
+    </div>
+    <div>
+        <h3>ul2</h3>
+        <ul id="ul2">
+            <li>
+                <a href="javascript:void(0)">晓钢</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">晓康</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">晓红</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">晓明</a>
+            </li>
+        </ul>
+    </div>
+    <p>哈哈1</p>
+    <p>哈哈2</p>
+    <p>哈哈3</p>
+    <p>哈哈4</p>
+
+
+    <script type="text/javascript">
+        // 入口函数
+        $(function () {
+            // siblings 的排他性应用
+            $("#ul1>li").hover(function () {
+                $(this).css({'color':'red','font-size':18}).siblings().css({'color':'black','font-size':16});
+            });
+
+            // siblings 的深层次应用
+            $("#ul2>li").hover(function () {
+                // $(this).css('color','red').children('a').css({'color':'red','font-size':18});
+                // $(this).siblings().css('color','black').children('a').css({'color':'black','font-size':16});
+                // 通过父类的兄弟元素
+                $(this).children('a').css({'color':'red'}).parent().siblings().children().css({'color':'black'})
+            });
+
+            // 选项卡实现  $(this).index() 获取当前标签的索引
+             $("#ul2>li").hover(function () {
+                 $(this).children('a').css({'color':'red'}).parent().siblings().children().css({'color':'black'})
+                 $("p").eq($(this).index()).addClass('active').siblings().removeClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

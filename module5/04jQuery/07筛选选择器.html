@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery属性选择器</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="box">
+		<p>
+			<span class="child">xiaoxiao1</span>
+		</p>
+		<p>
+			<span class="active">xiaoxiao2</span>
+		</p>
+		<p class="item3">xiaoxiao3</p>
+		<p class="item4">xiaoxiao4</p>
+		<p>xiaoxiao5</p>
+		<div class="child">哈哈哈哈哈</div>
+	</div>
+    <script type="text/javascript">
+        // 入口函数
+        $(function () {
+            // find() 查找标签中所有后代元素 子子孙孙
+            $(".box").find(".item3").css("background","red");
+
+            // children() 查找自定元素的亲儿子元素
+            $(".box").children(".child").css("background","red");
+
+            // sibling 查找所有兄弟元素  不包括自己
+            $(".box>p").siblings(".item4").css("background","green");
+
+            // parent 查找父亲
+            $(".child").parent().siblings(".child").css("background","purple");
+
+            // eq() 查找指定索引的标签
+            $("p").eq(-2).css("font-size",30);
+
+
+        })
+    </script>
+</body>
+</html>

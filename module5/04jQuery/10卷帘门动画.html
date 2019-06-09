@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基本动画</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #ff6700;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="slideDown">卷帘门下拉</button>
+    <button id="slideUp">卷帘门上拉</button>
+    <button id="slideToggle">开关式卷帘门</button>
+    <div class="box"></div>
+    <script type="text/javascript">
+        $(function () {
+            // 卷帘门下拉
+            $("#slideDown").click(function () {
+                $('.box').slideDown()
+            });
+            // 卷帘门上拉
+            $("#slideUp").click(function () {
+                $('.box').slideUp()
+            });
+            // 开关式卷帘门 自动检测动画的开关动态 从而作出关开动作
+            $('#slideToggle').click(function () {
+                $('.box').stop().slideToggle()
+            })
+        })
+    </script>
+</body>
+</html>

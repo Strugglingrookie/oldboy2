@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基本动画</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #ff6700;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>显示</button>
+    <button>隐藏</button>
+    <button>开关式动画</button>
+    <div class="box"></div>
+    <script type="text/javascript">
+        $(function () {
+            // 显示
+            $("button").eq(0).click(function () {
+                // show(动画时间,fn)
+                // normal 400ms   slow 600ms  fast 200ms  也可以是时间 单位毫秒
+                // fn 回调函数  动画结束后执行回调函数
+                $(".box").show('slow',function () {
+                    // text() 在当前标签写入文本
+                    $(this).text("加载完成！")
+                })
+            });
+            // 隐藏
+            $("button").eq(1).click(function () {
+                // hide(动画时间,fn)
+                // normal 400ms   slow 600ms  fast 200ms
+                // fn 回调函数
+                $(".box").hide('fast',function () {
+                    console.log('over!');
+                })
+            });
+            // 开关式动画 自动检测动画的开关动态 从而作出关开动作
+            $('button').eq(2).click(function () {
+                // 如果在开始新的动画之前不将之前的动画效果清除，会导致动画排队。所以在动画之前需要stop
+                $('.box').stop().toggle(2000);
+            })
+        })
+    </script>
+</body>
+</html>

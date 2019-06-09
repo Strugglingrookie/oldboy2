@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery引用及入口</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!--入口函数-->
+    <!--window.onload()  // 1覆盖现象 2等所有图片资源加载完成之后才调用脚本代码，用户体验欠佳-->
+    <script type="text/javascript">
+        // console.log(jQuery);
+        // console.log($);  //同上  $===jQuery
+
+        //入口函数
+        console.log($(document));
+        //文档对象加载完就运行这个函数 不需要等图片加载完
+        $(document).ready(
+            function () {
+                alert("dom文档对象加载完了");
+            }
+        );
+        // 简写  跟 window.onload不一样  Jquery这里不会覆盖
+        $(function () {
+            alert("文档对象确实加载完了，不会覆盖")
+        })
+
+        //等图图片资源加载完执行函数
+        $(window).ready(
+            function () {
+                alert("js入口函数，等图片加载完运行这个函数")
+            }
+        )
+
+        //等图图片资源加载完执行函数，Jquery调用同样不会覆盖
+        $(window).ready(
+            function () {
+                alert("js入口函数，等图片加载完运行这个函数，不会覆盖！")
+            }
+        )
+
+    </script>
+
+</body>
+</html>

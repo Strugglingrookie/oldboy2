@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基本动画</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #ff6700;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="fadeIn">淡入</button>
+    <button id="fadeOut">淡出</button>
+    <button id="fadeToggle">开关式淡入淡出</button>
+    <div class="box"></div>
+    <script type="text/javascript">
+        $(function () {
+            // 淡入
+            $("#fadeIn").click(function () {
+                $('.box').fadeIn(1000)
+            });
+            // 淡出
+            $("#fadeOut").click(function () {
+                $('.box').fadeOut(1000)
+            });
+            // 开关式淡入淡出 自动检测动画的开关动态 从而作出关开动作
+            $('#fadeToggle').click(function () {
+                $('.box').stop().fadeToggle(1000)
+            })
+        })
+    </script>
+</body>
+</html>

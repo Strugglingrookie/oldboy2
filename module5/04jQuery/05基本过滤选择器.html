@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery基本过滤选择器</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <ul id="ul1">
+        <li>小红</li>
+        <li id="li1">晓钢</li>
+        <div>
+            <ul id="ul2">
+               <li id="li2">小清醒</li>
+               <li>小幸运</li>
+               <li>小害羞</li>
+            </ul>
+        </div>
+        <li id="li3">小小</li>
+        <li>校外</li>
+        <li>消息</li>
+    </ul>
+    <script type="text/javascript">
+        // jQuery过滤选择器
+        $(function () {
+            // :eq(index) 选择匹配的标签中，索引为index的标签
+            var uleq = $("li:eq(0)");
+            console.log(uleq);
+            uleq.css("font-size",20);
+            uleq.css("color","red");
+
+            // :gt(index) 选择匹配的标签中，索引大于index的标签
+            var ulgt = $("li:gt(-2)");  //大于倒数第二个 即倒数第一个
+            console.log(ulgt);
+            ulgt.css("font-size",20);
+            ulgt.css("color","green");
+
+            // :lt(index) 选择匹配的标签中，索引小于index的标签
+            var ullt = $("li:lt(2)");  //大于倒数第二个 即倒数第一个
+            console.log(ullt);
+            ullt.css("font-size",25);
+            ullt.css("color","blue");
+
+            // :odd  选择匹配的标签中，索引为基数的标签
+            var ulodd = $("li:odd");  //偶数列
+            console.log(ulodd);
+            ulodd.css("font-size",30);
+            ulodd.css("background-color","red");
+
+            // :even  选择匹配的标签中，索引为基数的标签
+            var uleven = $("li:even");  //基数列
+            console.log(uleven);
+            uleven.css("font-size",30);
+            uleven.css("background-color","green");
+
+            // :first  选择匹配的标签中，第一个标签
+            var ulfirst = $("li:first");  //基数列
+            console.log(ulfirst);
+            ulfirst.css("font-size",20);
+            ulfirst.css("background-color","purple");
+
+            // :last  选择匹配的标签中，最后一个标签
+            var ullast = $("li:last");  //基数列
+            console.log(ullast);
+            ullast.css("font-size",20);
+            ullast.css("background-color","purple");
+
+        })
+
+
+    </script>
+</body>
+</html>

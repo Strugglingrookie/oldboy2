@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>二级菜单</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .wrap {
+            width: 330px;
+            height: 30px;
+            margin: 100px auto 0;
+            padding-left: 10px;
+            background-color: pink;
+        }
+
+        .wrap li {
+            background-color: #ff6700;
+        }
+
+        .wrap > ul > li {
+            float: left;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .wrap a {
+            display: block;
+            height: 30px;
+            width: 100px;
+            text-decoration: none;
+            color: #000;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .wrap li ul {
+            position: absolute;
+            top: 30px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <ul>
+        <li>
+            <a href="javascript:void(0);">一级菜单1</a>
+            <ul>
+                <li><a href="javascript:void(0);">二级菜单2</a></li>
+                <li><a href="javascript:void(0);">二级菜单3</a></li>
+                <li><a href="javascript:void(0);">二级菜单4</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void(0);">二级菜单1</a>
+            <ul>
+                <li><a href="javascript:void(0);">二级菜单2</a></li>
+                <li><a href="javascript:void(0);">二级菜单3</a></li>
+                <li><a href="javascript:void(0);">二级菜单4</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:void(0);">三级菜单1</a>
+            <ul>
+                <li><a href="javascript:void(0);">三级菜单2</a></li>
+                <li><a href="javascript:void(0);">三级菜单3</a></li>
+                <li><a href="javascript:void(0);">三级菜单4</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.wrap>ul>li').mouseenter(function () {
+            $('.wrap>ul>li').eq($(this).index()).children('ul').stop().slideDown('slow');
+        });
+        $('.wrap>ul>li').mouseleave(function () {
+            $('.wrap>ul>li').eq($(this).index()).children('ul').stop().slideUp('slow');
+        })
+    })
+</script>
+</body>
+</html>

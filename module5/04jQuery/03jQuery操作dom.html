@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery操作dom</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div id="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script type="text/javascript">
+        // jQuery操作dom三部曲  1事件源 2时间 3事件驱动程序
+        $(function () {
+            //标签选择器
+            var jqBox1 = $("div");  // 标签选择器
+            var jqBox2 = $(".box"); // 类选择器
+            var jqBox3 = $("#box"); // id选择器
+            //修改/增加box的样式 .css
+            jqBox1.css("height","120");
+            jqBox1.css("width","80");
+            jqBox1.css("margin-top",8);
+            jqBox1.css("background","red");
+            jqBox1.text("嘿嘿嘿");  // text 加入文本
+
+            jqBox2.css("background","green");
+            jqBox2.eq(0).text("嘎嘎嘎");  // text 加入文本
+
+            jqBox3.css("background","yellow");
+            jqBox3.text("嘻嘻嘻");  // text 加入文本
+
+            // js实现点击事件
+            // for(var i = 0;i < jqBox1.length; i++){
+            //     var temp = jqBox1[i];
+            //     console.log(temp.innerText);
+            //     temp.onclick=function () {
+            //         alert(1);
+            //     }
+            // }
+
+            // jQuery 实现点击事件
+            // jqBox1.click(function () {
+            //     console.log(this); // this指的是调用方法者本身，这里调用click的是jqBox1,是一个jq对象，但是打印出来发现是js对象
+            //     console.log($(this).text()); // jq对象获取文本的方法
+            //     alert(this.innerText);
+            //
+            // })
+
+            // 点击盒子 消失
+            jqBox1.click(function () {
+                // $(this).css("display","none"); //jq的样式控制
+                $(this).hide(3000); //jq的hide方法  3000秒内慢慢消失
+            })
+        })
+
+
+    </script>
+</body>
+</html>

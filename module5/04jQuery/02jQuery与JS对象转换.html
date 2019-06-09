@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery与js对象转换</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background: green;
+        }
+        #box2{
+            height: 200px;
+            width: 200px;
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="box2"></div>
+    </div>
+    <script type="text/javascript">
+        // jQuery中只有两个属性  索引和length 其他的都是方法 即封装好的API
+        // jQuery对象只能用jQuery的方法(api)  js对象只能应js的方法 不能混淆
+
+        // jQuery对象 转换为 js对象
+        var jqo = $(".box");  // 获取jquery对象
+        console.log(jqo); //
+        var jso = jqo[0];  // 取jquery对象的第一个元素 即是js对象
+        console.log(jso);
+        var jso2 = jqo.get(0);  // 还可以这样取
+        console.log(jso2);
+
+        // js对象转换为jquery对象
+        var jsobj = document.getElementById("box2");  // 获取js对象
+        console.log(jsobj);
+        var jqobj = $(jsobj);
+        console.log(jqobj);
+
+    </script>
+</body>
+</html>
