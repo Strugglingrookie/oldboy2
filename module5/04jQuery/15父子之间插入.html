@@ -13,7 +13,13 @@
 </body>
 <script type="text/javascript">
     $(function () {
-        $('.box')
+        var tmp = '<a href="" style="display: block">点我</a>';
+        var tmp1 = '<a href="" style="display: block">点我点我</a>';
+        var tmp2 = '<a href="">莫点我</a>';
+        $('.box').append(tmp2);  // 在父级元素最后面追加元素
+        $('.box').append(tmp1);  // 在父级元素最后面追加元素
+        $(tmp).appendTo($('.box'))  // 将元素追加到父元素最后面,这个可以链式编程，简化代码
+        var tmpBq = document.createElement('')
     })
 </script>
 </html>
