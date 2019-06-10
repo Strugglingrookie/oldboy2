@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ToDoList—最简单的待办事项列表</title>
+		<meta name="description" content="ToDoList无须注册即可使用！" />
+		<link rel="stylesheet" href="./css/mystyle.css">
+	</head>
+	<body>
+		<header>
+			<section>
+				<form  id="form">
+					<label for="title">ToDoList</label>
+					<input type="text" id="title" name="title" placeholder="添加ToDo" />
+				</form>
+			</section>
+		</header>
+		<section>
+			<h2 onclick="save()">正在进行 <span id="todocount"></span></h2>
+			<ol id="todolist" class="demo-box">
+			</ol>
+			<h2>已经完成 <span id="donecount"></span></h2>
+			<ul id="donelist">
+			</ul>
+		</section>
+		<script type="text/javascript" src="./js/myjs.js"></script>
+	</body>
+</html>

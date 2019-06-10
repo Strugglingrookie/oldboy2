@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery标签属性操作</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+        .box{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		.hidden{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<div title = 'alex' class="active"></div>
+    <img src="" alt="">
+	<a href="">百度一下</a>
+    <input type="text" name="" value="我是input的value" placeholder="" id="" >
+    <input type="text" name="" value="我是input的value" placeholder="" id="" >
+    <input type="radio" name="sex" checked > 男
+	<input type="radio" name="sex"> 女
+    <button id="btn" style="display: block">隐藏</button>
+	<div class="box"><h1>哈哈哈</h1></div>
+    <script type="text/javascript">
+        $(function () {
+            // 1.样式属性操作 css
+            console.log($('.active').css('background-color'));  //css('color') 获取值
+            $('.active').css('background-color','#ff6700');  //css('color','red') 设置单个值
+            $('.active').css({'background-color':'green',height:'200px'});
+            //设置多个值 key 驼峰式的时候不需要加引号，但如果key里有特殊字符，如margin-left,需要加引号
+
+            // 2. 标签的属性操作 attr removeAttr  如 class type name 等
+            console.log($("input:eq(0)").attr("type")); // attr(key) 获取属性值
+            $("input:eq(0)").attr("placeholder","请输入您的名字:"); // attr(key,value) 设置单个值
+            $("input:eq(0)").attr({type:"password",name:"name"});// attr({key1:value1}); // 设置多个值
+            console.log($("input:eq(0)").attr("type"));  // password
+            console.log($("input:eq(0)").attr("name"));  // name
+            $("input:eq(0)").removeAttr("name");  // 删除属性
+            console.log($("input:eq(0)").attr("name"));  //undefined
+
+            // 3.DOM对象属性操作 prop() removeProp()
+            console.log($("input[type=radio]").attr('checked')); //获取标签属性的值 checked
+            console.log($("input[type=radio]").prop('checked')); // 获取dom对象属性的值 true
+            console.dir(document.getElementsByTagName('input')[1]); //上面等同于dir里的checked对应的值
+            $("input[type=radio]").prop('aaaa',123456); //设置值
+            console.log($("input[type=radio]").prop('aaaa')); // 123456
+            $("input[type=radio]").removeProp('aaaa'); //删除值
+            console.log($("input[type=radio]").prop('aaaa')); // undefined
+
+            // 4.类样式属性操作  addClass()  removeClass() toggleClass()
+            // 如果是操作类样式 一定用这种方法 不能用attr 否则会发生覆盖、删除之前的类样式
+            var isShow = true;
+            $('#btn').click(function () {
+                if(isShow){
+                    $('.box').addClass('hidden');
+//                    $('#btn').text('显示');
+                    $(this).text("显示");
+                    isShow = false;
+                }else{
+                    $('.box').removeClass('hidden');
+//                    $('#btn').text('隐藏');
+                    $(this).text('隐藏');
+                    isShow = true;
+                }
+            });
+
+            // 5.对值的操作
+            // text() html()  val() 对应js的 innerText innerHTML value
+            console.log($('.box').text().trim()); // 获取a标签内的 文本 且清除前后空格  哈哈哈
+            $('a').text("千度百下"); // 设置文本内容
+            console.log($('a').text().trim()); // 千度百下
+            console.log($('.box').html()); // 获取标签 的html和文本 <h1>哈哈哈</h1>
+            $('.box').html('<h3 style="color:yellow">嘻嘻嘻</h3>'); //设置标签和内容
+            console.log($('input:eq(1)').val()); // 获取input标签里的值
+            $('input:eq(1)').val(''); // 设置input标签的值，这里是清空。一般用户提交后需要清空值。
+        })
+    </script>
+</body>
+</html>
