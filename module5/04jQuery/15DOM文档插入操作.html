@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>父子之间插入</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="xiaogang">xiaogang</div>
+	<div class="box"></div>
+	<div class="box2">
+        <ul>
+            <li id="lili">晓一</li>
+            <li>晓二</li>
+            <li id="li3">晓三</li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        // 父子之间 末尾追加 append appendTo
+        var tmp = '<a href="" style="display: block">点我最后面</a>';
+        var tmp1 = '<a href="" style="display: block">点我点我最后面</a>';
+        var tmp2 = '<a href="">莫点我最后面</a>';
+        $('.box').append(tmp2);  // 在父级元素最后面追加元素
+        $('.box').append(tmp1);  // 在父级元素最后面追加元素
+        $(tmp).appendTo($('.box'));  // 将元素追加到父元素最后面,这个可以链式编程，简化代码
+        var tmpP = document.createElement('p');
+        tmpP.innerText="我是一个新P标签";
+        $(tmpP).appendTo($('.box')).click(function () {
+            $(this).css('color','red').text('嘿嘿嘿！');
+        });
+
+        // 父子之间 插入到最前面 prepend prependTo
+        var tmp3 = '<a href="" style="display: block">最前面点我</a>';
+        var tmp4 = '<a href="" style="display: block">最前面点我点我</a>';
+        var tmp5 = '<a href="" style="display: block">最前面点我点我点我点我</a>';
+        $('.box').prepend(tmp3);  // 在父级元素最前面添加元素
+        $('.box').prepend(tmp4);  // 在父级元素最前面添加元素
+        $(tmp5).prependTo($('.box')).click(function () {
+           alert($(this).text())
+        });   // 将元素添加到父元素最前面,这个可以链式编程，简化代码
+
+        // 兄弟之间  末尾追加 after insertAfter
+        var tmpLi = document.createElement('li');
+        $(tmpLi).text('小一后面插入');
+        $('#lili').after(tmpLi);  // 在li后面追加一个tmpLi
+        var tmpLi2 = document.createElement('li');
+        $(tmpLi2).text('插入到小一后面');
+        $(tmpLi2).insertAfter($('#lili'));  // 将tmpLi2插入到li后面
+
+        // 兄弟之间  添加到前面 before  insertBefore
+        var tmpLi3 = document.createElement('li');
+        $(tmpLi3).text('小三前面插入');
+        $('#li3').before(tmpLi3);  // 在li前面插入一个tmpLi
+        var tmpLi4 = document.createElement('li');
+        $(tmpLi4).text('插入到小三前面');
+        $(tmpLi4).insertBefore($('#li3'));  // 将tmpLi4插入到li前面 链式编程 可以加事件 加css等
+
+    })
+</script>
+</html>

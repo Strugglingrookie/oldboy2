@@ -66,7 +66,7 @@
                     $(this).text("显示");
                     isShow = false;
                 }else{
-                    $('.box').removeClass('hidden');
+                    $('.box').removeClass('hidden');  //.removeClass() 不指定样式key 删除所有样式
 //                    $('#btn').text('隐藏');
                     $(this).text('隐藏');
                     isShow = true;
@@ -80,7 +80,7 @@
             console.log($('a').text().trim()); // 千度百下
             console.log($('.box').html()); // 获取标签 的html和文本 <h1>哈哈哈</h1>
             $('.box').html('<h3 style="color:yellow">嘻嘻嘻</h3>'); //设置标签和内容
-            console.log($('input:eq(1)').val()); // 获取input标签里的值
+            console.log($('input:eq(1)').val()); // 获取表单空间的值 如input textarea select
             $('input:eq(1)').val(''); // 设置input标签的值，这里是清空。一般用户提交后需要清空值。
         })
     </script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+二、替换操作
+
+知识点1：
+
+语法：
+
+$(selector).replaceWith(content);
+
+将所有匹配的元素替换成指定的string、js对象、jquery对象。
+
+//将所有的h5标题替换为a标签
+$('h5').replaceWith('<a href="#">hello world</a>');
+//将所有h5标题标签替换成id为app的dom元素
+$('h5').replaceWith($('#app'));
+
+知识点2：
+
+语法：
+
+$('<p>哈哈哈</p>').replaceAll('h2');
+
+解释：替换所有。将所有的h2标签替换成p标签。
+
+$('<br/><hr/><button>按钮</button>').replaceAll('h4');
+
+三、删除操作
+
+知识点1：
+
+语法：
+
+$(selector).remove();
+
+解释：删除节点后，事件也会删除（简言之，删除了整个标签）
+
+$('ul').remove();
+
+知识点2：
+
+语法：
+
+$(selector).detach();
+
+解释：删除节点后，事件会保留
+
+ var $btn = $('button').detach()
+ //此时按钮能追加到ul中
+ $('ul').append($btn)
+知识点3：
+
+语法：
+
+$(selector).empty();
+
+解释：清空选中元素中的所有后代节点
+
+//清空掉ul中的子元素，保留ul
+$('ul').empty()
+</body>
+</html>
