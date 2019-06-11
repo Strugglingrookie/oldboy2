@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>值的操作</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.father{
+			position: relative;
+			top: 10px;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			border: 1px solid red;
+			position: absolute;
+			top: 100px;
+			left: 200px;
+            background: #ff6700;
+		}
+	</style>
+</head>
+<body>
+<div class="father">
+    <div class="box"></div>
+</div>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // 获取宽高 下面获取到的是一个数值，没有px单位，方便计算，css('width')获取的宽高是有单位的。
+        // 不传数值就是获取，传数值就是设置 如 $('.box').width(500)
+        // width() height() 获取宽高
+        console.log($('.box').width());
+        console.log($('.box').height());
+        $('.box').width(500); // 设置宽度为500
+        // 内部宽 和内部  innerWidth() innerHeight   包含内部宽+padding  不包含border
+        console.log($('.box').innerWidth());
+        console.log($('.box').innerHeight());
+        $('.box').innerHeight(300); // padding是10不会变 变得是 height padding+height=300 所以height=280
+        //外部宽 outerWidth()  outerHeight  包含内部宽 + padding + border  默认不包含margin
+        console.log($('.box').outerWidth());
+        console.log($('.box').outerHeight());
+        $('.box').outerHeight(400);  // 同innerHeight 的设置，改的是height，不修改 padding 和 border
+
+        // 偏移 offset() 返回一个包含`top` 和 `left`属性的对象 即字典
+        // 距离页面顶部的距离 与父相子绝定位没有任何关系
+        console.log($('.box').offset());
+        $('.box').offset({top:100,left:100});  // 设置offset 是相对页面的距离 和父相子绝定位没有任何关系
+        console.log($('.box').offset());
+
+        // 滚动
+        //.scrollLeft() 水平方向  获取匹配的元素集合中第一个元素的当前水平滚动条的位置（页面卷走的宽度）
+        $('.box').scrollLeft(10000);
+        console.log($('.box').scrollLeft());
+        // .scrollTop() 垂直方向  获取匹配的元素集合中第一个元素的当前迟滞滚动条的位置（页面卷走的高度）
+        console.log($('.box').scrollTop());
+
+        //监听文档滚动的jquery方法
+        $(document).scroll(function(){
+            console.log($(document).scrollTop());
+            console.log($(document).scrollLeft());
+        })
+    })
+</script>
+</body>
+</html>

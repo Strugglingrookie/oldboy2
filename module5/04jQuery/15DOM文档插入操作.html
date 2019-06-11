@@ -57,6 +57,11 @@
         $(tmpLi4).text('插入到小三前面');
         $(tmpLi4).insertBefore($('#li3'));  // 将tmpLi4插入到li前面 链式编程 可以加事件 加css等
 
+        // es6标准 可以像shell一样 用${变量名}取值 从而实现参数化
+        var tmpText = '我是一个反应号实现的变量名取值';
+        var tmpFyh = `<li>${tmpText}</li>`;
+         $(tmpFyh).insertBefore($('#li3'));
+
     })
 </script>
 </html>
