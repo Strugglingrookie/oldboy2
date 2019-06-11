@@ -15,11 +15,35 @@
 <body>
 	<div class="father">
 		<button>按钮</button>
-		<a href="http://www.baidu.com">百度一下</a>
+		<a href="#" id="a1">百度一下</a>
+		<a href="http://www.baidu.com" id="a2">百度一下</a>
 	</div>
 	<script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script type="text/javascript">
+        $('.father button').click(function (event) {
+            console.log(event);
+            alert($(this).text());
+            event.stopPropagation();
+        });
 
+        $('#a1').click(function (e) {
+            e.stopPropagation();
+            alert('点击a！');
+            return false;
+        });
+
+        $('.father').click(function(event){
+				alert('父亲被点击了');
+                event.stopPropagation();
+				console.log('哈哈哈哈哈');
+
+				// 既阻止了默认事件 又阻止了冒泡
+				return false;
+			});
+
+        $('body').click(function(){
+				alert('body被点击了');
+			})
     </script>
 </body>
 </html>
