@@ -24,7 +24,7 @@
 		}
 	</style>
 </head>
-<body>
+<body style="height: 2000px">
 <div class="father">
     <div class="box"></div>
 </div>
@@ -63,6 +63,12 @@
         $(document).scroll(function(){
             console.log($(document).scrollTop());
             console.log($(document).scrollLeft());
+            var scrollVal = $(document).scrollTop();
+            var boxVal = $('.box').offset().top;
+            console.log(scrollVal,boxVal);
+            if(scrollVal>boxVal){
+                $('.box').stop().hide(1000);
+            }
         })
     })
 </script>
