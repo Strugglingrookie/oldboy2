@@ -15,30 +15,40 @@
 <body>
 	<div class="father">
 		<button>按钮</button>
-		<a href="#" id="a1">百度一下</a>
-		<a href="http://www.baidu.com" id="a2">百度一下</a>
+		<a href="http://www.baidu.com" style="display: block">百度一下</a>
+		<a href="http://www.baidu.com" style="display: block" id="a1">百度一下</a>
+		<a href="http://www.baidu.com" style="display: block" id="a2">百度一下</a>
 	</div>
 	<script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $('.father button').click(function (event) {
-            console.log(event);
+            console.log(event);  // 原生js的事件对象
             alert($(this).text());
+			//阻止冒泡事件 比如body html document 如果也有点击事件,将不会执行 所以这里body点击事件不会执行
             event.stopPropagation();
         });
 
+        $('a:eq(0)').click(function (e) {
+            // 因为全都没有阻止 所以 后面父盒子 body的点击都将被执行,然后再执行默认事件-跳转百度
+            alert('没有阻止默认事件也没有阻止冒泡!');
+        });
+
         $('#a1').click(function (e) {
-            e.stopPropagation();
-            alert('点击a！');
+            e.stopPropagation();  // 阻止冒泡
+            e.preventDefault();  // 阻止默认事件 指的是a标签的跳转 表单的提交 阻止这些
+            alert('点击a1！');
+            return false;
+        });
+
+        $('#a2').click(function (e) {
+            alert('点击a2！');
+            // 上面的两个阻止方法也可以写成这样 既阻止默认事件又阻止冒泡
             return false;
         });
 
         $('.father').click(function(event){
 				alert('父亲被点击了');
-                event.stopPropagation();
 				console.log('哈哈哈哈哈');
-
-				// 既阻止了默认事件 又阻止了冒泡
-				return false;
 			});
 
         $('body').click(function(){

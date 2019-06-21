@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽屉评论收起</title>
+    <style>
+        .box{
+            height:400px;
+            width: 300px;
+            border:1px solid red;
+            position: relative;
+            display: none;
+        }
+        .closex{
+            position: relative;
+            float:right;
+            cursor: pointer;
+        }
+        .shouqi{
+            position: absolute;
+            bottom: 0;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">评论</button>
+    <div class="box">
+        <span class="closex">X</span>
+        <button class="shouqi" id="btn2">收起</button>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $('#btn1').click(function (e) {
+//            $('.box').css('display','block');
+            $('.box').stop().slideToggle(200);
+            e.stopPropagation();
+        });
+
+        $('.closex,.shouqi').click(function () {
+//            $('.box').css('display','none');
+            $('.box').stop().slideUp(200);
+            e.stopPropagation();
+        });
+
+        $('.box').click(function () {
+            return false;
+        });
+
+        $(document).click(function () {
+            $('.box').stop().slideUp(200);
+        })
+    </script>
+</body>
+</html>
