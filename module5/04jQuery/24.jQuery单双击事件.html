@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单双击事件jquery</title>
+</head>
+<body>
+    <button>按钮</button>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            timer = null;
+            $('button').click(function (e) {
+                // 这个清除上一次单击的事件，因为每次单击创建的timer不一样；
+                // 下面双击事件清除的timer是最后一次单击创建的timer，第一次创建的timer那里并不能清除。
+                clearTimeout(timer);
+                timer = setTimeout(function (e) {
+                    console.log('单击咯');
+                },300);
+                console.log('click',timer);
+                e.stopPropagation();
+            });
+
+            $('button').dblclick(function (e) {
+                console.log('dblclick',timer);
+                clearTimeout(timer);
+                console.log('双击咯');
+                e.stopPropagation();
+            });
+        })
+    </script>
+</body>
+</html>

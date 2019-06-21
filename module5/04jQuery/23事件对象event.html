@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件对象event</title>
+</head>
+<body>
+    <button>按钮</button>
+	<input type="text" name="user" value="123">
+	<p class="content"></p>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //  实时监听input输入框 有输入触发fun  用于一些实时校验用户的输入数据，实时反馈输入校验结果
+            //  e 事件本身 e.target就是事件对应的js对象 类似于 this
+            $('input').get(0).oninput = function (e) {
+                console.log(e);
+                console.log(e.target);
+                console.log(e.target.value);
+                $('.content').text(e.target.value);
+            };
+            //  e.target === this  e.currentTarget当前事件的目标对象  e.target事件的触发对象
+            $('button').click(function (e) {
+                console.log(e.currentTarget);
+                console.log(e.target);
+                console.log(e.target.innerText);
+                console.log($(e.target).text());
+                console.log($(this).text());
+                console.log(e == this);  // false e是jquery对象 this是js对象
+                console.log(e.target == this);  // true
+                console.log(e.target === this);  // true
+                e.stopPropagation();  // 阻止冒泡
+            });
+
+            $('body').click(function(e){
+                console.log(e.currentTarget);  // 事件的目标js对象 点的哪个元素就是哪个 如button input
+				console.log(e.target);  // 事件触发js对象 即 body
+				console.log(this);  // 事件触发js对象 即 body
+				console.log(this===e.currentTarget);
+				console.log(this===e.target);
+				e.stopPropagation();  // 阻止冒泡
+			});
+
+			$('html').click(function(e){
+				// console.log(e.currentTarget);
+				console.log(e.target);
+				console.log(this===e.currentTarget);
+				console.log(this===e.target);
+			});
+
+        })
+    </script>
+</body>
+</html>

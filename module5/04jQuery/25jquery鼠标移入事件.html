@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery鼠标移入</title>
+	<style type="text/css">
+		.father{
+			width: 200px;
+			height: 200px;
+			background-color:red;
+		}
+		.child{
+			width: 50px;
+			height: 50px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="father" id="f1">
+		<p class="child" id="c1">steven</p>
+	</div>
+    <div class="father" id="f2">
+		<p class="child" id="c2">steven</p>
+	</div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // mouseover mouseout  鼠标移入移出  这里会有穿透现象，同样作用在其子元素上面
+            // 如下 当鼠标从子元素移动到父元素内的时候也会触发事件
+            $('#f1').mouseover(function (e) {
+               console.log('警告，不明物体侵入！！！');
+            });
+            $('#f1').mouseout(function (e) {
+               console.log('警告解除，不明物体滚了！！！');
+            });
+
+            // mouseenter mouseleave  鼠标移入移出  这里不会有穿透现象，不作用在其子元素上面
+            // 如下 当鼠标从子元素移动到父元素内的时候不会触发事件
+            $('#f2').mouseenter(function (e) {
+               console.log('警告，不明物体侵入！！！');
+            });
+            $('#f2').mouseleave(function (e) {
+               console.log('警告解除，不明物体滚了！！！');
+            });
+
+        })
+    </script>
+</body>
+</html>

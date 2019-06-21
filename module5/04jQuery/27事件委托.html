@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件委托</title>
+    <style type="text/css">
+        .box{
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            height:200px;
+            width: 300px;
+            background-color: #ff6700;
+            }
+        ul{
+            position:relative;
+            list-style: none;
+        }
+        li{
+            position:relative;
+            cursor: pointer;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button>添加</button>
+        <ul>
+            <li>晓钢</li>
+            <li>晓红</li>
+            <li>晓名</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function (e) {
+            $('button').click(function (e) {
+                $('ul').append('<li>晓均</li>');
+            });
+
+            // 么有事件委托的情况下，当新增加元素li时，li不会绑定li的事件
+            /*
+            $('li').click(function (e) {
+                // e.stopPropagation();
+                alert($(e.target).text());
+            });
+            */
+
+            // 用事件委托的情况下，当新增加元素li时，li会绑定li的事件  等于li的事件委托给了ul，
+            // 不论追加多少li，都会绑定这个委托的事件
+            $('ul').on('click',$('ul>li'),function (e) {
+                alert($(e.target).text());
+                e.stopPropagation();
+            });
+        })
+    </script>
+</body>
+</html>
