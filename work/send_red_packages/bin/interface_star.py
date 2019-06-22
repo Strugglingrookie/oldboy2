@@ -1,6 +1,6 @@
 import os,sys,flask,random,time,string,json
 sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from flask import request,make_response
+from flask import request,make_response,Response
 from flask_restful import request
 from lib.tools import md5_sign,get_sign,oprate_sql
 from conf.config import *
@@ -129,6 +129,35 @@ def investor_list():
 @server.route('/BS/rest/dispatch/forward',methods=['get','post'])
 def loan_sucess():
     return "D5RwV3kqqLSxduwLNFPd0QfVNaSwQ65CSFhoPmVJzUiamkmq5vuDvzIBvu6RWvIJ"
+
+@server.route('/')
+def index():
+    resp = Response('<h2>首页</h2>')
+    resp.headers['Access-Control-Allow-Origin']='*'
+    return resp
+
+@server.route('/course')
+def courses():
+    resp = Response(json.dumps({'name':'三儿'}))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
+
+@server.route('/create/user',methods=['post',])
+def create():
+    name = request.form.get('name')
+    pwd = request.form.get('password')
+    user={name:{'password':pwd}}
+    with open('user.json','r') as f:
+        data = json.load(f)
+    print(data)
+    data.update(user)
+    print(data)
+    with open('user.json','w') as f:
+        json.dump(data,f)
+    resp = Response(json.dumps(data))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    print(resp)
+    return resp
 
 server.run(port=8080, host='0.0.0.0', debug=True)  # 指定host为“0.0.0.0”后，局域网内其他IP就都可以访问了
 

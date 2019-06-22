@@ -6,16 +6,58 @@
 </head>
 <body>
     <div class="box"></div>
+    <form >
+		<input type="text" name="user" placeholder="name">
+		<input type="text" name="password" placeholder="password">
+		<input type="submit" name="">
+	</form>
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script type="text/javascript">
         $(function () {
             $.ajax({
-                url:'https://www.baidu.com',
+                url:'http://localhost:8080',
                 type:'get',
                 success:function (data) {
-                    $('box')[0].innerHTML=data;
+                    $('.box').append(data);
+                    console.log(data)
+                },
+                error:function (err) {
+                    console.log(err)
                 }
+            });
+
+            $.ajax({
+                url:'http://localhost:8080/course',
+                type:'get',
+                dataType:'json', //要求为String类型的参数，预期服务器返回的数据类型
+                success:function (data) {
+                    $('.box').text(data.name);
+                    console.log(data)
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+            });
+            $('form').submit(function (e) {
+                e.preventDefault();
+                var name_val = $('input[name=user]').val();
+                var pwd = $('input[name=password]').val();
+                $.ajax({
+                    url:'http://localhost:8080/create/user',
+                    type:'post',
+                    data:{
+                        name:name_val,
+                        password:pwd
+                    },
+                    success:function (data) {
+                        console.log(data);
+                    },
+                    error:function (err) {
+                        console.log(err);
+                    }
+                })
             })
+
         })
     </script>
 </body>
