@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>bootstrap栅格系统</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.css">
+    <script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!--“行（row）”必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）-->
+    <div class="container">
+        <!--定义一行，12col作用与这一行-->
+        <div class="row project">
+            <!--定义当是大屏的时候每个盒子占用3个格子，中屏每个盒子占用4个格子-->
+            <!--小屏每个盒子占用6个格子，特小屏每个盒子占用12个盒子-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。
+            </div>
+        </div>
+        <div class="row project">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <!--内容删掉后放一个div就可以看到一个个盒子了-->
+                <!--thumbnail bootstrap子代的一个类 就是官网里的盒子-->
+                <div class="thumbnail" style="height: 336px;"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail" style="height: 336px;"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail" style="height: 336px;"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail" style="height: 336px;"></div>
+            </div>
+        </div>
+        <!--列偏移 使用 .col-md-offset-* 类可以将列向右侧偏移-->
+        <div class="row project">
+            <div class="col-md-4">
+                <div class="thumbnail" style="height: 336px;"></div>
+            </div>
+            <!--下面这个盒子往右边偏移4个格子-->
+            <div class="col-md-4 col-md-offset-4">
+                <div class="thumbnail" style="height: 336px;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

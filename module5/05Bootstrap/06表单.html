@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>表单</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.css">
+    <script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail" style="height: 366px;">
+                    <p>没有用bootstrap样式的表单</p>
+                    <form action="">
+                        <label>user</label>
+                        <input type="text" name="user">
+                        <label>password</label>
+                        <input type="password" name="pwd">
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail" style="height: 366px;">
+                    <p>有用bootstrap样式的表单</p>
+                    <p>所有设置了 .form-control 类的 input、textarea 和 select 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="user">用户名</label>
+                            <input type="text" class="form-control" id="user" placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">密码</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="请输入密码">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">已阅读
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default">登录</button>
+                        <button type="submit" class="btn btn-success">提交</button>
+                        <button type="submit" class="btn btn-info">提交</button>
+                        <button type="submit" class="btn btn-danger">提交</button>
+                        <button type="submit" class="btn btn-warning">提交</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail" style="height: 366px;"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail" style="height: 366px;">
+                    <p>为 form 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）</p>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label for="exampleInputName2">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleInputEmail2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                      </div>
+                      <button type="submit" class="btn btn-default">submit</button>
+                    </form>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Sign in</button>
+                    </form>
+                    <form class="form-inline">
+                        <p>可以用bootstrap的fonts span+类型</p>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                        <div class="input-group">
+                          <div class="input-group-addon"><span class="glyphicon glyphicon-gbp"></span></div>
+                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                          <div class="input-group-addon">.00</div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Transfer cash</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="thumbnail" style="height: 366px;">
+                    <p>水平排列的表单</p>
+                    <p>通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。</p>
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Remember me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default">Sign in</button>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
