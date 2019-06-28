@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据类型转换&运算符</title>
+</head>
+<body>
+    <!--数据类型转换-->
+    <script type="text/javascript">
+        // number 转换成 string
+        var n = 100,s = 'str';
+        var newParam = n + s ;  // 隐式转换
+        console.log(typeof newParam);  // string
+        var n2 = String(n);  // 强制转换  String()  方法
+        var n3 = n.toString();  // 强制转换  toString() 方法
+        console.log(typeof n,typeof  n2,typeof  n3);  // number string string
+
+        // 将string转换成number
+        var m = '123';
+        var e = Number(m);  // 强制转换
+        console.log(typeof  m,typeof  e);// string number
+        var ms = '12str';
+        var es = Number(ms);  // 有个点要注意 如果强制转化的变量不是一个数值 那么转换后的值会变成 NAN  not a number
+        console.log(es,typeof  es);// NAN number
+        console.log(parseInt('123.321')); //123  parseInt()可以解析一个字符串 并且返回一个整数
+        console.log(parseFloat('123.321')); //123.321  parseFloat()可以解析一个字符串 并且返回一个小数
+
+        // 任何的数据类型都可以转换为boolean类型
+        var b1 = '123'; //true
+        var b2 = 0; //false
+        var b3 = -123 //true
+        var b4 = Infinity; //true
+        var b5 = NaN; //false
+        var b6; //false
+        var b7 = null; //false
+        //使用Boolean(变量) 来查看当前变量的真假
+
+    </script>
+
+    <!--运算符-->
+    <script type="text/javascript">
+        // 赋值运算符
+        var x=18,y=5;
+        var z = x; // 将z这个变量也指向 12 这个值的内存地址
+        x = 12;  // 从新开辟了一个内存地址存12  x指向这个内存地址  18的内存你地址不变
+        console.log(x,z); // 12,18
+        console.log(x+=y); // 17  等同于  x = x + y
+        console.log(x-=y); // 12  等同于  x = x - y
+        console.log(x*=y); // 60  等同于  x = x * y
+        console.log(x/=y); // 12  等同于  x = x / y
+        console.log(x%=y); // 2  等同于  x = x % y
+
+        // 算数运算符
+        var a = 5,b=2;
+        var c = a + b;
+        console.log(c);  // 7
+        var c = a - b;
+        console.log(c);  // 3
+        var c = a * b;
+        console.log(c);  // 10
+        var c = a / b;
+        console.log(c);  // 2.5
+        var c = a % b;
+        console.log(c);  // 1
+        var c = a ++;  // 这里需要解释下，先将a赋值给测c，然后a再自加，也就下面的代码里a=6.
+        console.log(c);  // 5
+        var c = a --;  // 这也是一样的，先将a赋值给测c，然后a再自减，也就下面的代码里a=5.
+        console.log(c);  // 6
+        var c = ++a ;  // 这也不同了，先将a自加，然后a赋值给c，a=6,c=6
+        console.log(c);  // 6
+        var c = --a;  // 这也不同了，先将a自减，然后a赋值给c，a=5,c=5
+        console.log(c);  // 1
+
+        // 比较运算符
+        // 比较运算符得到的是一个布尔值，常用来做判断
+        var m = 666;
+        console.log(m == 666, m == '666', m == 777);// true true false  只要值相等就成
+        console.log(m === 666, m=== '666');// true false  值和类型都需要相同
+        console.log(m != 666, m != 777);//  false true  只要值不相等就成
+        console.log(m !== 666, m !== '666');//  false true    值和类型都需要不相同
+        console.log(m > 777, m > '222');//  false true    比较的是值  不比较类型
+        console.log(m < 777, m < '222');//  true false     比较的是值  不比较类型
+        console.log(m >= 777, m >= '222');//  false true     比较的是值  不比较类型
+        console.log(m <= 777, m <= '222');//  true false     比较的是值  不比较类型
+
+        // 三元运算符  var a = 布尔值 ? "为真取前面这个" : "为假取后面这个";
+        var age = 17;
+        var flag = age >= 18 ? "成年人":"未成年";
+        console.log(flag);  // 因为 age >= 18  为假，所以 控制台输出的是 未成年
+    </script>
+</body>
+</html>

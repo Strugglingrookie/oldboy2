@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>01 Js变量&数据类型</title>
+</head>
+<body>
+<!--内接式-->
+    <script type="text/javascript">
+        //你要写的js代码  (//两个斜杠是注释)
+        console.log('Hello World!'); //控制台输出
+        alert('Hello World!'); //浏览器自带的警告弹框
+    </script>
+
+<!--外接式-->
+<!--写好的js放入的src指定的文件里，类似于python里引入模块，文件指定的js都可以在这里调用-->
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+<!--变量-->
+<!--定义变量：var就是一个关键字，用来定义变量。所谓关键字，就是有特殊功能的小词语。关键字后面一定要有空格隔开。-->
+<!--变量的赋值：等号表示赋值，将等号右边的值，赋给左边的变量。-->
+<!--变量名：我们可以给变量任意的取名字。-->
+    <script type="text/javascript">
+        //直接定义变量+赋值  在js中使用var关键字 进行变量的声明,注意 分号作为一句代码的结束符
+        var str='Hello World!';
+        console.log(str);
+
+        // 也可以先定义后赋值
+        var a;
+        console.log(a);  // 控制台输出 undefined 因为这个时候并没有给变量定义
+        a = 10086;
+        console.log(a);
+
+        //如果没有定义就直接引用会报错
+        console.log(x);  //  控制台报错：Uncaught ReferenceError: x is not defined
+    </script>
+
+   <!--数据类型-->
+    <script type="text/javascript">
+        //  数值类型:number  变量的值是一个数值 就是number类型
+        // 在js中，只要是数，就是数值型(number)的。无论整浮、浮点数（即小数）、无论大小、无论正负，都是number类型的
+        var a = 100.133;
+        var b = 100.2333;
+        var c = -100.2333;
+        // typeof js内置函数 用来看变量的类型
+        console.log(typeof a,typeof b,typeof c);  //  number number number
+        // 特殊情况 在其他语言里  0不可以是除数，但是在js里可以
+        var d = 100/0;  // c的类型仍然是number，无穷大
+        console.log(d,typeof d);  // Infinity "number"
+
+        //  字符串类型:string  带有引号就是字符串
+        var e = 'Hello World!';
+        console.log(e,typeof e); // Hello World! string
+        // 可以用+链接字符串
+        console.log(e+'How are you?'); // Hello World!How are you?
+        // 可以将数值和字符串相加，变成一个字符串  在这里不会报错
+        var f = a+e;
+        console.log(f,typeof f); // 100.133Hello World! string
+        // 如果是两个数值相加 就会变成运算
+        var g = a+b;
+        console.log(g, typeof  g);// 200.3663 "number"
+        // 空字符串
+        var h = '';
+        console.log(h, typeof  h);//  string
+
+        // 布尔类型 boolean
+        var i = false;
+        var j = true;
+        console.log(i,j); // false true
+        console.log(typeof i,typeof j);  // boolean boolean
+        // 一般用在条件判断 但是这里注意也有非空即真 非0即真 非null即真的说法
+        if(2){console.log('非0即真')}  // 打印
+        if(0){console.log('0')}  // 不打印
+        if('abc'){console.log('非空即真')}  // 打印
+        if(h){console.log('空')}  // 不打印 因为h是空字符串 所以boolean值是false
+        if(null){console.log('非null即真')}  // 不打印
+
+        //空对象
+        var k = null;
+        console.log(k, typeof k); //null "object"
+
+        //  未定义：undefined
+        var l;
+        console.log(l);// undefined  值就是undefined 控制台可以看到是灰色的
+        console.log(typeof l);// undefined  类型是undefined 控制台可以看到是黑色的
+    </script>
+
+</body>
+</html>
