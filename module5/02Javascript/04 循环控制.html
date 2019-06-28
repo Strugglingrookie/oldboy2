@@ -6,7 +6,36 @@
 </head>
 <body>
     <script type="text/javascript">
-        //  while
+        //  while  三要素：初始变量 判断条件  更新变量
+        var num = 1,sum = 0;
+        while(num <= 100){
+            sum += num;
+            num ++;
+        }
+        console.log(sum);
+
+        // do whie 和while的区别就是 先执行一次 再到循环
+        var num2 = 1,sum2 = 0;
+        do{
+            sum2 += num2;
+            num2 ++;
+        }while(num2 <= 100);
+        console.log(sum2);
+
+        // for 遍历循环
+        var sum3 = 0;
+        for(var i = 1;i <= 100; i++){
+            sum3 += i;
+        }
+        console.log(sum3);
+
+        // 在浏览器中输出直角三角形
+        for(var j=1;j<=6;j++){ //控制的行数
+           for(var k=1;k<=j;k++){ //控制的*
+               document.write("*");
+           }
+           document.write('<br>');
+        }
     </script>
 </body>
 </html>
