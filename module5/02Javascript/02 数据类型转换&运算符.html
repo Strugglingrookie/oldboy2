@@ -27,10 +27,15 @@
         console.log(parseInt('123.321')); //123  parseInt()可以解析一个字符串 并且返回一个整数
         console.log(parseFloat('123.321')); //123.321  parseFloat()可以解析一个字符串 并且返回一个小数
 
+        // 四舍五入
+        var num1 = 12.567;
+        var num2 = num1.toFixed(2); // 保留两位小数 注意四舍五入后的类型为字符串
+        console.log(num2, typeof num2); //  12.57 string
+
         // 任何的数据类型都可以转换为boolean类型
         var b1 = '123'; //true
         var b2 = 0; //false
-        var b3 = -123 //true
+        var b3 = -123; //true
         var b4 = Infinity; //true
         var b5 = NaN; //false
         var b6; //false
