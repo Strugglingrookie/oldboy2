@@ -7,6 +7,46 @@
     <title>函数&对象</title>
 </head>
 <body>
+    <h1>函数</h1>
+    <p>函数：就是把将一些语句进行封装，然后通过调用的形式，执行这些语句</p>
+    <p>function：是一个关键字。中文是“函数”、“功能”。
+        函数名字：命名规定和变量的命名规定一样。只能是字母、数字、下划线、美元符号，不能以数字开头。
+        参数：后面有一对小括号，里面是放参数用的。
+        大括号里面，是这个函数的语句。</p>
+    <script type="text/javascript">
+        //  申明
+        function add(x,y) {
+            var sum = x + y;
+            console.log(sum);
+            return sum;
+        }
 
+        //  调用
+        var sum = add(1,2);
+        console.log(sum);
+
+        //  匿名函数
+        var multipy = function (x,y) {
+            return x*y;
+        };
+        console.log(multipy(2,5));
+
+        //  伪数组 arguments  只在函数中使用  类似于python里的 args和kwargs
+        function args(m,n) {
+            console.log(args.length);  //获取形参的个数
+            console.log(arguments);  //获取实参
+            console.log(arguments.length); //获取实参的个数
+            console.log(arguments[0]);  //  获取第一个实参
+            // arguments.push('4');  //  不可以修改  伪数组 会报错
+        }
+        args(1,2);
+        args(1,2,3);
+        args(1,2,3,4);
+    </script>
+
+    <h1>面向对象</h1>
+    <script type="text/javascript">
+        //
+    </script>
 </body>
 </html>
