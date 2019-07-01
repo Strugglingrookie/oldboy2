@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DOM操作节点&定时器</title>
+    <style type="text/css">
+        #box2{
+            background-color: red;
+        }
+        .cls{
+            margin: 20px;
+            height: 100px;
+            width: 200px;
+            background-color: #ff6700;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1" style="display: block; margin: 20px;">插入</button>
+    <button id="btn2" style="display: block; margin: 20px;">删除</button>
+    <button id="btn3" style="display: block; margin: 20px;">删除自己</button>
+    <div id = 'box'>
+        <div class="cls" id = 'box1'>box1</div>
+        <div class="cls" id = 'box2'>box2</div>
+    </div>
+    <script type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+        //  创建子节点
+        var tmpObj = null;
+        $('btn1').onclick = function () {
+            tmpObj = document.createElement('p');
+            tmpObj.setAttribute('class','cls');
+            tmpObj.innerText = 'box3';
+            $('box').appendChild(tmpObj);  // 子元素最后一个位置追加
+            //$('box').insertBefore(tmpObj,$('box1'));  // 父.insertBefore(新的子节点,做为参考的节点)
+        };
+
+        //  删除子节点  父.removeChild(子节点)
+        $('btn2').onclick = function () {
+            $('box').removeChild(tmpObj)
+        };
+
+        // 删除自己
+        $('btn3').onclick = function () {
+            this.parentNode.removeChild(this);
+        }
+
+        // 获取父节点  亲爹
+        console.log($('box1').parentNode);
+        console.log($('box1').parentNode.parentNode.parentNode.parentNode);
+
+        // 获取的是复数  亲儿子
+        console.log($('box').children);
+    </script>
+</body>
+</html>

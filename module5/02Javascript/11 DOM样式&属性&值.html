@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>DOM操作样式&属性&值</title>
+    <style type="text/css">
+        #box2{
+            background-color: red;
+            float: left;
+        }
+        #box3{
+            background-color: green;
+            float: left;
+        }
+        #box4{
+            height: 800px;
+            width:1240px;
+            float: right;
+        }
+        .cls{
+            margin: 20px;
+            height: 100px;
+            width: 200px;
+            background-color: #ff6700;
+            float: left;
+        }
+        .active{
+			display: none;
+		}
+    </style>
+</head>
+<body>
+    <button id="btn" style="display: block" >设置</button>
+    <input style='margin: 20px' type="text" value="嘿嘿嘿" id="ipt" >
+    <div class="cls" id = 'box1'>box1</div>
+    <div class="cls" id = 'box2'>box2</div>
+    <div id="box3" class="cls"></div>
+    <button id="btn2" style="display: block; margin: 20px;">隐藏</button>
+    <a id="box4" href="javascript:void(0);"><img src="./images/image.jpg" alt="上一张" id="prev"></a>
+    <script type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+        //  标签样式操作  this.style.backgroundColor
+        var tmp1 = document.getElementById('box1');
+        tmp1.onclick = function () {
+            //  获取节点的样式属性值 点语法  get和set方法
+            console.log(this.style.height);
+            console.log(this.style.width);
+            console.log(this.style.backgroundColor);
+            // 修改样式属性  通过js设置的时候 要写成驼峰标识 backgroundColor
+            this.style.backgroundColor='green';
+            this.style.height='150px';
+            this.style.width='300px';
+        };
+
+        // 切换标签样式
+        var tmp2 = document.getElementById('box2');
+        isRed = true;
+        tmp2.onclick = function () {
+            if(isRed){
+                this.style.backgroundColor='green';
+                isRed = false;
+            }else{
+                this.style.backgroundColor='red';
+                isRed = true;
+            }
+        };
+
+        //  标签值的操作  innerText innerHtml input
+        $('btn').onclick = function () {
+            console.log($('box1').innerText);  // 只获取文本
+            console.log($('box2').innerText);  // 获取的是所有的节点 （文本和标签 换行）
+            $('box1').innerText = 'bbbbbbox1';  // 对标签文本内容的设置
+            $('box2').innerHTML = '<h1>box2box2</h1>';
+            // 表单控件  中有value属性的  必须通过 value来设置值和赋值
+            console.log($("ipt").value);
+            $("ipt").value = '嘻嘻嘻！';
+        };
+
+        //  标签属性的操作  getAttribute setAttribute
+        $('prev').onmouseover = function () {
+            console.log(this.getAttribute('src'));  // 获取标签的属性 getAttribute  这里取的是相对路径
+            console.log(this.getAttribute('id'));
+            console.log(this.getAttribute('alt'));
+            console.log(this.src);  // 获取标签的属性 这里取的绝对路径
+            console.log(this.id);
+            console.log(this.alt);
+            this.setAttribute('src','./images/image-hover.jpg');  // 设置属性
+            //this.src = './images/image-hover.jpg';  // 设置属性
+        };
+        $('prev').onmouseout = function () {
+            this.src = './images/image.jpg';  // 设置属性
+        };
+
+        //  显示隐藏
+        /*
+        $('btn2').onclick = function () {
+            if($('box3').style.display == 'none'){
+                $('box3').style.display = 'block';
+                this.innerText = '隐藏';
+            }else{
+                $('box3').style.display = 'none';
+                this.innerText = '显示';
+          }
+        };
+        */
+        //切换  初始化的时候会有渲染开销    网页中频繁的性切换 我们建议大家使用这种方式
+			var isShow = true;
+			$('btn2').onclick  = function(){
+				if (isShow) {
+					// 在js中设置类得通过className
+					$('box3').className += ' active';
+					this.innerText  = '显示';
+					isShow = false;
+				}else{
+					// 在js中设置类得通过className
+					$('box3').className = 'cls';
+					this.innerText  = '隐藏';
+					isShow = true;
+				}
+			};
+    </script>
+</body>
+</html>
