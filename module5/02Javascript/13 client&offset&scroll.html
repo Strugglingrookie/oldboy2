@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>client&offset&scroll</title>
+    <style type="text/css">
+            .box{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                border: 10px solid red;
+                /*margin: 10px 0px 0px 0px;*/
+                padding: 40px;
+            }
+        </style>
 </head>
 <body>
-
+    <div class="box" id="box">
+        成年人的世界没有容易二字，有些人活着就已经竭尽全力！
+    </div>
 </body>
+<script type="text/javascript">
+    function $(id) {
+        return document.getElementById(id);
+    }
+    //  client
+    console.log($('box').clientTop); //clientTop 内容区域到边框顶部的距离 ，说白了就是边框border的高度
+    console.log($('box').clientLeft);//clientLeft 内容区域到边框左部的距离，说白了就是边框border的宽度
+    console.log($('box').clientHeight);//clientWidth 内容区域+左右padding   可视宽度
+    console.log($('box').clientWidth);//clientHeight 内容区域+ 上下padding   可视高度
+    //  屏幕的可视区域
+    window.onload = function () {
+        window.onresize = function () {
+            // document.documentElement 获取的是html标签
+            // console.log(document.documentElement.clientWidth);
+            // console.log(document.documentElement.clientHeight);
+            // // 窗口大小发生变化时，会触发此方法
+            console.log(document.documentElement.clientHeight);
+            console.log(document.documentElement.clientWidth);
+        }
+    };
+
+
+
+</script>
 </html>

@@ -21,6 +21,8 @@
     <button id="btn1" style="display: block; margin: 20px;">插入</button>
     <button id="btn2" style="display: block; margin: 20px;">删除</button>
     <button id="btn3" style="display: block; margin: 20px;">删除自己</button>
+    <button id="btn4" style="display: block; margin: 20px;">moveIt</button>
+    <button id="btn5" style="display: block; margin: 20px;">stopIt</button>
     <div id = 'box'>
         <div class="cls" id = 'box1'>box1</div>
         <div class="cls" id = 'box2'>box2</div>
@@ -55,6 +57,20 @@
 
         // 获取的是复数  亲儿子
         console.log($('box').children);
+
+        // 动画  定时器每隔一定时间增加左边距 marginLeft
+        var timer = null;
+        var num = 20;
+        $('btn4').onclick = function () {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                num += 1;
+                $('box1').style.marginLeft = num + 'px';
+            },20)
+        };
+        $('btn5').onclick = function () {
+            clearInterval(timer);
+        };
     </script>
 </body>
 </html>
