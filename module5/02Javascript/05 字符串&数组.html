@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数组&字符串</title>
+</head>
+<body>
+    <h1>数组</h1>
+    <script type="text/javascript">
+        // 字面量方式创建（推荐大家使用这种方式，简单粗暴）
+        var colors = ['red','green','yellow'];
+
+        // 使用new关键词对构造函数进行创建对象,构造函数与后面的面向对象有关系
+        var colors2 = new Array();
+        console.log(typeof colors2);
+
+        // 数组赋值
+        colors2[0] = 'red';
+        colors2[1] = 'green';
+        colors2[2] = 'yellow';
+        for(var i = 0;i < colors2.length;i ++){
+            console.log(colors2[i]); // 通过索引取值
+        }
+
+        // 数组方法
+        // 数组合并 concat()
+        var ali = ['clothes','packets','shooes'];
+        var jd = ['camera','watches','computer'];
+        var all = ali.concat(jd);
+        console.log(all);
+
+        //  join() 将数组中元素使用指定的字符串连接起来，它会形成一个新的字符串
+        console.log(ali.join('&'));
+
+        //  slice(start,end); 返回数组的一段记录，顾头不顾尾
+        console.log(all.slice(1,2));
+
+        //  将数组转换成字符串 toString()
+        console.log(all.toString());  //  等同于 console.log(ali.join(','));
+
+        // pop 删除数组的最后一个元素并返回删除的元素
+        var tmp = ali.pop();  //  pop 是有返回值的，等于把最后一个元素取出来。
+        console.log(tmp,'  |  ',ali);
+
+        //  push() 向数组末尾添加一个元素或多个元素，并返回新的长度
+        console.log(ali.length);  // 2
+        var newArrayLength = ali.push('hats');
+        console.log(newArrayLength);  // 3
+        console.log(ali[ali.length - 1]);  // hats
+
+        //  reverse() 翻转数组
+        console.log(ali.join('->'));
+        ali.reverse();
+        console.log(ali.join('->'));
+
+        //  sort对数组排序
+        var tmpArray = [8,9,5,'b','g'];
+        var newArray = ali.concat(tmpArray);
+        console.log('排序前  ',newArray.join('->'));
+        newArray.sort();
+        console.log('排序后  ',newArray.join('->'));
+
+        //  shift() 删除并返回数组的第一个元素
+        console.log('原数组  ',jd.join('|'));
+        var firstElement = jd.shift();
+        console.log('第一个元素  ',firstElement);
+        console.log('shift后  ',jd.join('|'));
+
+        // unshift() 向数组的开头添加一个或更多元素，并返回新的长度
+        console.log('unshift之前的数组长度  ',jd.length);
+        var afterArrayLength = jd.unshift('newElement');
+        console.log('unshift之后的数组长度  ',afterArrayLength);
+        console.log('unshift之后的数组  ',jd.join('|'));
+
+        //  判断是否为数组：isArray()
+        console.log(Array.isArray(ali));  // rtue
+        var str = 'abcd';
+        console.log(Array.isArray(str));  // false
+    </script>
+
+    <h1>字符串</h1>
+    <script type="text/javascript">
+        var str = 'Hello World!';
+        var strTmp = 'How do you do ?';
+        //  charAt() 返回指定索引的位置的字符
+        console.log(str.charAt(1));
+        console.log(str.charAt(str.length-1));
+
+        //  concat 返回字符串值，表示两个或多个字符串的拼接
+        var newStr = str.concat(strTmp);
+        console.log(str);  // 原字符串不会改变
+        console.log(newStr);
+
+        //  replace(a,b) 将字符串a替换成字符串b  注意a是一个正则表达式，如果a没有指定全局替换，只会替换第一个匹配到的字符串
+        var NewReplacePart = str.replace(/o/,'*');
+        console.log(str);  // 原字符串不会改变
+        console.log(NewReplacePart);  //  Hell* World!  注意 这里只有第一个字符串被替换
+        var NewReplaceAll = str.replace(/l/g,'*');
+        console.log(NewReplaceAll);  //  He**o Wor*d!  因为指定了全局是，所以全部替换了
+
+        //  indexOf() 查找字符的下标，如果找到返回字符串的下标，找不到则返回-1 。跟seach()方法用法一样
+        console.log(str.indexOf('H'));  // 0
+        console.log(str.indexOf('World'));  // 6 返回匹配到的第一个字符的位置
+        console.log(str.indexOf('X'));  // 当找不到的时候返回 -1
+
+        //  slice(start，end) 提取一个字符串的一部分，并返回一新的字符串。左闭右开 分割字符串
+        console.log(str.slice(0,2));  // He  这里得到的是一个新的字符串  原str不会变化
+        console.log(str);  // 不变,
+
+        //  split('a',1) 以字符串a分割字符串，并返回新的数组。如果第二个参数没写，表示返回整个数组，如果定义了个数，则返回数组的最大长度
+        var arr = strTmp.split(' ');  // 空格分割字符串  返回整个数组
+        console.log(arr);   // ["How", "do", "you", "do", "?"]
+        var arr2 = strTmp.split(' ',2);  // 空格分割字符串  只取分割到的前两个元素
+        console.log(arr2);   // ["How", "do"]
+
+        //  substr(start,length) 返回一个字符串中从指定位置开始到指定字符数的字符。
+        console.log(str.substr(6,1));  // W
+
+        //  toLowerCase()转小写
+        console.log(str.toLowerCase());  // hello world!
+
+        //  toUpperCase()转大写
+        console.log(str.toUpperCase());
+
+        //  substring(indexStart,indexEnd) 提取字符串中介于两个指定下标之间的字符。返回的子串包括 开始 处的字符，但不包括 结束 处的字符
+        //如果 indexStart 等于 indexEnd，substring 返回一个空字符串。
+        //如果省略 indexEnd，substring 提取字符一直到字符串末尾。
+        //如果任一参数小于 0 或为 NaN，则被当作 0。
+        //如果任一参数大于 stringName.length，则被当作 stringName.length。
+        //如果 indexStart 大于 indexEnd，则 substring 的执行效果就像两个参数调换了一样
+        console.log(str.substring(0,2)); // He
+
+        //  trim() 去除字符串两边的空白
+        var str3 = '   I love you!!!   ';
+        console.log(str3);
+        console.log(str3.trim());
+
+        //  将number类型转换成字符串类型
+        var num = 132.32522;
+        var numStr = num.toString();
+        console.log(typeof numStr);
+
+        //  四舍五入
+        var newNum = num.toFixed(2);
+        console.log(newNum);
+    </script>
+</body>
+</html>

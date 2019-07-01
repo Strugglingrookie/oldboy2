@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Math&Date&Json</title>
 </head>
 <body>
+    <h1>Math</h1>
+    <script type="text/javascript">
+        var m = 3.1415926;
+        //  Math.ceil() 向上取整，'天花板函数'  多应用于翻页计算页数
+        console.log(Math.ceil(m));  // 4
 
+        //  Math.floor 向下取整，'地板函数'
+        console.log(Math.floor(m));  // 3
+
+        //  求两个数的最大值和最小值
+        var a = 18;b = 25;
+        console.log(Math.max(a,b));
+        console.log(Math.min(a,b));
+
+        //  随机数 Math.random()  取值范围  [0,1)
+        console.log(Math.random());
+        //  随机取 [100,1000] 的整数
+        console.log(Math.ceil(100 + Math.random()*900));
+        //  随机取 (100,1000) 的整数
+        console.log(Math.floor(101 + Math.random()*900));
+    </script>
+
+    <h1>Date</h1>
+    <script type="text/javascript">
+        //  创建日期对象
+        var MyDate = new Date();
+        console.log(MyDate.toLocaleString());  //  返回本地时间  2019/7/1 上午11:18:33
+        console.log(MyDate.Date);  // 根据本地时间返回    日期和时间
+        console.log(MyDate.getFullYear());  // 根据本地时间返回 足年
+        console.log(MyDate.getMonth());  // 根据本地时间返回  月份
+        console.log(MyDate.getDate());  // 根据本地时间返回指定日期月份的第几天
+        console.log(MyDate.getDay());  // 根据本地时间返回  星期的第几天  0代表星期天
+        console.log(MyDate.getHours());  // 根据本地时间返回  小时
+        console.log(MyDate.getMinutes());  // 根据本地时间返回  分钟
+        console.log(MyDate.getSeconds());  // 根据本地时间返回  秒
+    </script>
+
+    <h1>Json</h1>
+    <p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，采用完全独立于语言的文本格式，是理想的数据交换格式。
+        同时，JSON是 JavaScript 原生格式，这意味着在 JavaScript 中处理 JSON数据不须要任何特殊的 API 或工具包。</p>
+    <script type="text/javascript">
+        // json对象与json字符串之间的转换
+        var jsonStr = '{"name":"xiaoxiao","age":"18","weight":"60Kg"}';
+        var jsonObj = {"name":"xiaohong","age":"28","weight":"70Kg"};
+        console.log(typeof  jsonStr,typeof jsonObj);
+
+        //  字符串转json对象
+        var newJsonObj = JSON.parse(jsonStr);
+        console.log(newJsonObj,typeof newJsonObj);
+
+        //  json对象转字符串
+        var newJsonStr = JSON.stringify(jsonObj);
+        console.log(newJsonStr, typeof  newJsonStr);
+
+        //  遍历 json对象
+        for(var k in jsonObj){
+            console.log(k + '  ' + jsonObj[k])
+        }
+        //  遍历 json数组
+        var packAlex = [{"name":"xiaoxiao","age":"18","weight":"60Kg"}, {"name":"xiaohong","age":"28","weight":"70Kg"}];
+        for(var i in packAlex){//遍历packJson 数组时，i为索引
+           console.log(packAlex[i].name + " " + packAlex[i].weight);
+        }
+    </script>
 </body>
 </html>
