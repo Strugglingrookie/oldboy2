@@ -2,110 +2,109 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>BOM浏览器对象模型</title>
 </head>
 <body>
-    <!--BOM浏览器对象模型-->
+    <h1>BOM浏览器对象模型</h1>
     <script type="text/javascript">
-    // 1.window
-    // 系统对话框alert confirm prompt   延时操作setTimeout(fun,time)  没多少秒执行一次setInterval(fun,time)
-    /*
-    window.alert(12345);
-    var res = window.confirm("are you sure?");
-    console.log(res);
-    var str = window.prompt("吃了没","shit?");  // 接收用户输入的值
-    console.log(str);
-    window.setTimeout(function () {
-        console.log(1234)
-    },2000);
+        // 1.window
+            /*
+            // 系统对话框alert confirm prompt
+            window.alert(12345);
+            var res = window.confirm("are you sure?");
+            console.log(res);
+            var str = window.prompt("吃了没","shit?");  // 接收用户输入的值
+            console.log(str);
 
-    // window.setInterval(function () { console.log(1) },1000);
+            // 延时操作setTimeout(fun,time)
+            window.setTimeout(function () {
+                console.log(1234)
+            },2000);
 
-    var num = 0;
-    var timer = null;
-    timer = setInterval(function () {
-        num += 1;
-        if(num > 3){
-            clearInterval(timer);  //清除定时器
-            return;  //   结束函数运行
-        }
-        console.log("num:"+num);
-    },1000)
+            // 每多少秒执行一次setInterval(fun,time)
+             window.setInterval(function () { console.log(1) },1000);
 
-    // window.open(url="https://www.baidu.com",target="_blank"); // target 新窗口的位置， _blank  _self _parent
-    // window.close();
-    */
+            var num = 0;
+            var timer = null;
+            timer = setInterval(function () {
+                num += 1;
+                if(num > 3){
+                    clearInterval(timer);  //清除定时器
+                    return;  //   结束函数运行
+                }
+                console.log("num:"+num);
+            },1000);
 
-    // 2.location
-    /*
-    console.log(location.host);
-    console.log(location.hostname);
-    console.log(location.port);
-    console.log(location.href);
-    console.log(location.pathname);
-    console.log(location.protocol);
-    console.log(location.search);
-    setTimeout(function () {
-        location.href = "https://www.baidu.com";  // 会有历史记录
-        // location.replace("https://www.baidu.com");// 不会有历史记录
-        // location.reload(); // 重新加载网页
-    },2000)
-    */
+            //  open   close
+            window.open(url="https://www.baidu.com",target="_blank"); // target 新窗口的位置， _blank  _self _parent
+            window.close();
+            */
+        // 2.location
+            /*
+            console.log(location.host);
+            console.log(location.hostname);
+            console.log(location.port);
+            console.log(location.href);
+            console.log(location.pathname);
+            console.log(location.protocol);
+            console.log(location.search);
+            setTimeout(function () {
+                location.href = "https://www.baidu.com";  // 会有历史记录
+                // location.replace("https://www.baidu.com");// 不会有历史记录
+                // location.reload(); // 重新加载网页
+            },2000)
+            */
 
-    // 3.navigator
-    /*
-    console.log(navigator);
-    console.log(navigator.plugins);
-    function hasPlugin(name) {
-        name = name.toLowerCase();
-        for(var i = 0; i < navigator.plugins.length; i ++){
-            var pluginsName = navigator.plugins[i].name.toLowerCase()
-            if(pluginsName.indexOf(name) != -1){
-                console.log(name);
-                console.log(pluginsName);
-                return "有插件！"
+        // 3.window.navigator 的一些属性可以获取客户端的一些信息
+            /*
+            console.log(navigator);
+            console.log(navigator.plugins);
+            function hasPlugin(name) {
+                name = name.toLowerCase();
+                for(var i = 0; i < navigator.plugins.length; i ++){
+                    var pluginsName = navigator.plugins[i].name.toLowerCase()
+                    if(pluginsName.indexOf(name) != -1){
+                        console.log(name);
+                        console.log(pluginsName);
+                        return "有插件！"
+                    }
+                }
+                return "没有插件！"
             }
-        }
-        return "没有插件！"
-    }
-    alert(hasPlugin("flash"))
-    */
+            alert(hasPlugin("flash"))
+            */
 
-    // 4.history
-    /*
-        console.log(history);
-        history.go(0);  // 刷新页面
-        history.go(-1);  // 后退页面
-        history.go(1);  // 前进页面
-        history.back();  // 前进页面
-    */
+        // 4.history
+            /*
+                console.log(history);
+                history.go(0);  // 刷新页面
+                history.go(-1);  // 后退页面
+                history.go(1);  // 前进页面
+                history.back();  // 前进页面
+            */
 
-
-        <!--sessionStorage(临时存储)  为每一个数据源维持一个存储区域，在浏览器打开期间存在，包括页面重新加载。关闭浏览器后清除。-->
-        <!--localStorage(长期存储)  与 sessionStorage 一样，但是浏览器关闭后，数据依然会一直存在。-->
-        <!--存储和提取数据时，需要json格式化和解析-->
-        var person = {
-            name:"xiaogang",
-            age:18
-        };
-        sessionStorage.setItem("personStorage",JSON.stringify(person));
-        var getPerson = JSON.parse(sessionStorage.getItem("personStorage"));
-        console.log(getPerson);
-        //监听本地存储的变化  Storage 发生变化（增加、更新、删除）时的 触发，同一个页面发生的改变不会触发，只会监听同一域名下其他页面改变 Storage
-        window.addEventListener('personStorage', function (e) {
-            console.log('key', e.key);
-            console.log('oldValue', e.oldValue);
-            console.log('newValue', e.newValue);
-            console.log('url', e.url);
-        });
-        sessionStorage.removeItem("personStorage");  // 删除指定的数据
-        sessionStorage.clear(); // 删除所有的数据
-
-
+        // 5.HTML5 存储技术 localStorage sessionStorage
+            <!--sessionStorage(临时存储)  为每一个数据源维持一个存储区域，在浏览器打开期间存在，包括页面重新加载。关闭浏览器后清除。-->
+            <!--localStorage(长期存储)  与 sessionStorage 一样，但是浏览器关闭后，数据依然会一直存在。-->
+            <!--存储和提取数据时，需要json格式化和解析-->
+            var person = {
+                name:"xiaogang",
+                age:18
+            };
+            sessionStorage.setItem("personStorage",JSON.stringify(person));
+            var getPerson = JSON.parse(sessionStorage.getItem("personStorage"));
+            console.log(getPerson);
+            //监听本地存储的变化  Storage 发生变化（增加、更新、删除）时的 触发，同一个页面发生的改变不会触发，只会监听同一域名下其他页面改变 Storage
+            window.addEventListener('personStorage', function (e) {
+                console.log('key', e.key);
+                console.log('oldValue', e.oldValue);
+                console.log('newValue', e.newValue);
+                console.log('url', e.url);
+            });
+            sessionStorage.removeItem("personStorage");  // 删除指定的数据
+            sessionStorage.clear(); // 删除所有的数据
     </script>
-
-
-
-
 </body>
 </html>

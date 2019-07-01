@@ -7,9 +7,69 @@
     <title>正则表达式</title>
 </head>
 <body>
-    <h1>正则表达是适用于所有语言</h1>
+    <h1>正则表达式（英语：Regular Expression，在代码中常简写为regex、regexp或RE）</h1>
+    <p>使用单个字符串来描述、匹配一系列符合某个句法规则的字符串搜索模式</p>
+    <p>语法：/正则表达式主体/修饰符(可选)</p>
+    <p>实例:   var patt = /runoob/ig</p>
+    <p>实例解析：/runoob/i  是一个正则表达式。</p>
+    <p> runoob  是一个正则表达式主体 (用于检索)。</p>
+    <p> ig  是修饰符 (i:搜索不区分大小写;g:搜索全局)。</p>
+    <h1>正则表达式中的特殊字符  字符 含意</h1>
+    <p>\ 做为转意，即通常在"\"后面的字符不按原来意义解释，如/b/匹配字符"b"，当b前面加了反斜杆后/\b/，转意为匹配一个单词的边界。</p>
+    <p>对正则表达式功能字符的还原，如"*"匹配它前面元字符0次或多次，/a*/将匹配a,aa,aaa，加了"\"后，/a\*/将只匹配"a*"。</p>
+    <h1>正则表达式</h1>
+    <p>^ 匹配一个输入或一行的开头，/^a/匹配"an A"，而不匹配"An a"</p>
+    <p>$ 匹配一个输入或一行的结尾，/a$/匹配"An a"，而不匹配"an A"</p>
+    <p>* 匹配前面元字符0次或多次，/ba*/将匹配b,ba,baa,baaa</p>
+    <p>+ 匹配前面元字符1次或多次，/ba*/将匹配ba,baa,baaa</p>
+    <p>? 匹配前面元字符0次或1次，/ba*/将匹配b,ba</p>
+    <p>(x) 匹配x保存x在名为$1...$9的变量中</p>
+    <p>x|y 匹配x或y</p>
+    <p>{n} 精确匹配n次</p>
+    <p>{n,} 匹配n次以上</p>
+    <p>{n,m} 匹配n-m次</p>
+    <p>[xyz] 字符集(character set)，匹配这个集合中的任一一个字符(或元字符)</p>
+    <p>[^xyz] 不匹配这个集合中的任何一个字符</p>
+    <p>[\b] 匹配一个退格符</p>
+    <p>\b 匹配一个单词的边界</p>
+    <p>\B 匹配一个单词的非边界</p>
+    <p>\cX 这儿，X是一个控制符，/\cM/匹配Ctrl-M</p>
+    <p>\d 匹配一个字数字符，/\d/ = /[0-9]/</p>
+    <p>\D 匹配一个非字数字符，/\D/ = /[^0-9]/</p>
+    <p>\n 匹配一个换行符</p>
+    <p>\r 匹配一个回车符</p>
+    <p>\s 匹配一个空白字符，包括\n,\r,\f,\t,\v等</p>
+    <p>\S 匹配一个非空白字符，等于/[^\n\f\r\t\v]/</p>
+    <p>\t 匹配一个制表符</p>
+    <p>\v 匹配一个重直制表符</p>
+    <p>\w 匹配一个可以组成单词的字符(alphanumeric，这是我的意译，含数字)，包括下划线，如[\w]匹配"$5.98"中的5，等于[a-zA-Z0-9]</p>
+    <p>\W 匹配一个不可以组成单词的字符，如[\W]匹配"$5.98"中的$，等于[^a-zA-Z0-9]。</p>
     <script type="text/javascript">
-        //
+        var str = 'Hello World! Nice to meet you.';
+        //  字符串方法中正则表达式的应用  replace search split match
+        var newStr = str.replace(/\s/ig,'*');  // replace 如果不指定 g 全局，那么当替换第一个匹配到的字符串就会停止
+        console.log(newStr);  //  Hello*World!*Nice*to*meet*you.
+        console.log(str.search(/\d/i));  //  没有找到数字 所以结果 是  -1
+        console.log(str.search(/\w/i));  // 返回找到的第一个古河规则字符串的 索引  这里是 0
+        var arr = str.split(/\s/i);  //  空字符串分割
+        console.log(arr);  //  ["Hello", "World!", "Nice", "to", "meet", "you."]
+        // match  在字符串内搜索指定的值，匹配成功返回匹配成功的数组，无则返回 null
+        var tmpArr1 = str.match(/\w/ig);
+        var tmpArr2 = str.match(/\d/ig);
+        console.log(tmpArr1);  // ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d", "N", "i", "c", "e", "t", "o", "m", "e", "e", "t", "y", "o", "u"]
+        console.log(tmpArr2);  // null
+
+        // 正则表达式对象的方法
+        var patt1 = /\d/ig;
+        var patt2 = /\w/ig;
+        //  test() 检测字符串中是否包含定义字符，返回布尔
+        console.log(patt1.test(str));  // false
+        console.log(patt2.test(str));  // true
+        //  exec() 检索字符串中指定的值，匹配成功返回数组，匹配失败返回 null
+        var tmp1 = patt1.exec(str);
+        var tmp2 = patt2.exec(str);
+        console.log(tmp1);  // null
+        console.log(tmp2);  // ["e", index: 1, input: "Hello World! Nice to meet you.", groups: undefined]
     </script>
 </body>
 </html>
