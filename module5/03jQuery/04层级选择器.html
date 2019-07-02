@@ -1,55 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>jQuery层级选择器</title>
-    <script type="text/javascript" src="jquery-3.3.1.js"></script>
-</head>
-<body>
-    <ul id="ul1">
-        <li>小红</li>
-        <li id="li1">晓钢</li>
-        <div>
-            <ul id="ul2">
-               <li id="li2">小清醒</li>
-               <li>小幸运</li>
-            </ul>
-        </div>
-        <li id="li3">小小</li>
-        <li>校外</li>
-        <li>消息</li>
-    </ul>
-    <script type="text/javascript">
-        // jQuery层级选择器
-        $(function () {
-            //空格 后代选择器 所选择标签的所有后代标签
-            var ulChildren = $("#ul1 li");
-            console.log(ulChildren);
-            ulChildren.css("font-size",20);
-            ulChildren.css("color","red");
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery层级选择器</title>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <ul id="ul1">
+            <li>小红</li>
+            <li id="li1">晓钢</li>
+            <div>
+                <ul id="ul2">
+                   <li id="li2">小清醒</li>
+                   <li>小幸运</li>
+                </ul>
+            </div>
+            <li id="li3">小小</li>
+            <li>校外</li>
+            <li>消息</li>
+        </ul>
+        <script type="text/javascript">
+            // jQuery层级选择器
+            $(function () {
+                //空格 后代选择器 所选择标签的所有后代标签
+                var ulChildren = $("#ul1 li");
+                console.log(ulChildren);
+                ulChildren.css("font-size",20);
+                ulChildren.css("color","red");
 
-            // > 子代选择器 子代里的标签 不包括子代的子代  只是相差一代
-            var ulChild = $("#ul1>li");
-            console.log(ulChild);
-            ulChild.css("color","green");
-            ulChild.css("font-size",30);
+                // > 子代选择器 子代里的标签 不包括子代的子代  只是相差一代
+                var ulChild = $("#ul1>li");
+                console.log(ulChild);
+                ulChild.css("color","green");
+                ulChild.css("font-size",30);
 
-            // + 紧邻的标签 兄弟标签中往下第一个标签
-            var jlli = $("#li3+li");
-            jlli.css("color","purple");
+                // + 紧邻的标签 兄弟标签中往下第一个标签
+                var jlli = $("#li3+li");
+                jlli.css("color","purple");
 
-            // ~ 兄弟标签 所有同级往下的标签
-            var broli = $("#li3~li");
-            broli.css("color","black");
+                // ~ 兄弟标签 所有同级往下的标签
+                var broli = $("#li3~li");
+                broli.css("color","black");
 
-            // , 并集选择器  同时选择多个条件下的标签
-            var liOr = $("#li1,#li2");
-            console.log(liOr);
-            liOr.css("color","blue");
-            liOr.css("font-size",25);
-        })
-
-
-    </script>
-</body>
-</html>
+                // , 并集选择器  同时选择多个条件下的标签
+                var liOr = $("#li1,#li2");
+                console.log(liOr);
+                liOr.css("color","blue");
+                liOr.css("font-size",25);
+            })
+        </script>
+    </body>
+    </html>
