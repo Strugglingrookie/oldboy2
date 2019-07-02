@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>边框border</title>
+	<style type="text/css">
+		.border{
+			width: 200px;
+			height: 200px;
+			/*border: 1px solid red;*/
+			/*按照三要素来编写border*/
+			/*border-width: 4px 10px;
+			border-style: solid dotted double dashed;
+			border-color: green red purple yellow;*/
+
+			/*按照方向来编写border*/
+			/*
+			border-top-width: 4px;
+			border-top-color: red;
+			border-top-style: solid;
+
+			border-bottom-width: 4px;
+			border-bottom-color: red;
+			border-bottom-style: solid;
+			*/
+		}
+		input{
+			/*清除默认样式*/
+			/*border: none;*/
+			/*或者*/
+			border: 0;
+			/*清除外线*/
+			outline: none;
+		}
+		.username{
+			width: 180px;
+			height: 40px;
+			font-size: 20px;
+			padding-left: 10px;
+			border: 1px solid #666;
+		}
+		.username:hover{
+			border: 1px solid orange;
+		}
+	</style>
+</head>
+<body>
+	<!-- 三要素： 粗细（width）  样式 (style) 颜色 (color)-->
+	<div class="border"></div>
+	<input type="text" name="" class="username">
+
+</body>
+</html>

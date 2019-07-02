@@ -1,0 +1,22 @@
+/*#p1{
+	color: green;
+	font-size: 20px;
+}
+#p2{
+	color: green;
+	font-weight: bold;
+}
+#p3{
+	font-weight: bold;
+	font-size: 20px
+}*/
+
+.lv{
+	color: green;
+}
+.big{
+	font-size: 20px;
+}
+.bold{
+	font-weight: bold;
+}
