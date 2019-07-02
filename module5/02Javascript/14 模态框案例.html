@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模态框案例</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin: 0;
+        }
+        .bgc{
+            background-color: #b0b0b0;
+        }
+        #box{
+            position: relative;
+            height:300px;
+            width: 300px;
+            border: 1px solid red;
+            margin:0 auto;
+            background-color: #fff;
+            display: none;
+        }
+        #close{
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 30px;
+            width: 20px;
+            background-color: red;
+            line-height: 30px;
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <!--打开网页时，点击登录显示一个背景图，中心 弹出一个登录框，登录框 右上角有关闭按钮 点击关闭 关闭登录框-->
+    <button id="btn" style="display: block;">登陆</button>
+    <div id="box">
+        <span id="close">X</span>
+    </div>
+</body>
+<script type="text/javascript">
+    function $(id) {
+        return document.getElementById(id)
+    }
+    $('btn').onclick = function () {
+        document.documentElement.style.backgroundColor = '#b0b0b0';
+        this.style.display = 'none';
+        $('box').style.display = 'block';
+    };
+    $('close').onclick = function () {
+        $('box').style.display = 'none';
+        $('btn').style.display = 'block';
+        document.documentElement.style.backgroundColor = '#fff';
+    }
+</script>
+</html>

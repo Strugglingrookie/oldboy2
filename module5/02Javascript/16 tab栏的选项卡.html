@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta http-equiv="X-U-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>选项卡</title>
     <style type="text/css">
     * {
         padding: 0;
@@ -77,42 +78,22 @@
         <p>新闻内容</p>
         <p>图片</p>
     </div>
-    <script type="text/javascript">
-    	
-    	// 需求：  鼠标放在上面，li上  li本身变色（添加类） 对应下面p也显示出来（添加类）
-    	// 思路： 1.点亮上面的盒子   2 利用索引值来显示下面的盒子
-
-    	/*
-    	// 变量提升
-    	var a;
-    	console.log(a);//undefined
-    	a = 10;
-    	console.log(a);
-    	*/
-
-
-    	var  tabLi = document.getElementsByTagName('li');
-    	var  tabP = document.getElementsByTagName('p');
-    	
-    	for(var  i = 0; i < tabLi.length; i++){
-    		// 将 i保存到 li标签对象中
-    		tabLi[i].index  = i;
-    		// for循环和点击事件 谁快  i 全局作用域（块级作用域）   3
-    		tabLi[i].onclick = function(){
-
-    			for(var j = 0;j < tabLi.length;j++){
-    				tabLi[j].className = '';
-    				tabP[j].className = '';
-    			}
-    			this.className = 'active';
-    			// Cannot set property 'className' of undefined
-    			console.log(i);
-    			console.log(this);
-    			console.log(this.index);
-    			tabP[this.index].className = 'active';
-    		}
-    	}
-    </script>
 </body>
-
+<script type="text/javascript">
+    // 需求：  鼠标放在上面，li上  li本身变色（添加类） 对应下面p也显示出来（添加类）
+    // 思路： 1.点亮上面的盒子   2 利用索引值来显示下面的盒子
+    var tmp = document.getElementsByTagName('li');
+    var tmp2 = document.getElementsByTagName('p');
+    for(var i=0;i<tmp.length;i++){
+        tmp[i].index = i;  // 将 i保存到 li标签对象中  这个步骤很关键
+        tmp[i].onmouseover = function () {
+            for(var j=0;j<tmp.length;j++){
+                tmp[j].className = '';
+                tmp2[j].className = '';
+            }
+            this.className = 'active';
+            tmp2[this.index].className = 'active';
+        }
+    }
+</script>
 </html>
