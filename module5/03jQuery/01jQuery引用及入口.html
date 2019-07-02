@@ -23,14 +23,14 @@
         // 简写  跟 window.onload不一样  Jquery这里不会覆盖
         $(function () {
             alert("文档对象确实加载完了，不会覆盖")
-        })
+        });
 
         //等图图片资源加载完执行函数
         $(window).ready(
             function () {
                 alert("js入口函数，等图片加载完运行这个函数")
             }
-        )
+        );
 
         //等图图片资源加载完执行函数，Jquery调用同样不会覆盖
         $(window).ready(
