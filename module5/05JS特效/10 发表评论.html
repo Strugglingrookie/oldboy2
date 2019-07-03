@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表评论</title>
+    <style type="text/css">
+        *{
+			padding: 0;
+			margin: 0;
+		}
+        #box{
+            width:800px;
+            border:1px solid #ddd;
+            padding:20px;
+            margin:100px auto;
+            outline: none;
+        }
+        #comment{
+            width: 80%;
+			font-size: 20px;
+			outline: none;
+        }
+        ul{
+            list-style:none;
+        }
+        ul li{
+            border-bottom: 1px dashed #ccc;
+			width: 640px;
+			color: red;
+			line-height: 45px;
+        }
+        ul li a{
+            float: right;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <textarea name="" id="comment" cols="80" rows="10" placeholder="评论......"></textarea>
+    <button id="btn">发表</button>
+    <ul id="content">
+        <!--<li>adfadfha <a href="javascript:void(0)">删除</a></li>-->
+    </ul>
+</div>
+<script type="text/javascript">
+    function $(id) {
+        return typeof id === 'string' ? document.getElementById(id) : null
+    }
+    window.onload = function () {
+        $('btn').onclick = function () {
+            var content = $('comment').value.trim();
+            if(content){
+                var newLi = document.createElement('li');
+                newLi.innerHTML = `${content}<a href="javascript:void(0)">删除</a></li>`;
+                $('content').insertBefore(newLi,$('content').children[0]);
+                $('comment').value = '';
+            }else{
+                alert('内容不能为空！')
+            }
+            var aNodes = document.getElementsByTagName('a');
+            for(var i = 0; i < aNodes.length; i++){
+                aNodes[i].onclick = function () {
+                    this.parentNode.remove();
+                }
+            }
+        };
+
+
+    };
+</script>
+</body>
+</html>
