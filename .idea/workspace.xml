@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
+    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="jquery">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module5/02Javascript/12 DOM操作节点&amp;定时器.html" afterPath="$PROJECT_DIR$/module5/02Javascript/12 DOM操作节点&amp;定时器.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html" afterPath="$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module5/05JS特效/01 图片切换.html" afterPath="$PROJECT_DIR$/module5/05JS特效/01 图片切换.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +17,61 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="13 client&amp;offset&amp;scroll.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html">
+          <file leaf-file-name="05 百度换肤.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module5/05JS特效/05 百度换肤.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="389">
-                  <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+                <state relative-caret-position="242">
+                  <caret line="11" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="09 随机验证码.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module5/05JS特效/09 随机验证码.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="16" column="38" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="11 九宫格布局.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module5/05JS特效/11 九宫格布局.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="88">
+                  <caret line="4" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="12 九宫格布局plus.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module5/05JS特效/12 九宫格布局plus.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="16" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="186" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="14 transform的应用.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/module5/05JS特效/14 transform的应用.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="13 日期特效.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module5/05JS特效/13 日期特效.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -31,12 +80,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="18-offset系列.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/DOM/18-offset系列.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="550">
-                  <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+                <state relative-caret-position="396">
+                  <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
                   <folding>
                     <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,11 +95,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="19-scroll系列.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/DOM/19-scroll系列.html">
+          <file leaf-file-name="15 九宫格布局-2.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/JS特效/15 九宫格布局-2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+                <state relative-caret-position="22">
+                  <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -91,6 +140,8 @@
         <option value="$PROJECT_DIR$/module5/02Javascript/05 字符串方法&amp;数组.html" />
         <option value="$PROJECT_DIR$/module5/02Javascript/12 DOM操作节点&amp;定时器.html" />
         <option value="$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html" />
+        <option value="$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/DOM/19-scroll系列.html" />
+        <option value="$PROJECT_DIR$/module5/05JS特效/01 图片切换.html" />
       </list>
     </option>
   </component>
@@ -134,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -161,6 +211,10 @@
               <option name="myItemId" value="module5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="05JS特效" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -175,8 +229,18 @@
               <option name="myItemId" value="module5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="02Javascript" />
+              <option name="myItemId" value="oldboy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oldboy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="courseware" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,6 +255,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="courseware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5第五模块" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,7 +348,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DOM" />
+              <option name="myItemId" value="JS特效" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,29 +371,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="代码" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oldboy2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oldboy2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="courseware" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5第五模块" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,11 +402,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/06 Math&amp;Date&amp;Json.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/07 函数&amp;对象.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/08 正则表达式.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/09 BOM浏览器对象模型.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/10 DOM文档对象模型.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -363,13 +409,17 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/05 字符串&amp;数组.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/11 DOM样式&amp;属性&amp;值.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/12 DOM操作节点&amp;定时器.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/14 DOM案例.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/images/image-hover.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/images/image.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/04 图片切换plus.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/05 百度换肤.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/06 千千音乐盒.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/07 表单验证.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/08 上传图片验证.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/09 随机验证码.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/10 发表评论.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/11 九宫格布局.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/12 九宫格布局plus.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/13 日期特效.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/14 transform的应用.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -377,12 +427,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/05 字符串方法&amp;数组.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/11 DOM节点获取&amp;事件.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/12 DOM样式&amp;属性&amp;值.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/13 DOM操作节点&amp;定时器.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/14 client&amp;offset&amp;scroll.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/02Javascript/15 DOM案例.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/module5/05JS特效/04 图片切换.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -661,14 +706,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561740463403</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="jquery">
+      <created>1561996817188</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561996817188</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14925373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15405117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -704,82 +756,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/28-事件冒泡的处理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/29-抽屉评论收起.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module5/04jQuery/22抽屉评论收起.html" />
-    <entry file="file://$PROJECT_DIR$/module5/04jQuery/23jQuery事件对象.html" />
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/31-jQuery的单双击事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/32-jQuery的鼠标移入事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/33-小米的购物车.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module5/04jQuery/28jQuery的ajax请求.html" />
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/30-事件对象event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module5/04jQuery/23jQuery事件对象.html" />
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/30-事件对象event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/31-jQuery的单双击事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/32-jQuery的鼠标移入事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/33-小米的购物车.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module5/04jQuery/18jquery的位置.html" />
-    <entry file="file://$PROJECT_DIR$/module5/04jQuery/19防淘宝固定导航栏.html" />
     <entry file="file://$PROJECT_DIR$/module5/04jQuery/21事件冒泡的处理.html" />
     <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/26-jQuery的位置信息.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -794,13 +770,7 @@
     <entry file="file://$PROJECT_DIR$/module5/03js/04JS正在表达式.html" />
     <entry file="file://$PROJECT_DIR$/module5/04jQuery/jquery-3.3.1.js" />
     <entry file="file://$PROJECT_DIR$/module5/04jQuery/jQuery1.html" />
-    <entry file="file://$PROJECT_DIR$/module5/00homework/02todolist项目/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/00homework/02todolist项目/css/mystyle.css" />
     <entry file="file://$PROJECT_DIR$/module5/00homework/02todolist项目/todolist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -815,13 +785,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module5/00homework/02todolist项目/js/myjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/00homework/02todolist项目/js/myjs.js" />
     <entry file="file://$PROJECT_DIR$/module5/04jQuery/18jquery的位置.html" />
     <entry file="file://$PROJECT_DIR$/module5/04jQuery/19防淘宝固定导航栏.html" />
     <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/26-jQuery的位置信息.html">
@@ -883,19 +847,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module5/02Javascript/05 字符串方法&amp;数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/02Javascript/05 字符串方法&amp;数组.html" />
     <entry file="file://$PROJECT_DIR$/module5/02Javascript/03 流程控制.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,13 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,22 +887,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="16" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html">
+    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/DOM/19-scroll系列.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-          <folding />
+        <state relative-caret-position="242">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/DOM/18-offset系列.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="396">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -965,10 +909,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/DOM/19-scroll系列.html">
+    <entry file="file://$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/代码/JS特效/15 九宫格布局-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/02Javascript/13 client&amp;offset&amp;scroll.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <marker date="1562109554408" expanded="true" signature="3780:3790" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/02Javascript/06 Math&amp;Date&amp;Json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/01 图片切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/02 衣服相册.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/04 图片切换plus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/03 关闭小广告.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/06 千千音乐盒.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/08 上传图片验证.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/07 表单验证.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/05 百度换肤.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/10 发表评论.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/09 随机验证码.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/11 九宫格布局.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/12 九宫格布局plus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="186" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/14 transform的应用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module5/05JS特效/13 日期特效.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
