@@ -1,0 +1,23 @@
+p{
+	color: orange;
+	font-size: 14px;
+	font-weight: bold;
+}
+#peiqi{
+	color: green;
+}
+#jj{
+	color: red;
+}
+.active{
+	color: gray;
+}
+.title{
+	font-size: 30px;
+}
+/*
+
+ #id选择器名称{
+	样式;
+ }
+*/

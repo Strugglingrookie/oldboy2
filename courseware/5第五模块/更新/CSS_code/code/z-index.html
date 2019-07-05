@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>z-index的讲解</title>
+	<style type="text/css">
+		.a{
+			position: relative;
+			width: 200px;
+			height: 40px;
+			background-color: #C3FFFB;
+			border: 3px solid #3962FE;
+			z-index: 1;
+
+		}
+		.b{
+			position: relative;
+			width: 200px;
+			height: 40px;
+			background-color: #C3FFFB;
+			border: 3px solid #3962FE;
+			top: -30px;
+			left: 50px;
+			z-index: 10000;
+
+		}
+		.c{
+			position: relative;
+			width: 200px;
+			height: 40px;
+			background-color: #C3FFFB;
+			border: 3px solid #3962FE;
+			top: -50px;
+			left: 100px;
+			/*z-index: auto;*/
+			z-index:10;
+		}
+	</style>
+</head>
+<body>
+	<div style="position: relative;z-index: 15;">
+		<div class="a">A</div>
+	</div>
+	
+	<div style="position: relative;z-index: 10;">
+		<div class="b">B</div>
+	</div>
+	<div class="c">C</div>
+</body>
+</html>

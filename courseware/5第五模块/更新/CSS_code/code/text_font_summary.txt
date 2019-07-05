@@ -1,0 +1,52 @@
+字体属性和文本属性总结：
+字体属性
+    1.字体
+        font-family: "微软雅黑","宋体",...;
+    2.字体大小
+        font-size: 20px;
+        像素单位： px,em,rem
+        px: 绝对单位。 一旦设置了值，不管网页如何变化始终如一
+        em:相对单位。当前某块区域的字体大小，比如给p标签设置了字体大小20px，那么1em= 20px;
+        rem：相对单位 主要应用于移动端
+    3.字体颜色
+        color: red
+        颜色表示法：  
+            - 单词表示法  red green yellow purple.
+            - rgb()表示法
+                + rgba()  a:alpha 表示透明度
+            - 十六进制表示法
+                + #ff6700
+    4.字体样式
+            font-style
+                normal : 默认的字体
+                italic:斜体
+    5.字体粗细
+            font-weight:
+                bold:粗的字体
+                100~900
+                400表示默认
+文本属性：
+    1.文本修饰
+            text-decoration
+                underline 下划线
+                none 无线
+                overline 上划线
+                line-through 删除线
+    2.文本缩进
+            text-indent
+                单位建议使用em
+    3.行高
+            行与行之间的距离
+                line-height
+                    px，em，rem
+    4.中文字间距/单词间距
+            letter-spacing
+            word-spacing
+    5.文本对齐方式
+            text-align
+                left
+                right
+                center  使用最多
+
+
+

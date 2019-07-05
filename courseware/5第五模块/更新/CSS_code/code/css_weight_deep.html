@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css选择器权重深入</title>
+	<style type="text/css">
+		/* 0 0 3*/
+		div div p{
+			/*color: yellow;*/
+		}
+		/*0 0 1*/
+		p{
+			color: gray;
+		}
+		/*0 1 0*/
+		.active{
+			/*color: purple;*/
+		}
+		/*0 1 1*/
+		div .active{
+			/*color: black;*/
+		}
+		/*0 1 1*/
+		div div .active{
+			/*color: blue;*/
+		}
+		/*1 2 0*/
+		.wrap1 #box2 .active{
+			/*color: green;*/
+		}
+		/*2 0 1*/
+		#box1 #box2 p{
+			/*color: red;*/
+		}
+		/*继承来的属性 它的权重非常低 0*/
+		#box1 #box2 #box3{
+			color: orange;
+		}
+
+		.container{
+			color: orange;
+			font-size: 14px;
+		}
+		.container ul li {
+			color: #000;
+			font-size: 16px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrap1" id="box1">
+		<div class="wrap2" id="box2">
+			<div class="wrap3" id="box3">
+				<p class="active">MJJ是什么颜色</p>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<div class="container">
+		<ul>
+			<li>小米手机</li>
+		</ul>
+	</div>
+</body>
+</html>

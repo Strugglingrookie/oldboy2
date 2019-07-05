@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>衣服相册</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .smallImg{
+            margin-left: 10px;
+            margin-top: 20px;
+            border: 2px solid #fff;
+            height:50px;
+            width:50px;
+            float: left;
+        }
+        ul {
+            list-style: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/1.jpg" id="img">
+    <ul>
+        <li><a href=""><img src="images/1.jpg" class="smallImg"></a></li>
+        <li><a href=""><img src="images/2.jpg" class="smallImg"></a></li>
+        <li><a href=""><img src="images/3.jpg" class="smallImg"></a></li>
+        <li><a href=""><img src="images/4.jpg" class="smallImg"></a></li>
+        <li><a href=""><img src="images/5.jpg" class="smallImg"></a></li>
+    </ul>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var imgBig = document.getElementById('img');
+        var imgLi = document.getElementsByClassName('smallImg');
+        for(var i = 0; i < imgLi.length; i ++){
+            imgLi[i].onmouseover = function () {
+                for(var j = 0; j < imgLi.length; j ++){
+                    imgLi[j].style.border = '2px solid #fff';
+                }
+                this.style.border = '2px solid red';
+                imgBig.src = this.src;
+            }
+        }
+    }
+</script>
+</html>

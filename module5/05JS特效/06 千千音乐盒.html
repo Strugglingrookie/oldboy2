@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>千千音乐盒</title>
+    <style type="text/css">
+        #box{
+            position: relative;
+            width: 400px;
+            margin:100px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding:20px
+        }
+        .footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="title">
+            <h3>千千音乐盒</h3>
+            <hr>
+        </div>
+        <div>
+            <input type="checkbox">花田里犯了错<br>
+            <input type="checkbox">摩羯座<br>
+            <input type="checkbox">我不配<br>
+            <input type="checkbox">对<br>
+            <input type="checkbox">错<br>
+            <input type="checkbox">心中的日月<br>
+            <input type="checkbox">白色恋人<br>
+            <hr>
+        </div>
+        <div class="footer">
+            <button id="all">全选</button>
+            <button id="cancel">取消选中</button>
+            <button id="reverse">反选</button>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function $(id) {
+        return typeof id === 'string' ? document.getElementById(id):null
+    }
+    window.onload = function () {
+        var inputs = document.getElementsByTagName('input');
+        $('all').onclick = function () {
+            for(var i = 0; i < inputs.length; i++){
+                inputs[i].checked = true;
+            }
+        };
+        $('cancel').onclick = function () {
+            for(var i = 0; i < inputs.length; i++){
+                inputs[i].checked = false;
+            }
+        };
+        $('reverse').onclick = function () {
+            for(var i = 0; i < inputs.length; i++){
+                inputs[i].checked = !inputs[i].checked;
+            }
+        }
+    }
+</script>
+</html>

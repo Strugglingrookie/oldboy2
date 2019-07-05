@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>选择器权重</title>
+	<style type="text/css">
+		/*数选择器的数量： id选择器 类选择器 标签选择器*/
+		/*0 1 0*/
+		.b{
+			color: purple;
+		}
+		/*0 0 3*/
+		html body div{
+			color: red;
+		}
+		/*1 0 0*/
+		#b{
+			color: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<div>a</div>
+	<div class="b" id="b" style="color: green;">b</div>
+</body>
+</html>

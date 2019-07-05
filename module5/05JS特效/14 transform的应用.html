@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transform的运用</title>
+    <style type="text/css">
+        #box{
+            margin-top: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: #ff6700;
+            /*transform: translate(100px,100px);*/
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">move it</button>
+    <div id="box"></div>
+    <script type="text/javascript">
+        var btn = document.getElementById('btn');
+        var box = document.getElementById('box');
+        var index = 1;
+        window.onload = function () {
+            btn.onclick = function () {
+                box.style.transform = `translate(${10*index}px,${5*index}px)
+                 rotate(${0.2*index}deg)  scale(2.0) skew(${0.1*index}deg)`;
+                index++;
+            }
+        }
+    </script>
+</body>

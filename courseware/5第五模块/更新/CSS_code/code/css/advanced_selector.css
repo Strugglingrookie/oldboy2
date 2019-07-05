@@ -1,0 +1,27 @@
+.wrap a{
+	color: orange;
+}
+
+.wrap>a{
+	color: purple;
+}
+
+h3,span{
+	color: gray;
+	font-size: 14px;
+}
+/*
+选择器1选择器2{
+	样式;
+}
+*/
+h2{
+	color: red;
+}
+.active{
+	font-weight: lighter;
+}
+h2.active{
+	font-size: 14px;
+}
+

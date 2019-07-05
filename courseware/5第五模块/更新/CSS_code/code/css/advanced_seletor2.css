@@ -1,0 +1,30 @@
+
+/*爱恨准则 先爱再恨  LoVe HAte*/
+/*没有被访问过a的状态*/
+a:link{
+	color: orange;
+}
+/*访问过后的a的状态*/
+a:visited{
+	color: green;
+}
+/*鼠标悬浮时a的状态*/
+a:hover{
+	color: black;
+}
+/*鼠标摁住时a的状态*/
+a:active{
+	color:  purple;
+}
+span{
+	color: gray;
+}
+span:hover{
+	color: red;
+}
+div:hover{
+	background-color: green;
+}
+div:hover span{
+	color: white;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>制作表格</title>
+</head>
+<body>
+	<table border="1" cellspacing="0">
+		<caption>商品清单</caption>
+		<tr>
+			<th>产品名称</th>
+			<th>品牌</th>
+			<!-- 横向合并：合并的列数 -->
+			<th colspan='2'>数量和入库时间</th>
+		</tr>
+
+		<tr>
+			<td>电冰箱</td>
+			<td>海尔</td>
+			<td>300</td>
+			<td>2014-09</td>
+		</tr>
+
+		<tr>
+			<td>电视机</td>
+			<!-- 纵向合并： 合并的行数 -->
+			<td rowspan="3">小米</td>
+			<td>200</td>
+			<td>2018-09</td>
+		</tr>
+		<tr>
+			<td>电风扇</td>
+			<td>400</td>
+			<td>2017-09</td>
+		</tr>
+		<tr>
+			<td>电脑</td>
+			<td>400</td>
+			<td>2017-09</td>
+		</tr>
+	</table>
+
+</body>
+</html>

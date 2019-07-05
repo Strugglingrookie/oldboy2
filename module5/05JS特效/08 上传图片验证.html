@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片验证</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        .box{
+            margin:100px auto;
+            width:500px;
+            border:1px solid darkgray;
+            padding:20px;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <form action="javascript:void(0)">
+        <label for="file">图片格式验证</label>
+        <input type="file" id="file" >
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+    var patt = /.+\.jpg$|png$|jpeg$|gif$/ig;
+    window.onload = function () {
+        var inp = document.getElementById('file');
+        inp.onchange = function () {
+            if(patt.exec(inp.value.toLowerCase())){
+                alert('Right');
+            }else{
+                alert('False');
+            }
+        }
+    }
+</script>
+</html>

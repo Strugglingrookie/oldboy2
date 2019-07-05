@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>浮动元素的破坏性</title>
+	<style type="text/css">
+		.top_bar{
+			border: 1px solid red;
+		}
+		.child1{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			float: left;
+		}
+		.child2{
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+			float: right;
+		}
+		.header{
+			width: 100%;
+			height: 100px;
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="top_bar">
+		<div class="child1">儿子</div>
+		<div class="child2">二儿子</div>
+	</div>
+	<div class="header">
+		
+	</div>
+
+</body>
+</html>

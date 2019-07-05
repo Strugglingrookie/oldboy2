@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>外边距 margin</title>
+	<style type="text/css">
+		span{
+			background-color: red;
+		}
+		.xiongda{
+			margin-right: 20px;
+		}
+		.xionger{
+			margin-left: 100px;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		/*margin 垂直方向上 会出现外边距合并   外边距塌陷*/
+		.box1{
+			background-color: red;
+			margin-bottom: 30px;
+		}
+
+		.box2{
+			background-color: green;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 外边距： 一个盒子到另一个盒子的距离 -->
+	<span class="xiongda">熊大</span><span class="xionger">熊二</span>
+	<div class="box1"></div>
+	<div class="box2"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片切换</title>
+</head>
+<body>
+<button id="prev" style="margin-bottom: 10px">上一张</button>
+<button id="next" style="margin-bottom: 10px">下一张</button>
+<button id="toggle" style="margin-bottom: 10px">隐藏</button>
+<img src="./images/image01.jpg" id="gf" style="height: 500px;width: 400px;display: block">
+</body>
+<script type="text/javascript">
+    function $(id) {
+        return document.getElementById(id);
+    }
+    window.onload = function () {
+        var gf = $('gf');
+        var prev = $('prev');
+        var next = $('next');
+        var tog = $('toggle');
+        var isShow = true;
+        var patt = /[1-4]+/ig;
+        //  图片切换下一张
+        next.onclick = function () {
+            var src = gf.getAttribute('src');
+            var num = Number(src.match(patt)[0]);
+            if(num != 4){
+                gf.src = src.replace(patt,(num+1).toString())
+            }else{
+                gf.src = './images/image01.jpg'
+            }
+        };
+        // 图片切换上一张
+        prev.onclick = function () {
+            var src = gf.getAttribute('src');
+            var num = Number(src.match(patt)[0]);
+            if(num != 1){
+                gf.src = src.replace(patt,(num-1).toString())
+            }else{
+                gf.src = './images/image04.jpg'
+            }
+        };
+        //  显示和隐藏图片
+        tog.onclick = function () {
+            if(isShow){
+                gf.style.display = 'none';
+                this.innerText = '显示';
+                isShow = false;
+            }else{
+                gf.style.display = 'block';
+                this.innerText = '隐藏';
+                isShow = true;
+            }
+        }
+
+    }
+</script>
+</html>

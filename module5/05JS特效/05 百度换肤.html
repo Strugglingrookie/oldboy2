@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度换肤</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin: 0;
+        }
+        ul{
+            list-style:none;
+        }
+        #bigImg{
+            position: fixed;
+            top:0;
+            left:0;
+            height: 100%;
+            width: 100%;
+            background-image: url("images/skin1.jpg");
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+        #smallImg{
+            width:100%;
+            height:100px;
+            position: relative;
+            z-index:10;
+        }
+        #smallImg ul{
+            overflow: hidden;
+            width:1200px;
+            margin:0 auto;
+            background-color: rgba(255,255,255,.5);
+        }
+        #smallImg ul li{
+            float: left;
+            cursor: pointer;
+            height:120px;
+            margin: 10px 0 10px 96px;
+        }
+        #smallImg ul li img{
+			width: 180px;
+			height: 120px;
+		}
+
+    </style>
+</head>
+<body>
+    <div id="bigImg"></div>
+    <div id="smallImg">
+        <ul>
+            <li><img src="images/skin1.jpg"></li>
+            <li><img src="images/skin2.jpg"></li>
+            <li><img src="images/skin3.jpg"></li>
+            <li><img src="images/skin4.jpg"></li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript">
+    function $(id) {
+        return typeof id === 'string' ? document.getElementById(id):null
+    }
+    var imgLi = document.getElementsByTagName('li');
+    for(var i = 0; i < imgLi.length; i++){
+        imgLi[i].onclick = function () {
+            url = this.children[0].getAttribute('src');
+            $('bigImg').style.backgroundImage = `url("${url}")`;
+        }
+    }
+</script>
+</html>

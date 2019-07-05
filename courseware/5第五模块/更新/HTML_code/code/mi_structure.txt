@@ -1,0 +1,64 @@
+ 小米结构分析：
+ <head></head>
+ <body>
+<div id="top">
+        顶部栏
+                  <div id="top_list">
+                          left 顶部栏目
+                           <a href="">链接*10   a</a>
+                  </div>            
+                <div id="top_shop">
+                           right 购物车
+                           <a href="">  链接*1     a</a>
+                </div>
+                <div id="top_user">
+                         right 用户操作
+                         <a href=""> 链接*3     a</a>
+                </div>                 
+</div>
+      
+<div id="nav">
+        导航栏
+       <div>
+                left logo
+                <a href="">
+                        <img src="" alt="">
+                </a>
+       </div>
+              
+      <div>
+                left 导航链接
+                <ul>
+                    <li>
+                            <a href=""></a>
+                    </li>
+                    <li>
+                            <a href=""></a>
+                    </li>
+                    <li>
+                            <a href=""></a>
+                    </li>
+                    <li>
+                            <a href=""></a>
+                    </li>
+                </ul>
+                
+      </div>
+             
+        <div>
+                 right 搜索
+                 <form>
+                         <input type="text" name="">
+                         <input type="submit">
+                 </form>
+        </div>
+</div>
+   
+<div id="wrap">
+        主体内容
+</div>     
+
+<div id="footer">
+        脚部
+</div>
+</body>

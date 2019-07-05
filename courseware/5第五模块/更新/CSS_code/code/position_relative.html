@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>相对定位</title>
+	<style type="text/css">
+		body{
+			border: 1px solid orange;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			color: #fff;
+		}
+		div.one{
+			background-color: red;
+			position: relative;
+			top: 30px;
+			left: 100px;
+		}
+
+		div.two{
+			background-color: green;
+			position: relative;
+			top: 100px;
+		}
+
+		div.three{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- 相对定位：
+			不脱离标准文档流，可以调整元素
+		参考点：
+			以原来的位置为参考点
+	 -->
+	<div class="one">One</div>
+	<div class="two">Two</div>
+	<div class="three">Three</div>
+</body>
+</html>

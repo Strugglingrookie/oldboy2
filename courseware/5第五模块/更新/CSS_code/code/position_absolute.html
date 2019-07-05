@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>绝对定位</title>
+	<style type="text/css">
+		body{
+			border: 1px solid orange;
+		}
+		.grandfather{
+			position: relative;
+			top: 20px;
+			left: 30px;
+			border: 1px solid purple;
+		}
+		.father{
+			/*position: relative;
+			top: 30px;
+			left: 60px;*/
+			margin-left: 40px;
+			border: 1px solid black;
+		}
+
+		.one,.two,.three{
+			width: 200px;
+			height: 200px;
+			color: #fff;
+		}
+
+		div.one{
+			background-color: red;
+			position: absolute;
+			top: 200px;
+			left: 200px;	
+		}
+		div.two{
+			width: 400px;
+			background-color: green;
+			/*position: absolute;*/
+		}
+
+		div.three{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- 特点：
+			1.脱离标准文档流，不在页面占位置
+			2.层级提高，压盖现象
+		参考点：
+
+			相对于最近的非static祖先元素定位，如果没有非static祖先元素，那么以页面根元素左上角进行定位
+		网站中实战应用：“子绝父相”
+			
+
+	 -->
+	 <div class="grandfather">
+		 <div class="father">
+		 	<div class="one">One</div>
+			<div class="two">Two</div>
+			<div class="three">Three</div>
+		 </div>
+	 </div>
+	
+</body>
+</html>

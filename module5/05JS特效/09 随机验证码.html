@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机验证码</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        .box{
+            top:200px;
+            left:200px;
+            position: relative;
+        }
+        #box{
+            background-color: #b0b0b0;
+            height: 150px;
+            width:150px;
+            text-align: center;
+            color: #ff6700;
+            line-height: 150px;
+            font-size:30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="box"></div>
+        <input type="text" id="inp">
+        <button id="btn">验证</button>
+    </div>
+</body>
+<script type="text/javascript">
+    var code = '';
+    var randomCode = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z'];
+    function $(id) {
+        return typeof id === 'string' ? document.getElementById(id) : null
+    }
+    function random(min,max) {
+        return Math.floor(min+Math.random()*(max-min))
+    }
+    function createCode(num) {
+        code = '';
+        for(var i = 0; i < num; i++){
+            code += randomCode[random(0,randomCode.length)]
+        }
+        $('box').innerHTML = code;
+    }
+    window.onload = function () {
+        createCode(4);
+        $('btn').onclick = function () {
+            var val = $('inp').value.toUpperCase().trim();
+            if(!val){
+                console.log('请输入验证码！');
+            }else if(val === code){
+                window.location.href = 'http://www.baidu.com';
+            }else{
+                console.log('输入的验证码不正确！');
+                $('inp').value = '';
+                createCode(4);
+            }
+        }
+    }
+</script>
+</html>

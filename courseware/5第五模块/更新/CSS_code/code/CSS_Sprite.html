@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Sprite雪碧图技术</title>
+	<style type="text/css">
+		div{
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			/*48 * 1194*/
+			background: url('images/taobao_list.png') no-repeat 0 0;
+			/*控制背景图大小  */
+			background-size: 24px 597px;
+		}
+		div.spirte{
+			background-position: 0 0;
+		}
+		div.sprite2{
+			background-position: 0 -44px;
+		}
+		div.sprite3{
+			background-position: 0 -88px;
+		}
+		div.sprite4{
+			background-position: 0 -132px;
+		}
+	</style>
+</head>
+<body>
+	<div class="sprite"></div>
+	<div class="sprite2"></div>
+	<div class="sprite3"></div>
+	<div class="sprite4"></div>
+
+</body>
+</html>

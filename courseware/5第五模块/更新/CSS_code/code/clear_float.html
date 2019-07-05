@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>清除浮动的方式</title>
+	<style type="text/css">
+		.top_bar{
+			border: 1px solid red;
+		}
+		.child1{
+			width: 200px;
+			height: 100px;
+			background-color: green;
+			float: left;
+		}
+		.child2{
+			width: 200px;
+			height: 100px;
+			background-color: orange;
+			float: right;
+		}
+		.header{
+			width: 100%;
+			height: 100px;
+			background-color: purple;
+		}
+		.clear{
+			clear: both;
+		}
+		p::after{
+			/*行内元素*/
+			content:'大帅哥';
+		}
+		.clearfix::after{
+			content:'';
+			display: block;
+			clear: both;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 1.给父元素设置固定高度  
+			缺点： 使用不灵活 后期不易维护
+			应用：网页中盒子固定高度区域，比如固定的导航栏
+		2.内墙法（了解）
+			规则： 在最后一个浮动元素的后面加一个空的块级元素，并且设置该属性clear: both;
+			缺点： 结构冗余
+		重要：
+		3.伪元素（选择器）清除法
+		4.overflow:hidden;
+	 -->
+
+	<div class="top_bar clearfix">
+		<div class="child1">儿子</div>
+		<div class="child2">二儿子</div>
+		<!-- <div class="clear"></div> -->
+	</div>
+	<div class="header">
+		
+	</div>
+	<p>
+		<a href="#">百度一下</a>
+	</p>
+
+</body>
+</html>
