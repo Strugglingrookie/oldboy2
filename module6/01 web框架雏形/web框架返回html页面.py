@@ -4,20 +4,6 @@
 
 import socket
 
-
-'''
-地址簇：
-socket.AF_INET:典型的TCP/IP四层模型的通信过程,发送方、接收方依赖IP:Port来标识，即将本地的socket绑定到对应的IP端口上;
-发送数据时，指定对方的IP端口，经过Internet，可以根据此IP端口最终找到接收方；接收数据时，可以从数据包中获取到发送方的IP端口。
-socket.AF_UNIX：典型的本地IPC，类似于管道，依赖路径名标识发送方和接收方。即发送数据时，指定接收方绑定的路径名，
-操作系统根据该路径名可以直接找到对应的接收方，并将原始数据直接拷贝到接收方的内核缓冲区中，并上报给接收方进程进行处理。
-同样的接收方可以从收到的数据包中获取到发送方的路径名，并通过此路径名向其发送数据.（可实现进程间的通讯）
-类型：
-socket.SOCK_STREAM：流式socket , for TCP
-socket.SOCK_DGRAM： 数据报式socket , for UDP
-socket.SOCK_RAW：   原始套接字，普通的套接字无法处理ICMP、IGMP等网络报文，而SOCK_RAW可以；
-SOCK_RAW也可以处理特殊的IPv4报文；此外，利用原始套接字，可以通过IP_HDRINCL套接字选项由用户构造IP头。
-'''
 ip_port= ("127.0.0.1",8081)
 max_connect = 1  # 最对只接收5个连接，超过时直接拒绝
 
