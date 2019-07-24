@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'q7nvwolxa&cj20ti_$(had&^7b2o=wt+epf4az^v$x#!&#)ul@'
+SECRET_KEY = ')me6ne!ibe5_)glt57tuc&+p-mfpr2da(v=sd2oyd=b4c1&f=6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app01.apps.App01Config',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],  # 模板文件目录，指定了路劲后，在views里直接引用文件即可。
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,4 +118,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'  #静态文件目录的别名，客户端访问静态文件都是访问这个，然后指向到下面配置的静态文件目录
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'statics'),  # 指定静态文件地址，所有的静态文件都放这个目录
+]
