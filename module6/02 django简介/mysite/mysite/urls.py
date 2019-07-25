@@ -33,6 +33,7 @@ urlpatterns = [
     re_path(r'^articles/(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]+)/$',views.day_archive),
 
     # 路由分发  app01开头的路径，指定到app01.urls文件，由它去分发
-    re_path(r'^app01/',include('app01.urls')),
+    re_path(r'^app01/',include(('app01.urls','app01'))),  #('app01.urls','app01')中 app01是名称空间
+    re_path(r'^app02/',include(('app02.urls','app02'))),  # 避免不同应用中通用的反向解析路径覆盖
 
 ]

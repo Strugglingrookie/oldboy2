@@ -59,3 +59,6 @@ def month_archive(request,year,month):
 def day_archive(request,day,year,month):
     print(year,month,day)
     return HttpResponse('special_case_%s_%s_%s'%(year,month,day))
+
+def test(request):
+    return HttpResponse(reverse('app01:index'))  #反向解析的index的名称空间为app01

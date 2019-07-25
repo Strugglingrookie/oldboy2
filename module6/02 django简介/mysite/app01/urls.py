@@ -30,4 +30,6 @@ urlpatterns = [
     path('regist/', views.regist),
     path('regist/', views.regist),
     re_path(r'^articles/([0-9]{4})/$', views.special_case_2019,name='achive'),
+    re_path('test',views.test,name="index")
+
 ]
