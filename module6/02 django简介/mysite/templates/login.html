@@ -6,7 +6,11 @@
 </head>
 <body>
 <h3>登录</h3>
-<form action="http://127.0.0.1:8080/login" method="post">
+{#<form action="http://127.0.0.1:8080/app01/login/" method="post">#}
+{# "{% url 'log' %}" 模板，log为url控制器里路径的别名#}
+{#请求login页面，视图函数已经将 {% url 'log' %} 反向解析为配置的别名所指定的路径，返回的页面实际后台已经处理为如下#}
+{#<form action="{% url 'log' %}" method="post">  ----->  <form action="/app01/login/" method="post">#}
+<form action="{% url 'log' %}" method="post">
     <label for="user">用户名：</label>
     <input type="text" name="user" id="user">
     <label for="pwd">密码：</label>

@@ -14,20 +14,25 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,re_path
+from django.urls import path,re_path,include
 from app01 import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('favicon.ico/', views.favicon),
-    path('login/', views.login),
-    path('timer/', views.timer),
-    path('regist/', views.regist),
+    # path('admin/', admin.site.urls),
+    # path('index/', views.index),
+    # path('favicon.ico/', views.favicon),
+    # path('login/', views.login),
+    # path('timer/', views.timer),
+    # path('regist/', views.regist),
 
     # 路由配置：路径--------->视图函数
     re_path(r'^articles/2019/$',views.special_case_2019),
     re_path(r'^articles/([0-9]{4})/$',views.year_archive),  # 正则分组匹配后会将分组匹配值作为传参调用视图函数
     re_path(r'^articles/([0-9]{4})/([0-9]{2})/$',views.month_archive),  # 这里有三个传参 request,year,month
-    re_path(r'^articles/([0-9]{4})/([0-9]{2})/([0-9]+)/$',views.day_archive),  # 这里有四个传参 request,year,month,day
+    # 有名分组，就是关键字传参 固定写法  ?P<name>  等于是 year=2019,month=2,day=5
+    re_path(r'^articles/(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/(?P<day>[0-9]+)/$',views.day_archive),
+
+    # 路由分发  app01开头的路径，指定到app01.urls文件，由它去分发
+    re_path(r'^app01/',include('app01.urls')),
+
 ]
