@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style type="text/css">
+        h3{
+            margin: 10px 12px;
+            float: left;
+            overflow: hidden;
+        }
+        button{
+            margin: 12px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<h3>欢迎进入首页</h3>
+<button id="btn_reg">注册</button>
+<button id="btn_login">登陆</button>
+<form action="">
+    <img src="http://pic39.nipic.com/20140321/18063302_210604412116_2.jpg">
+</form>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var tmp_reg = document.getElementById('btn_reg');
+        var tmp_login = document.getElementById('btn_login');
+        tmp_reg.onclick = function () {
+            window.open('http://127.0.0.1:8080/regist',target='_self')
+        }
+        tmp_login.onclick = function () {
+            window.open('http://127.0.0.1:8080/login',target='_self')
+        }
+    }
+</script>
+</html>
