@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timer</title>
+{#    src 指定这个路径，等于客户端在请求timer.html文件的时候会再次向服务器请求src指定的路径。(自动拼接url)#}
+    <script type="text/javascript" src="/static/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/static/app01/my.js"></script>
+    <link rel="stylesheet" href="/static/app01/my.css">
+</head>
+<body>
+<h3>当前时间: {{ time }}</h3>
+</body>
+</html>
