@@ -28,7 +28,7 @@ while 1:
 
 
     # 读取html文件
-    with open("index.html","rb") as f:
+    with open("index1.html","rb") as f:
         data=f.read()
 
     conn.send((b"HTTP/1.1 200 OK\r\n\r\n%s"%data))

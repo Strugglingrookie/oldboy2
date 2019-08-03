@@ -40,7 +40,7 @@ def index(request):
     #username=request.user.username
     #return render(request,"index.html",{"username":username})
 
-    return render(request,"index.html")
+    return render(request,"index1.html")
 
 
 @login_required

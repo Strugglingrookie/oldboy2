@@ -61,7 +61,7 @@ def index(request):
 
 
     #return render(request,"index.html",{"n":name})
-    return render(request,"index.html",locals())
+    return render(request,"index1.html",locals())
 
 
 

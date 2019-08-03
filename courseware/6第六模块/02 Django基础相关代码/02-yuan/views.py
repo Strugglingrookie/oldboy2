@@ -9,7 +9,7 @@ from urllib.parse import parse_qs
 
 def index(environ):
 
-     with open("templates/index.html","rb") as f:
+     with open("templates/index1.html","rb") as f:
         data=f.read()
      return data
 

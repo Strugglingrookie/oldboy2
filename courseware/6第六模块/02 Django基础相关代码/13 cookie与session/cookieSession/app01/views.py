@@ -46,7 +46,7 @@ def index(request):
 
         now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         last_time = request.COOKIES.get("last_visit_time", "")
-        response = render(request, "index.html", {"username": username, "last_time": last_time})
+        response = render(request, "index1.html", {"username": username, "last_time": last_time})
         response.set_cookie("last_visit_time", now)
         return response
 
@@ -123,7 +123,7 @@ def index_session(request):
     username = request.session.get("username")
     last_visit_time = request.session.get("last_visit_time")
 
-    return render(request, "index.html", {"username": username, "last_visit_time": last_visit_time})
+    return render(request, "index1.html", {"username": username, "last_visit_time": last_visit_time})
 
 
 def logout(request):

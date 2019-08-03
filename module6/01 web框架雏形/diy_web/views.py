@@ -16,7 +16,7 @@ def favicon(environ):
     return data
 
 def index(environ):
-    data = op_file('./templates/index.html')
+    data = op_file('./templates/index1.html')
     return data
 
 def regist(environ):
@@ -37,7 +37,7 @@ def regist(environ):
             if res and isinstance(res, list):
                 data = b'username is already exits!'
             else:
-                data = op_file('./templates/index.html')
+                data = op_file('./templates/index1.html')
                 sql_reg = "insert into user_info(name,password) values(%s,%s);"
                 mysql_check.exec_sql(sql_reg,user,pwd)
         else:
@@ -61,7 +61,7 @@ def login(environ):
         sql = "select * from user_info WHERE  name=%s and password=%s"
         res = mysql_check.exec_sql(sql, user, pwd)
         if res and isinstance(res,list):
-            data = op_file('./templates/index.html')
+            data = op_file('./templates/index1.html')
         else:
             data = b'username or password is wrong!'
     else:

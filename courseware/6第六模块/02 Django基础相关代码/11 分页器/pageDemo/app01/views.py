@@ -61,4 +61,4 @@ def index(request):
          current_page=paginator.page(1)
 
 
-    return render(request,"index.html",locals())
+    return render(request,"index1.html",locals())

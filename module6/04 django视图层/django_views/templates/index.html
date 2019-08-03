@@ -16,11 +16,11 @@
     </style>
 </head>
 <body>
-<h3>欢迎进入首页</h3>
+<h3>欢迎进入首页  {{ word }}</h3>
 <button id="btn_reg">注册</button>
 <button id="btn_login">登陆</button>
 <form action="">
-    <img src="http://pic39.nipic.com/20140321/18063302_210604412116_2.jpg">
+    <img src="/static/index.jpg">
 </form>
 </body>
 <script type="text/javascript">
@@ -28,10 +28,10 @@
         var tmp_reg = document.getElementById('btn_reg');
         var tmp_login = document.getElementById('btn_login');
         tmp_reg.onclick = function () {
-            window.open('http://127.0.0.1:8080/regist',target='_self')
-        }
+            window.open('/app01/regist',target='_self')
+        };
         tmp_login.onclick = function () {
-            window.open('http://127.0.0.1:8080/login',target='_self')
+            window.open('/app01/login',target='_self')
         }
     }
 </script>

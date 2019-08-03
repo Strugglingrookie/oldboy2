@@ -20,7 +20,7 @@ while True: # 循环生成连接对象，当前连接断开马上进入下一次
         rec = conn.recv(1024)  # 最多接收1024个字节的数据
         if not rec:break  # 当客户端暴力断开连接时，linux下会进入死循环接收数据为空，所以当接收数据为空的时候跳出循环
         # 注意一定要以rb形式打开，因为http网络传输的时候只能传输bytes字节，如果不是rb，需要encode转一下才可以
-        with open('index.html', 'rb') as f:
+        with open('index1.html', 'rb') as f:
             data = f.read()
         # 发送数据给客户端，必须要发送这个，浏览器才可以解析
         conn.send(b"HTTP/1.1 200 OK\r\nstatus: 200\r\nContent-Type:text/html\r\n\r\n%s"%data)

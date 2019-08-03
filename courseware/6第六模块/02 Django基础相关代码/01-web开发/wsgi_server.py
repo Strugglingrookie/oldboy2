@@ -20,7 +20,7 @@ def application(environ, start_response):
 
             data=f.read()
     elif path=="/index":
-        with open("index.html","r") as f:
+        with open("index1.html","r") as f:
             data=f.read()
 
     return [data.encode("utf8")]

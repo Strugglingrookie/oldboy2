@@ -5,8 +5,8 @@
     <title>注册</title>
 </head>
 <body>
-<h3>注册</h3>
-<form action="http://127.0.0.1:8080/regist" method="post">
+<h3>注册  {{ word }}</h3>
+<form action="{% url 'views_app01:reg' %}" method="post">
     <label for="user">用户名：</label>
     <input type="text" name="user" id="user">
     <label for="pwd">密码：</label>

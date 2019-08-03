@@ -17,7 +17,7 @@ def application(environ, start_response):
     print(environ.get('PATH_INFO'))  # 请求路径
     start_response('200 OK',[('Content-Type','text/html')])
     path = environ.get('PATH_INFO')
-    data = open_file('login.html') if path == '/login' else open_file('index.html')
+    data = open_file('login.html') if path == '/login' else open_file('index1.html')
     return [data]
 # 创建服务，当没指定服务ip时，默认是127.0.0.1
 my_server = make_server('',8081,application)

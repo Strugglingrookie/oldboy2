@@ -33,7 +33,7 @@ def index(request):
 
     #return HttpResponse("<h1>OK</h1>")
 
-    return render(request,"index.html",{"timer":ctime}) #  index.html 模板文件
+    return render(request,"index1.html",{"timer":ctime}) #  index.html 模板文件
 
 
 

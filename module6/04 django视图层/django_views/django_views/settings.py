@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '6f!21e9tt(q)wv(94p+jzmjs%04uc4kt_0c9$nrwm_++06@3cu'
+SECRET_KEY = '%ob8cq%r^)u&s@4fgd7qy+5$49ssg%+*-skaddqh1=a+@ypj33'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app01.apps.App01Config',
+    'views_app01.apps.ViewsApp01Config',
 ]
 
 MIDDLEWARE = [
@@ -55,8 +55,7 @@ ROOT_URLCONF = 'django_views.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR,  'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,12 +114,15 @@ USE_L10N = True
 
 USE_TZ = True
 
-APPEND_SLASH = False
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIR = [os.path.join(BASE_DIR, 'statics')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'statics'),  # 指定静态文件地址，所有的静态文件都放这个目录
+]
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
