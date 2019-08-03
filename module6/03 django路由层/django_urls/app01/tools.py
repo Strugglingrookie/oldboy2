@@ -55,12 +55,10 @@ class Mysql(object):
             if sql.strip().lower().startswith('select') or sql.strip().lower().startswith('show'):
                 res = self.cur.fetchall()
                 res = self.format_res(res)
-                print(res)
                 return res
             else:
                 self.conn.commit()  # 非查询语句需要提交才能生效
                 res = rows
-                print(res)
                 return res
         except Exception as e:
             print(e)

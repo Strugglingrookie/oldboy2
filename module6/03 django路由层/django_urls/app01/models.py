@@ -17,7 +17,6 @@ mysql_check = Mysql('localhost', 3306, 'root', 'root', charset="utf8")
 if mysql_check.exec_sql(sql_check_db):
     mysql_create = Mysql('localhost', 3306, 'root', 'root',dbname='oldboy', charset="utf8")
     res_check = mysql_create.exec_sql(sql_check_table)
-    print(res_check)
     if res_check and 'oldboy' in res_check:
         if not mysql_create.exec_sql(sql_check_data):
             mysql_create.exec_sql(sql_create_data)
