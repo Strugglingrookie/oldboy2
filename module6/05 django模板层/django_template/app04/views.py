@@ -28,3 +28,7 @@ def index(request):
     else:
         print(request.POST)
         return HttpResponse('OJBK!')
+
+
+def base(request):
+    return  render(request, 'base.html')

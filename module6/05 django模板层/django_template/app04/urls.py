@@ -3,4 +3,5 @@ from app04 import  views
 
 urlpatterns = [
     re_path(r'^index/', views.index),
+    re_path(r'^base/', views.base),
 ]
