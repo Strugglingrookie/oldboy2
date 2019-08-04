@@ -50,13 +50,34 @@
 <p>暂无数据!</p>
 <!--结束标签-->
 {% endfor %}
-
 <h3>if 标签</h3>
-{% if n_bool %}
+{% if n > 18 %}
 <p><strong>成年咯</strong></p>
+{%  elif n == 18 %}
+<p><strong>刚成年</strong></p>
 {% else %}
 <p><strong>小屁孩</strong></p>
 {% endif %}
+<h3>with 标签</h3>
+<!--等于命名一个变量，后面引用就好-->
+{% with person_lis.1.name as name %}
+<p>{{ name }}</p>
+<p>{{ name }}</p>
+<p>{{ name }}</p>
+{% endwith %}
+<h3>csrf_token 标签</h3>
+<form action="" method="post">
+    <!--django有安全机制，post请求会校验，如果没有下面的csrf_token标签，在请求后台的时候回403 Forbidden -->
+    <!--这个标签等于是在请求的index页面的时候，后台回有一个 csrf_token 字段，下次post请求的时候会和post参数一起传过去，后台校验token一致才会接受该post请求-->
+    {% csrf_token %}
+    <input type="text" name="user">
+    <input type="password" name="pwd">
+    <input type="submit">
+</form>
+
+<hr>
+<h2>自定义标签和过滤器</h2>
+<h3>for 标签</h3>
 
 </body>
 </html>
