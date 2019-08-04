@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<hr>
+<h2>模板变量</h2>
+<p><strong>int</strong>  {{ digits }}</p>
+<p><strong>str</strong>  {{ string }}</p>
+<p><strong>lis</strong>  {{ lis }}</p>
+<p><strong>lis_items</strong>  {{ lis.0 }}  {{ lis.1 }}</p>
+<p><strong>dic</strong>  {{ dic }}</p>
+<p><strong>dic_items</strong>  {{ dic.name }}  {{ dic.age }}</p>
+<p><strong>jack</strong>  {{ jack }}</p>
+<p><strong>jack_items</strong>  {{ jack.name }}</p>
+<p><strong>person_lis</strong>  {{ person_lis }}</p>
+<p><strong>person_lis_items</strong>  {{ person_lis.1.name }} {{ person_lis.1.age }}</p>
+
+<hr>
+<h2>过滤器</h2>
+<!--default  如果一个变量是false或者为空，使用给定的默认值。否则，使用变量的值-->
+<p><strong>default</strong>  {{ lis2|default:'nothing' }}</p>
+<!--length 返回值的长度。它对字符串和列表都起作用-->
+<p><strong>length</strong>  {{ lis|length }}</p>
+<!--filesizeformat  将值格式化为一个 “人类可读的” 文件尺寸 （例如 '1 KB', '11.5 MB', '189 bytes'）-->
+<p><strong>filesizeformat</strong>  {{ filesize|filesizeformat }}</p>
+<!--date 可以按指定的日期格式  'Y-m-d H:m:s'-->
+<p><strong>date</strong>  {{ now|date:'H:m:s' }}</p>
+<!--slice 切片  同list切片-->
+<p><strong>slice</strong>  {{ lis|slice:'2:' }}</p>
+<!--truncatechars 截取字节长度，比如参数6，截取5个字节，剩下的用省略号表示-->
+<p><strong>truncatechars</strong>  {{ string|truncatechars:3 }}</p>
+<!--truncatewords 截取单词，比如参数1，截取1个单词，剩下的用省略号表示-->
+<p><strong>truncatewords</strong>  {{ string|truncatewords:1 }}</p>
+<!--safe 信任返回的数据，对特定的html或者js等的语句不转义-->
+<p><strong>没有safe</strong>  {{ ops }}</p>
+<!--<p><strong>有safe</strong>  {{ ops|safe }}</p>-->
+
+<hr>
+<h2>模板标签</h2>
+<h3>for 标签</h3>
+{% for i in person_lis %}
+<!--{{forloop.counter}}  计数  从1开始    {{forloop.counter0}} 从0开始-->
+<p>{{forloop.counter}}  {{ i.name }}</p>
+<p>{{forloop.counter}}  {{ i.age }}</p>
+<!--empty 标签  在for循环无数据的时候执行其逻辑-->
+{% empty %}
+<p>暂无数据!</p>
+<!--结束标签-->
+{% endfor %}
+
+<h3>if 标签</h3>
+{% if n_bool %}
+<p><strong>成年咯</strong></p>
+{% else %}
+<p><strong>小屁孩</strong></p>
+{% endif %}
+
+</body>
+</html>
