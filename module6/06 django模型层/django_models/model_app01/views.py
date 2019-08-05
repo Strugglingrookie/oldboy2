@@ -111,11 +111,111 @@ def index(request):
     sql_res=Book.objects.filter(price=2).delete()
     print(sql_res)
     Book.objects.filter(price=66).first().delete()
+    # 也可以一次性删除多个对象。每个 QuerySet 都有一个 delete() 方法，它一次性删除 QuerySet 中所有的对象
+    Book.objects.filter(pub_date__year=2019).delete()
+    #要注意的是： delete() 方法是 QuerySet 上的方法，但并不适用于 Manager 本身。
+    #这是一种保护机制，是为了避免意外地调用 Entry.objects.delete() 方法导致 所有的 记录被误删除。如果你确认要删除所有的对象，那么你必须显式地调用：
+    Book.objects.all().delete()
 
-    # update :  调用者: queryset对象
-    ret = Book.objects.filter(title="java").update(title="php")
-'''
+    # update() :  调用者: queryset对象
+    # update()方法对于任何结果集（QuerySet）均有效，这意味着你可以同时更新多条记录update()方法会返回一个整型数值，表示受影响的记录条数。
+    sql_res = Book.objects.filter(title="php").update(title="java")
+    print(sql_res)  # 受影响的条数
+    '''
     return render(request,'index.html',locals())
+
+
+def book(request):
+    return render(request, 'book.html', locals())
+
+
+def book_add(request):
+    method = request.method
+    if method.lower() == 'post':
+        req_data = request.POST
+        print('request.POST:\n', req_data)
+        title = req_data.get('name')
+        price = req_data.get('price')
+        pub_date = req_data.get('pub_date')
+        publish = req_data.get('publish')
+        try:
+            Book.objects.create(title=title,price=price,pub_date=pub_date,publish=publish,state=1)
+        except Exception as e:
+            res = e
+            return render(request, 'book.html', locals())
+        else:
+            res = 'OJBK!'
+            return render(request, 'book.html', locals())
+    else:
+        return redirect('/app01/book')
+
+
+def book_select(request):
+    method = request.method
+    if method.lower() == 'post':
+        req_data = request.POST
+        print('request.POST:\n', req_data)
+        title = req_data.get('name')
+        price = req_data.get('price')
+        pub_date = req_data.get('pub_date')
+        publish = req_data.get('publish')
+        try:
+            res = Book.objects.filter(title__contains=title,price__contains=price,pub_date__contains=pub_date,publish__contains=publish)
+        except Exception as e:
+            res = e
+            return render(request, 'book.html', locals())
+        else:
+            res_lis = []
+            for i in res:
+                res_lis.append(i.title)
+                res_lis.append(i.price)
+                res_lis.append(i.publish)
+            res = res_lis
+            return render(request, 'book.html', locals())
+    else:
+        return redirect('/app01/book')
+
+
+def book_update(request):
+    method = request.method
+    if method.lower() == 'post':
+        req_data = request.POST
+        print('request.POST:\n', req_data)
+        title = req_data.get('name')
+        price = req_data.get('price')
+        pub_date = req_data.get('pub_date')
+        publish = req_data.get('publish')
+        try:
+            Book.objects.create(title=title,price=price,pub_date=pub_date,publish=publish,state=1)
+        except Exception as e:
+            res = e
+            return render(request, 'book.html', locals())
+        else:
+            res = 'OJBK!'
+            return render(request, 'book.html', locals())
+    else:
+        return redirect('/app01/book')
+
+
+def book_delete(request):
+    method = request.method
+    if method.lower() == 'post':
+        req_data = request.POST
+        print('request.POST:\n', req_data)
+        title = req_data.get('name')
+        price = req_data.get('price')
+        pub_date = req_data.get('pub_date')
+        publish = req_data.get('publish')
+        try:
+            Book.objects.create(title=title,price=price,pub_date=pub_date,publish=publish,state=1)
+        except Exception as e:
+            res = e
+            return render(request, 'book.html', locals())
+        else:
+            res = 'OJBK!'
+            return render(request, 'book.html', locals())
+    else:
+        return redirect('/app01/book')
 
 
 def login(request):
