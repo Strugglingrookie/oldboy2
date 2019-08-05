@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>注册</title>
+{% endblock title %}
+
+
+{% block content %}
+<h3>注册  {{ word }}</h3>
+<form action="{% url 'model_app01:reg' %}" method="post">
+    {% csrf_token %}
+    <label for="user">用户名：</label>
+    <input type="text" name="user" id="user">
+    <label for="pwd">密码：</label>
+    <input type="password" name="pwd" id="pwd">
+    <input type="submit" value="注册">
+</form>
+{% endblock content %}
+

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>首页</title>
+{% endblock title %}
+{% block style %}
+    {{ block.super }}
+    <style type="text/css">
+        h3{
+            margin: 10px 12px;
+            float: left;
+            overflow: hidden;
+        }
+        button{
+            margin: 12px;
+            overflow: hidden;
+        }
+        .btns{
+            float: right;
+            overflow: hidden;
+        }
+        h4{
+            margin: 80px 20px 20px;
+        }
+        .sql_con{
+            margin: 20px;
+            width: 600px;
+            height: 400px;
+            border: 1px solid #5bc0de;
+        }
+    </style>
+{% endblock style %}
+
+{% block content %}
+<div class="btns">
+    <h3>欢迎进入首页  {{ word }}</h3>
+    <button id="btn_reg">注册</button>
+    <button id="btn_login">登陆</button>
+</div>
+<div>
+    <h4>sql执行返回数据</h4>
+    <div class="sql_con">
+        <p>{{ sql_res }}</p>
+    </div>
+</div>
+{% endblock content %}
+
+
+{%block js%}
+<script type="text/javascript" src="/static/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="/static/index.js"></script>
+{%endblock js%}
