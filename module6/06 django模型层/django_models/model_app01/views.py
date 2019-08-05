@@ -181,12 +181,17 @@ def book_update(request):
     if method.lower() == 'post':
         req_data = request.POST
         print('request.POST:\n', req_data)
-        title = req_data.get('name')
+        old_title = req_data.get('old_name')
+        new_title = req_data.get('new_name')
         price = req_data.get('price')
         pub_date = req_data.get('pub_date')
         publish = req_data.get('publish')
         try:
-            Book.objects.create(title=title,price=price,pub_date=pub_date,publish=publish,state=1)
+            new_title = new_title if new_title else Book.objects.filter(title=old_title)[0].title
+            price = price if price else Book.objects.filter(title=old_title)[0].price
+            pub_date = pub_date if pub_date else Book.objects.filter(title=old_title)[0].pub_date
+            publish = publish if publish else Book.objects.filter(title=old_title)[0].publish
+            Book.objects.filter(title=old_title).update(title=new_title,price=price,pub_date=pub_date,publish=publish)
         except Exception as e:
             res = e
             return render(request, 'book.html', locals())
@@ -203,16 +208,15 @@ def book_delete(request):
         req_data = request.POST
         print('request.POST:\n', req_data)
         title = req_data.get('name')
-        price = req_data.get('price')
-        pub_date = req_data.get('pub_date')
-        publish = req_data.get('publish')
         try:
-            Book.objects.create(title=title,price=price,pub_date=pub_date,publish=publish,state=1)
+            res = Book.objects.filter(title=title).delete()
+            print(res)
         except Exception as e:
             res = e
             return render(request, 'book.html', locals())
         else:
-            res = 'OJBK!'
+            print(12345,res)
+            res = 'OJBK!' if res[0]>0 else '记录不存在！'
             return render(request, 'book.html', locals())
     else:
         return redirect('/app01/book')
