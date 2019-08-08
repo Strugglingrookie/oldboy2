@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,re_path,include
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path('^app01/', include(('book_app01.urls','book_app01'))),
