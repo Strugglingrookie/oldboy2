@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/module6/06 django模型层/book/.idea/book.iml" filepath="$PROJECT_DIR$/module6/06 django模型层/book/.idea/book.iml" />
       <module fileurl="file://$PROJECT_DIR$/module6/03 django路由层/django_urls/.idea/django_urls.iml" filepath="$PROJECT_DIR$/module6/03 django路由层/django_urls/.idea/django_urls.iml" />
       <module fileurl="file://$PROJECT_DIR$/module6/04 django视图层/django_views/.idea/django_views.iml" filepath="$PROJECT_DIR$/module6/04 django视图层/django_views/.idea/django_views.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module6/06 django模型层/many_tables/.idea/many_tables.iml" filepath="$PROJECT_DIR$/module6/06 django模型层/many_tables/.idea/many_tables.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oldboy.iml" filepath="$PROJECT_DIR$/.idea/oldboy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module6/06 django模型层/tables/.idea/tables.iml" filepath="$PROJECT_DIR$/module6/06 django模型层/tables/.idea/tables.iml" />
     </modules>
   </component>
 </project>
