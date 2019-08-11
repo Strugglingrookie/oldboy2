@@ -20,6 +20,9 @@
             text-align: center;
             color: #D0D0D0;
         }
+    th{
+        text-align: center;
+    }
     </style>
 {% endblock style %}
 
@@ -32,7 +35,7 @@
 
     <div class="container mybook">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <form class="form-inline filter" action="">
                     <div class="form-group">
                         <div class="form-group other">
@@ -50,8 +53,8 @@
                         <th>价格</th>
                         <th>出版日期</th>
                         <th>出版社</th>
-                        <th>删除操作</th>
-                        <th>编辑操作</th>
+                        <th>作者</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -60,9 +63,20 @@
                             <td>{{ book.title }}</td>
                             <td>{{ book.price }}</td>
                             <td>{{ book.pub_date|date:'Y-m-d' }}</td>
-                            <td>{{ book.publish }}</td>
-                            <td><a href="/app01/book/{{ book.pk }}/delete" class="btn btn-danger">删除</a></td>
-                            <td><a href="/app01/book/{{ book.pk }}/update" class="btn btn-info">编辑</a></td>
+                            <td>{{ book.publish.name }}</td>
+                            <td>
+                                {% for author in book.authors.all %}
+                                    {% if forloop.last %}
+                                        <span>{{ author.name }}</span>
+                                    {% else %}
+                                        <span>{{ author.name }}</span>,
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                <a href="/app01/book/{{ book.pk }}/update" class="btn btn-info">编辑</a>
+                                <a href="/app01/book/{{ book.pk }}/delete" class="btn btn-danger">删除</a>
+                            </td>
                         </tr>
                         {% empty %}
                             <td class="empty" colspan="6">暂无数据!</td>

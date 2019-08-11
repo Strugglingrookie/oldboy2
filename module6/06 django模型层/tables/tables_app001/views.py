@@ -45,6 +45,7 @@ def add(request):
     # book_obj1.authors.remove(1)
     # book_obj1.authors.remove(*[4,])
     # book_obj1.authors.remove(author_obj3)
+    # book_obj1.authors.clear()  # 删除所有
 
 
     return HttpResponse('OJBK!')

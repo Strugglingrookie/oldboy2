@@ -3,16 +3,18 @@
 {% block style %}
     {{ block.super }}
     <style>
-        .mybook{
+        .mybook {
             margin-top: 50px;
         }
-        .btn{
+
+        .btn {
             margin-top: 10px;
         }
-    .opt_res{
-        margin-top: 50px;
-        color: red;
-    }
+
+        .opt_res {
+            margin-top: 50px;
+            color: red;
+        }
     </style>
 {% endblock style %}
 
@@ -23,34 +25,43 @@
 {% block content %}
     <h3>新增书籍</h3>
 
-<div class="container mybook">
-     <div class="row">
-         <div class="col-md-6">
-             <form action="" method="post">
-                 {% csrf_token %}
-                 <div>
-                     <label for="">书籍名称</label>
-                     <input type="text" class="form-control" name="title" value={{ title }}>
-                 </div>
-                 <div>
-                     <label for="">价格</label>
-                     <input type="text" class="form-control" name="price" value={{ price }}>
-                 </div>
-                 <div>
-                     <label for="">出版日期</label>
-                     <input type="date" class="form-control" name="date" value={{ date }}>
-                 </div>
-                 <div>
-                     <label for="">出版社</label>
-                     <input type="text" class="form-control" name="publish" value={{ publish }}>
-                 </div>
-
-                 <input type="submit" class="btn btn-success pull-right">
-
-
-             </form>
-             <p class="opt_res">{{ opt_res }}</p>
-         </div>
-     </div>
-</div>
+    <div class="container mybook">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="">书籍名称</label>
+                        <input type="text" class="form-control" name="title" value={{ title }}>
+                    </div>
+                    <div class="form-group">
+                        <label for="">价格</label>
+                        <input type="text" class="form-control" name="price" value={{ price }}>
+                    </div>
+                    <div class="form-group">
+                        <label for="">出版日期</label>
+                        <input type="date" class="form-control" name="date" value={{ date }}>
+                    </div>
+                    <div class="form-group">
+                        <label for="">出版社</label>
+                        <select name="publish_id" id="" class="form-control">
+                            {% for publish in publish_obj %}
+                                <option value={{ publish.pk }}>{{ publish.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">作者</label>
+                        <select type="text" name="authors_id_list" multiple class="form-control">
+                            {% for author in author_obj %}
+                                <option value="{{ author.pk }}">{{ author.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <input type="submit" class="btn btn-success pull-right">
+                </form>
+                <p class="opt_res">{{ opt_res }}</p>
+            </div>
+        </div>
+    </div>
 {% endblock content %}

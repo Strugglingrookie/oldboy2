@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Publish(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=32)
@@ -29,8 +30,8 @@ class AuthorDetail(models.Model):
     addr = models.CharField(max_length=32)
     phone = models.BigIntegerField()
 
-    def __str__(self):
-        return self.phone
+    # def __str__(self):
+    #     return self.phone
 
 
 class Book(models.Model):
