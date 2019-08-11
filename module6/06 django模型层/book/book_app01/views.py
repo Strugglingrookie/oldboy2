@@ -12,19 +12,6 @@ def book(request):
     except:
         title = ''
     book_list = Book.objects.filter(title__contains=title)
-    '''
-        # 1 查询人民出版社出版过的价格大于200的书籍
-        res = Book.objects.filter(publish="人民出版社",price__gt=200)
-        # 2 查询2017年8月出版的所有以py开头的书籍名称
-        res = Book.objects.filter(pub_date__contains="2017-08",title__startswith='py').values('title')
-        # 3 查询价格为50,100或者150的所有书籍名称及其出版社名
-        res = Book.objects.filter(price__in=[50,100,150]).values('title','publish')
-        # 4 查询价格在100到200之间的所有书籍名称及其价格
-        res = Book.objects.filter(price__range=[100,200]).values('title','price')
-        # 5 查询所有人民出版社出版的书籍的价格（从高到低排序，去重）
-        res = Book.objects.filter(publish="人民出版社").values('price').distinct().order_by('-price')
-        print('res----------->',res)
-    '''
     return  render(request, 'book.html',locals())
 
 
