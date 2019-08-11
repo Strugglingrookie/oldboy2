@@ -50,7 +50,7 @@ def add(request):
     return HttpResponse('OJBK!')
 
 
-def query_son(request):
+def query(request):
     """
     跨表查询:
        1 基于对象查询

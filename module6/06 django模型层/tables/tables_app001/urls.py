@@ -9,6 +9,6 @@ from tables_app001 import views
 
 urlpatterns = [
     path('add', views.add),
-    path('query/son', views.query_son),
+    path('query', views.query),
 
 ]
