@@ -50,8 +50,11 @@ def check(request):
     method = request.method
     if method == 'POST':
         dic = {'name':'用户名','nickname':'用户昵称','phone':'手机号'}
-        type = request.POST.get('type')
-        value = request.POST.get('value')
+        print(request.body)  # 原始的请求体数据  不管啥类型的请求数据都取的到
+        print(request.POST)  # POST请求数据  if contentType==urlencoded ,request.POST才有数据
+        req_data = json.loads(request.body.decode('utf8'))
+        type = req_data['type']
+        value = req_data['value']
         if type == 'name':
             res = UserInfo.objects.filter(name=value).exists()
         elif type == 'nickname':

@@ -6,17 +6,19 @@ $(function () {
             $(this).next().text('');
         });
         $(check_obj[i]).blur(function () {
-            formdata = {};
-            formdata.type = this.id;
-            formdata.value = this.value;
+            data_dic = {};
+            data_dic.type = this.id;
+            data_dic.value = this.value;
             $.ajax({
                 url: '/app01/check/',
                 type: 'post',
-                data: formdata,
+                contentType:"application/json",
+                data: JSON.stringify(data_dic),
                 success: function (data) {
                     var data_json = JSON.parse(data);
+                    console.log(data_json);
                     if (data_json['code'] !== '000000') {
-                        type_id = '#' + formdata.type;
+                        type_id = '#' + data_dic.type;
                         $(type_id).next().html(data_json['msg']);
                         console.log(data_json);
                     }

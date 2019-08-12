@@ -1,6 +1,6 @@
 $('#ajax_btn').click(function (e) {
     e.preventDefault();
-    var formdata = new FormData();
+    var formdata = new FormData();  // 文件必须要以 FormData 数据类型传递，不可以再用默认的application/x-www-form-urlencoded
     formdata.append('name', $('#fileajax').val());
     formdata.append('imgfile', $('#ajax_file')[0].files[0]);
     $.ajax({
