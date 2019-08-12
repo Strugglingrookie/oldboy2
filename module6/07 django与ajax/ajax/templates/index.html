@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>index</title>
+{% endblock title %}
+
+{% block style %}
+    {{ block.super }}
+    <style>
+        img{
+            margin: 20px auto;
+        }
+        .btn{
+            margin-right: 20px;
+        }
+    </style>
+{% endblock style %}
+
+{% block content %}
+    <h3>欢迎进入首页  {{ word }}</h3>
+<a href="/app01/regist" class="btn btn-info">注册</a>
+<a href="/app01/login" class="btn btn-info">登陆</a>
+<form action="">
+    <img src="/static/index.jpg">
+</form>
+{% endblock content %}

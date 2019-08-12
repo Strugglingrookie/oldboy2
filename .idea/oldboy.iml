@@ -10,6 +10,7 @@
     <orderEntry type="module" module-name="book" />
     <orderEntry type="module" module-name="many_tables" />
     <orderEntry type="module" module-name="tables" />
+    <orderEntry type="module" module-name="ajax" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

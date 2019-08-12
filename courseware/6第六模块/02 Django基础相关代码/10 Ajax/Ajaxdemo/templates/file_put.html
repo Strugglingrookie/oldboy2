@@ -86,7 +86,7 @@
         var formdata=new FormData();
         formdata.append("user",$("#user").val());
         formdata.append("avatar",$("#avatar")[0].files[0]);
-
+        console.log(formdata);
         $.ajax({
             url:"",
             type:"post",

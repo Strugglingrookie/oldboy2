@@ -57,7 +57,7 @@ React-native inoic
 
 ```html
 <!--相当于引入了某个模块-->
-<script type="text/javascript" src = './index.js'></script>
+<script type="text/javascript" src = './regist.js'></script>
 ```
 
 #### 注释

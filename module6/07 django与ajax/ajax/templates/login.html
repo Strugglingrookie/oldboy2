@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>index</title>
+{% endblock title %}
+
+{% block style %}
+    {{ block.super }}
+    <style>
+        .regist {
+            margin: 20px auto;
+        }
+
+        .res {
+            margin: 20px auto;
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+{% endblock style %}
+
+{% block content %}
+    <h3>登陆页面</h3>
+    <hr>
+    <div class="regist">
+        <form>
+            <div class="form-group">
+                <label for="">用户名</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="">密码</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-success" id="btn">登陆</button>
+            <p class="res"></p>
+        </form>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    {{ block.super }}
+    <script type="text/javascript" src="/static/login.js"></script>
+{% endblock js %}

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>index</title>
+{% endblock title %}
+
+{% block style %}
+    {{ block.super }}
+    <style>
+        .regist {
+            margin: 20px auto;
+        }
+    .res{
+        margin: 20px auto;
+        font-size: 18px;
+    }
+    .success{
+        color:green;
+    }
+    .error{
+        color: red;
+    }
+    .check{
+        color: red;
+        float: right;
+    }
+    </style>
+{% endblock style %}
+
+{% block content %}
+    <h3>注册页面</h3>
+    <hr>
+    <div class="regist">
+        <form>
+            <div class="form-group">
+                <label for="">用户名</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+                <span class="check"></span>
+            </div>
+            <div class="form-group">
+                <label for="">昵称</label>
+                <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+                <span class="check"></span>
+            </div>
+            <div class="form-group">
+                <label for="">手机号</label>
+                <input type="text" class="form-control" id="phone" placeholder="Phone_no">
+                <span class="check"></span>
+            </div>
+            <div class="form-group">
+                <label for="">密码</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="">确认密码</label>
+                <input type="password" class="form-control" id="confirm_pwd" placeholder="ConfirmPassword">
+            </div>
+            <button type="submit" class="btn btn-success" id="btn">注册</button>
+            <p class="res"></p>
+        </form>
+    </div>
+{% endblock content %}
+
+{% block js %}
+    {{ block.super }}
+    <script type="text/javascript" src="/static/regist.js"></script>
+{% endblock js %}
