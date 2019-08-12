@@ -1,44 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="module6">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/base.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/index.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/migrations/0002_auto_20190812_0826.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/ajax.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/jquery-3.3.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/regist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/advertise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/file.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/regist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/大纲/JavaScript大纲(使用Typero软件查看).md" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JS_code/大纲/JavaScript大纲(使用Typero软件查看).md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oldboy.iml" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" />
+    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/06 django模型层/many_tables/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/06 django模型层/many_tables/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/06 django模型层/many_tables/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/06 django模型层/many_tables/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/07 django与ajax/a.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/10 Ajax/Ajaxdemo/templates/file_put.html" afterPath="$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/10 Ajax/Ajaxdemo/templates/file_put.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -286,46 +255,13 @@
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="07 django与ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="06 django模型层" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="module6" type="462c0819:PsiDirectoryNode" />
               <item name="07 django与ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="07 django与ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="07 django与ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax_app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="07 django与ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="statics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="07 django与ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -907,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565571120643</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="module6">
+      <created>1565615179199</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1565615179199</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -927,7 +870,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29699665" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25472748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25472748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1444563" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
