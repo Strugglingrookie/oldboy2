@@ -30,15 +30,15 @@
             <div class="col-md-6">
                 <form action="" method="post">
                     {% csrf_token %}
-                    <div>
+                    <div class="form-group">
                         <label for="">书籍名称</label>
                         <input type="text" class="form-control" name="title" value="{{ book_obj.title }}">
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="">价格</label>
                         <input type="text" class="form-control" name="price" value="{{ book_obj.price }}">
                     </div>
-                    <div>
+                    <div class="form-group">
                         <label for="">出版日期</label>
                         <input type="date" class="form-control" name="date"
                                value="{{ book_obj.pub_date|date:'Y-m-d' }}">
