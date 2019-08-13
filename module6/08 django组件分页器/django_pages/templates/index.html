@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+
+<ul>
+    {% for book in current_page.object_list %}
+        <li>书籍名称：{{ book.title }} 价格：{{ book.price }}</li>
+    {% empty %}
+        <li>暂无数据！</li>
+    {% endfor %}
+</ul>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+
+        {% if  current_page.has_previous %}
+            <li>
+                <a href="?page={{ current_page.previous_page_number }}" aria-label="Previous">
+                    <span aria-hidden="true">上一页</span></a>
+            </li>
+        {% else %}
+            <li class="disabled">
+                <a href="#" aria-label="Previous"><span aria-hidden="true">上一页</span></a>
+            </li>
+        {% endif %}
+
+
+        {% for i in page_lis %}
+            {% if current_page_num == i %}
+                <li class="active"><a href="?page={{ i }}">{{ i }}</a></li>
+            {% else %}
+                <li><a href="?page={{ i }}">{{ i }}</a></li>
+            {% endif %}
+
+        {% endfor %}
+        {% if  current_page.has_next %}
+            <li>
+                <a href="?page={{ current_page.next_page_number }}" aria-label="Previous">
+                    <span aria-hidden="true">下一页</span></a>
+            </li>
+        {% else %}
+            <li class="disabled">
+                <a href="#" aria-label="Previous"><span aria-hidden="true">下一页</span></a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+</body>
+</html>

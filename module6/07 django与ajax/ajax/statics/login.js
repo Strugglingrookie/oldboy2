@@ -5,7 +5,7 @@ $(function () {
         var data = {};
         data.name = $('#name').val().trim();
         data.pwd = $('#pwd').val().trim();
-        if (formdata.name && formdata.pwd) {
+        if (data.name && data.pwd) {
             $.ajax({
                 url: '',
                 type: 'post',
