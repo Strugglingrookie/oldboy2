@@ -42,8 +42,9 @@ def pages(request):
     # page1_ab = my_paginator.page('ab')
     # 所以在用的时候需要try一下来捕捉这些异常
 
+
     # 响应页面的代码  只用到了current_page_num 和 current_page
-    paginator = Paginator(book_objs, 6)
+    paginator = Paginator(book_objs, 10)
     current_page_num = int(request.GET.get('page', 1))
     # 当页码大于总页数时  当前页面取总页数
     current_page_num = current_page_num if current_page_num<=paginator.num_pages else paginator.num_pages
