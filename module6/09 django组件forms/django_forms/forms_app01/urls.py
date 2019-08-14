@@ -3,5 +3,7 @@ from forms_app01 import views
 
 
 urlpatterns = [
-    path('index/',views.index)
+    path('simple_forms/',views.simple_forms),
+    path('multi_forms/',views.multi_forms),
+    path('gouzi/',views.gouzi),
 ]
