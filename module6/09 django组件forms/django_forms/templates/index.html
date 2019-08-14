@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>注册页面</h3>
+            <form action="" method="post">
+                {% csrf_token %}
+                <label for="user">用户名</label>
+                <p><input type="text" name="name" id="name"></p>
+                <label for="pwd">密码</label>
+                <p><input type="password" name="pwd" id="pwd"></p>
+                <label for="r_pwd">确认密码</label>
+                <p><input type="password" name="r_pwd" id="r_pwd"></p>
+                <label for="email">邮箱</label>
+                <p><input type="text" name="email" id="email"></p>
+                <label for="phone">手机</label>
+                <p><input type="text" name="tel" id="phone"></p>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
