@@ -13,6 +13,7 @@
     <orderEntry type="module" module-name="ajax" />
     <orderEntry type="module" module-name="django_pages" />
     <orderEntry type="module" module-name="django_forms" />
+    <orderEntry type="module" module-name="cookie_session" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
