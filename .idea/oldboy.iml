@@ -14,6 +14,7 @@
     <orderEntry type="module" module-name="django_pages" />
     <orderEntry type="module" module-name="django_forms" />
     <orderEntry type="module" module-name="cookie_session" />
+    <orderEntry type="module" module-name="auther" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

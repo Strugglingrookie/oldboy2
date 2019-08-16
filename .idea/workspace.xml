@@ -2,31 +2,314 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/.idea/cookie_session.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/statics/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/.idea/auther.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/statics/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/regist.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/Django-2.2.3.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/django/contrib/admin/static/admin/fonts/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/basecommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/baseparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/build_env.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/cmdoptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/check.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/completion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/configuration.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/hash.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/help.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/search.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/show.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/configuration.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/locations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/models/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/models/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/check.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/freeze.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/prepare.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/pep425tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_set.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_uninstall.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/resolve.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/appdirs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/deprecation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/encoding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/filesystem.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/glibc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/hashes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/logging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/misc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/outdated.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/packaging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/setuptools_build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/temp_dir.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/typing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/ui.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/bazaar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/git.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/mercurial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/subversion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/appdirs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/_cmd.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/adapter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/file_cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/controller.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/filewrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/heuristics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/serialize.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/wrapper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/core.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/big5freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/big5prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/chardistribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/charsetgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/charsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cli/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cli/chardetect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/codingstatemachine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cp949prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/enums.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/escprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/escsm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/eucjpprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euckrfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euckrprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euctwfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euctwprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/gb2312freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/gb2312prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/hebrewprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/jisfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/jpcntx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langbulgarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langcyrillicmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langgreekmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langhebrewmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langhungarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langthaimodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langturkishmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/latin1prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcssm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sjisprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/universaldetector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/utf8prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/ansi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/ansitowin32.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/initialise.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/win32.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/winterm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/misc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/shutil.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/sysconfig.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/sysconfig.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/tarfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/database.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/locators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/manifest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/metadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/resources.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/wheel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distro.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_ihatexml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_inputstream.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_tokenizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/datrie.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/lint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/optionaltags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/sanitizer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/whitespace.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/html5parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/serializer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/genshi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/sax.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/dom.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/etree.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/genshi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/codec.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/core.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/idnadata.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/intranges.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/package_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/uts46data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/ipaddress.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/linklockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/mkdirlockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/pidlockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/sqlitelockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/symlinklockfile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/_version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/fallback.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/__about__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/_compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/_structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/markers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/requirements.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/specifiers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pkg_resources/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pkg_resources/py31compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/bar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/counter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/spinner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pyparsing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/core.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/writer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/__version__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/_internal_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/adapters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/auth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/certs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/cookies.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/help.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/hooks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/packages.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/sessions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/status_codes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/structures.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/retrying.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/_collections.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/connectionpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/appengine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/ntlmpool.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/pyopenssl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/securetransport.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/socks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/filepost.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/backports/makefile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ordered_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/six.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/poolmanager.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/connection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/request.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/response.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/retry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/selectors.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/ssl_.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/timeout.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/url.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/wait.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/labels.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/mklabels.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/x_user_defined.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/pytz-2019.1.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module6/django_views/venv/lib/python3.7/site-packages/sqlparse-0.3.0.dist-info/RECORD" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oldboy.iml" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/a.txt" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/a.txt" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/__init__.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,34 +421,12 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py">
+            <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="135" column="26" lean-forward="true" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+                <state relative-caret-position="242">
+                  <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#59#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#37#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -175,23 +436,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/app01/views.py">
+          <file leaf-file-name="regist.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/regist.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#59#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/cookieSession/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+                <state relative-caret-position="242">
+                  <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -222,15 +471,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/06 django模型层/tables/tables_app001/models.py" />
-        <option value="$PROJECT_DIR$/module6/06 django模型层/book/templates/book.html" />
-        <option value="$PROJECT_DIR$/module6/06 django模型层/book/templates/updatebook.html" />
-        <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/settings.py" />
-        <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/urls.py" />
-        <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/__init__.py" />
-        <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/models.py" />
-        <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/index.js" />
-        <option value="$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/10 Ajax/Ajaxdemo/app01/views.py" />
         <option value="$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/10 Ajax/Ajaxdemo/templates/file_put.html" />
         <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/urls.py" />
         <option value="$PROJECT_DIR$/module6/04 django视图层/django_views/templates/index.html" />
@@ -271,8 +511,17 @@
         <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html" />
         <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py" />
         <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/urls.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" />
         <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py" />
+        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/settings.py" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/index.html" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/login.html" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/regist.html" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/urls.py" />
+        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py" />
       </list>
     </option>
   </component>
@@ -337,57 +586,28 @@
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="02 Django基础相关代码" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="02 Django基础相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="13 cookie与session" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="02 Django基础相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="13 cookie与session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookieSession" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="02 Django基础相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="13 cookie与session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookieSession" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="02 Django基础相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="13 cookie与session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookieSession" type="462c0819:PsiDirectoryNode" />
-              <item name="cookieSession" type="462c0819:PsiDirectoryNode" />
+              <item name="module6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="module6" type="462c0819:PsiDirectoryNode" />
+              <item name="09 django组件forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module6" type="462c0819:PsiDirectoryNode" />
+              <item name="09 django组件forms" type="462c0819:PsiDirectoryNode" />
+              <item name="django_forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module6" type="462c0819:PsiDirectoryNode" />
+              <item name="09 django组件forms" type="462c0819:PsiDirectoryNode" />
+              <item name="django_forms" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
@@ -400,14 +620,6 @@
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="module6" type="462c0819:PsiDirectoryNode" />
               <item name="10 django组件cookie&amp;session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookie_session" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="10 django组件cookie&amp;session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookie_session" type="462c0819:PsiDirectoryNode" />
               <item name="cookie_session" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -422,16 +634,29 @@
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="10 django组件cookie&amp;session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookie_session" type="462c0819:PsiDirectoryNode" />
-              <item name="statics" type="462c0819:PsiDirectoryNode" />
+              <item name="11 django组件用户认证" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="10 django组件cookie&amp;session" type="462c0819:PsiDirectoryNode" />
-              <item name="cookie_session" type="462c0819:PsiDirectoryNode" />
+              <item name="11 django组件用户认证" type="462c0819:PsiDirectoryNode" />
+              <item name="auther" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module6" type="462c0819:PsiDirectoryNode" />
+              <item name="11 django组件用户认证" type="462c0819:PsiDirectoryNode" />
+              <item name="auther" type="462c0819:PsiDirectoryNode" />
+              <item name="auth_app01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module6" type="462c0819:PsiDirectoryNode" />
+              <item name="11 django组件用户认证" type="462c0819:PsiDirectoryNode" />
+              <item name="auther" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -452,13 +677,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther\statics" />
       <recent name="E:\Study\oldboy2\module6\10 django组件cookie&amp;session\cookie_session\cs_app01" />
       <recent name="E:\Study\oldboy2\module6\10 django组件cookie&amp;session\cookie_session\statics" />
       <recent name="E:\Study\oldboy2\module6\09 django组件forms\django_forms\templates" />
       <recent name="E:\Study\oldboy2\module6\09 django组件forms\django_forms\statics" />
-      <recent name="E:\Study\oldboy2\module6\08 django组件分页器\django_pages\statics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther" />
       <recent name="E:\Study\oldboy2\module6\07 django与ajax\ajax\statics" />
       <recent name="E:\Study\oldboy2\module6\06 django模型层\django_models\statics" />
       <recent name="E:\Study\oldboy2\module6\03 django路由层\django_urls\statics" />
@@ -477,7 +703,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.cookie_session">
+  <component name="RunManager" selected="Django server.auther">
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -655,6 +881,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ajax" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration name="auther" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="auther" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -887,7 +1135,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="12">
+    <list size="13">
       <item index="0" class="java.lang.String" itemvalue="Django server.django_urls" />
       <item index="1" class="java.lang.String" itemvalue="Django server.django_views" />
       <item index="2" class="java.lang.String" itemvalue="Django server.book" />
@@ -900,6 +1148,7 @@
       <item index="9" class="java.lang.String" itemvalue="Python.models (1)" />
       <item index="10" class="java.lang.String" itemvalue="Python.test" />
       <item index="11" class="java.lang.String" itemvalue="Python.manage (1)" />
+      <item index="12" class="java.lang.String" itemvalue="Django server.auther" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1135,7 +1384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565787794312</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="module6">
+      <created>1565876556179</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1565876556179</updated>
+    </task>
+    <task id="LOCAL-00032" summary="module6">
+      <created>1565937384977</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1565937384977</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1149,15 +1412,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14605543" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4968017" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.50319827" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25412542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25412542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1166,7 +1431,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29699665" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1195,112 +1459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/index.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/regist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="47" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="125" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="152" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="73" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="63" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/08 django组件分页器/django_pages/statics/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="4" column="76281" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/08 django组件分页器/django_pages/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/11 分页器/pageDemo/pageDemo/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/11 分页器/pageDemo/pageDemo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1367,20 +1525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/myforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_two.html" />
     <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_three.html" />
     <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/urls.py">
@@ -1423,26 +1567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="152" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1489,16 +1617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_forms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#form#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1509,38 +1627,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding>
-            <element signature="e#638#670#0" expanded="true" />
+            <element signature="e#638#670#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/cookieSession/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        <state relative-caret-position="435">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#59#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/app01/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/cookieSession/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1550,33 +1676,193 @@
         <state relative-caret-position="154">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/app01/views.py">
+    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/cookieSession/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="135" column="26" lean-forward="true" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
+        <state relative-caret-position="308">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/statics/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="152" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#630#662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#24#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/14 中间件/middlewareDemo/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/myforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
