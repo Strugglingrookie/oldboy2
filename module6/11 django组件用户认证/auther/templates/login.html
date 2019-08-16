@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h4>登录</h4>
+            <form action="" method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-group">
+                        <label for="">{{ field.label }}</label>
+                        {{ field }}
+                        <span class="pull-right" style="color: red">{{ field.errors.0 }}</span>
+                    </div>
+                {% endfor %}
+                <input type="submit" class="btn btn-success">
+                <span class="pull-right" style="color: red">{{ error }}</span>
+            </form>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

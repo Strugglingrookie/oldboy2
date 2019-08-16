@@ -22,3 +22,8 @@ class Form(forms.Form):
             raise ValidationError('用户名已存在！')
 
 
+class LoginForm(forms.Form):
+    name = forms.CharField(min_length=4, max_length=16, widget=name_widget, label='用户名')
+    pwd = forms.CharField(min_length=4, max_length=16, widget=pwd_widget, label='密码')
+
+
