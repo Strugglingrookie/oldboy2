@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/module6/08 django组件分页器/django_pages/.idea/django_pages.iml" filepath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/.idea/django_pages.iml" />
       <module fileurl="file://$PROJECT_DIR$/module6/03 django路由层/django_urls/.idea/django_urls.iml" filepath="$PROJECT_DIR$/module6/03 django路由层/django_urls/.idea/django_urls.iml" />
       <module fileurl="file://$PROJECT_DIR$/module6/04 django视图层/django_views/.idea/django_views.iml" filepath="$PROJECT_DIR$/module6/04 django视图层/django_views/.idea/django_views.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module6/12 django组件中间件/middleware/.idea/middleware.iml" filepath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/.idea/middleware.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/oldboy.iml" filepath="$PROJECT_DIR$/.idea/oldboy.iml" />
     </modules>
   </component>
