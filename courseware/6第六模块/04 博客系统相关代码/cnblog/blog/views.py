@@ -56,7 +56,7 @@ def index(request):
     """
     article_list = models.Article.objects.all()
 
-    return render(request, "index1.html", {"article_list": article_list})
+    return render(request, "index.html", {"article_list": article_list})
 
 
 def logout(request):
