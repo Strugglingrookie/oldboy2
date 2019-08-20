@@ -13,7 +13,7 @@ mobile_geetest_key = "f5883f4ee3bd4fa8caec67941de1b903"
 
 
 def home(request):
-    return render(request, "index1.html",)
+    return render(request, "index.html",)
 
 
 def pcgetcaptcha(request):

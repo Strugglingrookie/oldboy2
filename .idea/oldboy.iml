@@ -16,6 +16,7 @@
     <orderEntry type="module" module-name="cookie_session" />
     <orderEntry type="module" module-name="auther" />
     <orderEntry type="module" module-name="middleware" />
+    <orderEntry type="module" module-name="blog" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
