@@ -1,0 +1,95 @@
+curEnv: sit08
+mode: dev
+
+sit08:
+  PH:
+    url: https://testweb20160.yylending.com
+    DB:
+      host: 172.29.2.143
+      port: 3507
+      user: yylendingapp
+      password: WuGeiKaiFa123
+      db: yylending08
+
+  WPT:
+    url: https://testwpt20150.yylending.com
+    DB:
+      mongo_host: 172.29.2.162
+      mongo_port: 27018
+
+  WK:
+    url: http://172.30.3.218
+    DB:
+      host: 172.29.2.144
+      port: 3501
+      user: wkapp
+      password: WuGeiKaiFa123
+      db: wkdb08
+
+  BS:
+    host: 172.29.2.149:8080
+    DB:
+      host: 172.29.2.144
+      port: 3502
+      user: bsapp
+      password: WuGeiKaiFa123
+      db: bsdb08
+
+  INNER:
+    url: http://172.29.2.152:8080
+    DB:
+      host: 172.29.2.143
+      port: 3505
+      user: innerevalapp
+      password: WuGeiKaiFa123
+      db: innereval08
+
+  CORE:
+    DB:
+      host: 172.29.2.145
+      port: 1522
+      user: yjsdata
+      password: wugeikaifa123
+      db: YYFAX03
+
+  FATP:
+    url: https://testfatpsit08.yylending.com
+    DB:
+      host: 172.29.2.143
+      port: 3506
+      user: fatpapp
+      password: WuGeiKaiFa123
+      db: fatpdb08
+
+  OMS:
+    url: https://testomssit08.yylending.com
+
+  PLMS:
+    url: https://testplmssit08image.yylending.com
+
+  YYFAX:
+    msgDB:
+      host: 172.29.2.157
+      port: 3323
+      user: msgdata
+      password: yjsdata1016
+      db: yyfax_msg
+    jiesuanDB:
+      host: 172.30.3.78
+      port: 3310
+      user: yjsdata
+      password: PtSjKmMkFwY666
+      db: yyfax_user
+    xgmDB:
+      host: 172.29.2.157
+      port: 3320
+      user: yjsdata
+      password: PtSjKmMkFwY666
+      db: S62
+
+  ZLJR:
+    ftpServer:
+      host: 112.74.138.13
+      port: 10022
+      username: tbs
+      password: yP0*_3u9

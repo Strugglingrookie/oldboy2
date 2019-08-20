@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/queryCredit/A-01-个人借款及担保申请表.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/queryCredit/A-06-征信查询授权书.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/queryCredit/A-08-第二代身份证.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/fatpTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/omsTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/phTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/wkTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/wptTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/queryCredit/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/queryCredit/queryCredit.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/tools/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/tools/base.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/blog/views.py" afterPath="$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/blog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/__init__.py" afterPath="$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/settings.py" afterPath="$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/settings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/work/check_file.py" afterPath="$PROJECT_DIR$/work/平台/check_file.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/work/send_red_packages/bin/interface_star.py" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/work/send_red_packages/bin/user.json" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/bin/user.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/work/send_red_packages/conf/config.py" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/conf/config.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/work/send_red_packages/lib/tools.py" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/lib/tools.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/work/上传人间.py" afterPath="$PROJECT_DIR$/work/平台/上传文件.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,56 +133,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="02 博客系统的表关系.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/02 博客系统的表关系.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2353">
-              <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03 登录功能.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/03 登录功能.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="04 注册功能.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/04 注册功能.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-615">
-              <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="05 设计首页.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/05 设计首页.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="06 个人站点页面的设计.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/06 个人站点页面的设计.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1474">
-              <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="07 文章详情页.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/07 文章详情页.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -196,11 +165,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state relative-caret-position="285">
+              <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Python中级第8模块课件链接.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseware/Python中级第8模块课件链接.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Python第7模块课件链接.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseware/Python第7模块课件链接.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interface_star.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="114" column="27" lean-forward="false" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+              <folding>
+                <marker date="1564714302882" expanded="true" signature="2120:2355" ph="insert into S62.withhold_info... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fatpTest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/fatpTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding>
+                <element signature="e#14#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Python中级第9模块课件链接地址.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseware/Python中级第9模块课件链接地址.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -338,66 +371,27 @@
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="autoRegressionTesting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="04 博客系统相关代码" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="autoRegressionTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="04 博客系统相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="04 博客系统相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="04 博客系统相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblog" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="courseware" type="462c0819:PsiDirectoryNode" />
-              <item name="6第六模块" type="462c0819:PsiDirectoryNode" />
-              <item name="04 博客系统相关代码" type="462c0819:PsiDirectoryNode" />
-              <item name="cnblog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
-              <item name="module6" type="462c0819:PsiDirectoryNode" />
-              <item name="13 BBS&amp;BLOG" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="autoRegressionTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="queryCredit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -418,18 +412,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\work\平台" />
       <recent name="E:\Study\oldboy2\module6\12 django组件中间件\middleware\middle_app01" />
       <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther" />
       <recent name="E:\Study\oldboy2\module6\07 django与ajax\ajax\statics" />
       <recent name="E:\Study\oldboy2\module6\06 django模型层\django_models\statics" />
-      <recent name="E:\Study\oldboy2\module6\03 django路由层\django_urls\statics" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\work" />
       <recent name="E:\Study\oldboy2\module6\12 django组件中间件\middleware\templates" />
       <recent name="E:\Study\oldboy2\module6\12 django组件中间件\middleware\middle_app01\migrations" />
       <recent name="E:\Study\oldboy2\module6\12 django组件中间件\middleware\middle_app01" />
       <recent name="E:\Study\oldboy2\module6\12 django组件中间件\middleware\statics" />
-      <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther\statics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1169,7 +1163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566202882444</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="module6">
+      <created>1566204697833</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1566204697833</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1183,7 +1184,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1065" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14903846" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4968017" order="10" side_tool="false" content_ui="tabs" />
@@ -1193,7 +1193,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26431718" sideWeight="0.49626067" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26431718" sideWeight="0.49626067" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1230,52 +1230,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/statics/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="46" />
-          <folding>
-            <element signature="e#630#662#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_forms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1506,7 +1460,7 @@
         <state relative-caret-position="264">
           <caret line="12" column="49" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1635,9 +1589,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        <state relative-caret-position="285">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/Python中级第8模块课件链接.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/Python中级第9模块课件链接地址.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseware/Python第7模块课件链接.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="114" column="27" lean-forward="false" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+          <folding>
+            <marker date="1564714302882" expanded="true" signature="2120:2355" ph="insert into S62.withhold_info... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/fatpTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
