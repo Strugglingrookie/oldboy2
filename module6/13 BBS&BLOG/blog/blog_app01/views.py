@@ -34,7 +34,7 @@ def login(request):
 
 
 def regist(request):
-    if request.method == 'POST':
+    if request.method == 'POST':  # 或者 if request.is_ajax():
         form = UserForms(request.POST)
         res = response = {"user": None, "msg": None}
         if form.is_valid():
@@ -45,6 +45,7 @@ def regist(request):
             phone = form.cleaned_data['tel']
             # 注意创建用户的时候要用create_user方法  用create的话不会对密码进行加密
             res = UserInfo.objects.create_user(username=username,email=email,password=pwd,phone_num=phone)
+            response["user"] = form.cleaned_data.get("username")
         else:
             res["msg"] = form.errors
         return JsonResponse(res)

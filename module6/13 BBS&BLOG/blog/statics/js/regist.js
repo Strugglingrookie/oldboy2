@@ -3,15 +3,24 @@ $(function () {
    $('#btn').click(function (e) {
        e.preventDefault();
        var formdata = new FormData();
-       formdata.append("name", $('#id_name').val().trim());
-       formdata.append("pwd", $('#id_pwd').val().trim());
-       formdata.append("r_pwd", $('#id_r_pwd').val().trim());
-       formdata.append("email", $('#id_email').val().trim());
-       formdata.append("tel", $('#id_tel').val().trim());
-       formdata.append("avatar", $('#avatar')[0].files[0]);
-       formdata.append("csrfmiddlewaretoken", $('[name="csrfmiddlewaretoken"]').val());
 
-       if(formdata.name && formdata.pwd && formdata.r_pwd && formdata.email && formdata.tel){
+       // 一个个手动加
+       // formdata.append("name", $('#id_name').val().trim());
+       // formdata.append("pwd", $('#id_pwd').val().trim());
+       // formdata.append("r_pwd", $('#id_r_pwd').val().trim());
+       // formdata.append("email", $('#id_email').val().trim());
+       // formdata.append("tel", $('#id_tel').val().trim());
+       // formdata.append("csrfmiddlewaretoken", $('[name="csrfmiddlewaretoken"]').val());
+       // formdata.append("avatar", $('#avatar')[0].files[0]);
+
+       // 也可以这样简单的加
+       var request_data = $("#form").serializeArray();
+        $.each(request_data, function (index, data) {
+            formdata.append(data.name, data.value)
+        });
+        formdata.append("avatar", $('#avatar')[0].files[0]);
+
+       // if(formdata.name && formdata.pwd && formdata.r_pwd && formdata.email && formdata.tel){
            $.ajax({
                url:'',
                type:'post',
@@ -19,20 +28,22 @@ $(function () {
                processData:false,
                data:formdata,
                success:function (data) {
-                   console.log(data.user);
-                   if(data.msg){
-                       $('.error').text(data.msg).css({"color":'red', 'margin-left':"20px"})
-                   }else{
+                   if(data.user){
                        location.href='/app01/login/'
+                   }else{
+                       $.each(data.msg, function (field, error_list) {
+                           console.log(field, error_list);
+                           $('#id_'+field).next().text(error_list[0])
+                       });
                    }
                },
                error:function (data) {
                    console.log(data)
                }
            })
-       }else{
-           $('.error').text('所有项均为必填！').css({"color":'red', 'margin-left':"20px"})
-       }
+       // }else{
+       //     $('.error').text('所有项均为必填！').css({"color":'red', 'margin-left':"20px"})
+       // }
    });
 
     // 图片预览
