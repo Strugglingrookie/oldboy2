@@ -156,6 +156,6 @@ LOGGING = {
     }
 }
 
-# 与用户上传相关的配置
+# 与用户上传相关的配置  类似于static 和 statics的关系
+MEDIA_URL="/media/"  # 浏览器可以同static一样，通过media直接访问下面配置目录的media数据
 MEDIA_ROOT=os.path.join(BASE_DIR,"media")
-MEDIA_URL="/media/"

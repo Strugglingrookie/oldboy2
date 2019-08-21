@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, re_path, include
+from django.views.static import serve
+from blog import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 配置media的访问路径 实现同static的访问效果  http://127.0.0.1:8080/media/avatars/default.png
+    re_path(r'^media/(?P<path>.*)', serve, {"document_root":settings.MEDIA_ROOT}),
     path('app01/', include('blog_app01.urls')),
 ]

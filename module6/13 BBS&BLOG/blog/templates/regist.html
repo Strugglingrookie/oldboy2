@@ -24,13 +24,7 @@
                     <div class="form-group">
                         <label for={{ field.auto_id }}>{{ field.label }}</label>
                         {{ field }}
-                        <span class="pull-right" style="color: red">
-                            {% if field.label == '确认密码' %}
-                                {{ clean_error.0 }}
-                            {% else %}
-                                {{ field.errors.0 }}
-                            {% endif %}
-                        </span>
+                        <span class="pull-right" style="color: red"></span>
                     </div>
                 {% endfor %}
                 <div class="form-group">
@@ -42,10 +36,8 @@
                 </div>
                 <div class="form-group">
                     <input type="submit" value="注册" class="btn btn-success" id="btn">
-                    <span class="error"></span>
+                    <span class="pull-right error" style="color: red"></span>
                 </div>
-
-
             </form>
         </div>
     </div>

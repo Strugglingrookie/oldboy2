@@ -36,16 +36,33 @@ def login(request):
 def regist(request):
     if request.method == 'POST':  # 或者 if request.is_ajax():
         form = UserForms(request.POST)
-        res = response = {"user": None, "msg": None}
+        res = {"user": None, "msg": None}
         if form.is_valid():
-            print(form.cleaned_data)
             username = form.cleaned_data['name']
             email = form.cleaned_data['email']
             pwd = form.cleaned_data['pwd']
             phone = form.cleaned_data['tel']
-            # 注意创建用户的时候要用create_user方法  用create的话不会对密码进行加密
-            res = UserInfo.objects.create_user(username=username,email=email,password=pwd,phone_num=phone)
-            response["user"] = form.cleaned_data.get("username")
+            file_obj = request.FILES.get('avatar')
+            '''
+            if not file_obj:
+                # 注意创建用户的时候要用create_user方法  用create的话不会对密码进行加密
+                UserInfo.objects.create_user(username=username,email=email,password=pwd,phone_num=phone)
+            else:
+                # django会将文件对象下载到项目的根目录avatars(model指定的路径)文件夹中
+                # （如果没有avatars文件夹，Django会自动创建）,user_obj的avatar存的是文件的相对路径。
+                
+                # 如果settings中 配置了 MEDIA_ROOT=os.path.join(BASE_DIR,"media")
+                # django会将文件对象下载到配置目录下的avatars中，没有则创建。
+                
+                UserInfo.objects.create_user(username=username,email=email,password=pwd,phone_num=phone,avatar=file_obj)
+           '''
+            # 上面的写法不规范，优化后如下
+            extra = {}
+            if file_obj:
+                extra = {"avatar":file_obj}
+            UserInfo.objects.create_user(username=username, email=email, password=pwd, phone_num=phone,**extra)
+
+            res["user"] = form.cleaned_data.get("name")
         else:
             res["msg"] = form.errors
         return JsonResponse(res)
