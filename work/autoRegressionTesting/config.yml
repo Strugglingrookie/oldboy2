@@ -51,6 +51,7 @@ sit08:
       user: yjsdata
       password: wugeikaifa123
       db: YYFAX03
+    MYDB: yjsdata/wugeikaifa123@172.29.2.145:1522/YYFAX03
 
   FATP:
     url: https://testfatpsit08.yylending.com
@@ -65,7 +66,17 @@ sit08:
     url: https://testomssit08.yylending.com
 
   PLMS:
-    url: https://testplmssit08image.yylending.com
+    url: https://testplmssit08.yylending.com
+    DB:
+      host: 172.29.2.144
+      port: 3503
+      user: plmsapp
+      password: WuGeiKaiFa123
+      db: plmsdb08
+    header:
+      content-type: application/json;charset=UTF-8
+      systemid: PLMS
+      user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
 
   YYFAX:
     msgDB:
@@ -93,3 +104,5 @@ sit08:
       port: 10022
       username: tbs
       password: yP0*_3u9
+
+
