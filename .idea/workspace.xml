@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/00算法复杂度.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/01二分查找.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02冒泡排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/03选择排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/share_id.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/tools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/userid.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/autoRegressionTesting/config.yml" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +26,17 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/oldboy2$test.coverage" NAME="test Coverage Results" MODIFIED="1565167568171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy2$Unittests_in_plmsTest_py.coverage" NAME="Unittests in plmsTest.py Coverage Results" MODIFIED="1567147570299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/business" />
+    <SUITE FILE_PATH="coverage/oldboy2$01.coverage" NAME="01二分查找 Coverage Results" MODIFIED="1574392611069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1564284143300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite" />
-    <SUITE FILE_PATH="coverage/oldboy$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1564284206054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/django_views" />
-    <SUITE FILE_PATH="coverage/oldboy2$plms_tools.coverage" NAME="plms_tools Coverage Results" MODIFIED="1567133888044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/tools" />
-    <SUITE FILE_PATH="coverage/oldboy2$Unittests_for_plmsTest_PLMSTest.coverage" NAME="Unittests for plmsTest.PLMSTest Coverage Results" MODIFIED="1567133735789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/business" />
+    <SUITE FILE_PATH="coverage/oldboy2$plms_tools.coverage" NAME="plms_tools Coverage Results" MODIFIED="1567664667658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/tools" />
+    <SUITE FILE_PATH="coverage/oldboy2$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1574393618386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/核心/周年庆造数据" />
+    <SUITE FILE_PATH="coverage/oldboy2$Unittests_for_plmsTest_PLMSTest.coverage" NAME="Unittests for plmsTest.PLMSTest Coverage Results" MODIFIED="1567662222077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/business" />
     <SUITE FILE_PATH="coverage/oldboy$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1564287893100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite/app01" />
+    <SUITE FILE_PATH="coverage/oldboy2$02.coverage" NAME="02冒泡排序 Coverage Results" MODIFIED="1574393338658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1564284206054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/django_views" />
+    <SUITE FILE_PATH="coverage/oldboy2$.coverage" NAME="算法 Coverage Results" MODIFIED="1574391444769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03选择排序 Coverage Results" MODIFIED="1574405745492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy2$interface_star.coverage" NAME="interface_star Coverage Results" MODIFIED="1567665209383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/平台/send_red_packages/bin" />
     <SUITE FILE_PATH="coverage/oldboy2$Unittests_for_plmsTest_PLMSTest_test_PLMS_001_.coverage" NAME="Unittests for plmsTest.PLMSTest.test_PLMS_001_一次性费用还款 Coverage Results" MODIFIED="1567077084228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/business" />
   </component>
   <component name="DatabaseView">
@@ -101,83 +114,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plmsTest.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py">
+      <file leaf-file-name="算法.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/算法.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-              <folding>
-                <element signature="e#15#29#0" expanded="true" />
-                <element signature="e#7920#8570#0" expanded="false" />
-                <element signature="e#9482#10107#0" expanded="false" />
-                <element signature="e#10156#10756#0" expanded="false" />
-                <marker date="1567147914537" expanded="true" signature="3270:3366" ph="SELECT * FRO... plms_case_distribute" />
-                <marker date="1567147914537" expanded="true" signature="7073:7183" ph="SELECT * fro... LOAN_NO" />
-                <marker date="1567147914537" expanded="true" signature="7088:7167" ph="select LOAN_... ph_disposal_loanplan" />
-                <marker date="1567147914537" expanded="true" signature="7275:7333" ph="select * fro... ph_disposal_repayrecord" />
-                <marker date="1567147914537" expanded="true" signature="8267:8399" ph="SELECT PAY_O... *" />
-                <marker date="1567147914537" expanded="true" signature="8282:8383" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
-                <marker date="1567147914537" expanded="true" signature="9098:9159" ph="SELECT * fro... PAY_OFF_FLAG" />
-                <marker date="1567147914537" expanded="true" signature="9098:9170" ph="select * fro... ph_prerepayrecord" />
-                <marker date="1567147914537" expanded="true" signature="9771:9785" ph="select * fro... ph_prerepayrecord" />
-                <marker date="1567147914537" expanded="true" signature="9771:9837" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
-                <marker date="1567147914537" expanded="true" signature="10409:10467" ph="select * fro... ph_disposal_repayrecord" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fatpTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/fatpTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="316" column="8" lean-forward="true" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="27" />
-              <folding>
-                <element signature="e#14#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="66">
+              <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plms_tools.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py">
+      <file leaf-file-name="03选择排序.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module8/03选择排序.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-              <folding>
-                <marker date="1567147420371" expanded="true" signature="659:805" ph="SELECT PAY_O... *" />
-                <marker date="1567147420371" expanded="true" signature="685:789" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
-                <marker date="1567147420371" expanded="true" signature="971:1067" ph="SELECT * FRO... plms_case_distribute" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wkTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/wkTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+            <state relative-caret-position="308">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,15 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/gouzi.html" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/settings.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/urls.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/models.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/urls.py" />
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py" />
         <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py" />
@@ -256,7 +198,16 @@
         <option value="$PROJECT_DIR$/work/autoRegressionTesting/business/tools.py" />
         <option value="$PROJECT_DIR$/work/autoRegressionTesting/config.yml" />
         <option value="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" />
+        <option value="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" />
         <option value="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" />
+        <option value="$PROJECT_DIR$/work/核心/周年庆造数据/share_id.txt" />
+        <option value="$PROJECT_DIR$/module8/二分查找.py" />
+        <option value="$PROJECT_DIR$/module8/00算法复杂度.py" />
+        <option value="$PROJECT_DIR$/module8/算法.py" />
+        <option value="$PROJECT_DIR$/module8/01二分查找.py" />
+        <option value="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" />
+        <option value="$PROJECT_DIR$/module8/02冒泡排序.py" />
+        <option value="$PROJECT_DIR$/module8/03选择排序.py" />
       </list>
     </option>
   </component>
@@ -306,7 +257,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,25 +267,31 @@
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="autoRegressionTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="核心" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="autoRegressionTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="核心" type="462c0819:PsiDirectoryNode" />
+              <item name="周年庆造数据" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,11 +312,11 @@
       <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\module8" />
+      <recent name="E:\Study\oldboy2" />
+      <recent name="E:\Study\oldboy2\work\核心\周年庆造数据" />
       <recent name="E:\Study\oldboy2\module6\13 BBS&amp;BLOG\blog\blog_app01" />
       <recent name="E:\Study\oldboy2\module6\13 BBS&amp;BLOG\blog" />
-      <recent name="E:\Study\oldboy2\module6\13 BBS&amp;BLOG\blog\statics" />
-      <recent name="E:\Study\oldboy2\work" />
-      <recent name="E:\Study\oldboy2\module6\12 django组件中间件\middleware\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,51 +331,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in plmsTest.py">
-    <configuration name="Unittests for plmsTest.PLMSTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.03选择排序">
+    <configuration name="算法" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/autoRegressionTesting/business" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;plmsTest.PLMSTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/算法.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Unittests for plmsTest.PLMSTest.test_PLMS_001_一次性费用还款" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="01二分查找" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/autoRegressionTesting/business" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;plmsTest.PLMSTest.test_PLMS_001_一次性费用还款&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/01二分查找.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Unittests in plmsTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="02冒泡排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/autoRegressionTesting/business" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/02冒泡排序.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="03选择排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/03选择排序.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -696,6 +679,24 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
+    <configuration name="create_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/核心/周年庆造数据" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="django_forms" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -784,24 +785,6 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <configuration name="manage (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module6/06 django模型层/book" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="book" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module6/06 django模型层/book/manage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="middleware" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -824,24 +807,6 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <configuration name="plms_tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work/autoRegressionTesting/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="15">
       <item index="0" class="java.lang.String" itemvalue="Django server.django_urls" />
       <item index="1" class="java.lang.String" itemvalue="Django server.django_views" />
@@ -853,19 +818,19 @@
       <item index="7" class="java.lang.String" itemvalue="Django server.auther" />
       <item index="8" class="java.lang.String" itemvalue="Django server.middleware" />
       <item index="9" class="java.lang.String" itemvalue="Django server.blog" />
-      <item index="10" class="java.lang.String" itemvalue="Python.manage (1)" />
-      <item index="11" class="java.lang.String" itemvalue="Python tests.Unittests for plmsTest.PLMSTest" />
-      <item index="12" class="java.lang.String" itemvalue="Python tests.Unittests in plmsTest.py" />
-      <item index="13" class="java.lang.String" itemvalue="Python.plms_tools" />
-      <item index="14" class="java.lang.String" itemvalue="Python tests.Unittests for plmsTest.PLMSTest.test_PLMS_001_一次性费用还款" />
+      <item index="10" class="java.lang.String" itemvalue="Python.create_data" />
+      <item index="11" class="java.lang.String" itemvalue="Python.01二分查找" />
+      <item index="12" class="java.lang.String" itemvalue="Python.算法" />
+      <item index="13" class="java.lang.String" itemvalue="Python.02冒泡排序" />
+      <item index="14" class="java.lang.String" itemvalue="Python.03选择排序" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in plmsTest.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.plms_tools" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for plmsTest.PLMSTest" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for plmsTest.PLMSTest.test_PLMS_001_一次性费用还款" />
-        <item index="4" class="java.lang.String" itemvalue="Python.manage (1)" />
+        <item index="0" class="java.lang.String" itemvalue="Python.03选择排序" />
+        <item index="1" class="java.lang.String" itemvalue="Python.create_data" />
+        <item index="2" class="java.lang.String" itemvalue="Python.02冒泡排序" />
+        <item index="3" class="java.lang.String" itemvalue="Python.01二分查找" />
+        <item index="4" class="java.lang.String" itemvalue="Python.算法" />
       </list>
     </recent_temporary>
   </component>
@@ -1163,12 +1128,19 @@
       <option name="project" value="LOCAL" />
       <updated>1566552823412</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="work">
+      <created>1567156018241</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1567156018241</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_plmsTest_py - 2019.08.30 at 13h 56m 07s.xml">
-      <configuration name="Unittests in plmsTest.py" configurationId="tests" />
+    <history-entry file="Unittests_for_plmsTest_PLMSTest - 2019.09.05 at 13h 44m 01s.xml">
+      <configuration name="Unittests for plmsTest.PLMSTest" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_plmsTest_py - 2019.08.30 at 14h 31m 11s.xml">
       <configuration name="Unittests in plmsTest.py" configurationId="tests" />
@@ -1211,13 +1183,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15831557" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18017058" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4968017" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26362625" sideWeight="0.5037393" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.243604" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29699665" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.243604" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669633" sideWeight="0.49626067" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1241,7 +1213,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jquery" />
     <MESSAGE value="module6" />
-    <option name="LAST_COMMIT_MESSAGE" value="module6" />
+    <MESSAGE value="work" />
+    <option name="LAST_COMMIT_MESSAGE" value="work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1256,116 +1229,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/cnblog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="144" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="85" column="15" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/blog/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/utils/valid_code_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/blog/utils/validCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="69" column="49" lean-forward="true" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="37" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/gouzi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/img/default.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/cnblog/blog/Myforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/04 注册功能.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1782">
@@ -1569,71 +1432,201 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/wkTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
+        <state relative-caret-position="5566">
           <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/fatpTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="316" column="8" lean-forward="true" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="27" />
-          <folding>
-            <element signature="e#14#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/config.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/user.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/conf/config.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/核心/周年庆造数据/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/lib/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/核心/周年庆造数据/userid.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/核心/周年庆造数据/share_id.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="2000" column="0" lean-forward="true" selection-start-line="2000" selection-start-column="0" selection-end-line="2000" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/fatpTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6556">
+          <caret line="305" column="57" lean-forward="false" selection-start-line="305" selection-start-column="57" selection-end-line="305" selection-end-column="57" />
+          <folding>
+            <element signature="e#14#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="990">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <marker date="1567147420371" expanded="true" signature="659:805" ph="SELECT PAY_O... *" />
-            <marker date="1567147420371" expanded="true" signature="685:789" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
-            <marker date="1567147420371" expanded="true" signature="971:1067" ph="SELECT * FRO... plms_case_distribute" />
+            <marker date="1567664664650" expanded="true" signature="659:805" ph="SELECT PAY_O... *" />
+            <marker date="1567664664650" expanded="true" signature="685:789" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
+            <marker date="1567664664650" expanded="true" signature="975:1071" ph="SELECT * FRO... plms_case_distribute" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="103" column="12" lean-forward="false" selection-start-line="103" selection-start-column="12" selection-end-line="105" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="99" column="78" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="99" selection-end-column="78" />
           <folding>
-            <element signature="e#15#29#0" expanded="true" />
-            <element signature="e#7920#8570#0" expanded="false" />
-            <element signature="e#9482#10107#0" expanded="false" />
-            <element signature="e#10156#10756#0" expanded="false" />
-            <marker date="1567147914537" expanded="true" signature="3270:3366" ph="SELECT * FRO... plms_case_distribute" />
-            <marker date="1567147914537" expanded="true" signature="7073:7183" ph="SELECT * fro... LOAN_NO" />
-            <marker date="1567147914537" expanded="true" signature="7088:7167" ph="select LOAN_... ph_disposal_loanplan" />
-            <marker date="1567147914537" expanded="true" signature="7275:7333" ph="select * fro... ph_disposal_repayrecord" />
-            <marker date="1567147914537" expanded="true" signature="8267:8399" ph="SELECT PAY_O... *" />
-            <marker date="1567147914537" expanded="true" signature="8282:8383" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
-            <marker date="1567147914537" expanded="true" signature="9098:9159" ph="SELECT * fro... PAY_OFF_FLAG" />
-            <marker date="1567147914537" expanded="true" signature="9098:9170" ph="select * fro... ph_prerepayrecord" />
-            <marker date="1567147914537" expanded="true" signature="9771:9785" ph="select * fro... ph_prerepayrecord" />
-            <marker date="1567147914537" expanded="true" signature="9771:9837" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
-            <marker date="1567147914537" expanded="true" signature="10409:10467" ph="select * fro... ph_disposal_repayrecord" />
+            <element signature="e#15#29#0" expanded="false" />
+            <element signature="e#7948#8598#0" expanded="false" />
+            <marker date="1568164033143" expanded="true" signature="3268:3364" ph="SELECT * FRO... plms_case_distribute" />
+            <marker date="1568164033143" expanded="true" signature="7092:7202" ph="SELECT * fro... LOAN_NO" />
+            <marker date="1568164033143" expanded="true" signature="7107:7186" ph="select LOAN_... ph_disposal_loanplan" />
+            <marker date="1568164033143" expanded="true" signature="7295:7353" ph="select * fro... ph_disposal_repayrecord" />
+            <marker date="1568164033143" expanded="true" signature="8295:8427" ph="SELECT PAY_O... *" />
+            <marker date="1568164033143" expanded="true" signature="8310:8411" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
+            <marker date="1568164033143" expanded="true" signature="9126:9187" ph="SELECT * fro... PAY_OFF_FLAG" />
+            <marker date="1568164033143" expanded="true" signature="9126:9198" ph="select * fro... ph_prerepayrecord" />
+            <marker date="1568164033143" expanded="true" signature="9802:9816" ph="select * fro... ph_prerepayrecord" />
+            <marker date="1568164033143" expanded="true" signature="9802:9868" ph="select * fro... PH_LOANOUT_FEE_REPAY_RECORD" />
+            <marker date="1568164033143" expanded="true" signature="10439:10497" ph="select * fro... ph_disposal_repayrecord" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3740">
+          <caret line="170" column="46" lean-forward="false" selection-start-line="170" selection-start-column="46" selection-end-line="170" selection-end-column="46" />
+          <folding>
+            <marker date="1567665354657" expanded="true" signature="2139:2374" ph="insert into S62.withhold_info... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/核心/周年庆造数据/new.txt">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1183">
+          <caret line="12914" column="12" lean-forward="true" selection-start-line="12914" selection-start-column="12" selection-end-line="12914" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="826">
+          <caret line="12914" column="12" lean-forward="true" selection-start-line="12914" selection-start-column="12" selection-end-line="12914" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/00算法复杂度.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/01二分查找.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding>
+            <marker date="1574393643602" expanded="true" signature="152:486" ph="INSERT INTO `lcrm03`.`lcrm_share_coupon`... " />
+            <marker date="1574393643602" expanded="true" signature="496:759" ph="INSERT INTO `lcrm03`.`lcrm_share_coupon_record`... " />
+            <marker date="1574393643602" expanded="true" signature="1674:2447" ph="INSERT INTO `cma03`.`app_user`... " />
+            <marker date="1574393643602" expanded="true" signature="3656:3713" ph="SELECT id,ta... bhzx_loan_account_info" />
+            <marker date="1574393643602" expanded="true" signature="3656:3736" ph="SELECT id,ta... bhzx_loan_account_info" />
+            <marker date="1574393643602" expanded="true" signature="3656:3737" ph="SELECT * FRO... bhzx_loan_account_info" />
+            <marker date="1574393643602" expanded="true" signature="3987:4055" ph="update bhzx_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/02冒泡排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/算法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/03选择排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

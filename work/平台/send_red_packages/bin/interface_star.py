@@ -1,6 +1,7 @@
-import os,sys,flask,random,time,string,json
+import os,sys,flask,random,time,string,json,threading
 sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from flask import request,make_response,Response
+import requests
+from flask import request,make_response,Response, jsonify
 from flask_restful import request
 from lib.tools import md5_sign,get_sign,oprate_sql
 from conf.config import *
@@ -13,19 +14,19 @@ server=flask.Flask(__name__)
 def auto_sign():
     try:
         if not request.json.get('fileNames'):
-            # if "Sign" not in request.headers:
+            if "Sign" not in request.headers:
                 print("sign = md5(key1=value1&key2=value2&key3=value3)  key按自然顺序排序")
                 dict = request.json
                 if 'params' in dict:
                     dict = request.json['params']
                 sign = md5_sign(dict)
-            # else:
-            #     print("headeSign头部验签  sign = md5(signKey + 请求体json串)")
-            #     str = request.data.decode()
-            #     print(str)
-            #     new_str=str.replace("\n","").replace("\t","")
-            #     print(new_str)
-            #     sign = get_sign(new_str)
+            else:
+                print("headeSign头部验签  sign = md5(signKey + 请求体json串)")
+                str = request.data.decode()
+                print(str)
+                new_str=str.replace("\n","").replace("\t","")
+                print(new_str)
+                sign = get_sign(new_str)
         else:
             dict = request.data.decode()
             sign= get_sign(dict)
@@ -159,8 +160,41 @@ def create():
     print(resp)
     return resp
 
+
+def req_url(url,data,header,i,res_dic):
+    print('开始第 %s 次发送委外邮件' % i)
+    send_email_res = requests.post(url, json=data, headers=header).json()
+    res_dic['第 %s 次发送委外邮件结果' % i] = send_email_res
+    print('结束第 %s 次发送委外邮件' % i)
+
+
+@server.route('/email',methods=['get','post'])
+def sed_email():
+
+    times = int(request.args.get("times"))
+    login_url = "https://testplmssit08.yylending.com/plms-um-service/http/user/login"
+    data = {"password": "96qyVNn/porDY","userId": "sijl"}
+    header = {'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36',
+              'systemid': 'PLMS', 'content-type': 'application/json;charset=UTF-8'}
+    login_res = requests.post(login_url, json=data, headers=header).json()
+    token = login_res.get('data').get('accToken') if login_res.get('data') else None
+
+    send_email_url = "https://testplmssit08.yylending.com/plms-urge-service/http/urge/outsource/sendImageMail"
+    send_email_data = {"loanNo": "LA20170807000104", "attachmentNos": ["IM2019090400000059"],
+                       "companyId": "OS20160718000001",
+                       "attachmentTypes": ["A-01", "A-08", "A-10", "A-25", "A-31", "A-99"]}
+    header["acctoken"] = token
+    res_dic = {}
+    t_list = []
+    for i in range(1, times+1):
+        t = threading.Thread(target=req_url, args=(send_email_url,send_email_data,header,i,res_dic))
+        t_list.append(t)
+        t.start()
+    for t in t_list:
+        t.join()
+    return jsonify(res_dic)
+
+
+server.config['JSON_AS_ASCII'] = False
 server.run(port=8080, host='0.0.0.0', debug=True)  # 指定host为“0.0.0.0”后，局域网内其他IP就都可以访问了
-
-
-
 

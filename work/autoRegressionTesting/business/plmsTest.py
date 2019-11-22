@@ -43,7 +43,7 @@ class PLMSTest(unittest.TestCase):
         header = self.config.getCfgValue(self.curEnv, "PLMS", "header")
         return header
 
-    def login(self):    # 登陆
+    def login(self):  # 登陆
         path = '/plms-um-service/http/user/login'
         data = {"password": "96qyVNn/porDY", "userId": "sijl"}
         header = self.get_PLMS_header()
@@ -51,7 +51,6 @@ class PLMSTest(unittest.TestCase):
         token = res.get('data').get('accToken') if res.get('data') else None
         self.assertTrue(token)
         return token
-
 
     # 一次性费用还款
     def getLoanNo(self, token):  # 一次性费用还款  ------->  一次性费用借据列表
@@ -70,7 +69,7 @@ class PLMSTest(unittest.TestCase):
         self.assertTrue(loanNo)
         return loanNo
 
-    def getOnceFeeDetail(self, token, loanNo):# 一次性费用还款  ------->  一次性费用借据详情
+    def getOnceFeeDetail(self, token, loanNo):  # 一次性费用还款  ------->  一次性费用借据详情
         path = '/plms-repay-service/http/repay/oncefee/getOnceFeeDetail'
         data = {"loanNo": loanNo}
         header = self.get_PLMS_header()
@@ -89,12 +88,11 @@ class PLMSTest(unittest.TestCase):
         retCode = res.get('retCode')
         return retCode
 
-
     # 预还款
     def getOverDueRepayDetail(self, token):  # 预还款  ------->  逾期管理费还款费用详情
         db_info = self.get_plmsDB_info()
         sql = "SELECT * FROM plms_case_distribute WHERE attribute_queue=300001 AND sterm+20<total_sterm LIMIT 1"
-        loanNo = mysql_sql(sql,**db_info)[0][1]
+        loanNo = mysql_sql(sql, **db_info)[0][1]
         path = '/plms-repay-service/http/repay/overdue/getOverDueRepayDetail'
         data = {"loanNo": loanNo}
         header = self.get_PLMS_header()
@@ -103,11 +101,12 @@ class PLMSTest(unittest.TestCase):
         allPayBalance = res.get('data').get('allPayBalance') if res.get('data') else None
         unPayOneTimeFee = res.get('data').get('unPayOneTimeFee') if res.get('data') else 0
         self.assertTrue(allPayBalance)
-        return loanNo,allPayBalance,unPayOneTimeFee
+        return loanNo, allPayBalance, unPayOneTimeFee
 
-    def getOverDueRepayCommit(self,token, loanNo, allPayBalance, unPayOneTimeFee):  # 预还款  ------->  逾期管理费还款
+    def getOverDueRepayCommit(self, token, loanNo, allPayBalance, unPayOneTimeFee):  # 预还款  ------->  逾期管理费还款
         path = '/plms-repay-service/http/repay/overdue/getOverDueRepayCommit'
-        data = {"loanNo": loanNo, "unPayOneTimeFee": unPayOneTimeFee, "payAmount": allPayBalance, "allPayBalance": allPayBalance}
+        data = {"loanNo": loanNo, "unPayOneTimeFee": unPayOneTimeFee, "payAmount": allPayBalance,
+                "allPayBalance": allPayBalance}
         header = self.get_PLMS_header()
         header["acctoken"] = token
         res = requests.post(self.url + path, json=data, headers=header).json()
@@ -124,8 +123,8 @@ class PLMSTest(unittest.TestCase):
         sterm = res.get('data').get('sterm') if res.get('data') else None
         self.assertTrue(payAmount)
         self.assertTrue(sterm)
-        print(payAmount,sterm)
-        return payAmount,sterm
+        print(payAmount, sterm)
+        return payAmount, sterm
 
     def aheadDeductCommit(self, token, loanNo, payAmount, sterm):  # 预还款  ------->  预还款期次费用信息
         path = '/plms-repay-service/http/repay/prerepay/aheadDeductCommit'
@@ -135,7 +134,6 @@ class PLMSTest(unittest.TestCase):
         res = requests.post(self.url + path, json=data, headers=header).json()
         retCode = res.get('retCode')
         return retCode
-
 
     # 代偿手续费还款
     def getCompensatoryFeeInfoList(self, token):  # 代偿手续费还款  ------->  代偿手续费还款列表
@@ -170,10 +168,10 @@ class PLMSTest(unittest.TestCase):
     def guaranteePayCommit(self, token):  # 追偿逾期还款  ------->  追偿逾期还款
         db_info = self.get_coreDB_info()
         get_loanNo_sql = "SELECT * from (select LOAN_NO from ph_disposal_loanplan GROUP BY LOAN_NO ORDER BY LOAN_NO DESC) WHERE ROWNUM=1"
-        loanNo = oracle_sql(db_info,get_loanNo_sql)[0][0]
+        loanNo = oracle_sql(db_info, get_loanNo_sql)[0][0]
         get_guaranteePay_sql = "select * from ph_disposal_repayrecord where loan_no = '%s'" % loanNo
         actual_org = oracle_sql(db_info, get_guaranteePay_sql)[0]
-        org_money = actual_org[6]+actual_org[8]+actual_org[10]+actual_org[12]+actual_org[14]
+        org_money = actual_org[6] + actual_org[8] + actual_org[10] + actual_org[12] + actual_org[14]
         path = '/plms-repay-service/http/repay/guaranteePay/guaranteePayCommit'
         data = {"loanNo": loanNo, "repayAmount": "10"}
         header = self.get_PLMS_header()
@@ -208,13 +206,13 @@ class PLMSTest(unittest.TestCase):
         self.assertEqual(retCode, '000000')
         # 数据库结果判断  status为S
         db_info = self.get_coreDB_info()
-        sql = "select * from ph_prerepayrecord where loanapplyserialno ='%s' and sterm=%s" %(loanNo,sterm)
+        sql = "select * from ph_prerepayrecord where loanapplyserialno ='%s' and sterm=%s" % (loanNo, sterm)
         res = oracle_sql(db_info, sql)
         money = 0 if not res else res[0][5]
         status = 0 if not res else res[0][6]
         self.assertEqual(money, 10)
         self.assertEqual(status, 'S')
-        print("预还款成功",loanNo, sterm, 10)
+        print("预还款成功", loanNo, sterm, 10)
 
     def xg_test_PLMS_003_代偿手续费还款(self):
         token = self.login()
@@ -224,15 +222,15 @@ class PLMSTest(unittest.TestCase):
         self.assertEqual(retCode, '000000')
         # 数据库结果判断  status为S
         db_info = self.get_coreDB_info()
-        sql = "select * from PH_LOANOUT_FEE_REPAY_RECORD ee where ee.loan_no='%s'" %loanNo
+        sql = "select * from PH_LOANOUT_FEE_REPAY_RECORD ee where ee.loan_no='%s'" % loanNo
         res = oracle_sql(db_info, sql)
         flag = 0 if not res else res[0][-3]
         actual_pay = 0 if not res else res[0][-5]
         self.assertEqual(flag, "1")
         self.assertEqual(str(actual_pay), paySum)
-        print("代偿手续费还款成功",loanNo, paySum)
+        print("代偿手续费还款成功", loanNo, paySum)
 
-    def xg_test_PLMS_004_追偿逾期还款(self):
+    def test_PLMS_004_追偿逾期还款(self):
         token = self.login()
         retCode, loanNo, org_money = self.guaranteePayCommit(token)
         # 接口返回结果判断
@@ -241,10 +239,10 @@ class PLMSTest(unittest.TestCase):
         db_info = self.get_coreDB_info()
         get_guaranteePay_sql = "select * from ph_disposal_repayrecord where loan_no = '%s'" % loanNo
         actual_new = oracle_sql(db_info, get_guaranteePay_sql)[0]
-        new_money = actual_new[6] + actual_new[8] + actual_new[10] +  actual_new[12] + actual_new[14]
+        new_money = actual_new[6] + actual_new[8] + actual_new[10] + actual_new[12] + actual_new[14]
         money = new_money - org_money
         self.assertEqual(money, 10)
-        print("追偿逾期还款成功",loanNo, 10)
+        print("追偿逾期还款成功", loanNo, 10)
 
 
 if __name__ == '__main__':
