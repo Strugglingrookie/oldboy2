@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/00算法复杂度.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/01二分查找.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02冒泡排序.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/03选择排序.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/share_id.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/tools.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/userid.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/04插入排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/05快速排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/06堆排序.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/tools/plms_tools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/03选择排序.py" afterPath="$PROJECT_DIR$/module8/03选择排序.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,6 +19,7 @@
     <SUITE FILE_PATH="coverage/oldboy2$test.coverage" NAME="test Coverage Results" MODIFIED="1565167568171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy2$Unittests_in_plmsTest_py.coverage" NAME="Unittests in plmsTest.py Coverage Results" MODIFIED="1567147570299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/business" />
     <SUITE FILE_PATH="coverage/oldboy2$01.coverage" NAME="01二分查找 Coverage Results" MODIFIED="1574392611069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy2$04.coverage" NAME="04插入排序 Coverage Results" MODIFIED="1575271597563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1564284143300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite" />
     <SUITE FILE_PATH="coverage/oldboy2$plms_tools.coverage" NAME="plms_tools Coverage Results" MODIFIED="1567664667658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/tools" />
     <SUITE FILE_PATH="coverage/oldboy2$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1574393618386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/核心/周年庆造数据" />
@@ -35,7 +28,8 @@
     <SUITE FILE_PATH="coverage/oldboy2$02.coverage" NAME="02冒泡排序 Coverage Results" MODIFIED="1574393338658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1564284206054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/django_views" />
     <SUITE FILE_PATH="coverage/oldboy2$.coverage" NAME="算法 Coverage Results" MODIFIED="1574391444769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
-    <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03选择排序 Coverage Results" MODIFIED="1574405745492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy2$05.coverage" NAME="05快速排序 Coverage Results" MODIFIED="1575364122119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03选择排序 Coverage Results" MODIFIED="1575247731734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy2$interface_star.coverage" NAME="interface_star Coverage Results" MODIFIED="1567665209383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/平台/send_red_packages/bin" />
     <SUITE FILE_PATH="coverage/oldboy2$Unittests_for_plmsTest_PLMSTest_test_PLMS_001_.coverage" NAME="Unittests for plmsTest.PLMSTest.test_PLMS_001_一次性费用还款 Coverage Results" MODIFIED="1567077084228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/autoRegressionTesting/business" />
   </component>
@@ -114,21 +108,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="算法.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="算法.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module8/算法.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="185" column="4" lean-forward="true" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03选择排序.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module8/03选择排序.py">
+      <file leaf-file-name="06堆排序.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/06堆排序.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,9 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" />
-        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py" />
-        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/regist.html" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/index.html" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py" />
@@ -208,6 +199,9 @@
         <option value="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" />
         <option value="$PROJECT_DIR$/module8/02冒泡排序.py" />
         <option value="$PROJECT_DIR$/module8/03选择排序.py" />
+        <option value="$PROJECT_DIR$/module8/04插入排序.py" />
+        <option value="$PROJECT_DIR$/module8/05快速排序.py" />
+        <option value="$PROJECT_DIR$/module8/06二叉树.py" />
       </list>
     </option>
   </component>
@@ -331,43 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.03选择排序">
-    <configuration name="算法" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/算法.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="01二分查找" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/01二分查找.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.05快速排序">
     <configuration name="02冒泡排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -400,6 +358,42 @@
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/03选择排序.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="04插入排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/04插入排序.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="05快速排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/05快速排序.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -819,18 +813,18 @@
       <item index="8" class="java.lang.String" itemvalue="Django server.middleware" />
       <item index="9" class="java.lang.String" itemvalue="Django server.blog" />
       <item index="10" class="java.lang.String" itemvalue="Python.create_data" />
-      <item index="11" class="java.lang.String" itemvalue="Python.01二分查找" />
-      <item index="12" class="java.lang.String" itemvalue="Python.算法" />
-      <item index="13" class="java.lang.String" itemvalue="Python.02冒泡排序" />
-      <item index="14" class="java.lang.String" itemvalue="Python.03选择排序" />
+      <item index="11" class="java.lang.String" itemvalue="Python.02冒泡排序" />
+      <item index="12" class="java.lang.String" itemvalue="Python.03选择排序" />
+      <item index="13" class="java.lang.String" itemvalue="Python.04插入排序" />
+      <item index="14" class="java.lang.String" itemvalue="Python.05快速排序" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.03选择排序" />
-        <item index="1" class="java.lang.String" itemvalue="Python.create_data" />
-        <item index="2" class="java.lang.String" itemvalue="Python.02冒泡排序" />
-        <item index="3" class="java.lang.String" itemvalue="Python.01二分查找" />
-        <item index="4" class="java.lang.String" itemvalue="Python.算法" />
+        <item index="0" class="java.lang.String" itemvalue="Python.05快速排序" />
+        <item index="1" class="java.lang.String" itemvalue="Python.04插入排序" />
+        <item index="2" class="java.lang.String" itemvalue="Python.03选择排序" />
+        <item index="3" class="java.lang.String" itemvalue="Python.create_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.02冒泡排序" />
       </list>
     </recent_temporary>
   </component>
@@ -1135,7 +1129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567156018241</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="work">
+      <created>1574418607766</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1574418607766</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1193,7 +1194,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669633" sideWeight="0.49626067" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933258" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1224,32 +1225,11 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/03 博客系统相关课件/04 注册功能.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/myforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseware/6第六模块/04 博客系统相关代码/django_demo/django_demo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1614,18 +1594,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module8/算法.py">
+    <entry file="file://$PROJECT_DIR$/module8/03选择排序.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="69" column="29" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+        <state relative-caret-position="242">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module8/03选择排序.py">
+    <entry file="file://$PROJECT_DIR$/module8/04插入排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/05快速排序.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/06堆排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/算法.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="185" column="4" lean-forward="true" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
           <folding />
         </state>
       </provider>
