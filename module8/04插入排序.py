@@ -18,5 +18,3 @@ def insert_sort(lis):
 print(lis)
 for i in range((len(lis))):
     print(lis[-i-2])
-
-xv
