@@ -20,5 +20,7 @@ def quick_sort(lis,left,right):
         quick_sort(lis, mid+1, right)
 
 
-quick_sort(lis,0,len(lis)-1)
-print(lis)
+# quick_sort(lis,0,len(lis)-1)
+# print(lis)
+for i in range(5,-1,-1):
+    print(i)
