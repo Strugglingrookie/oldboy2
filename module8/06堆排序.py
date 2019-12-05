@@ -1,26 +1,27 @@
 
-lis=[6,3,11,9,8,9,2,4,5,7,8,7,4]  #[2, 3, 4, 4, 5, 6, 7, 7, 8, 8, 9, 9, 11]
-
-def partion(lis,left,right):
-    temp = lis[left]
-    while left < right:
-        while left < right and lis[right] >= temp:
-            right -= 1
-        lis[left] = lis[right]
-        while left < right and lis[left] <= temp:
-            left += 1
-        lis[right] = lis[left]
-    lis[left] = temp
-    return left
-
-def quick_sort(lis,left,right):
-    if left < right:
-        mid = partion(lis,left,right)
-        quick_sort(lis, left, mid-1)
-        quick_sort(lis, mid+1, right)
+lis=[11,3,9,8,9,2,4,5,7,8,7,4]
+def sift(lis, low, high):
+    i = low
+    j = 2*i + 1
+    tmp = lis[i]
+    while j<=high:
+        if j < high and lis[j] < lis[j+1]:
+            j += 1
+        if tmp < lis[j]:
+            lis[i] = lis[j]
+            i = j
+            j = 2*i +1
+        else:
+            break
+    lis[i] = tmp
 
 
-# quick_sort(lis,0,len(lis)-1)
-# print(lis)
-for i in range(5,-1,-1):
-    print(i)
+def heap(lis):
+    n = len(lis)
+    for i in range(n // 2, -1, -1):
+        sift(lis,i,n-1)
+    for i in range(n-1,-1,-1):
+        lis[0],lis[i] = lis[i],lis[0]
+        sift(lis,0,i-1)
+heap(lis)
+print(lis)
