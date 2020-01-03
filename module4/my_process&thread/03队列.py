@@ -26,13 +26,11 @@ print(q.get())  # 根据先进先出原则，从队列里取一个数据
 print(q.get())
 print(q.get())
 print(q.empty())  # True
-
+'''
 
 # 生产者/消费者模型
-from multiprocessing import Queue
-from multiprocessing import Process
 import time
-
+from multiprocessing import Queue, Process
 
 def producer(name, q):
     for i in range(5):
@@ -41,7 +39,6 @@ def producer(name, q):
         q.put(res)
         print(res)
 
-
 def consumer(name, q):
     while True:
         time.sleep(0.2)
@@ -49,7 +46,6 @@ def consumer(name, q):
         if not res:
             break
         print("%s 吃了 %s" % (name, res))
-
 
 if __name__ == "__main__":
     q = Queue()
@@ -64,7 +60,7 @@ if __name__ == "__main__":
         p.join()
     q.put(None)  # 注意，有几个消费者就要发送几个None
     print("over")
-'''
+
 
 
 # JoinableQueue 的使用  可以用join方法的Queue

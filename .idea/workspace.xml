@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/07归并排序.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/work/testing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oldboy.iml" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/db.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/14非阻塞IO模型.py" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/14非阻塞IO模型.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/06堆排序.py" afterPath="$PROJECT_DIR$/module8/06堆排序.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,9 +19,11 @@
     <SUITE FILE_PATH="coverage/oldboy2$test.coverage" NAME="test Coverage Results" MODIFIED="1565167568171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1564284143300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite" />
     <SUITE FILE_PATH="coverage/oldboy2$07.coverage" NAME="07归并排序 Coverage Results" MODIFIED="1576208767834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
+    <SUITE FILE_PATH="coverage/oldboy2$02_.coverage" NAME="02守护&amp;互斥锁 Coverage Results" MODIFIED="1578037061852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1564284206054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/django_views" />
     <SUITE FILE_PATH="coverage/oldboy2$.coverage" NAME="堆排序 Coverage Results" MODIFIED="1575388488677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy2$11greenlet_gevent.coverage" NAME="11greenlet&amp;gevent Coverage Results" MODIFIED="1577237253907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
+    <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03队列详解 Coverage Results" MODIFIED="1578048714444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy2$10.coverage" NAME="10协程 Coverage Results" MODIFIED="1577236606654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1564287893100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite/app01" />
     <SUITE FILE_PATH="coverage/oldboy2$06.coverage" NAME="06堆排序 Coverage Results" MODIFIED="1576652821376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
@@ -122,36 +123,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="06堆排序.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module8/06堆排序.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10协程.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/10协程.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="11greenlet&amp;gevent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/11greenlet&amp;gevent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="12协程server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/12协程server.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -162,17 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="09进程&amp;线程池.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/09进程&amp;线程池.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1254">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/testing.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
@@ -182,41 +143,89 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="14非阻塞IO模型.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/14非阻塞IO模型.py">
+      <file leaf-file-name="上传文件.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/平台/上传文件.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            <state relative-caret-position="352">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="15多路复用IO模型.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/15多路复用IO模型.py">
+      <file leaf-file-name="check_file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/平台/check_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+            <state relative-caret-position="-50">
+              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="16线程池server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/16线程池server.py">
+      <file leaf-file-name="interface_star.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-578">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <folding>
+                <marker date="1567665354657" expanded="true" signature="2139:2374" ph="insert into S62.withhold_info... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01进程基础.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/01进程基础.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-608">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02守护&amp;互斥锁.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="132" column="32" lean-forward="true" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+              <folding>
+                <element signature="e#2763#2803#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03队列.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="56" column="48" lean-forward="true" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+              <folding>
+                <element signature="e#718#729#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03队列详解.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+              <folding>
+                <element signature="e#2914#2963#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/db.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="13协程client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/13协程client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -245,10 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/__init__.py" />
-        <option value="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/urls.py" />
-        <option value="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/models.py" />
-        <option value="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/urls.py" />
         <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/login.js" />
         <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/base.html" />
         <option value="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/login.html" />
@@ -296,6 +301,10 @@
         <option value="$PROJECT_DIR$/module4/my_process&amp;thread/11greenlet&amp;gevent.py" />
         <option value="$PROJECT_DIR$/module4/my_process&amp;thread/14非阻塞IO模型.py" />
         <option value="$PROJECT_DIR$/work/testing.py" />
+        <option value="$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py" />
+        <option value="$PROJECT_DIR$/module4/my_process&amp;thread/db.txt" />
+        <option value="$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py" />
+        <option value="$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py" />
       </list>
     </option>
   </component>
@@ -354,7 +363,65 @@
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module4" type="462c0819:PsiDirectoryNode" />
+              <item name="my_process&amp;thread" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="平台" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="平台" type="462c0819:PsiDirectoryNode" />
+              <item name="send_red_packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="平台" type="462c0819:PsiDirectoryNode" />
+              <item name="send_red_packages" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="平台" type="462c0819:PsiDirectoryNode" />
+              <item name="send_red_packages" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="平台" type="462c0819:PsiDirectoryNode" />
+              <item name="send_red_packages" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
@@ -407,44 +474,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.testing">
-    <configuration name="06堆排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/06堆排序.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="07归并排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/07归并排序.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="10协程" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.03队列详解">
+    <configuration name="02守护&amp;互斥锁" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -457,7 +488,43 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module4/my_process&amp;thread/10协程.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="03队列" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module4/my_process&amp;thread" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="03队列详解" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module4/my_process&amp;thread" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -664,19 +731,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.07归并排序" />
-      <item index="1" class="java.lang.String" itemvalue="Python.06堆排序" />
-      <item index="2" class="java.lang.String" itemvalue="Python.10协程" />
-      <item index="3" class="java.lang.String" itemvalue="Python.11greenlet&amp;gevent" />
-      <item index="4" class="java.lang.String" itemvalue="Python.testing" />
+      <item index="0" class="java.lang.String" itemvalue="Python.11greenlet&amp;gevent" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testing" />
+      <item index="2" class="java.lang.String" itemvalue="Python.02守护&amp;互斥锁" />
+      <item index="3" class="java.lang.String" itemvalue="Python.03队列" />
+      <item index="4" class="java.lang.String" itemvalue="Python.03队列详解" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.testing" />
-        <item index="1" class="java.lang.String" itemvalue="Python.11greenlet&amp;gevent" />
-        <item index="2" class="java.lang.String" itemvalue="Python.10协程" />
-        <item index="3" class="java.lang.String" itemvalue="Python.06堆排序" />
-        <item index="4" class="java.lang.String" itemvalue="Python.07归并排序" />
+        <item index="0" class="java.lang.String" itemvalue="Python.03队列详解" />
+        <item index="1" class="java.lang.String" itemvalue="Python.03队列" />
+        <item index="2" class="java.lang.String" itemvalue="Python.02守护&amp;互斥锁" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testing" />
+        <item index="4" class="java.lang.String" itemvalue="Python.11greenlet&amp;gevent" />
       </list>
     </recent_temporary>
   </component>
@@ -932,7 +999,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575387611552</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="module6">
+      <created>1578019511160</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1578019511160</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -946,8 +1020,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11940298" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11940298" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4968017" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2958843" sideWeight="0.5063966" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1018,62 +1093,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/app01/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/13 cookie与session/cookieSession/cookieSession/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/statics/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1377,6 +1396,78 @@
         <state relative-caret-position="382">
           <caret line="68" column="18" lean-forward="true" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/上传文件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/check_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <marker date="1567665354657" expanded="true" signature="2139:2374" ph="insert into S62.withhold_info... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/01进程基础.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-608">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/db.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="132" column="32" lean-forward="true" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+          <folding>
+            <element signature="e#2763#2803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="56" column="48" lean-forward="true" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+          <folding>
+            <element signature="e#718#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+          <folding>
+            <element signature="e#2914#2963#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
