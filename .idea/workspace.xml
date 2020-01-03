@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/db.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/02守护&amp;互斥锁.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +20,7 @@
     <SUITE FILE_PATH="coverage/oldboy$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1564284206054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/django_views" />
     <SUITE FILE_PATH="coverage/oldboy2$.coverage" NAME="堆排序 Coverage Results" MODIFIED="1575388488677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy2$11greenlet_gevent.coverage" NAME="11greenlet&amp;gevent Coverage Results" MODIFIED="1577237253907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
-    <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03队列详解 Coverage Results" MODIFIED="1578048714444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
+    <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03队列详解 Coverage Results" MODIFIED="1578050100975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy2$10.coverage" NAME="10协程 Coverage Results" MODIFIED="1577236606654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1564287893100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite/app01" />
     <SUITE FILE_PATH="coverage/oldboy2$06.coverage" NAME="06堆排序 Coverage Results" MODIFIED="1576652821376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
@@ -212,10 +209,10 @@
       <file leaf-file-name="03队列详解.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+            <state relative-caret-position="837">
+              <caret line="163" column="8" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
               <folding>
-                <element signature="e#2914#2963#0" expanded="true" />
+                <element signature="e#2864#2914#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1006,7 +1003,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578019511160</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="module6">
+      <created>1578048748460</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1578048748460</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1020,7 +1024,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11940298" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814237" sideWeight="0.4968017" order="10" side_tool="false" content_ui="tabs" />
@@ -1028,7 +1031,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33147943" sideWeight="0.48933902" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2958843" sideWeight="0.4936034" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6240267" sideWeight="0.4936034" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26502147" sideWeight="0.49413645" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1463,10 +1466,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/03队列详解.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="165" column="14" lean-forward="true" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+        <state relative-caret-position="837">
+          <caret line="163" column="8" lean-forward="true" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
           <folding>
-            <element signature="e#2914#2963#0" expanded="true" />
+            <element signature="e#2864#2914#0" expanded="true" />
           </folding>
         </state>
       </provider>
