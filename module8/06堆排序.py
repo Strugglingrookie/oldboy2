@@ -23,5 +23,7 @@ def heap(lis):
     for i in range(n-1,-1,-1):
         lis[0],lis[i] = lis[i],lis[0]
         sift(lis,0,i-1)
-heap(lis)
+# heap(lis)
 print(lis)
+for i in range(10 // 2, -1, -1):
+    print(i)
