@@ -1,5 +1,5 @@
 # 死锁
-'''
+
 from threading import Thread,Lock
 import time
 
@@ -36,7 +36,7 @@ if __name__ == '__main__':
     for i in range(10):
         t=MyThread()
         t.start()
-'''
+
 
 # 互斥锁只能acquire一次
 '''
