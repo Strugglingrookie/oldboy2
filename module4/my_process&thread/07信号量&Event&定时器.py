@@ -53,7 +53,7 @@ if __name__ == "__main__":
     for i in range(10):
         s = Thread(target=student, args=(i,))
         s.start()
-    t = Thread(target=teacher)
+    t = Thread(target=teacher,args=('teacher',))
     t.start()
 '''
 

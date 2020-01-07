@@ -25,13 +25,6 @@ def mergesort(li, low, high):
         mergesort(li, mid + 1, high)
         merge(li, low, mid, high)
 
-str = 'asdddgdffffadfaa'
-lis1 = []
-lis2 = []
-for i in str:
-    if len(lis1) == 0 or i != lis1[-1]:
-        lis1.append(i)
-        lis2.append(1)
-    else:
-        lis2[-1] += 1
-print('连续出现最多次数的是%s，出现次数%s'%(lis1[lis2.index(max(lis2))],max(lis2)))
+li = [10,4,6,3,8,2,5,7]
+mergesort(li, 0, len(li)-1)
+print(li)
