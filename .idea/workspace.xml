@@ -1,70 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/07堆排topk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/08归并排序.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/09牛B三人组小结.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/10.希尔排序.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/1.in.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/1.out.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/2.in.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/2.out.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/5.in.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/5.out.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/data/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/codeStyles/Project.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/codeStyles/codeStyleConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/dictionaries/qimi.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/.idea/算法入门.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/动态规划/cut_rod.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/动态规划/fibnacci.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/动态规划/fraction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/动态规划/gcd.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/动态规划/lcs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/AVLTree.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/bitree.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/bst.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/demo.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/hash_table.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/linklist.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/maze.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/queue.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/queue2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/stack.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/tree.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/bubble_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/bucket_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/cal_time.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/count_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/hanoi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/heap2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/heap_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/heap_topk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/insert_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/merge_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/quick_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/radix_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/search.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/select_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/shell_sort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/查找排序/sort_cmp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/贪心算法/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/贪心算法/activity_selection.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/贪心算法/change_money.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/贪心算法/fractional_backpack.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/算法入门/贪心算法/number_join.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module8/07归并排序.py" afterPath="" />
+    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="module6">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/10希尔排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/11计数排序.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/module8/10.希尔排序.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/05快速排序.py" afterPath="$PROJECT_DIR$/module8/05快速排序.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/06堆排序.py" afterPath="$PROJECT_DIR$/module8/06堆排序.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,6 +23,7 @@
     <SUITE FILE_PATH="coverage/oldboy2$07topk.coverage" NAME="07堆排topk Coverage Results" MODIFIED="1578488709930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy2$11greenlet_gevent.coverage" NAME="11greenlet&amp;gevent Coverage Results" MODIFIED="1577237253907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy2$09_.coverage" NAME="09进程&amp;线程池 Coverage Results" MODIFIED="1578399998918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
+    <SUITE FILE_PATH="coverage/oldboy2$10_.coverage" NAME="10.希尔排序 Coverage Results" MODIFIED="1578491027325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1564287893100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module6/02 django简介/mysite/app01" />
     <SUITE FILE_PATH="coverage/oldboy2$06.coverage" NAME="06堆排序 Coverage Results" MODIFIED="1578357818117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy2$02_.coverage" NAME="02守护&amp;互斥锁 Coverage Results" MODIFIED="1578037061852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
@@ -186,11 +128,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="10.希尔排序.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module8/10.希尔排序.py">
+      <file leaf-file-name="10希尔排序.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/10希尔排序.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="11计数排序.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module8/11计数排序.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04插入排序.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/04插入排序.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -219,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/models.py" />
         <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/index.html" />
         <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/simple_forms.html" />
         <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_two.html" />
@@ -270,6 +231,7 @@
         <option value="$PROJECT_DIR$/module8/07堆排topk.py" />
         <option value="$PROJECT_DIR$/module8/09牛B三人组小结.py" />
         <option value="$PROJECT_DIR$/module8/10.希尔排序.py" />
+        <option value="$PROJECT_DIR$/module8/算法入门/11计数排序.py" />
       </list>
     </option>
   </component>
@@ -333,6 +295,12 @@
             <path>
               <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
               <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
+              <item name="module8" type="462c0819:PsiDirectoryNode" />
+              <item name="算法入门" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oldboy2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oldboy2" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -354,11 +322,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\module8" />
       <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther" />
       <recent name="E:\Study\oldboy2\module6\07 django与ajax\ajax\statics" />
       <recent name="E:\Study\oldboy2\module6\06 django模型层\django_models\statics" />
       <recent name="E:\Study\oldboy2\module6\03 django路由层\django_urls\statics" />
-      <recent name="E:\Study\oldboy2\module5\00homework\02todolist项目\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Study\oldboy2\module8" />
@@ -380,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.07堆排topk">
+  <component name="RunManager" selected="Python.10.希尔排序">
     <configuration name="07归并排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -395,24 +363,6 @@
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="E:\Study\oldboy2\module8\08归并排序.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="07信号量&amp;Event&amp;定时器" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module4/my_process&amp;thread" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module4/my_process&amp;thread/07信号量&amp;Event&amp;定时器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -467,6 +417,24 @@
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module4/my_process&amp;thread/09进程&amp;线程池.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="10.希尔排序" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\Study\oldboy2\module8\10希尔排序.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -637,19 +605,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.07信号量&amp;Event&amp;定时器" />
-      <item index="1" class="java.lang.String" itemvalue="Python.08线程队列" />
-      <item index="2" class="java.lang.String" itemvalue="Python.09进程&amp;线程池" />
-      <item index="3" class="java.lang.String" itemvalue="Python.07归并排序" />
-      <item index="4" class="java.lang.String" itemvalue="Python.07堆排topk" />
+      <item index="0" class="java.lang.String" itemvalue="Python.08线程队列" />
+      <item index="1" class="java.lang.String" itemvalue="Python.09进程&amp;线程池" />
+      <item index="2" class="java.lang.String" itemvalue="Python.07归并排序" />
+      <item index="3" class="java.lang.String" itemvalue="Python.07堆排topk" />
+      <item index="4" class="java.lang.String" itemvalue="Python.10.希尔排序" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.07堆排topk" />
-        <item index="1" class="java.lang.String" itemvalue="Python.07归并排序" />
-        <item index="2" class="java.lang.String" itemvalue="Python.09进程&amp;线程池" />
-        <item index="3" class="java.lang.String" itemvalue="Python.08线程队列" />
-        <item index="4" class="java.lang.String" itemvalue="Python.07信号量&amp;Event&amp;定时器" />
+        <item index="0" class="java.lang.String" itemvalue="Python.10.希尔排序" />
+        <item index="1" class="java.lang.String" itemvalue="Python.07堆排topk" />
+        <item index="2" class="java.lang.String" itemvalue="Python.07归并排序" />
+        <item index="3" class="java.lang.String" itemvalue="Python.09进程&amp;线程池" />
+        <item index="4" class="java.lang.String" itemvalue="Python.08线程队列" />
       </list>
     </recent_temporary>
   </component>
@@ -940,7 +908,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578398151365</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="module6">
+      <created>1578489684534</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1578489684534</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1027,13 +1002,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/14 中间件/middlewareDemo/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/myforms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1151,13 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module8/04插入排序.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1407,10 +1368,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module8/10.希尔排序.py">
+    <entry file="file://$PROJECT_DIR$/module8/04插入排序.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/10希尔排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/11计数排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
