@@ -1,3 +1,6 @@
+# _*_coding:utf-8_*_
+# created by Alex Li on 12/3/17
+
 def sift(li, low, high):
     """
     :param li: 列表

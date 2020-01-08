@@ -10,23 +10,25 @@
 
 lis=[6,3,11,9,8,9,2,4,5,7,8,7,4]  #[2, 3, 4, 4, 5, 6, 7, 7, 8, 8, 9, 9, 11]
 
-def partion(lis,left,right):
-    temp = lis[left]
+def partion(li, left, right):
+    tmp = li[left]
     while left < right:
-        while left < right and lis[right] >= temp:
-            right -= 1
-        lis[left] = lis[right]
-        while left < right and lis[left] <= temp:
+        while left < right and li[right] >= tmp: #从右面找比tmp小的数
+            right -= 1      # 往左走一步
+        li[left] = li[right] #把右边的值写到左边空位上
+        # print(li, 'right')
+        while left < right and li[left] <= tmp:
             left += 1
-        lis[right] = lis[left]
-    lis[left] = temp
+        li[right] = li[left] #把左边的值写到右边空位上
+        # print(li, 'left')
+    li[left] = tmp      # 把tmp归位
     return left
 
-def quick_sort(lis,left,right):
-    if left < right:
-        mid = partion(lis,left,right)
-        quick_sort(lis, left, mid-1)
-        quick_sort(lis, mid+1, right)
+def quick_sort(li, left, right):
+    if left<right:  # 至少两个元素
+        mid = partion(li, left, right)
+        quick_sort(li, left, mid-1)
+        quick_sort(li, mid+1, right)
 
 
 quick_sort(lis,0,len(lis)-1)
