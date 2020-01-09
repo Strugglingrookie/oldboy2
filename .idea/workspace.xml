@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="module6">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/10希尔排序.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/11计数排序.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module8/10.希尔排序.py" afterPath="" />
+    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/12桶排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/13基数排序.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/14排序练习.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11计数排序.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="11计数排序.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module8/11计数排序.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -148,11 +148,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04插入排序.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module8/04插入排序.py">
+      <file leaf-file-name="12桶排序.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module8/12桶排序.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="13基数排序.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/13基数排序.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="14排序练习.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/14排序练习.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -181,8 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/index.html" />
-        <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/simple_forms.html" />
         <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_two.html" />
         <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_three.html" />
         <option value="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_one.html" />
@@ -232,6 +250,8 @@
         <option value="$PROJECT_DIR$/module8/09牛B三人组小结.py" />
         <option value="$PROJECT_DIR$/module8/10.希尔排序.py" />
         <option value="$PROJECT_DIR$/module8/算法入门/11计数排序.py" />
+        <option value="$PROJECT_DIR$/module8/算法入门/12桶排序.py" />
+        <option value="$PROJECT_DIR$/module8/14排序练习.py" />
       </list>
     </option>
   </component>
@@ -915,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578489684534</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="module6">
+      <created>1578491286518</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1578491286518</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1002,27 +1029,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/myforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseware/6第六模块/02 Django基础相关代码/12 forms组件/formsdemo/app01/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1388,6 +1394,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/13基数排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/14排序练习.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/12桶排序.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
