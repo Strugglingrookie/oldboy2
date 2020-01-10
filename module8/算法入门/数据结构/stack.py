@@ -3,7 +3,6 @@
 # Date: 24/12/2017
 
 class Stack:
-
     def __init__(self):
         self.stack = []
 

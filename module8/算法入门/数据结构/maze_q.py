@@ -30,7 +30,7 @@ def print_r(path):
 
     realpath = []
 
-    while curNode[2] == -1:
+    while curNode[2] != -1:
         realpath.append(curNode[0:2])
         curNode = path[curNode[2]]
 
@@ -49,6 +49,8 @@ def maze_path_queue(x1, y1, x2, y2):
         path.append(curNode)
         if curNode[0] == x2 and curNode[1] == y2:
             # 终点
+            print(len(path))
+            print(path)
             print_r(path)
             return True
         for dir in dirs:
