@@ -2,7 +2,7 @@ import os,sys,flask,random,time,string,json,threading
 sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import requests
 from flask import request,make_response,Response, jsonify
-from flask_restful import request
+# from flask_restful import request
 from lib.tools import md5_sign,get_sign,oprate_sql
 from conf.config import *
 
@@ -194,6 +194,46 @@ def sed_email():
         t.join()
     return jsonify(res_dic)
 
+@server.route('/my/login',methods=['get','post'])
+def my_login():
+    resp = make_response()
+    resp.headers["Content-Type"] = "application/json"
+    resp.headers["charset"] = "UTF-8"
+    try:
+        dict = request.json
+        print(dict)
+        if dict.get('name')!='xg' or dict.get('password')!='123456':
+            raise NameError
+        rs_json = {"code":"000000","msg":"login success","token":"asdfgh"}
+        rs_data = json.dumps(rs_json)
+        resp.response = rs_data
+        print(rs_data)
+        return resp
+    except Exception as e:
+        print(e)
+        rs_json = {"code": "111111", "msg": "login error"}
+        rs_data = json.dumps(rs_json)
+        return rs_data
+
+@server.route('/my/index',methods=['get','post'])
+def my_index():
+    resp = make_response()
+    resp.headers["Content-Type"] = "application/json"
+    resp.headers["charset"] = "UTF-8"
+    try:
+        dict = request.json
+        print(dict)
+        token = dict.get('token')
+        if not token or token != 'asdfgh':
+            raise NameError
+        rs_json = {"code":"000000","msg":"index success!"}
+        rs_data = json.dumps(rs_json)
+        resp.response = rs_data
+        print(rs_data)
+        return resp
+    except Exception as e:
+        print(e)
+        return "格式不对，请检查json格式，对比小幺鸡请求参数！    http://172.30.3.61:8092/doc/1YaX6ZoSxS"
 
 server.config['JSON_AS_ASCII'] = False
 server.run(port=8080, host='0.0.0.0', debug=True)  # 指定host为“0.0.0.0”后，局域网内其他IP就都可以访问了
