@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/04迷宫.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/00数据结构.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/01栈.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/02队列.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/03双向队列.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/04迷宫(栈).py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/module8/00题.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oldboy.iml" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/stack.py" afterPath="$PROJECT_DIR$/module8/算法入门/数据结构/stack.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/00算法复杂度.py" afterPath="$PROJECT_DIR$/module8/01排序算法/00算法复杂度.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/01二分查找.py" afterPath="$PROJECT_DIR$/module8/01排序算法/01二分查找.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/02冒泡排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/02冒泡排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/03选择排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/03选择排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/04插入排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/04插入排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/05快速排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/05快速排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/06堆排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/06堆排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/07堆排topk.py" afterPath="$PROJECT_DIR$/module8/01排序算法/07堆排topk.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/08归并排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/08归并排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/09牛B三人组小结.py" afterPath="$PROJECT_DIR$/module8/01排序算法/09牛B三人组小结.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/10希尔排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/10希尔排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/11计数排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/11计数排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/12桶排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/12桶排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/13基数排序.py" afterPath="$PROJECT_DIR$/module8/01排序算法/13基数排序.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/14排序练习.py" afterPath="$PROJECT_DIR$/module8/01排序算法/14排序练习.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module8/算法.py" afterPath="$PROJECT_DIR$/module8/01排序算法/算法.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py" afterPath="$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +26,7 @@
     <SUITE FILE_PATH="coverage/oldboy2$03.coverage" NAME="03双向队列 Coverage Results" MODIFIED="1578651472524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
     <SUITE FILE_PATH="coverage/oldboy2$08.coverage" NAME="08线程队列 Coverage Results" MODIFIED="1578398119433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
     <SUITE FILE_PATH="coverage/oldboy2$testing.coverage" NAME="testing Coverage Results" MODIFIED="1578298695398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
-    <SUITE FILE_PATH="coverage/oldboy2$04__.coverage" NAME="04迷宫(队列) Coverage Results" MODIFIED="1578650404446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
+    <SUITE FILE_PATH="coverage/oldboy2$04__.coverage" NAME="04迷宫(队列) Coverage Results" MODIFIED="1578654126723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
     <SUITE FILE_PATH="coverage/oldboy2$test.coverage" NAME="test Coverage Results" MODIFIED="1565167568171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy2$04.coverage" NAME="04迷宫问题 Coverage Results" MODIFIED="1578644406919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
     <SUITE FILE_PATH="coverage/oldboy2$01.coverage" NAME="01栈 Coverage Results" MODIFIED="1578650833040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
@@ -161,13 +134,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="04迷宫(队列).py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="04迷宫(队列).py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+            <state relative-caret-position="129">
+              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="33" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04迷宫.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -214,18 +194,18 @@
       <file leaf-file-name="maze_q.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="87">
               <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04迷宫(栈).py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04迷宫(栈).py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫(栈).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="271">
+              <caret line="90" column="60" lean-forward="true" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -305,9 +285,9 @@
         <option value="$PROJECT_DIR$/module8/02数据结构/04迷宫问题.py" />
         <option value="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" />
         <option value="$PROJECT_DIR$/module8/02数据结构/04迷宫(栈).py" />
-        <option value="$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py" />
         <option value="$PROJECT_DIR$/module8/02数据结构/01栈.py" />
         <option value="$PROJECT_DIR$/module8/02数据结构/02队列.py" />
+        <option value="$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py" />
       </list>
     </option>
   </component>
@@ -333,9 +313,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-514" />
-    <option name="y" value="30" />
-    <option name="width" value="1932" />
+    <option name="x" value="170" />
+    <option name="y" value="36" />
+    <option name="width" value="975" />
     <option name="height" value="1065" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -437,7 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.03双向队列">
+  <component name="RunManager" selected="Python.04迷宫(队列)">
     <configuration name="01栈" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -488,6 +468,24 @@
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/02数据结构/03双向队列.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="04迷宫(栈)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8/02数据结构" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/02数据结构/04迷宫(栈).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -675,38 +673,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="maze_q" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8/算法入门/数据结构" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.maze_q" />
-      <item index="1" class="java.lang.String" itemvalue="Python.04迷宫(队列)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.01栈" />
-      <item index="3" class="java.lang.String" itemvalue="Python.02队列" />
-      <item index="4" class="java.lang.String" itemvalue="Python.03双向队列" />
+      <item index="0" class="java.lang.String" itemvalue="Python.04迷宫(队列)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.01栈" />
+      <item index="2" class="java.lang.String" itemvalue="Python.02队列" />
+      <item index="3" class="java.lang.String" itemvalue="Python.03双向队列" />
+      <item index="4" class="java.lang.String" itemvalue="Python.04迷宫(栈)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.03双向队列" />
-        <item index="1" class="java.lang.String" itemvalue="Python.02队列" />
-        <item index="2" class="java.lang.String" itemvalue="Python.01栈" />
-        <item index="3" class="java.lang.String" itemvalue="Python.04迷宫(队列)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.maze_q" />
+        <item index="0" class="java.lang.String" itemvalue="Python.04迷宫(队列)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.04迷宫(栈)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.03双向队列" />
+        <item index="3" class="java.lang.String" itemvalue="Python.02队列" />
+        <item index="4" class="java.lang.String" itemvalue="Python.01栈" />
       </list>
     </recent_temporary>
   </component>
@@ -1039,7 +1019,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578619105967</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="module6">
+      <created>1578651527407</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1578651527407</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1059,7 +1046,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2958843" sideWeight="0.5063966" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33147943" sideWeight="0.48933902" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24805339" sideWeight="0.4936034" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40600666" sideWeight="0.4936034" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26502147" sideWeight="0.49413645" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120469086" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1435,31 +1422,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/maze.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1498,8 +1464,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫(栈).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="271">
+          <caret line="90" column="60" lean-forward="true" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/02数据结构/04迷宫(队列).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="33" />
           <folding />
         </state>
       </provider>

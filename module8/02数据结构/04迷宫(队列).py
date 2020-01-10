@@ -28,8 +28,8 @@ def mase_queue(maze):
     q.append((start, -1))
     path = []
     while len(q) > 0:
-        # 取队列坐标
-        cur = q.pop()
+        # 取队列坐标，用popleft 才是队列，左边出
+        cur = q.popleft()
 
         #将该坐标加入到路径
         path.append(cur)
