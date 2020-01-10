@@ -74,7 +74,8 @@
 # if res:
 #     print(res.group())
 
-li = [10,4,6,3,8,2,5,7]
-tmp = [4,10]
-li[0:2] = tmp
-print(li)
+# li = [10,4,6,3,8,2,5,7]
+# tmp = [4,10]
+# li[0:2] = tmp
+# print(li)
+print(2017%4)
