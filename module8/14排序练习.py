@@ -34,35 +34,28 @@ def eauql_str(str1,str2):
 li = [
     [1,3,5,7],
     [8,10,12,16],
-    [19,100,156]
+    [19,100,156,189]
  ]
 def find_func(li, num):
-    left = 0
-    right = len(li)-1
-    mid = None
-    while left <= right:
-        mid = (left+right) // 2
-        if li[mid][0] == num:
-            return mid,0
-        elif li[mid][0] < num:
-            left = mid + 1
-        elif li[mid][0] > num:
-            right = mid -1
-    if mid != None:
-        i = mid if li[mid][0] < num else mid-1
+    n = None
+    if li != []:
+        n = len(li[0])
+    if n != None:
         left = 0
-        right = len(li[mid]) - 1
+        right = n*len(li) - 1
         while left <= right:
             mid = (left+right) // 2
-            if li[i][mid] == num:
-                return i,mid
-            elif li[i][mid] < num:
-                left = mid + 1
-            elif li[i][mid] > num:
-                right = mid -1
+            i = mid // n
+            j = mid % n
+            if li[i][j] == num:
+                return i,j
+            elif li[i][j] > num:
+                right -= 1
+            elif li[i][j] < num:
+                left += 1
     return False
 
-# print(find_func(li, 7))
+print(find_func(li, 156))
 
 # 3. 给定一个列表和一个整数，设计算法找到两个数的下标，
 # 使得两个数之和为给定的整数。保证肯定仅有一个结果。
@@ -74,5 +67,5 @@ def find_two(li, sum):
                 return i,j
     return False
 
-lis = [1,3,5,7]
-print(find_two(lis, 12))
+# lis = [1,3,5,7]
+# print(find_two(lis, 12))
