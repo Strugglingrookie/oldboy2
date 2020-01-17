@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/07哈希表.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/08哈希表实现.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/09二叉树.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +40,7 @@
     <SUITE FILE_PATH="coverage/oldboy2$.coverage" NAME="堆排序 Coverage Results" MODIFIED="1575388488677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
     <SUITE FILE_PATH="coverage/oldboy2$09.coverage" NAME="09二叉树 Coverage Results" MODIFIED="1579091383449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
     <SUITE FILE_PATH="coverage/oldboy2$13.coverage" NAME="13基数排序 Coverage Results" MODIFIED="1578559660919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8" />
-    <SUITE FILE_PATH="coverage/oldboy2$10.coverage" NAME="10协程 Coverage Results" MODIFIED="1577236606654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module4/my_process&amp;thread" />
+    <SUITE FILE_PATH="coverage/oldboy2$10.coverage" NAME="10二叉搜索树 Coverage Results" MODIFIED="1579250833276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/02数据结构" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -137,35 +135,17 @@
     <favorites_list name="oldboy" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.49029127">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="07哈希表.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/module8/02数据结构/07哈希表.py">
+          <file leaf-file-name="10二叉搜索树.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="08哈希表实现.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/module8/02数据结构/08哈希表实现.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="80" column="14" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="09二叉树.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/module8/02数据结构/09二叉树.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="202">
-                  <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-                  <folding />
+                <state relative-caret-position="3850">
+                  <caret line="175" column="29" lean-forward="true" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#101#114#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -177,8 +157,8 @@
           <file leaf-file-name="bst.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/bst.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <state relative-caret-position="362">
+                  <caret line="109" column="44" lean-forward="true" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -222,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/urls.py" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/regist.html" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/templates/index.html" />
         <option value="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py" />
@@ -273,6 +252,7 @@
         <option value="$PROJECT_DIR$/module8/02数据结构/08哈希表实现.py" />
         <option value="$PROJECT_DIR$/module8/算法入门/数据结构/bitree.py" />
         <option value="$PROJECT_DIR$/module8/02数据结构/09二叉树.py" />
+        <option value="$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py" />
       </list>
     </option>
   </component>
@@ -421,7 +401,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.09二叉树">
+  <component name="RunManager" selected="Python.10二叉搜索树">
     <configuration name="04迷宫(队列)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -508,6 +488,24 @@
       <module name="oldboy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/02数据结构/09二叉树.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="10二叉搜索树" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8/02数据结构" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="oldboy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -677,38 +675,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="oldboy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/testing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.testing" />
-      <item index="1" class="java.lang.String" itemvalue="Python.05链表" />
-      <item index="2" class="java.lang.String" itemvalue="Python.06双向链表" />
-      <item index="3" class="java.lang.String" itemvalue="Python.08哈希表实现" />
-      <item index="4" class="java.lang.String" itemvalue="Python.09二叉树" />
+      <item index="0" class="java.lang.String" itemvalue="Python.05链表" />
+      <item index="1" class="java.lang.String" itemvalue="Python.06双向链表" />
+      <item index="2" class="java.lang.String" itemvalue="Python.08哈希表实现" />
+      <item index="3" class="java.lang.String" itemvalue="Python.09二叉树" />
+      <item index="4" class="java.lang.String" itemvalue="Python.10二叉搜索树" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.09二叉树" />
-        <item index="1" class="java.lang.String" itemvalue="Python.08哈希表实现" />
-        <item index="2" class="java.lang.String" itemvalue="Python.06双向链表" />
-        <item index="3" class="java.lang.String" itemvalue="Python.05链表" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testing" />
+        <item index="0" class="java.lang.String" itemvalue="Python.10二叉搜索树" />
+        <item index="1" class="java.lang.String" itemvalue="Python.09二叉树" />
+        <item index="2" class="java.lang.String" itemvalue="Python.08哈希表实现" />
+        <item index="3" class="java.lang.String" itemvalue="Python.06双向链表" />
+        <item index="4" class="java.lang.String" itemvalue="Python.05链表" />
       </list>
     </recent_temporary>
   </component>
@@ -725,13 +705,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558943260927</updated>
-    </task>
-    <task id="LOCAL-00001" summary="jquery">
-      <created>1560264548865</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1560264548865</updated>
     </task>
     <task id="LOCAL-00002" summary="jquery">
       <created>1561737868559</created>
@@ -1069,7 +1042,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578922876517</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="module6">
+      <created>1579091409937</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1579091409937</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1151,18 +1131,11 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module4/my_process&amp;thread/01进程基础.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-608">
@@ -1507,19 +1480,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/bst.py">
+    <entry file="file://$PROJECT_DIR$/module8/02数据结构/09二叉树.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module8/02数据结构/09二叉树.py">
+    <entry file="file://$PROJECT_DIR$/module8/算法入门/数据结构/bst.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        <state relative-caret-position="362">
+          <caret line="109" column="44" lean-forward="true" selection-start-line="109" selection-start-column="44" selection-end-line="109" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3850">
+          <caret line="175" column="29" lean-forward="true" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
+          <folding>
+            <element signature="e#101#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
