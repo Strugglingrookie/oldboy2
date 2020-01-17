@@ -3,7 +3,6 @@
 # 如果y是x左子树的一个节点，那么y.key ≤ x.key；
 # 如果y是x右子树的一个节点，那么y.key ≥ x.key。
 
-import random
 from collections import deque
 
 class BiTreeNode(): # 树节点

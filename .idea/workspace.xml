@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py" afterPath="$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -141,11 +141,9 @@
           <file leaf-file-name="10二叉搜索树.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3850">
-                  <caret line="175" column="29" lean-forward="true" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#101#114#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="308">
+                  <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -706,13 +704,6 @@
       <option name="presentableId" value="Default" />
       <updated>1558943260927</updated>
     </task>
-    <task id="LOCAL-00002" summary="jquery">
-      <created>1561737868559</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1561737868559</updated>
-    </task>
     <task id="LOCAL-00003" summary="jquery">
       <created>1561740463403</created>
       <option name="number" value="00003" />
@@ -1049,7 +1040,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579091409937</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="module6">
+      <created>1579251631387</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1579251631387</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1498,11 +1496,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module8/02数据结构/10二叉搜索树.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3850">
-          <caret line="175" column="29" lean-forward="true" selection-start-line="175" selection-start-column="29" selection-end-line="175" selection-end-column="29" />
-          <folding>
-            <element signature="e#101#114#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
