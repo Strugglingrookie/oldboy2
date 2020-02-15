@@ -2,86 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="module8">
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/00设计原则.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/01简单工厂(创建).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/02工厂方法(创建).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/03抽象工厂(创建).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/04建造者(创建).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/05单例模式(创建).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/06适配器(结构).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/04设计模式/07桥模式(结构).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/abstract_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/adapter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/bridge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/builder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/chain_of_responsibility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/composite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/facade.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/factory_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/observer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/proxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/singleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/template_method.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/设计模式/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/08组合(结构).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/1.in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/1.out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/2.in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/2.out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/5.in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/5.out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/data/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/dictionaries/qimi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/算法入门.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/cut_rod.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/fibnacci.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/fraction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/gcd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/lcs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/AVLTree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/bitree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/bst.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/demo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/hash_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/linklist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/maze.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/queue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/queue2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/stack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/bubble_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/bucket_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/cal_time.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/count_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/hanoi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/heap2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/heap_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/heap_topk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/insert_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/merge_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/quick_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/radix_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/select_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/shell_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/sort_cmp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/activity_selection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/change_money.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/fractional_backpack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/number_join.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -505,14 +427,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558943260927</updated>
-      <workItem from="1581670289410" duration="33096000" />
-    </task>
-    <task id="LOCAL-00005" summary="module6">
-      <created>1564714791019</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1564714791019</updated>
+      <workItem from="1581670289410" duration="33722000" />
     </task>
     <task id="LOCAL-00006" summary="module6">
       <created>1564731870203</created>
@@ -850,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581769397996</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="module8">
+      <created>1581781650637</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1581781650637</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -889,10 +811,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="7" key="#_pydev_execfile/0.0.1536.824@0.0.1536.824" timestamp="1581751053151" />
-    <state x="396" y="6" key="CommitChangelistDialog2" timestamp="1581769396996">
+    <state x="396" y="6" key="CommitChangelistDialog2" timestamp="1581781649794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="396" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581769396996" />
+    <state x="396" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581781649794" />
     <state x="483" y="113" key="FileChooserDialogImpl" timestamp="1581673333314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -934,10 +856,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581638239111" />
     <state x="170" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581758561569" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1581769402046">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1581781653446">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581769402046" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581781653446" />
     <state x="345" y="204" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581673335216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
