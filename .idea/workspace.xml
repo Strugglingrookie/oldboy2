@@ -2,14 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="module8">
-      <change afterPath="$PROJECT_DIR$/module8/03算法进阶/03钢条切割动态规划.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/03算法进阶/04最长公共子序列.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/03算法进阶/05欧几里得算法.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module8/03算法进阶/cut_rod_recursion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/oldboy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/00设计原则.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/01简单工厂(创建).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/02工厂方法(创建).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/03抽象工厂(创建).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/04建造者(创建).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/05单例模式(创建).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/06适配器(结构).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/04设计模式/07桥模式(结构).py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/abstract_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/adapter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/bridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/chain_of_responsibility.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/composite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/facade.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/factory_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/observer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/singleton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/template_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module8/设计模式/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module8/03算法进阶/01动态规划.py" beforeDir="false" afterPath="$PROJECT_DIR$/module8/03算法进阶/01动态规划简介.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/1.in.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/1.out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/2.in.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/2.out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/5.in.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/5.out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/data/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/dictionaries/qimi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/.idea/算法入门.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/cut_rod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/fibnacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/fraction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/gcd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/动态规划/lcs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/AVLTree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/bitree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/bst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/hash_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/linklist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/maze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/maze_q.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/queue2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/数据结构/tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/bubble_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/bucket_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/cal_time.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/count_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/hanoi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/heap2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/heap_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/heap_topk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/insert_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/merge_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/quick_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/radix_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/select_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/shell_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/查找排序/sort_cmp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/activity_selection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/change_money.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/fractional_backpack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module8/算法入门/贪心算法/number_join.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,10 +202,17 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Study/oldboy2/module6/07 django与ajax/ajax/ajax_app01/models.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module8/04设计模式" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\oldboy\module8\04设计模式" />
+      <recent name="D:\oldboy\module8" />
+      <recent name="E:\Study\oldboy2\module8\02数据结构" />
+      <recent name="E:\Study\oldboy2\module8" />
+      <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther\statics" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Study\oldboy2\module8\01排序算法" />
       <recent name="E:\Study\oldboy2\module8" />
@@ -141,15 +220,8 @@
       <recent name="E:\Study\oldboy2\module6\07 django与ajax\ajax\statics" />
       <recent name="E:\Study\oldboy2\module6\06 django模型层\django_models\statics" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Study\oldboy2\module8\02数据结构" />
-      <recent name="E:\Study\oldboy2\module8" />
-      <recent name="E:\Study\oldboy2\module6\11 django组件用户认证\auther\statics" />
-      <recent name="E:\Study\oldboy2\module6\10 django组件cookie&amp;session\cookie_session\cs_app01" />
-      <recent name="E:\Study\oldboy2\module6\10 django组件cookie&amp;session\cookie_session\statics" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.05欧几里得算法">
+  <component name="RunManager" selected="Python.05单例模式(创建)">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="oldboy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,6 +334,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="05单例模式(创建)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oldboy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8/04设计模式" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/module8/04设计模式/05单例模式(创建).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="_pydev_execfile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ajax" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -298,28 +392,6 @@
       <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cut_rod_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="oldboy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/module8/03算法进阶" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\oldboy\module8\03算法进阶\cut_rod_recursion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -409,17 +481,17 @@
     <list>
       <item itemvalue="Python.03钢条切割动态规划" />
       <item itemvalue="Python._pydev_execfile" />
-      <item itemvalue="Python.cut_rod_recursion" />
       <item itemvalue="Python.04最长公共子序列" />
       <item itemvalue="Python.05欧几里得算法" />
+      <item itemvalue="Python.05单例模式(创建)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.05单例模式(创建)" />
         <item itemvalue="Python.05欧几里得算法" />
         <item itemvalue="Python.04最长公共子序列" />
         <item itemvalue="Python.03钢条切割动态规划" />
         <item itemvalue="Python._pydev_execfile" />
-        <item itemvalue="Python.cut_rod_recursion" />
       </list>
     </recent_temporary>
   </component>
@@ -433,14 +505,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558943260927</updated>
-      <workItem from="1581670289410" duration="22668000" />
-    </task>
-    <task id="LOCAL-00004" summary="jquery">
-      <created>1561996817188</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1561996817188</updated>
+      <workItem from="1581670289410" duration="33096000" />
     </task>
     <task id="LOCAL-00005" summary="module6">
       <created>1564714791019</created>
@@ -778,7 +843,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579251675746</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="module8">
+      <created>1581769397993</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1581769397996</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -817,30 +889,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="7" key="#_pydev_execfile/0.0.1536.824@0.0.1536.824" timestamp="1581751053151" />
-    <state x="396" y="6" key="CommitChangelistDialog2" timestamp="1581769194469">
+    <state x="396" y="6" key="CommitChangelistDialog2" timestamp="1581769396996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="396" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581769194469" />
+    <state x="396" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581769396996" />
     <state x="483" y="113" key="FileChooserDialogImpl" timestamp="1581673333314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="483" y="113" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581673333314" />
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1581768086481">
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom" timestamp="1581779626798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581768086481" />
-    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1581768086479">
+    <state width="1493" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581779626798" />
+    <state width="1493" height="160" key="GridCell.Tab.0.center" timestamp="1581779626798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581768086479" />
-    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1581768086478">
+    <state width="1493" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581779626798" />
+    <state width="1493" height="160" key="GridCell.Tab.0.left" timestamp="1581779626797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581768086478" />
-    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1581768086480">
+    <state width="1493" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581779626797" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right" timestamp="1581779626798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581768086480" />
+    <state width="1493" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581779626798" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1581751064002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -862,6 +934,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581638239111" />
     <state x="170" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581758561569" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1581769402046">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581769402046" />
     <state x="345" y="204" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581673335216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -878,6 +954,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/oldboy$05__.coverage" NAME="05单例模式(创建) Coverage Results" MODIFIED="1581777675978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/04设计模式" />
     <SUITE FILE_PATH="coverage/oldboy$04.coverage" NAME="04最长公共子序列 Coverage Results" MODIFIED="1581760959432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/03算法进阶" />
     <SUITE FILE_PATH="coverage/oldboy$02.coverage" NAME="02钢条切割 Coverage Results" MODIFIED="1581749839891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/03算法进阶" />
     <SUITE FILE_PATH="coverage/oldboy$03.coverage" NAME="03钢条切割动态规划 Coverage Results" MODIFIED="1581753249752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/03算法进阶" />
