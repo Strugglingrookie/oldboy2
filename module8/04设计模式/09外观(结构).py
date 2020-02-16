@@ -1,6 +1,21 @@
-# coding: utf-8
-# author: ztypl
-# date:   2018/12/26
+# -*- coding: utf-8 -*-
+# @Author : XiaoGang
+# @Time   : 2020/2/16 8:41
+# @File   : 09外观(结构).py
+
+
+'''
+内容：为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
+角色：
+外观（facade）
+子系统类（subsystem classes）
+
+优点：
+减少系统相互依赖
+提高了灵活性
+提高了安全性
+
+'''
 
 
 class CPU:
@@ -27,7 +42,7 @@ class Memory:
         print("内存断电")
 
 
-class Computer: # Facade
+class Computer:  # Facade
     def __init__(self):
         self.cpu = CPU()
         self.disk = Disk()

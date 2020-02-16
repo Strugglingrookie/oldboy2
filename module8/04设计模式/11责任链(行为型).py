@@ -1,8 +1,29 @@
-# coding: utf-8
-# author: ztypl
-# date:   2018/12/26
+# -*- coding: utf-8 -*-
+# @Author : XiaoGang
+# @Time   : 2020/2/16 8:41
+# @File   : 09外观(结构).py
+
+
+'''
+责任链模式
+内容：使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。
+将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。
+
+角色：
+抽象处理者（Handler）
+具体处理者（ConcreteHandler）
+客户端（Client）
+
+适用场景：
+有多个对象可以处理一个请求，哪个对象处理由运行时决定
+在不明确接收者的情况下，向多个对象中的一个提交一个请求
+
+优点：
+降低耦合度：一个对象无需知道是其他哪一个对象处理其请求
+'''
 
 from abc import ABCMeta, abstractmethod
+
 
 class Handler(metaclass=ABCMeta):
     @abstractmethod
@@ -41,9 +62,8 @@ class ProjectDirector(Handler):
             print("项目主管职权不足")
             self.next.handle_leave(day)
 
+
 # Client
-
-
 day = 12
 h = ProjectDirector()
 h.handle_leave(day)
