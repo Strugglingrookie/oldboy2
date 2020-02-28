@@ -1,0 +1,62 @@
+2020-02-28 23:26:45,295 - Thread-1_13488 INFO read_case.read_excel:17 - 开始读取测试用例 D:\oldboy\auto\atp\cases\test_copy.xlsx
+2020-02-28 23:26:45,296 - Thread-3_7120 INFO read_case.read_excel:17 - 开始读取测试用例 D:\oldboy\auto\atp\cases\test_login_index.xlsx
+2020-02-28 23:26:45,296 - Thread-1_13488 INFO read_case.read_excel:23 - 测试用例读取完毕 D:\oldboy\auto\atp\cases\test_copy.xlsx
+2020-02-28 23:26:45,303 - Thread-3_7120 INFO read_case.read_excel:23 - 测试用例读取完毕 D:\oldboy\auto\atp\cases\test_login_index.xlsx
+2020-02-28 23:26:45,312 - Thread-1_13488 INFO request_send.req:58 - 开始发起请求:
+url:http://localhost:8080/my/login
+method:post
+headers:{'content-type': 'application/json', 'charset': 'UTF-8'}
+req_data:{'name': 'xg', 'password': '123456'}
+待关联的参数:{'user_token': 'token'}
+2020-02-28 23:26:45,325 - Thread-2_13424 INFO read_case.read_excel:17 - 开始读取测试用例 D:\oldboy\auto\atp\cases\test_copy2.xlsx
+2020-02-28 23:26:45,325 - Thread-3_7120 INFO request_send.req:58 - 开始发起请求:
+url:http://localhost:8080/my/login
+method:post
+headers:{'content-type': 'application/json', 'charset': 'UTF-8'}
+req_data:{'name': 'xg', 'password': '123456'}
+待关联的参数:{'user_token': 'token'}
+2020-02-28 23:26:45,354 - Thread-2_13424 INFO read_case.read_excel:23 - 测试用例读取完毕 D:\oldboy\auto\atp\cases\test_copy2.xlsx
+2020-02-28 23:26:45,372 - Thread-2_13424 INFO request_send.req:58 - 开始发起请求:
+url:http://localhost:8080/my/login
+method:post
+headers:{'content-type': 'application/json', 'charset': 'UTF-8'}
+req_data:{'name': 'xg', 'password': '12345'}
+待关联的参数:{'user_token': 'token'}
+2020-02-28 23:26:47,705 - Thread-1_13488 INFO request_send.req:88 - 请求 http://localhost:8080/my/login 成功，响应参数 {'code': '000000', 'msg': 'login success', 'token': 'asdfgh'}
+2020-02-28 23:26:47,718 - Thread-3_7120 INFO request_send.req:88 - 请求 http://localhost:8080/my/login 成功，响应参数 {'code': '000000', 'msg': 'login success', 'token': 'asdfgh'}
+2020-02-28 23:26:47,731 - Thread-2_13424 ERROR request_send.req:79 - 获取关联参数失败 token
+2020-02-28 23:26:47,732 - Thread-1_13488 INFO request_send.req:58 - 开始发起请求:
+url:http://localhost:8080/my/index
+method:post
+headers:{'content-type': 'application/json', 'charset': 'UTF-8'}
+req_data:{'phone': '18133428515', 'token': 'asdfgh'}
+待关联的参数:{}
+2020-02-28 23:26:47,739 - Thread-3_7120 INFO request_send.req:58 - 开始发起请求:
+url:http://localhost:8080/my/index
+method:post
+headers:{'content-type': 'application/json', 'charset': 'UTF-8'}
+req_data:{'phone': '15749466373', 'token': 'asdfgh'}
+待关联的参数:{}
+2020-02-28 23:26:47,762 - Thread-2_13424 ERROR request_send.req:80 - 响应数据 {'code': '111111', 'msg': 'login error'} 里没有关联参数 token
+2020-02-28 23:26:47,822 - Thread-2_13424 INFO request_send.req:88 - 请求 http://localhost:8080/my/login 成功，响应参数 {'code': '111111', 'msg': 'login error'}
+2020-02-28 23:26:47,828 - Thread-2_13424 ERROR parse_response.do_check:46 - 预期结果 code=000000，实际结果 {'code': '111111', 'msg': 'login error'}
+2020-02-28 23:26:47,828 - Thread-2_13424 ERROR request_send.set_rele:42 - 没有找到关联参数 user_token
+2020-02-28 23:26:47,829 - Thread-2_13424 INFO request_send.req:58 - 开始发起请求:
+url:http://localhost:8080/my/index
+method:post
+headers:{'content-type': 'application/json', 'charset': 'UTF-8'}
+req_data:{'phone': '18510549649', 'token': '{user_token}'}
+待关联的参数:{}
+2020-02-28 23:26:49,895 - Thread-1_13488 INFO request_send.req:88 - 请求 http://localhost:8080/my/index 成功，响应参数 {'code': '000000', 'msg': 'index success!'}
+2020-02-28 23:26:49,895 - Thread-1_13488 INFO utils.write_excel:15 - 现在开始写报告了：文件名是 D:\oldboy\auto\atp\cases\test_copy.xlsx  内容：[[{'name': 'xg', 'password': '123456'}, "{'code': '000000', 'msg': 'login success', 'token': 'asdfgh'}", '通过', ''], [{'phone': '18133428515', 'token': 'asdfgh'}, "{'code': '000000', 'msg': 'index success!'}", '通过', '']]
+2020-02-28 23:26:49,908 - Thread-3_7120 INFO request_send.req:88 - 请求 http://localhost:8080/my/index 成功，响应参数 {'code': '000000', 'msg': 'index success!'}
+2020-02-28 23:26:49,932 - Thread-3_7120 INFO utils.write_excel:15 - 现在开始写报告了：文件名是 D:\oldboy\auto\atp\cases\test_login_index.xlsx  内容：[[{'name': 'xg', 'password': '123456'}, "{'code': '000000', 'msg': 'login success', 'token': 'asdfgh'}", '通过', ''], [{'phone': '15749466373', 'token': 'asdfgh'}, "{'code': '000000', 'msg': 'index success!'}", '通过', '']]
+2020-02-28 23:26:49,987 - Thread-2_13424 INFO request_send.req:88 - 请求 http://localhost:8080/my/index 成功，响应参数 {'code': '111111', 'msg': 'permission error'}
+2020-02-28 23:26:50,017 - Thread-2_13424 ERROR parse_response.do_check:46 - 预期结果 code=000000，实际结果 {'code': '111111', 'msg': 'permission error'}
+2020-02-28 23:26:50,017 - Thread-2_13424 INFO utils.write_excel:15 - 现在开始写报告了：文件名是 D:\oldboy\auto\atp\cases\test_copy2.xlsx  内容：[[{'name': 'xg', 'password': '12345'}, "{'code': '111111', 'msg': 'login error'}", '失败', "预期结果 code=000000，实际结果 {'code': '111111', 'msg': 'login error'}"], [{'phone': '18510549649', 'token': '{user_token}'}, "{'code': '111111', 'msg': 'permission error'}", '失败', "预期结果 code=000000，实际结果 {'code': '111111', 'msg': 'permission error'}"]]
+2020-02-28 23:26:50,273 - Thread-3_7120 INFO utils.write_excel:30 - 报告生成完成，文件名是D:\oldboy\auto\atp\report\20200228232650_test_login_index.xls
+2020-02-28 23:26:50,273 - Thread-1_13488 INFO utils.write_excel:30 - 报告生成完成，文件名是D:\oldboy\auto\atp\report\20200228232650_test_copy.xls
+2020-02-28 23:26:50,285 - Thread-2_13424 INFO utils.write_excel:30 - 报告生成完成，文件名是D:\oldboy\auto\atp\report\20200228232650_test_copy2.xls
+2020-02-28 23:26:50,327 - MainThread_16324 INFO start_threads.main:57 - 全局关联参数池 {13488: {'user_token': 'asdfgh'}, 7120: {'user_token': 'asdfgh'}, 13424: {'user_token': ''}}
+2020-02-28 23:26:53,736 - MainThread_16324 INFO utils.send_mail:51 - 发送邮件成功
+2020-02-28 23:26:53,939 - MainThread_16324 INFO start_threads.main:61 - done

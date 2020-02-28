@@ -78,4 +78,21 @@
 # tmp = [4,10]
 # li[0:2] = tmp
 # print(li)
-print(2017%4)
+# print(2017%4)
+
+li = [4.3, 1.2, 5, 11, 8.444, 5.333]
+
+
+def bubble_sort(l):
+    for i in range(len(l) - 1):
+        exchange = False
+        for j in range(len(l) - i - 1):
+            if l[j] > l[j + 1]:
+                l[j], l[j + 1] = l[j + 1], l[j]
+                exchange = True
+        if not exchange:
+            break
+    return l
+
+
+print(bubble_sort(li))

@@ -1,0 +1,8 @@
+api/user/login,niuhanyang,aA123456,userId
+/api/user/reg,niuhanyang,aA12356,错误
+niuhanyang,aA12456,成功
+niuhanyang,aA12456,成功
+niuhanyang,aA12456,成功
+niuhanyang,aA12456,成功
+niuhanyang,aA12456,错误
+niuhanyang,aA12456,错误

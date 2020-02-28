@@ -200,9 +200,9 @@ def my_login():
     resp.headers["Content-Type"] = "application/json"
     resp.headers["charset"] = "UTF-8"
     try:
-        dict = request.json
-        print(dict)
-        if dict.get('name')!='xg' or dict.get('password')!='123456':
+        dic = request.json
+        print(dic)
+        if dic.get('name')!='xg' or dic.get('password')!='123456':
             raise NameError
         rs_json = {"code":"000000","msg":"login success","token":"asdfgh"}
         rs_data = json.dumps(rs_json)
@@ -234,6 +234,7 @@ def my_index():
     except Exception as e:
         print(e)
         return "格式不对，请检查json格式，对比小幺鸡请求参数！    http://172.30.3.61:8092/doc/1YaX6ZoSxS"
+
 
 server.config['JSON_AS_ASCII'] = False
 server.run(port=8080, host='0.0.0.0', debug=True)  # 指定host为“0.0.0.0”后，局域网内其他IP就都可以访问了
