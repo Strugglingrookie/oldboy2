@@ -4,7 +4,7 @@
 # @File   : parse_response.py
 
 
-import traceback, jsonpath
+import jsonpath
 from config.settings import log
 
 
@@ -24,7 +24,7 @@ class ParseResponse():
             return True
         log.debug("开始校验...预期结果 %s，实际结果 %s"
                   % (self.expected_res, self.actual_res))
-        expected_lis = self.expected_res.split(",")
+        expected_lis = self.expected_res.split("&")
         for exp in expected_lis:
             check_flag = False
             for sym in self.symbol:
@@ -58,7 +58,7 @@ class ParseResponse():
 
 
 if __name__ == '__main__':
-    expect_data = "user=xg,age<28,height=180,money>1000"
+    expect_data = "user=xg&age<28&height=180&money>1000"
     actual_dic = {"user": "xg", "age": 20, 'height': 180, 'money': 101}
     p = ParseResponse(expect_data, actual_dic)
     print(p.status)

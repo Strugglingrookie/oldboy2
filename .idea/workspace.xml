@@ -1,119 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="module8">
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/bin/start-多线程.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/bin/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/cases/test-处女座测试用例.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/cases/test-处女座测试用例2.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/config/setting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/config/utli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/config/用例模板.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/lib/parse_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/lib/read_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/lib/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/lib/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/logs/atp.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/logs/atp.log.2019-07-21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728112536_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728113029_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728113550_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114434_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114459_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114459_test-处女座测试用例2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114756_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114756_test-处女座测试用例2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114935_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114935_test-处女座测试用例2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/bin/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/bin/start_threads.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/cases/test_copy.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/cases/test_copy2.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/cases/test_login_index.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/cases/用例模板.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/flast_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/lib/log_write.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/lib/parse_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/lib/read_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/lib/request_send.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/lib/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/logs/atp.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/report/20200228232650_test_copy.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/report/20200228232650_test_copy2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/report/20200228232650_test_login_index.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/atp/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/bin/start-多线程.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/bin/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/cases/test-处女座测试用例.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/cases/test-处女座测试用例2.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/config/setting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/config/utli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/config/用例模板.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/lib/parse_response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/lib/read_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/lib/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/lib/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/logs/atp.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/logs/atp.log.2019-07-21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728112536_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728113029_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728113550_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114434_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114459_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114459_test-处女座测试用例2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114756_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114756_test-处女座测试用例2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114935_test-处女座测试用例.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/atp/report/20190728114935_test-处女座测试用例2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/case/test_bug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/case/test_pay.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/case/test_reg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/discover.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/new_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/users.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/bin/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/cases/base_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/cases/test_choujiang.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/cases/test_get_stu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/config/setting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/data/stus" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/logs/utp.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/utlis/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/utlis/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/utp/utlis/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/单元测试产生报告.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/单元测试框架.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/有关联关系的接口.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/查找测试用例.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/day10/笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unit_test.py" afterDir="false" />
+    <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="接口自动化框架">
+      <change afterPath="$PROJECT_DIR$/auto/utp/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/BeautifulReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/BeautifulReport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/img/²âÊÔ±¨¸æ.png" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/img/²âÊÔ±¨¸æ.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/sample/img/test_errors_save_imgs.png" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/img/test_errors_save_imgs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³Ãæºó.png" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³Ãæºó.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³ÃæÇ°.png" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³ÃæÇ°.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/sample/sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/sample.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/sample/²âÊÔ±¨¸æ.html" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/²âÊÔ±¨¸æ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/template/template" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/template/template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/BeautifulReport/tests/test_make_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/tests/test_make_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/BeautifulReport/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/BeautifulReport/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atp/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/平台/send_red_packages/bin/interface_star.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/atp/flast_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/bin/flask_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/atp/lib/parse_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/lib/parse_response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/atp/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/BeautifulReport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/img/²âÊÔ±¨¸æ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/img/test_errors_save_imgs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³Ãæºó.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³ÃæÇ°.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/sample.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/sample/²âÊÔ±¨¸æ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/template/template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/BeautifulReport/tests/test_make_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/bin/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/utp/BeautifulReport/setup.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +135,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -236,26 +144,26 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Study/oldboy2/module6/07 django与ajax/ajax/ajax_app01/models.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auto" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Python/Python37" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\杨晓钢\AppData\Local\Programs\Python\Python37" />
       <recent name="D:\oldboy\auto" />
       <recent name="D:\oldboy\auto\atp\cases" />
       <recent name="D:\oldboy" />
       <recent name="D:\oldboy\module8\04设计模式" />
-      <recent name="D:\oldboy\module8" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\oldboy\auto\atp" />
+      <recent name="D:\oldboy\auto\atp\bin" />
       <recent name="D:\oldboy\auto\utp" />
+      <recent name="D:\oldboy\auto\atp" />
       <recent name="D:\oldboy\auto" />
       <recent name="D:\oldboy\atp\cases" />
-      <recent name="E:\Study\oldboy2\module8\01排序算法" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.unit_test">
+  <component name="RunManager" selected="Python.parse_response">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="oldboy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,6 +232,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="parse_response" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="oldboy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/atp/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/atp/lib/parse_response.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="oldboy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -360,28 +290,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/atp/bin/start_threads.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="oldboy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/atp" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/atp/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -513,19 +421,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.utils" />
       <item itemvalue="Python.start" />
       <item itemvalue="Python.start_threads" />
       <item itemvalue="Python.unit_test" />
+      <item itemvalue="Python.parse_response" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.parse_response" />
         <item itemvalue="Python.unit_test" />
         <item itemvalue="Python.start_threads" />
         <item itemvalue="Python.start" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -547,14 +455,7 @@
       <workItem from="1582605250767" duration="1829000" />
       <workItem from="1582675758773" duration="5225000" />
       <workItem from="1582723517178" duration="32179000" />
-      <workItem from="1582800098146" duration="49312000" />
-    </task>
-    <task id="LOCAL-00008" summary="module6">
-      <created>1564751984235</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1564751984235</updated>
+      <workItem from="1582800098146" duration="55036000" />
     </task>
     <task id="LOCAL-00009" summary="module6">
       <created>1564818832871</created>
@@ -892,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581817125238</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="接口自动化框架">
+      <created>1582907024720</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1582907024721</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -924,7 +832,8 @@
     <MESSAGE value="jquery" />
     <MESSAGE value="module6" />
     <MESSAGE value="module8" />
-    <option name="LAST_COMMIT_MESSAGE" value="module8" />
+    <MESSAGE value="接口自动化框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口自动化框架" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="7" key="#_pydev_execfile" timestamp="1581751053151">
@@ -943,30 +852,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="495" y="34" key="#test/0.0.1536.824@0.0.1536.824" timestamp="1582715358134" />
-    <state x="396" y="6" key="CommitChangelistDialog2" timestamp="1581817123461">
+    <state x="349" y="6" key="CommitChangelistDialog2" timestamp="1582907022667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="396" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1581817123461" />
+    <state x="349" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582907022667" />
     <state x="483" y="113" key="FileChooserDialogImpl" timestamp="1581673333314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="483" y="113" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581673333314" />
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1582905763711">
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom" timestamp="1582943206637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582905763711" />
-    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1582905763711">
+    <state width="1493" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582943206637" />
+    <state width="1493" height="180" key="GridCell.Tab.0.center" timestamp="1582943206636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582905763711" />
-    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1582905763711">
+    <state width="1493" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582943206636" />
+    <state width="1493" height="180" key="GridCell.Tab.0.left" timestamp="1582943206636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582905763711" />
-    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1582905763711">
+    <state width="1493" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582943206636" />
+    <state width="1493" height="180" key="GridCell.Tab.0.right" timestamp="1582943206637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582905763711" />
+    <state width="1493" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582943206637" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1581751064002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -988,10 +897,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581638239111" />
     <state x="400" y="115" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582904752070" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1581817127314">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1582907030538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581817127314" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582907030538" />
     <state x="345" y="204" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581673335216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -1013,7 +922,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/oldboy$test.coverage" NAME="test Coverage Results" MODIFIED="1582799109831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/atp" />
-    <SUITE FILE_PATH="coverage/oldboy$parse_response.coverage" NAME="parse_response Coverage Results" MODIFIED="1582876252901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
+    <SUITE FILE_PATH="coverage/oldboy$parse_response.coverage" NAME="parse_response Coverage Results" MODIFIED="1582943045729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
     <SUITE FILE_PATH="coverage/oldboy$unit_test.coverage" NAME="unit_test Coverage Results" MODIFIED="1582905763703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp" />
     <SUITE FILE_PATH="coverage/oldboy$start_threads.coverage" NAME="start_threads Coverage Results" MODIFIED="1582903603350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/bin" />
     <SUITE FILE_PATH="coverage/oldboy$03.coverage" NAME="03钢条切割动态规划 Coverage Results" MODIFIED="1581753249752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/03算法进阶" />
