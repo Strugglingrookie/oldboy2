@@ -3,7 +3,7 @@
 # @Author  : Xiao
 
 
-from tools import Mysql
+from lib import Mysql
 from urllib.parse import parse_qs
 
 def op_file(filename):

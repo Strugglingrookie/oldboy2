@@ -1,0 +1,4 @@
+'xiaogang', '123456', True
+'', '123456', True
+'xiaogang', '', False
+'adgadg', '123456', False

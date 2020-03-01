@@ -8,7 +8,7 @@ from urllib import request,parse
 from config import Config
 from business.phTest import PHTest
 from business.wptTest import WPTTest
-from tools.base import Base
+from lib.base import Base
 from random import randint,choice
 from selenium import webdriver
 

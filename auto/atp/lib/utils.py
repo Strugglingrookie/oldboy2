@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author : XiaoGang
 # @Time   : 2020/2/28 16:01
-# @File   : utils.py
+# @File   : lib.py
 
 
 import xlrd, os, time, traceback, yagmail

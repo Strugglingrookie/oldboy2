@@ -1,4 +1,4 @@
-from tools import Mysql
+from lib import Mysql
 
 # mysql_check = Mysql('172.29.2.158', 3343, 'lcrmapp', 'WuGeiKaiFa123', dbname='lcrm03', charset="utf8")
 

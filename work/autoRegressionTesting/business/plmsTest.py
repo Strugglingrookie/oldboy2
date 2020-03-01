@@ -7,7 +7,7 @@ BASEPATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, BASEPATH)
 
 from config import Config
-from tools.plms_tools import oracle_sql, mysql_sql
+from lib.plms_tools import oracle_sql, mysql_sql
 
 
 class PLMSTest(unittest.TestCase):

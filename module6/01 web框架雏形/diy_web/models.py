@@ -3,7 +3,7 @@
 # @Author  : Xiao
 
 
-from tools import Mysql
+from lib import Mysql
 
 sql_check_db = "show databases like 'oldboy';"
 sql_create_db = 'create database oldboy DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;'

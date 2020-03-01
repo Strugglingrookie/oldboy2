@@ -1,0 +1,4 @@
+xg,123456,code=000000&msg=login success
+xg,123451,code=111111&msg=login error
+xg,123457,code=111111
+xg,123458,code=000000
