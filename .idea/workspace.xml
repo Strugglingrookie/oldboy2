@@ -2,94 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="单元自动化框架">
-      <change afterPath="$PROJECT_DIR$/auto/utp/bin/flask_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/bin/start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/cases/base_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/cases/test_index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/cases/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/data/userinfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/lib/log_write.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/lib/operate_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/lib/request_send.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/lib/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/01unit_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/02setUp_tearDown.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/03parametric.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/04params_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/05relevance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/06case_batchs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/07beautiful_report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/utp/unittest_basic/params.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/BeautifulReport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/img/²âÊÔ±¨¸æ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/sample/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/sample/img/test_errors_save_imgs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³Ãæºó.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/sample/img/µã»÷µÚÒ»¸öÎÄÕÂÒ³ÃæÇ°.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/sample/sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/sample/²âÊÔ±¨¸æ.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/template/template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/BeautifulReport/tests/test_make_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/oldboy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/bin/start-多线程.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/bin/start.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/cases/test-处女座测试用例.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/cases/test-处女座测试用例2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/config/setting.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/config/utli.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/config/用例模板.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/lib/parse_response.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/lib/read_case.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/lib/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/lib/util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/logs/atp.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/logs/atp.log.2019-07-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728112536_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728113029_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728113550_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114434_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114459_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114459_test-处女座测试用例2.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114756_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114756_test-处女座测试用例2.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114935_test-处女座测试用例.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/1nn_atp/report/20190728114935_test-处女座测试用例2.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/atp/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/lib/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/report/report_20200301235852.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/new_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/auto/utp/report/report_20200301235305.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/单元测试产生报告.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/单元测试框架.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/有关联关系的接口.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/查找测试用例.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/day10/笔记.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/utp/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/utp/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/utp/unit_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/2第二模块/chapter4-常用模块/mods/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/2第二模块/chapter4-常用模块/mods/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/src/deferred/exceptionHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/src/deferred/exceptionHook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5/02Javascript/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module5/02Javascript/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5/03jQuery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module5/03jQuery/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5/04Bootstrap/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module5/04Bootstrap/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/01 web框架雏形/diy_web/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/01 web框架雏形/diy_web/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/01 web框架雏形/diy_web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/01 web框架雏形/diy_web/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/django_models/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/django_models/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/plmsTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/autoRegressionTesting/business/wkTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/wkTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/核心/周年庆造数据/create_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -522,14 +435,7 @@
       <workItem from="1582605250767" duration="1829000" />
       <workItem from="1582675758773" duration="5225000" />
       <workItem from="1582723517178" duration="32179000" />
-      <workItem from="1582800098146" duration="103802000" />
-    </task>
-    <task id="LOCAL-00011" summary="module6">
-      <created>1564903825892</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1564903825892</updated>
+      <workItem from="1582800098146" duration="104307000" />
     </task>
     <task id="LOCAL-00012" summary="module6">
       <created>1564922773721</created>
@@ -867,7 +773,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582949317995</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="单元自动化框架">
+      <created>1583079224323</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1583079224324</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -891,7 +804,8 @@
     <MESSAGE value="module6" />
     <MESSAGE value="module8" />
     <MESSAGE value="接口自动化框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口自动化框架" />
+    <MESSAGE value="单元自动化框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="单元自动化框架" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="7" key="#_pydev_execfile" timestamp="1581751053151">
@@ -910,30 +824,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="495" y="34" key="#test/0.0.1536.824@0.0.1536.824" timestamp="1582715358134" />
-    <state x="349" y="6" key="CommitChangelistDialog2" timestamp="1583079175954">
+    <state x="349" y="6" key="CommitChangelistDialog2" timestamp="1583079221812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583079175954" />
+    <state x="349" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583079221812" />
     <state x="483" y="113" key="FileChooserDialogImpl" timestamp="1582978770565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="483" y="113" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582978770565" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1583078331910">
+    <state width="746" height="223" key="GridCell.Tab.0.bottom" timestamp="1583079245463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583078331910" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1583078331910">
+    <state width="746" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
+    <state width="746" height="223" key="GridCell.Tab.0.center" timestamp="1583079245463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583078331910" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1583078331910">
+    <state width="746" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
+    <state width="746" height="223" key="GridCell.Tab.0.left" timestamp="1583079245463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583078331910" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1583078331910">
+    <state width="746" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
+    <state width="746" height="223" key="GridCell.Tab.0.right" timestamp="1583079245463">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583078331910" />
+    <state width="746" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583076774039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -955,10 +869,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581638239111" />
     <state x="424" y="84" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582978794770" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1582949326218">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583079227448">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582949326218" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583079227448" />
     <state x="345" y="204" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581673335216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
