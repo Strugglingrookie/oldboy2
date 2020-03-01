@@ -2,6 +2,393 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="单元自动化框架">
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/.idea/layuiAdmin原版.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/content/comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/content/contform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/content/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/content/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/content/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/content/tagsform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/forum/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/forum/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/forum/replys.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/forum/replysform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/message/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/workorder/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/app/workorder/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/case_join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/case_join_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/case_join_listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/case_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/case_listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/js/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/cnzweb/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/anim/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/auxiliar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/badge/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/button/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/carousel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/code/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/flow/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/form/element.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/form/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/grid/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/grid/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/grid/mobile-pc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/grid/mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/grid/speed-dial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/grid/stack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/laydate/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/laydate/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/laydate/special-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/laydate/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/layer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/layer/special-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/layer/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/laypage/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/laypage/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/nav/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/panel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/progress/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/rate/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/auto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/cellEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/cellEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/fixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/height.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/initSort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/operate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/reload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/resetPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/thead.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/table/tostatic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/tabs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/timeline/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/upload/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/upload/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/component/util/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/demo/table/user/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/home/console.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/home/homepage1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/home/homepage2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/console/prograss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/console/top-card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/console/top-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/content/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/content/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/content/tags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/forum/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/forum/replys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/message/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/message/direct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/message/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/table/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/table/demo2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/table/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/table/user30.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/useradmin/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/json/workorder/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/lib/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/lib/extend/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/lib/extend/echartsTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/lib/view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/console.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/contlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/prograss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/senior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/useradmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/modules/workorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/res/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/res/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/res/template/character.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/res/template/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/style/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/tpl/system/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/layuiadmin/tpl/system/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/mock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/senior/echarts/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/senior/echarts/line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/senior/echarts/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/set/system/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/set/system/website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/set/user/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/set/user/password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/addresslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/goodslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/msgboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/personalpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/tips/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/template/tips/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/user/administrators/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/user/administrators/role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/user/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/user/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/user/user/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/app/content/contform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/app/content/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/app/content/tagsform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/app/forum/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/app/forum/replysform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/app/workorder/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/user/administrators/adminform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/user/administrators/roleform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/views/user/user/userform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/layuiAdmin/笔记" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/migrations/0002_logentry_remove_auto_add.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/migrations/0003_logentry_add_action_flag_choices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/admin_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/admin_modify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/admin_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/views/autocomplete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/views/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/views/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/handlers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/handlers/modwsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0002_alter_permission_name_max_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0003_alter_user_email_max_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0004_alter_user_username_opts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0005_alter_user_last_login_null.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0006_require_contenttypes_0002.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0007_alter_validators_add_error_messages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0008_alter_user_username_max_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0009_alter_user_last_name_max_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0010_alter_group_name_max_length.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/0011_update_proxy_permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/auth/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/admin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/admin/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/admin/widgets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/forms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/forms/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/forms/widgets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/datasource.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/driver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/envelope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/feature.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/geometries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/geomtype.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/layer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/libgdal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/gdal/srs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geoip2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geoip2/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geoip2/resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/collections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/coordseq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/geometry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/libgeos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/linestring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/mutable_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/point.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/polygon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/prepared.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/serializers/geojson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/sitemaps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/sitemaps/kml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/sitemaps/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/layermapping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/ogrinfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/ogrinspect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/utils/srs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/humanize/templatetags/humanize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/messages/storage/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/messages/storage/cookie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/sites/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/sites/migrations/0002_alter_domain_unique.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/sites/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/checks/compatibility/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/checks/security/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/checks/security/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/checks/security/csrf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/checks/security/sessions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/compilemessages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/createcachetable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/dbshell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/diffsettings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/dumpdata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/flush.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/inspectdb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/loaddata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/makemessages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/makemigrations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/migrate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/runserver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/sendtestemail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/shell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/showmigrations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/sqlflush.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/sqlmigrate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/sqlsequencereset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/squashmigrations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/startapp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/startproject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/testserver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/faker/providers/address/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/faker/providers/barcode/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,22 +505,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Study/oldboy2/module6/07 django与ajax/ajax/ajax_app01/models.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/platform" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\oldboy\platform" />
       <recent name="C:\Users\杨晓钢\AppData\Local\Programs\Python\Python37\Lib\site-packages" />
       <recent name="D:\oldboy\auto\utp\bin" />
       <recent name="D:\oldboy\auto\utp\lib" />
       <recent name="D:\oldboy\auto\utp\config" />
-      <recent name="D:\oldboy\auto\utp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\oldboy\auto\utp\tools" />
@@ -435,14 +824,7 @@
       <workItem from="1582605250767" duration="1829000" />
       <workItem from="1582675758773" duration="5225000" />
       <workItem from="1582723517178" duration="32179000" />
-      <workItem from="1582800098146" duration="104307000" />
-    </task>
-    <task id="LOCAL-00012" summary="module6">
-      <created>1564922773721</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1564922773721</updated>
+      <workItem from="1582800098146" duration="106279000" />
     </task>
     <task id="LOCAL-00013" summary="module6">
       <created>1564992012785</created>
@@ -780,7 +1162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583079224324</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="单元自动化框架">
+      <created>1583079897837</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1583079897837</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,6 +1197,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="单元自动化框架" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Notifications" timestamp="1583080193011">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1583080193011" />
     <state x="488" y="7" key="#_pydev_execfile" timestamp="1581751053151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -824,30 +1217,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="495" y="34" key="#test/0.0.1536.824@0.0.1536.824" timestamp="1582715358134" />
-    <state x="349" y="6" key="CommitChangelistDialog2" timestamp="1583079221812">
+    <state x="349" y="6" key="CommitChangelistDialog2" timestamp="1583080592582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583079221812" />
+    <state x="349" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583080592582" />
     <state x="483" y="113" key="FileChooserDialogImpl" timestamp="1582978770565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="483" y="113" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582978770565" />
-    <state width="746" height="223" key="GridCell.Tab.0.bottom" timestamp="1583079245463">
+    <state width="746" height="158" key="GridCell.Tab.0.bottom" timestamp="1583080259760">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
-    <state width="746" height="223" key="GridCell.Tab.0.center" timestamp="1583079245463">
+    <state width="746" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583080259760" />
+    <state width="746" height="158" key="GridCell.Tab.0.center" timestamp="1583080259759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
-    <state width="746" height="223" key="GridCell.Tab.0.left" timestamp="1583079245463">
+    <state width="746" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583080259759" />
+    <state width="746" height="158" key="GridCell.Tab.0.left" timestamp="1583080259759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
-    <state width="746" height="223" key="GridCell.Tab.0.right" timestamp="1583079245463">
+    <state width="746" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583080259759" />
+    <state width="746" height="158" key="GridCell.Tab.0.right" timestamp="1583080259760">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583079245463" />
+    <state width="746" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583080259760" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583076774039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -864,15 +1257,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583076774039" />
-    <state x="424" y="84" key="SettingsEditor" timestamp="1582978794770">
+    <state x="388" y="54" key="SettingsEditor" timestamp="1583080507782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581638239111" />
-    <state x="424" y="84" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582978794770" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583079227448">
+    <state x="388" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583080507782" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583080732704">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583079227448" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583080732704" />
     <state x="345" y="204" width="715" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1581673335216">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,75 @@
+https://www.showdoc.cc/xinghan?page_id=2778492898901704
+
+项目管理
+    http://127.0.0.1:8000/api/project
+    用到的组件
+        应用-->内容系统-->文章列表 模板
+    项目列表
+        数据重载
+            component/table/reload.html
+        数据操作
+            component/table/operate.html
+        field --> 接口的字段key
+        title --> 表格的表头
+        sort  --> 排序
+        width --> 宽度  不加就自适应
+        height --> 高度  不加就自适应
+        templet --> 自定义模板 根据css选择器定位html的script标签 进行自定义渲染  可以使用{{}} 进行数据的取值  默认有个参数d 代表这一行的数据
+        page -->  是否应用分页   为True 则应用 通过接口返回的count来控制
+        table.on  用的都是table中的 lay-filter
+    添加项目
+    删除项目
+    搜索项目
+    编辑项目
+    项目列表
+测试用例
+    用例列表  完成
+        搜索用例 完成
+            项目Select渲染 完成
+            搜索时携带用例名称、项目ID 完成
+        添加用例
+            TAB页   组件-->选项卡  component/tabs/index.html  完成
+            开关    组件-->表单-->表单元素  完成
+            基本信息
+                项目Select渲染  完成
+                接口Select根据项目选择后渲染  完成
+            参数
+                动态添加KV参数 完成
+                动态删除KV参数 完成
+                JSON参数切换 完成
+                如果基本信息中Method选择的是GET，禁止切换功能 完成
+            header
+                动态添加KV参数 完成
+                动态删除KV参数 完成
+            提交数据
+                组装参数、header数据并提交 完成
+        批量运行用例 完成
+            应用-->内容系统-->文章列表-->checkbox获取 完成
+        单个运行用例
+        删除用例 完成
+        编辑用例
+            填充基本信息
+            点击加载接口列表
+            填充参数下的KV
+            填充参数下的JSON
+            填充header下的KV
+接口管理
+用例集合
+    https://www.layui.com/demo/transfer.html
+
+接口、用例、用例集合 属于项目
+
+
+排查问题的顺序：
+    1、100% 代码是ok
+    2、f12 console 报错
+    3、js 打上断点  单步调试
+
+
+中秋大礼包
+    1、接口管理所有功能点，全部落实，并且自测通过。
+    2、测试用例管理的内容。
+
+
+
+
