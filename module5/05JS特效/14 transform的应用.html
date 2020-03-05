@@ -21,10 +21,14 @@
         var box = document.getElementById('box');
         var index = 1;
         window.onload = function () {
-            btn.onclick = function () {
-                box.style.transform = `translate(${10*index}px,${5*index}px)
-                 rotate(${0.2*index}deg)  scale(2.0) skew(${0.1*index}deg)`;
-                index++;
+            timer = null;
+            btn.onclick = function (){
+                clearInterval(timer);
+                timer = setInterval( function(){
+                    box.style.transform = `translate(${10 * index}px,${5 * index}px)
+                 rotate(${0.6 * index}deg)  scale(1.5) skew(${0.2 * index}deg)`;
+                    index++;
+            },200)
             }
         }
     </script>
