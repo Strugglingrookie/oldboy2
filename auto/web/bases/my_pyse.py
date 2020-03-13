@@ -38,7 +38,8 @@ class Pyse():
         '''
         if "=>" not in css:
             raise NameError("Positioning syntax errors, lack of '=>'.")
-        by,value = css.lower().split('=>')
+        by,value = css.split('=>')
+        by = by.lower()
         if by == 'id':
             WebDriverWait(self.driver,time_out,poll).until(EC.presence_of_element_located((By.ID,value)))
         elif by == 'class':
@@ -59,7 +60,8 @@ class Pyse():
     def get_element(self,css):
         if "=>" not in css:
             raise NameError("Positioning syntax errors, lack of '=>'.")
-        by,value = css.lower().split('=>')
+        by, value = css.split('=>')
+        by = by.lower()
         if by == 'id':
             element = self.driver.find_element_by_id(value)
         elif by == 'class':
