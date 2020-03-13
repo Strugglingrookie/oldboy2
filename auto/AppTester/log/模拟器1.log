@@ -1,0 +1,461 @@
+Tried to attach logging to file C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log but an error occurred: EBUSY: resource busy or locked, unlink 'C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log'
+[Appium] Welcome to Appium v1.7.0
+[Appium] Non-default server args:
+[Appium]   address: 127.0.0.1
+[Appium]   port: 8081
+[Appium]   log: C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log
+[Appium]   udid: emulator-5556
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"emulator-5556"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: 'emulator-5556'
+[Appium] Appium REST http interface listener started on 127.0.0.1:8081
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"ip":"127.0.0.1","platformVersion":"5.0.2","port":8081,"noReset":"True","unicodeKeyboard":true,"platformName":"Android","udid":"emulator-5556","resetKeyboard":true,"appPackage":"com.tencent.mobileqq","log_path":"C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log","appActivity":"com.tencent.mobileqq.activity.SplashActivity","deviceName":"emulator-5556","name":"模拟器1"},"requiredCapabilities":{}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"ip":"127.0.0.1","platformVersion":"5.0.2","port":8081,"noReset":"True","unicodeKeyboard":true,"platformName":"Android","udid":"emulator-5556","resetKeyboard":true,"appPackage":"com.tencent.mobileqq","log_path":"C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log","appActivity":"com.tencent.mobileqq.activity.SplashActivity","deviceName":"emulator-5556","name":"模拟器1"},{},null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1525424498266 (17:01:38 GMT+0800 (中国标准时间))
+[Appium] Creating new AndroidDriver (v1.26.5) session
+[Appium] Capabilities:
+[Appium]   ip: '127.0.0.1'
+[Appium]   platformVersion: '5.0.2'
+[Appium]   port: 8081
+[Appium]   noReset: 'True'
+[Appium]   unicodeKeyboard: true
+[Appium]   platformName: 'Android'
+[Appium]   udid: 'emulator-5556'
+[Appium]   resetKeyboard: true
+[Appium]   appPackage: 'com.tencent.mobileqq'
+[Appium]   log_path: 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log'
+[Appium]   appActivity: 'com.tencent.mobileqq.activity.SplashActivity'
+[Appium]   deviceName: 'emulator-5556'
+[Appium]   name: '模拟器1'
+[BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: ip, port, log_path, name.
+[BaseDriver] Session created with session id: 52903936-0504-4c98-981f-033480d44d1c
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_131
+[ADB] Checking whether adb is present
+[ADB] Using adb.exe from E:\Android\androidsdkwindows\platform-tools\adb.exe
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: emulator-5556
+[ADB] Checking whether adb is present
+[ADB] Using adb.exe from E:\Android\androidsdkwindows\platform-tools\adb.exe
+[debug] [ADB] Setting device id to emulator-5556
+[AndroidDriver] App file was not listed, instead we're going to run com.tencent.mobileqq directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","pm","list","packages","com.tencent.mobileqq"]
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Called deleteSession but bootstrap wasn't active
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","am","force-stop","io.appium.unlock"]
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[HTTP] <-- POST /wd/hub/session 500 2281 ms - 194 
+Tried to attach logging to file C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log but an error occurred: EBUSY: resource busy or locked, unlink 'C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log'
+[Appium] Welcome to Appium v1.7.0
+[Appium] Non-default server args:
+[Appium]   address: 127.0.0.1
+[Appium]   port: 8081
+[Appium]   log: C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log
+[Appium]   udid: emulator-5556
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"emulator-5556"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: 'emulator-5556'
+[Appium] Appium REST http interface listener started on 127.0.0.1:8081
+[HTTP] --> POST /wd/hub/session {"requiredCapabilities":{},"desiredCapabilities":{"platformVersion":"5.0.2","platformName":"Android","log_path":"C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log","appPackage":"com.android.browser","unicodeKeyboard":true,"resetKeyboard":true,"udid":"emulator-5556","noReset":"True","port":8081,"deviceName":"emulator-5556","ip":"127.0.0.1","name":"模拟器1","appActivity":".BrowserActivity"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformVersion":"5.0.2","platformName":"Android","log_path":"C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log","appPackage":"com.android.browser","unicodeKeyboard":true,"resetKeyboard":true,"udid":"emulator-5556","noReset":"True","port":8081,"deviceName":"emulator-5556","ip":"127.0.0.1","name":"模拟器1","appActivity":".BrowserActivity"},{},null]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1525424552827 (17:02:32 GMT+0800 (中国标准时间))
+[Appium] Creating new AndroidDriver (v1.26.5) session
+[Appium] Capabilities:
+[Appium]   platformVersion: '5.0.2'
+[Appium]   platformName: 'Android'
+[Appium]   log_path: 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log'
+[Appium]   appPackage: 'com.android.browser'
+[Appium]   unicodeKeyboard: true
+[Appium]   resetKeyboard: true
+[Appium]   udid: 'emulator-5556'
+[Appium]   noReset: 'True'
+[Appium]   port: 8081
+[Appium]   deviceName: 'emulator-5556'
+[Appium]   ip: '127.0.0.1'
+[Appium]   name: '模拟器1'
+[Appium]   appActivity: '.BrowserActivity'
+[BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[BaseDriver] The following capabilities were provided, but are not recognized by appium: log_path, port, ip, name.
+[BaseDriver] Session created with session id: 077b76ba-7215-43b8-bd76-427b58f88704
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_131
+[ADB] Checking whether adb is present
+[ADB] Using adb.exe from E:\Android\androidsdkwindows\platform-tools\adb.exe
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] Could not find devices, restarting adb server...
+[debug] [ADB] Restarting adb
+[debug] [ADB] Killing adb server on port 5037
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: emulator-5556
+[ADB] Checking whether adb is present
+[ADB] Using adb.exe from E:\Android\androidsdkwindows\platform-tools\adb.exe
+[debug] [ADB] Setting device id to emulator-5556
+[AndroidDriver] App file was not listed, instead we're going to run com.android.browser directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","pm","list","packages","com.android.browser"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Enabling Unicode keyboard support
+[debug] [AndroidDriver] Pushing unicode ime to device...
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","install","C:\\Users\\bjhouyafan\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","settings","get","secure","default_input_method"]
+[debug] [AndroidDriver] Unsetting previous IME io.appium.android.ime/.UnicodeIME
+[debug] [AndroidDriver] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ime","enable","io.appium.android.ime/.UnicodeIME"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ime","set","io.appium.android.ime/.UnicodeIME"]
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","dumpsys","package","io.appium.settings"]
+[ADB] Checking whether aapt is present
+[ADB] Using aapt.exe from E:\Android\androidsdkwindows\build-tools\25.0.2\aapt.exe
+[debug] [ADB] The installed "io.appium.settings" package does not require upgrade (4 >= 4)
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Current device property 'ro.build.version.sdk': 21
+[debug] [ADB] Device API level: 21
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","dumpsys","package","io.appium.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ps"]
+[debug] [ADB] Device API level: 21
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[debug] [ADB] Device API level: 21
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","settings","put","secure","mock_location","1"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","install","C:\\Users\\bjhouyafan\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 5.0.2
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","wm","size"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","getprop","ro.product.model"]
+[debug] [ADB] Current device property 'ro.product.model': Android SDK built for x86
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","getprop","ro.product.manufacturer"]
+[debug] [ADB] Current device property 'ro.product.manufacturer': unknown
+[AndroidDriver] No app sent in, not parsing package/activity
+[debug] [AndroidDriver] No app capability. Assuming it is already on the device
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","push","C:\\Users\\bjhouyafan\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5556","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.browser","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 21
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","am","start","-W","-n","com.android.browser/.BrowserActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 077b76ba-7215-43b8-bd76-427b58f88704 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1525424580604 (17:03:00 GMT+0800 (中国标准时间))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformVersion":"5.0.2","platformName":"Android","log_path":"C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log","appPackage":"com.android.browser","unicodeKeyboard":true,"resetKeyboard":true,"udid":"emulator-5556","noReset":true,"port":8081,"deviceName":"emulator-5556","ip":"127.0.0.1","name":"模拟器1","appActivity":".BrowserActivity"},"platformVersion":"5.0.2","platformName":"Android","log_path":"C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log","appPackage":"com.android.browser","unicodeKeyboard":true,"resetKeyboard":true,"udid":"emulator-5556","noReset":true,"port":8081,"deviceName":"emulator-5556","ip":"127.0.0.1","name":"模拟器1","appActivity":".BrowserActivity","deviceUDID":"emulator-5556","deviceScreenSize":"720x1280","deviceModel":"Android SDK built for x86","deviceManufacturer":...
+[HTTP] <-- POST /wd/hub/session 200 27785 ms - 1127 
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"url","using":"id","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","url","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"url","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"url","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'url' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.browser:id/url]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 200 1526 ms - 87 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"url","using":"id","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","url","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"url","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"url","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'url' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.browser:id/url]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 200 485 ms - 87 
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"url","using":"id","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","url","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"url","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"url","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'url' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.android.browser:id/url]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 200 18 ms - 87 
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element/3/value {"value":["h","t","t","p",":","/","/","u","i",".","i","m","d","s","x",".","c","n"],"sessionId":"077b76ba-7215-43b8-bd76-427b58f88704","id":"3"}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["h","t","t","p",":","/","/","u","i",".","i","m","d","s","x",".","c","n"],"3","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"3","text":"http://ui.imdsx.cn","replace":false,"unicodeKeyboard":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"3","text":"http://ui.imdsx.cn","replace":false,"unicodeKeyboard":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 3
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: http://ui.imdsx.cn
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.setValue() result: true
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element/3/value 200 9935 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/appium/device/press_keycode {"sessionId":"077b76ba-7215-43b8-bd76-427b58f88704","keycode":66}
+[debug] [MJSONWP] Calling AppiumDriver.pressKeyCode() with args: [66,null,"077b76ba-7215-43b8-bd76-427b58f88704",null,"077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"pressKeyCode","params":{"keycode":66,"metastate":null}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"pressKeyCode","params":{"keycode":66,"metastate":null}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: pressKeyCode
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.pressKeyCode() result: true
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/appium/device/press_keycode 200 155 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"new UiSelector().text(\"修改手势密码\")","using":"-android uiautomator","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"修改手势密码\")","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 500 592 ms - 164 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"new UiSelector().text(\"修改手势密码\")","using":"-android uiautomator","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"修改手势密码\")","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 500 18 ms - 164 
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"new UiSelector().text(\"修改手势密码\")","using":"-android uiautomator","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"修改手势密码\")","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 500 111 ms - 164 
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"new UiSelector().text(\"修改手势密码\")","using":"-android uiautomator","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"修改手势密码\")","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 500 35 ms - 164 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[HTTP] --> POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element {"value":"new UiSelector().text(\"修改手势密码\")","using":"-android uiautomator","sessionId":"077b76ba-7215-43b8-bd76-427b58f88704"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"修改手势密码\")","077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().text(\"修改手势密码\")","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[HTTP] <-- POST /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/element 500 24 ms - 164 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().text("修改手势密码")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().text("修改手势密码")
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "修改手势密码"
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[TEXT=修改手势密码]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+[HTTP] --> GET /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/screenshot {}
+[debug] [MJSONWP] Calling AppiumDriver.getScreenshot() with args: ["077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [ADB] Device API level: 21
+[AndroidDriver] Cannot get screenshot data with 'adb exec-out' because of 'Command 'E\:\\Android\\androidsdkwindows\\platform-tools\\adb.exe exec-out '/system/bin/screencap -p'' exited with code 4294967295'. Defaulting to 'adb shell' call
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","/system/bin/rm","/data/local/tmp/screenshot.png;","/system/bin/screencap","-p","/data/local/tmp/screenshot.png"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ls","-la","/data/local/tmp/screenshot.png"]
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","pull","/data/local/tmp/screenshot.png","C:\\Users\\BJHOUY~1\\AppData\\Local\\Temp\\appium11844-11256-1z89xf.fmkkq.png"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","dumpsys","input"]
+[debug] [MJSONWP] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAtAAAAUACAYAAABuzmU9AABZu0lEQVR4AezBcWhUd8Lv/3eHc+EbyANnIIU5oOABCx5poROewGZY/3Au/iATfMCEFnRwoTu3Qjtu4an5CU+b+odN+4A39oGu2YXqWFgZCysT4Yoj/OSOf3iZKbgkhRanUOEEVpiBFebABvL9Y6A/pr3TTdPEntq4TfTzej0DfI2IiIiIiMSSQEREREREYksgIiIiIiKxJRARERERkdgSiIiIiIhIbAlERERERCS2BCIiIiIiElsCERERERGJLYGIiIiIiMSWQEREREREYnMQERERkc3jAF02XfrFNMlnkzxM7WYNefwcRERERJ4whVcLuIMu4f2Q+Svz9JlBQ24sh7/Dpye8HzJ/ZZ7NEuwJaLVbRFHEZks+myQ1lEJ+eQ4iIiIiT5DRX40yc3qGnnqjzvyVeXqCPQHlS2W8HR6r5V/KM/nyJD9XsCfA2+nRareQJ5uDiIiIyBNk6uQU6ylfKuPt8Lj7+V3e+5/v4bouM6dnyOzLMPHSBPNX5nlUwZ4Ab6fHZkm/mCb5bJLVXNflx2QPZFmrdrOGbC4HERERkSfExEsTZEYzrBXsCfB2ePRMn5qm8WmDnsxohvzhPMMvDDN/ZZ5HEewJ8HZ6bKbks0lSQyl+qtRQCnn8HERERESeENMnp2ndbxH+NSQzmqHPdV36Gp826Jv9YJbKnytEUcSjCPYEeDs9nibukEuwOyBajmh+2YQumyaVSuHv8rFdS7gUEj2I+Cn8XT6pHSnssqV5r4ldtjwODiIiIiJPgImXJvB2eEyfmiY3liOO9v027fttHkWwJ8Db6fG0KP6uSP7lPP5un75O1KF2s8bM+zO0220eVeGVAkeOHmFvsJfvdOFu8y5z5+eYvzLPRtwhl+mT02QPZPFSHn0rdoXm501KH5eYvzrPZnIQERER2ebMoGHm9AydqEP5kzK5sRwPE+wJmDk9Q1/zyybTp6aJK9gT4O30+GcLw5Bo...
+[HTTP] <-- GET /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704/screenshot 200 4513 ms - 39734 
+[HTTP] --> DELETE /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["077b76ba-7215-43b8-bd76-427b58f88704"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1525424605131 (17:03:25 GMT+0800 (中国标准时间))
+[Appium] Removing session 077b76ba-7215-43b8-bd76-427b58f88704 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [AndroidDriver] Resetting IME to io.appium.android.ime/.UnicodeIME
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ime","set","io.appium.android.ime/.UnicodeIME"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","am","force-stop","com.android.browser"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","input","keyevent",3]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 32.673
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running 'E:\Android\androidsdkwindows\platform-tools\adb.exe' with args: ["-P",5037,"-s","emulator-5556","shell","am","force-stop","io.appium.unlock"]
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1525424610596 (17:03:30 GMT+0800 (中国标准时间))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/077b76ba-7215-43b8-bd76-427b58f88704 200 5466 ms - 76 

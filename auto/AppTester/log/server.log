@@ -1,0 +1,354 @@
+[2018-04-27 17:20:49,275] [DEBUG] [appController.py:server:19] 每个手机的信息：{'port': 1818, 'deviceName': '127.0.0.1:62001', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'platformName': 'Android'}
+[2018-04-27 17:25:46,779] [DEBUG] [appController.py:server:19] 每个手机的信息：{'port': 1818, 'ip': '127.0.0.1', 'deviceName': '127.0.0.1:62001', 'platformName': 'Android', 'platformVersion': '4.4.2', 'udid': '127.0.0.1:62001'}
+[2018-04-27 17:26:35,093] [DEBUG] [appController.py:server:22] 每个手机的信息：{'platformName': 'Android', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'deviceName': '夜游神', 'port': 1818, 'udid': '127.0.0.1:62001'}
+[2018-04-27 17:31:49,591] [DEBUG] [appController.py:server:19] 每个手机的信息：{'port': 1818, 'deviceName': '127.0.0.1:62001', 'name': '夜游神', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'ip': '127.0.0.1'}
+[2018-04-27 17:39:29,444] [DEBUG] [appController.py:server:23] 每个手机的信息：{'udid': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'name': '夜游神', 'port': 1818, 'deviceName': '127.0.0.1:62001', 'platformName': 'Android'}
+[2018-04-27 17:47:03,576] [DEBUG] [appController.py:server:30] 每个手机的信息：{'platformVersion': '4.4.2', 'name': '夜游神', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'port': 1818, 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android'}
+[2018-04-27 17:47:03,577] [DEBUG] [appController.py:server_command:23] 每个手机的信息：{'platformVersion': '4.4.2', 'name': '夜游神', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'port': 1818, 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android'}
+[2018-04-27 17:47:43,501] [DEBUG] [appController.py:server:30] 每个手机的信息：{'platformName': 'Android', 'udid': 'emulator-5554', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器2.log', 'deviceName': 'emulator-5554', 'ip': '127.0.0.199', 'name': '模拟器2', 'platformVersion': '5.0.2', 'port': 9000}
+[2018-04-27 17:47:43,502] [DEBUG] [appController.py:server_command:23] 每个手机的信息：{'platformName': 'Android', 'udid': 'emulator-5554', 'name': '模拟器2', 'deviceName': 'emulator-5554', 'ip': '127.0.0.199', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器2.log', 'platformVersion': '5.0.2', 'port': 9000}
+[2018-04-27 17:47:43,502] [DEBUG] [appController.py:server:30] 每个手机的信息：{'platformName': 'Android', 'udid': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'deviceName': '127.0.0.1:62001', 'ip': '127.0.0.1', 'name': '夜游神', 'platformVersion': '4.4.2', 'port': 1818}
+[2018-04-27 17:47:43,503] [DEBUG] [appController.py:server_command:23] 每个手机的信息：{'platformName': 'Android', 'udid': '127.0.0.1:62001', 'name': '夜游神', 'deviceName': '127.0.0.1:62001', 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformVersion': '4.4.2', 'port': 1818}
+[2018-04-27 17:51:26,358] [DEBUG] [appController.py:server:35] 每个手机的信息：{'platformName': 'Android', 'platformVersion': '4.4.2', 'deviceName': '127.0.0.1:62001', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'name': '夜游神', 'port': 1818, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log'}
+[2018-04-27 17:51:26,359] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1818 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 17:53:51,607] [DEBUG] [appController.py:server:37] 每个手机的信息：{'udid': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'platformName': 'Android', 'ip': '127.0.0.1', 'deviceName': '127.0.0.1:62001', 'port': 1818, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'name': '夜游神'}
+[2018-04-27 17:53:51,609] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1818 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 17:54:23,128] [DEBUG] [appController.py:server:37] 每个手机的信息：{'platformName': 'Android', 'udid': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'ip': '127.0.0.1', 'name': '夜游神', 'port': 1818}
+[2018-04-27 17:54:23,130] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1818 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 17:54:33,449] [DEBUG] [appController.py:server:38] 每个手机的信息：{'ip': '127.0.0.1', 'udid': '127.0.0.1:62001', 'platformName': 'Android', 'port': 1818, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'name': '夜游神', 'platformVersion': '4.4.2', 'deviceName': '127.0.0.1:62001'}
+[2018-04-27 17:54:33,450] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1818 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 17:56:02,538] [DEBUG] [appController.py:server:36] 每个手机的信息：{'ip': '127.0.0.1', 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformVersion': '4.4.2', 'udid': '127.0.0.1:62001', 'platformName': 'Android', 'name': '夜游神', 'port': 1819}
+[2018-04-27 17:56:02,539] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:13:52,464] [DEBUG] [appController.py:server:36] 每个手机的信息：{'port': 1819, 'ip': '127.0.0.1', 'platformName': 'Android', 'platformVersion': '4.4.2', 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'udid': '127.0.0.1:62001', 'name': '夜游神'}
+[2018-04-27 18:13:52,465] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:14:19,295] [DEBUG] [appController.py:server:36] 每个手机的信息：{'deviceName': '127.0.0.1:62001', 'udid': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'port': 1819, 'name': '夜游神', 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android'}
+[2018-04-27 18:14:19,296] [DEBUG] [appController.py:server_command:28] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:14:19,633] [DEBUG] [appController.py:test_server:56] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:14:24,926] [DEBUG] [appController.py:test_server:56] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:14:30,103] [DEBUG] [appController.py:test_server:53] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       8316
+[2018-04-27 18:14:30,103] [DEBUG] [appController.py:test_server:60] 全部服务启动成功！
+[2018-04-27 18:14:30,104] [DEBUG] [main.py:run:11] 11111111
+[2018-04-27 18:18:50,132] [DEBUG] [appController.py:kill_server:29] 执行[KILL SERVER]操作:成功: 已终止 PID 8316 (属于 PID 15192 子进程)的进程。
+[2018-04-27 18:18:50,133] [DEBUG] [appController.py:server:48] 每个手机的信息：{'platformName': 'Android', 'ip': '127.0.0.1', 'deviceName': '127.0.0.1:62001', 'port': 1819, 'udid': '127.0.0.1:62001', 'name': '夜游神', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformVersion': '4.4.2'}
+[2018-04-27 18:18:50,136] [DEBUG] [appController.py:server_command:38] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:18:50,383] [DEBUG] [appController.py:test_server:68] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:18:55,570] [DEBUG] [appController.py:test_server:68] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:19:00,747] [DEBUG] [appController.py:test_server:65] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       7880
+[2018-04-27 18:19:00,748] [DEBUG] [appController.py:test_server:72] 全部服务启动成功！
+[2018-04-27 18:19:00,748] [DEBUG] [main.py:run:11] 11111111
+[2018-04-27 18:34:12,086] [DEBUG] [appController.py:kill_server:29] 执行[KILL SERVER]操作:成功: 已终止 PID 7880 (属于 PID 14408 子进程)的进程。
+[2018-04-27 18:34:12,090] [DEBUG] [appController.py:server:48] 每个手机的信息：{'platformVersion': '5.0.2', 'udid': 'emulator-5554', 'deviceName': 'emulator-5554', 'port': 9000, 'ip': '127.0.0.199', 'name': '模拟器2', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器2.log', 'platformName': 'Android'}
+[2018-04-27 18:34:12,097] [DEBUG] [appController.py:server_command:38] 启动服务执行的命令：appium -a 127.0.0.199 -p 9000 -U emulator-5554 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器2.log
+[2018-04-27 18:34:12,100] [DEBUG] [appController.py:server:48] 每个手机的信息：{'platformVersion': '4.4.2', 'udid': '127.0.0.1:62001', 'deviceName': '127.0.0.1:62001', 'port': 1819, 'ip': '127.0.0.1', 'name': '夜游神', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android'}
+[2018-04-27 18:34:12,108] [DEBUG] [appController.py:server_command:38] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:34:12,646] [DEBUG] [appController.py:test_server:68] 端口 [9000] 服务启动失败5秒钟后尝试
+[2018-04-27 18:34:13,338] [DEBUG] [appController.py:test_server:68] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:34:18,601] [DEBUG] [appController.py:test_server:68] 端口 [9000] 服务启动失败5秒钟后尝试
+[2018-04-27 18:34:18,945] [DEBUG] [appController.py:test_server:68] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:34:24,134] [DEBUG] [appController.py:test_server:65] 检验服务启动：  TCP    127.0.0.199:9000       0.0.0.0:0              LISTENING       5640
+[2018-04-27 18:34:29,339] [DEBUG] [appController.py:test_server:65] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       14956
+[2018-04-27 18:34:29,340] [DEBUG] [appController.py:test_server:72] 全部服务启动成功！
+[2018-04-27 18:34:29,340] [DEBUG] [main.py:run:11] 11111111
+[2018-04-27 18:40:04,026] [DEBUG] [appController.py:kill_server:36] 执行[KILL SERVER]操作:成功: 已终止 PID 14956 (属于 PID 4128 子进程)的进程。
+成功: 已终止 PID 5640 (属于 PID 1144 子进程)的进程。
+[2018-04-27 18:40:04,047] [DEBUG] [appController.py:server:55] 每个手机的信息：{'platformVersion': '4.4.2', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'port': 1819, 'name': '夜游神', 'ip': '127.0.0.1', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'deviceName': '127.0.0.1:62001'}
+[2018-04-27 18:40:04,059] [DEBUG] [appController.py:server_command:45] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:40:04,412] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:40:09,803] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:40:14,983] [DEBUG] [appController.py:test_server:72] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       3616
+[2018-04-27 18:40:14,983] [DEBUG] [appController.py:test_server:79] 全部服务启动成功！
+[2018-04-27 18:40:33,964] [DEBUG] [appController.py:kill_server:36] 执行[KILL SERVER]操作:成功: 已终止 PID 3616 (属于 PID 8640 子进程)的进程。
+[2018-04-27 18:40:33,965] [DEBUG] [appController.py:server:55] 每个手机的信息：{'platformName': 'Android', 'port': 1819, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'ip': '127.0.0.1', 'udid': '127.0.0.1:62001', 'name': '夜游神', 'platformVersion': '4.4.2', 'deviceName': '127.0.0.1:62001'}
+[2018-04-27 18:40:33,967] [DEBUG] [appController.py:server_command:45] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-04-27 18:40:34,252] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:40:39,484] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-04-27 18:40:44,657] [DEBUG] [appController.py:test_server:72] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       4788
+[2018-04-27 18:40:44,657] [DEBUG] [appController.py:test_server:79] 全部服务启动成功！
+[2018-05-04 10:41:15,271] [DEBUG] [appController.py:kill_server:36] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 10:41:15,272] [DEBUG] [appController.py:server:55] 每个手机的信息：{'name': '夜游神', 'platformName': 'Android', 'deviceName': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'ip': '127.0.0.1', 'udid': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'port': 1819}
+[2018-05-04 10:41:15,273] [DEBUG] [appController.py:server_command:45] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 10:41:15,689] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:20,869] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:26,056] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:31,274] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:36,443] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:41,664] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:46,821] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:51,982] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:41:57,186] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:42:02,434] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:42:07,689] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:42:12,871] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:42:18,067] [DEBUG] [appController.py:test_server:75] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 10:42:23,318] [DEBUG] [appController.py:test_server:72] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       8088
+[2018-05-04 10:42:23,319] [DEBUG] [appController.py:test_server:79] 全部服务启动成功！
+[2018-05-04 10:42:23,320] [DEBUG] [appController.py:driver_commend:89] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:35:47,478] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 8088 (属于 PID 7028 子进程)的进程。
+[2018-05-04 11:35:47,479] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformVersion': '4.4.2', 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'port': 1819, 'name': '夜游神', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1'}
+[2018-05-04 11:35:47,482] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:35:47,810] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:35:53,010] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:35:58,182] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11888
+[2018-05-04 11:35:58,182] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:35:58,183] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:36:09,415] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:36:09,420] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:36:09,425] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
+[2018-05-04 11:40:24,926] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 11888 (属于 PID 11316 子进程)的进程。
+[2018-05-04 11:40:24,927] [DEBUG] [appController.py:server:56] 每个手机的信息：{'name': '夜游神', 'platformVersion': '4.4.2', 'port': 1819, 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'platformName': 'Android', 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log'}
+[2018-05-04 11:40:24,940] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:40:25,209] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:40:30,394] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:40:35,579] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       5164
+[2018-05-04 11:40:35,580] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:40:35,581] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:40:47,061] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:40:47,071] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:42:22,027] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 5164 (属于 PID 4440 子进程)的进程。
+[2018-05-04 11:42:22,028] [DEBUG] [appController.py:server:56] 每个手机的信息：{'udid': '127.0.0.1:62001', 'port': 1819, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'name': '夜游神', 'platformVersion': '4.4.2', 'ip': '127.0.0.1', 'deviceName': '127.0.0.1:62001', 'platformName': 'Android'}
+[2018-05-04 11:42:22,032] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:42:22,329] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:42:27,531] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:42:32,709] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       10016
+[2018-05-04 11:42:32,710] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:42:32,711] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:42:43,683] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:42:43,694] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:43:14,748] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
+[2018-05-04 11:43:35,893] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 12112 (属于 PID 10016 子进程)的进程。
+成功: 已终止 PID 12232 (属于 PID 10016 子进程)的进程。
+成功: 已终止 PID 10016 (属于 PID 12196 子进程)的进程。
+[2018-05-04 11:43:35,894] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformName': 'Android', 'platformVersion': '4.4.2', 'udid': '127.0.0.1:62001', 'name': '夜游神', 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'deviceName': '127.0.0.1:62001', 'port': 1819}
+[2018-05-04 11:43:35,899] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:43:36,236] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:43:41,440] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:43:46,598] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11120
+[2018-05-04 11:43:46,598] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:43:46,599] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:43:57,834] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:43:57,839] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:43:57,848] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
+[2018-05-04 11:44:59,290] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 11388 (属于 PID 11120 子进程)的进程。
+成功: 已终止 PID 9908 (属于 PID 11120 子进程)的进程。
+成功: 已终止 PID 7544 (属于 PID 11120 子进程)的进程。
+成功: 已终止 PID 11120 (属于 PID 1816 子进程)的进程。
+[2018-05-04 11:44:59,290] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformName': 'Android', 'name': '夜游神', 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'udid': '127.0.0.1:62001', 'port': 1819}
+[2018-05-04 11:44:59,292] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:44:59,592] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:45:04,775] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:45:09,947] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11960
+[2018-05-04 11:45:09,947] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:45:09,947] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:45:21,845] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:45:21,849] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:45:21,855] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
+[2018-05-04 11:47:51,543] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 11960 (属于 PID 12260 子进程)的进程。
+[2018-05-04 11:47:51,544] [DEBUG] [appController.py:server:56] 每个手机的信息：{'name': '夜游神', 'deviceName': '127.0.0.1:62001', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'port': 1819, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'ip': '127.0.0.1'}
+[2018-05-04 11:47:51,549] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:47:51,835] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:47:57,123] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:48:02,295] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       12100
+[2018-05-04 11:48:02,295] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:48:02,296] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:48:13,620] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:48:13,626] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:48:13,628] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
+[2018-05-04 11:48:48,981] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 10312 (属于 PID 12100 子进程)的进程。
+成功: 已终止 PID 11700 (属于 PID 12100 子进程)的进程。
+成功: 已终止 PID 12100 (属于 PID 11532 子进程)的进程。
+[2018-05-04 11:48:48,982] [DEBUG] [appController.py:server:56] 每个手机的信息：{'port': 1819, 'deviceName': '127.0.0.1:62001', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformVersion': '4.4.2', 'platformName': 'Android', 'ip': '127.0.0.1', 'udid': '127.0.0.1:62001', 'name': '夜游神'}
+[2018-05-04 11:48:48,983] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:48:49,238] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:48:54,500] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:48:59,686] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       9932
+[2018-05-04 11:48:59,686] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:48:59,687] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:49:11,612] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:49:46,512] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:49:46,514] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
+[2018-05-04 11:50:56,803] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 5392 (属于 PID 9932 子进程)的进程。
+成功: 已终止 PID 11692 (属于 PID 9932 子进程)的进程。
+成功: 已终止 PID 9932 (属于 PID 7524 子进程)的进程。
+[2018-05-04 11:50:56,804] [DEBUG] [appController.py:server:56] 每个手机的信息：{'deviceName': '127.0.0.1:62001', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'udid': '127.0.0.1:62001', 'port': 1819, 'name': '夜游神', 'platformName': 'Android'}
+[2018-05-04 11:50:56,806] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:50:57,122] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:51:02,311] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:51:07,471] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11688
+[2018-05-04 11:51:07,471] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:51:07,472] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:51:18,828] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:51:53,786] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:51:53,787] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\report\\app_picture\\夜游神\\test_a_qq_login.jpg',)]
+[2018-05-04 11:53:36,772] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 11688 (属于 PID 5260 子进程)的进程。
+[2018-05-04 11:53:36,772] [DEBUG] [appController.py:server:56] 每个手机的信息：{'deviceName': '127.0.0.1:62001', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'name': '夜游神', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'port': 1819}
+[2018-05-04 11:53:36,773] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:53:37,143] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:53:42,323] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:53:47,537] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11444
+[2018-05-04 11:53:47,538] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:53:47,538] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:53:59,956] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:54:34,247] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:54:34,248] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\report\\app_picture\\夜游神\\test_a_qq_login.jpg',)]
+[2018-05-04 11:54:40,847] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 12060 (属于 PID 11444 子进程)的进程。
+成功: 已终止 PID 12032 (属于 PID 11444 子进程)的进程。
+成功: 已终止 PID 11444 (属于 PID 9932 子进程)的进程。
+[2018-05-04 11:54:40,848] [DEBUG] [appController.py:server:56] 每个手机的信息：{'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformVersion': '4.4.2', 'port': 1819, 'ip': '127.0.0.1', 'name': '夜游神', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'deviceName': '127.0.0.1:62001'}
+[2018-05-04 11:54:40,854] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:54:41,178] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         127.0.0.1:17022        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17027        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17028        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17029        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17031        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17034        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17036        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17038        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17039        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17042        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17043        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17044        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17045        TIME_WAIT       0
+  TCP    127.0.0.1:1819         127.0.0.1:17061        TIME_WAIT       0
+  TCP    127.0.0.1:17032        127.0.0.1:1819         TIME_WAIT       0
+  TCP    127.0.0.1:17033        127.0.0.1:1819         TIME_WAIT       0
+  TCP    127.0.0.1:17037        127.0.0.1:1819         TIME_WAIT       0
+  TCP    127.0.0.1:17038        127.0.0.1:1819         TIME_WAIT       0
+  TCP    127.0.0.1:17039        127.0.0.1:1819         TIME_WAIT       0
+  TCP    127.0.0.1:17047        127.0.0.1:1819         TIME_WAIT       0
+  TCP    127.0.0.1:17051        127.0.0.1:1819         TIME_WAIT       0
+[2018-05-04 11:54:41,179] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:54:41,180] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:54:43,596] [INFO] [main.py:run:44] 开始执行CASE！当前启动[0]个DRIVER！
+[2018-05-04 11:55:12,548] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 11:55:12,549] [DEBUG] [appController.py:server:56] 每个手机的信息：{'deviceName': '127.0.0.1:62001', 'name': '夜游神', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'port': 1819}
+[2018-05-04 11:55:12,550] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:55:12,790] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:55:17,991] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:55:23,157] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11696
+[2018-05-04 11:55:23,157] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:55:23,158] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:55:34,075] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:56:07,565] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:56:35,954] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\report\\app_picture\\夜游神\\test_a_qq_login.jpg',)]
+[2018-05-04 11:58:06,559] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 11:58:06,560] [DEBUG] [appController.py:server:56] 每个手机的信息：{'name': '夜游神', 'platformVersion': '4.4.2', 'port': 1819, 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android', 'udid': '127.0.0.1:62001', 'deviceName': '127.0.0.1:62001'}
+[2018-05-04 11:58:06,561] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 11:58:06,787] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:58:12,015] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 11:58:17,178] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11592
+[2018-05-04 11:58:17,179] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 11:58:17,181] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 11:58:29,567] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 11:59:03,464] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 11:59:10,803] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\report\\app_picture\\夜游神\\test_a_qq_login.jpg',)]
+[2018-05-04 16:17:23,033] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 16:17:23,081] [DEBUG] [appController.py:server:56] 每个手机的信息：{'ip': '127.0.0.1', 'port': 1819, 'platformName': 'Android', 'platformVersion': '4.4.2', 'name': '夜游神', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'deviceName': '127.0.0.1:62001', 'udid': '127.0.0.1:62001'}
+[2018-05-04 16:17:23,082] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 16:17:23,411] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:17:28,598] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:17:33,805] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:17:38,970] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11856
+[2018-05-04 16:17:38,971] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 16:17:38,972] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 16:17:52,363] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 16:18:28,725] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 16:18:35,626] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\report\\app_picture\\夜游神\\test_a_qq_login.jpg',)]
+[2018-05-04 16:20:19,709] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 16:20:19,710] [DEBUG] [appController.py:server:56] 每个手机的信息：{'port': 1819, 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'platformVersion': '4.4.2', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'deviceName': '127.0.0.1:62001', 'platformName': 'Android', 'name': '夜游神'}
+[2018-05-04 16:20:19,711] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 16:20:19,974] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:20:25,183] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:20:30,393] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11900
+[2018-05-04 16:20:30,393] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 16:20:30,395] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 16:20:42,587] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 16:21:18,865] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 16:21:23,567] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\report\\app_picture\\夜游神\\test_a_qq_login.jpg',)]
+[2018-05-04 16:28:20,362] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 16:28:20,362] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformName': 'Android', 'platformVersion': '4.4.2', 'udid': '127.0.0.1:62001', 'deviceName': '127.0.0.1:62001', 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'port': 1819, 'name': '夜游神'}
+[2018-05-04 16:28:20,363] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 16:28:20,613] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:28:25,803] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:28:30,966] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       11308
+[2018-05-04 16:28:30,967] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 16:28:30,967] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 16:28:43,250] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 16:29:19,846] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 16:30:47,727] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 11308 (属于 PID 11784 子进程)的进程。
+[2018-05-04 16:30:47,727] [DEBUG] [appController.py:server:56] 每个手机的信息：{'port': 1819, 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'udid': '127.0.0.1:62001', 'deviceName': '127.0.0.1:62001', 'ip': '127.0.0.1', 'platformName': 'Android', 'platformVersion': '4.4.2', 'name': '夜游神'}
+[2018-05-04 16:30:47,728] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 16:30:48,002] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:30:53,292] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:30:58,468] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       10692
+[2018-05-04 16:30:58,468] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 16:30:58,469] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 16:31:09,579] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 16:31:44,232] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 16:31:44,234] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../app_picture/夜游神/test_a_qq_login.jpg',)]
+[2018-05-04 16:32:30,109] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 7544 (属于 PID 10692 子进程)的进程。
+成功: 已终止 PID 10324 (属于 PID 10692 子进程)的进程。
+成功: 已终止 PID 10692 (属于 PID 11180 子进程)的进程。
+[2018-05-04 16:32:30,109] [DEBUG] [appController.py:server:56] 每个手机的信息：{'port': 1819, 'deviceName': '127.0.0.1:62001', 'platformVersion': '4.4.2', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'platformName': 'Android', 'ip': '127.0.0.1', 'udid': '127.0.0.1:62001', 'name': '夜游神'}
+[2018-05-04 16:32:30,113] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 16:32:30,370] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:32:35,548] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:32:40,749] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       12272
+[2018-05-04 16:32:40,750] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 16:32:40,750] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 16:32:52,243] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 16:33:27,707] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 16:33:27,709] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../app_picture/夜游神/test_a_qq_login.jpg',)]
+[2018-05-04 16:35:00,204] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 12272 (属于 PID 3264 子进程)的进程。
+[2018-05-04 16:35:00,204] [DEBUG] [appController.py:server:56] 每个手机的信息：{'port': 1819, 'platformName': 'Android', 'platformVersion': '4.4.2', 'name': '夜游神', 'udid': '127.0.0.1:62001', 'ip': '127.0.0.1', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\夜游神.log', 'deviceName': '127.0.0.1:62001'}
+[2018-05-04 16:35:00,205] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 1819 -U 127.0.0.1:62001 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\夜游神.log
+[2018-05-04 16:35:00,614] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:35:05,855] [DEBUG] [appController.py:test_server:76] 端口 [1819] 服务启动失败5秒钟后尝试
+[2018-05-04 16:35:11,055] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:1819         0.0.0.0:0              LISTENING       9104
+[2018-05-04 16:35:11,055] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 16:35:11,056] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:1819/wd/hub
+[2018-05-04 16:35:21,846] [INFO] [main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2018-05-04 16:35:56,309] [DEBUG] [main.py:case:27] 当前线程的的名字：夜游神
+[2018-05-04 16:35:56,310] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/夜游神/test_a_qq_login.jpg',)]
+[2018-05-04 17:01:19,745] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 9104 (属于 PID 8636 子进程)的进程。
+[2018-05-04 17:01:19,746] [DEBUG] [appController.py:server:56] 每个手机的信息：{'ip': '127.0.0.1', 'platformVersion': '5.0.2', 'udid': 'emulator-5556', 'port': 8081, 'deviceName': 'emulator-5556', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log', 'name': '模拟器1', 'platformName': 'Android'}
+[2018-05-04 17:01:19,748] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 8081 -U emulator-5556 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log
+[2018-05-04 17:01:19,748] [DEBUG] [appController.py:server:56] 每个手机的信息：{'ip': '127.0.0.199', 'platformVersion': '5.0.2', 'udid': 'emulator-5554', 'port': 9000, 'deviceName': 'emulator-5554', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器2.log', 'name': '模拟器2', 'platformName': 'Android'}
+[2018-05-04 17:01:19,749] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.199 -p 9000 -U emulator-5554 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器2.log
+[2018-05-04 17:01:20,190] [DEBUG] [appController.py:test_server:76] 端口 [8081] 服务启动失败5秒钟后尝试
+[2018-05-04 17:01:20,921] [DEBUG] [appController.py:test_server:76] 端口 [9000] 服务启动失败5秒钟后尝试
+[2018-05-04 17:01:26,906] [DEBUG] [appController.py:test_server:76] 端口 [8081] 服务启动失败5秒钟后尝试
+[2018-05-04 17:01:27,752] [DEBUG] [appController.py:test_server:76] 端口 [9000] 服务启动失败5秒钟后尝试
+[2018-05-04 17:01:32,997] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:8081         0.0.0.0:0              LISTENING       9860
+[2018-05-04 17:01:38,193] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.199:9000       0.0.0.0:0              LISTENING       9600
+[2018-05-04 17:01:38,193] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 17:01:38,194] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:8081/wd/hub
+[2018-05-04 17:01:38,195] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.199:9000/wd/hub
+[2018-05-04 17:01:40,634] [INFO] [thread_main.py:run:44] 开始执行CASE！当前启动[0]个DRIVER！
+[2018-05-04 17:01:59,859] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 9860 (属于 PID 4664 子进程)的进程。
+成功: 已终止 PID 9600 (属于 PID 11664 子进程)的进程。
+[2018-05-04 17:01:59,861] [DEBUG] [appController.py:server:56] 每个手机的信息：{'ip': '127.0.0.1', 'port': 8081, 'udid': 'emulator-5556', 'platformVersion': '5.0.2', 'name': '模拟器1', 'platformName': 'Android', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log', 'deviceName': 'emulator-5556'}
+[2018-05-04 17:01:59,862] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 8081 -U emulator-5556 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log
+[2018-05-04 17:01:59,862] [DEBUG] [appController.py:server:56] 每个手机的信息：{'ip': '127.0.0.199', 'port': 9000, 'udid': 'emulator-5554', 'platformVersion': '5.0.2', 'name': '模拟器2', 'platformName': 'Android', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器2.log', 'deviceName': 'emulator-5554'}
+[2018-05-04 17:01:59,880] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.199 -p 9000 -U emulator-5554 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器2.log
+[2018-05-04 17:02:00,719] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:8081         127.0.0.1:29166        TIME_WAIT       0
+  TCP    127.0.0.1:29165        127.0.0.1:8081         TIME_WAIT       0
+[2018-05-04 17:02:13,434] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:错误: 没有找到进程 "node.exe"。
+[2018-05-04 17:02:13,752] [DEBUG] [appController.py:kill_server:38] 重启ADB服务！
+[2018-05-04 17:02:13,752] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformVersion': '5.0.2', 'port': 8081, 'platformName': 'Android', 'udid': 'emulator-5556', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器1.log', 'ip': '127.0.0.1', 'name': '模拟器1', 'deviceName': 'emulator-5556'}
+[2018-05-04 17:02:13,799] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 8081 -U emulator-5556 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器1.log
+[2018-05-04 17:02:13,800] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformVersion': '5.0.2', 'port': 9000, 'platformName': 'Android', 'udid': 'emulator-5554', 'log_path': 'C:\\Users\\bjhouyafan\\Desktop\\TXZTesterApp\\log\\模拟器2.log', 'ip': '127.0.0.199', 'name': '模拟器2', 'deviceName': 'emulator-5554'}
+[2018-05-04 17:02:13,836] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.199 -p 9000 -U emulator-5554 -g C:\Users\bjhouyafan\Desktop\TXZTesterApp\log\模拟器2.log
+[2018-05-04 17:02:14,305] [DEBUG] [appController.py:test_server:76] 端口 [8081] 服务启动失败5秒钟后尝试
+[2018-05-04 17:02:14,795] [DEBUG] [appController.py:test_server:76] 端口 [9000] 服务启动失败5秒钟后尝试
+[2018-05-04 17:02:20,922] [DEBUG] [appController.py:test_server:76] 端口 [8081] 服务启动失败5秒钟后尝试
+[2018-05-04 17:02:22,233] [DEBUG] [appController.py:test_server:76] 端口 [9000] 服务启动失败5秒钟后尝试
+[2018-05-04 17:02:27,435] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:8081         0.0.0.0:0              LISTENING       11256
+[2018-05-04 17:02:32,742] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.199:9000       0.0.0.0:0              LISTENING       6152
+[2018-05-04 17:02:32,743] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2018-05-04 17:02:32,748] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:8081/wd/hub
+[2018-05-04 17:02:32,768] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.199:9000/wd/hub
+[2018-05-04 17:03:00,621] [INFO] [thread_main.py:run:44] 开始执行CASE！当前启动[2]个DRIVER！
+[2018-05-04 17:03:30,368] [DEBUG] [thread_main.py:case:27] 当前线程的的名字：模拟器2
+[2018-05-04 17:03:30,374] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/模拟器2/test_a_thread.jpg',)]
+[2018-05-04 17:03:30,599] [DEBUG] [thread_main.py:case:27] 当前线程的的名字：模拟器1
+[2018-05-04 17:03:30,607] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/模拟器1/test_a_thread.jpg',)]

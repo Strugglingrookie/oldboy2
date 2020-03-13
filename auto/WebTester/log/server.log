@@ -1,0 +1,7 @@
+[2018-04-25 15:56:02,345] [DEBUG] [webrun.py:<module>:3] 111
+[2018-04-26 11:21:27,519] [DEBUG] [HTMLTestRunner.py:_generate_report:750] []
+[2018-04-26 11:22:07,181] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
+[2018-04-28 18:07:01,292] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
+[2018-04-28 18:09:52,765] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
+[2018-04-28 18:11:14,612] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
+[2018-04-29 10:54:29,088] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
