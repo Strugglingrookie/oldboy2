@@ -12,47 +12,39 @@
 ###实现功能如下：  
     1、继承unittest编写测试用例
     2、加载测试用例python文件
-    3、BeautifulReport执行测试用例并生成测试报告
-    4、发送邮件
+    3、HTMLTestRunner执行测试用例并生成测试报告
     
 ###依赖软件：
-    程序运行需要使用requests、unittest、yagmail、jsonpath、flask、pymysql、parameterized模块
+    程序运行需要使用unittest、HTMLTestRunner、selenium模块
     安装命令：
-        pip install requests
+        pip install selenium
         pip install unittest
-        pip install yagmail
-        pip install jsonpath
-        pip install flask
-        pip install pymysql
-        pip install parameterized
-            
-            
+                     
 ###程序运行：
-    # 启动api server
-    python bin/flask_server.py
-    
     # 单线程运行
-    python bin/start.py
+    python bin/main.py
     
     
 ###程序结构：
-	atp/
+	auto/
 	├── README
-	├── atp #upt主程序目录
+	├── web #upt主程序目录
 	│   ├── bin #utp 执行文件 目录
 	│   │   ├── __init__.py
-	│   │   ├── flask_server.py  #启动api接口服务端
-	│   │   └──  start.py  #单线程执行测试用例
+	│   │   └──  main.py  #单线程执行测试用例
 	│   ├── config #配置文件
 	│   │   └── settings.py #存放host/邮箱等基础配置信息
 	│   ├── lib #主要程序逻辑都 在这个目录里
-	│   │   ├── operate.py  #操作数据库
-	│   │   ├── tools.py  #工具模块 如校验json子集等
+	│   │   ├── pyse.py  #selenium 二次封装
+	│   │   ├── tools.py  #工具模块 
 	│   │   ├── log_write.py  #写日志
-	│   │   └── request_send.py  #写日志
-	│   ├── cases  #测试用例py文件存放目录
-	│   ├── logs  #日志文件存放目录
+	│   │   └── HTMLTestRunner.py  #生成测试报告
+	│   ├── page  #页面抽象目录
+	│   │   └── page.py  #一个页面对应一个类，一个功能对应一个函数
+	│   ├── test_case  #导入page.py,用unittest封装好的测试用例
+	│   ├── log  #日志文件存放目录
 	│   └── report  #执行结果存放目录
+	│   │   └── picture  #存放用例执行失败的页面截图
 	└── └── data  #存放参数化数据
 
 	
