@@ -21,10 +21,7 @@ ran.crop(box).save("code.png")  # 把获取的验证码保存
 # 获取验证码图片，读取验证码
 imageCode = Image.open("code.png")  # 打开保存的验证码图片
 # imageCode.load()
-# # 图像增强，二值化  https://blog.csdn.net/qq_38486203/article/details/82856422
-# https://digi.bib.uni-mannheim.de/tesseract/
-# https://blog.csdn.net/weixin_44054321/article/details/88909885
-
+# # 图像增强，二值化
 sharp_img = ImageEnhance.Contrast(imageCode).enhance(2.0)
 sharp_img.save("code2.png")  # 保存图像增强，二值化之后的验证码图片
 sharp_img.load()  # 对比度增强

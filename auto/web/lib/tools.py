@@ -4,9 +4,23 @@
 # @File   : tools.py
 
 
-import yagmail, time, traceback, jsonpath, copy, random, string
-from config.settings import logger, EMAIL_INFO, CS, TO
+import yagmail, time, traceback, jsonpath, copy, random, string,os
+from config.settings import logger, EMAIL_INFO, CS, TO,WEB_PICTURE_PATH
 
+
+class Tool(object):
+    def __init__(self):
+        self.filelist = os.listdir(WEB_PICTURE_PATH)
+
+    def error_picture(self):
+        picture = []
+        for item in self.filelist:
+            if item.endswith('.jpg') or item.endswith('png'):
+                picture.append((item,))
+        return picture
+
+    def clear_picture(self):
+        list(map(os.remove, map(lambda file: WEB_PICTURE_PATH + file, self.filelist)))
 
 def get_value(d, k):
     '这个函数是用来从返回结果里面获取key的'
@@ -17,7 +31,7 @@ def get_value(d, k):
 
 
 def send_mail(pass_count, fail_count, file_name):
-    log.debug('开始发送邮件')
+    logger.debug('开始发送邮件')
     content = '''
 各位好！
     本次接口测试结果如下：总共运行%s条用例，通过%s条，失败【%s】条。
@@ -29,9 +43,9 @@ def send_mail(pass_count, fail_count, file_name):
         mail.send(to=TO, cc=CS, subject=subject,
                   contents=content, attachments=file_name)
     except Exception as e:
-        log.error("发送邮件出错了，错误信息是:\n%s" % traceback.format_exc())
+        logger.error("发送邮件出错了，错误信息是:\n%s" % traceback.format_exc())
     else:
-        log.info("发送邮件成功")
+        logger.info("发送邮件成功")
 
 
 def get_params(data_path):
@@ -71,12 +85,12 @@ def json_assert(expected_json, actual_json, tmp_json=None):
 def str_to_dic(s):
     '''字符串转换成字典'''
     dic = {}
-    log.debug("请求参数转换字典：%s" % s)
+    logger.debug("请求参数转换字典：%s" % s)
     if s.strip():
         for var in s.split("&"):
             k, v = var.split("=")
             dic[k] = v
-    log.debug('%s 转换字典为 %s' % (s, dic))
+    logger.debug('%s 转换字典为 %s' % (s, dic))
     return dic
 
 
