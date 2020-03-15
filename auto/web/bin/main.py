@@ -5,7 +5,7 @@
 
 
 import unittest,time,os
-from config.settings import CASE_PATH,REPORT_PATH,logger
+from config.settings import CASE_PATH,REPORT_PATH
 from lib.HTMLTestRunner import HTMLTestRunner
 
 
