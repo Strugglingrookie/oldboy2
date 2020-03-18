@@ -5,6 +5,7 @@
 
 
 from page.page import Page
+from lib.tools import Tool
 import unittest
 
 
@@ -12,6 +13,9 @@ class IdTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.page = Page()
+        cls.tool = Tool()
+        # 重点！！！ 每次测试之前需要删除报错的截图，不然成功的用例也会将错误图片放进去
+        cls.tool.clear_picture()
 
     @classmethod
     def tearDownClass(cls):

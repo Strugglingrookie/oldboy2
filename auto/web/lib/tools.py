@@ -20,5 +20,5 @@ class Tool(object):
         return picture
 
     def clear_picture(self):
-        list(map(os.remove, map(lambda file: WEB_PICTURE_PATH + file, self.filelist)))
+        list(map(os.remove, map(lambda file: os.path.join(WEB_PICTURE_PATH,file), self.filelist)))
 

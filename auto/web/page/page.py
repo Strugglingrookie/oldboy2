@@ -27,7 +27,7 @@ class IdTest(BasePage):
         self.d.type("css=>#i1","Web aotu test!")
 
     def check_id(self,name):
-        return self.d.wait_and_save_exception("css=>#i2",name)
+        return self.d.wait_and_save_exception("css=>#i1",name)
 
 
 class Page(IdTest):
