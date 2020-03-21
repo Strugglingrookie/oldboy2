@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>auto_test_report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 1400px;
+    overflow-x: scroll;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>auto_test_report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-09-26 17:35:30</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:12.960000</p>
+<p class='attribute'><strong>Status:</strong> Pass 21 Error 4</p>
+
+<p class='description'>请查阅用例执行情况</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>unittest.loader._FailedTest</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>accept_input</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: ImportError: Failed to import test module: accept_input
+Traceback (most recent call last):
+  File "E:\Python\path\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "E:\Python\path\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\WPT_Auto\wpt_interface_test\case_suite\accept_input.py", line 15, in &lt;module&gt;
+    get_user_info = public.get_user_auth_info()
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 1076, in get_user_auth_info
+    if response.json():
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python35\site-packages\requests\models.py", line 896, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "E:\Python\path\lib\json\__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "E:\Python\path\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "E:\Python\path\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>base</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: ImportError: Failed to import test module: base
+Traceback (most recent call last):
+  File "E:\Python\path\lib\unittest\loader.py", line 428, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "E:\Python\path\lib\unittest\loader.py", line 369, in _get_module_from_name
+    __import__(name)
+  File "D:\WPT_Auto\wpt_interface_test\case_suite\base.py", line 20, in &lt;module&gt;
+    get_user_info = public.get_user_auth_info()
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 1076, in get_user_auth_info
+    if response.json():
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python35\site-packages\requests\models.py", line 896, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "E:\Python\path\lib\json\__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "E:\Python\path\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "E:\Python\path\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>credit_inquiry.CreditInquiry:   征信查询</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_fetch_credit_result: 查询征信结果</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.1: 2019-09-26 17:35:30,561, INFO, line-717, 查询征信结果请求数据: {'orgId': '75501', 'pageNo': 1, 'certId': None, 'pageSize': 30}
+2019-09-26 17:35:31,118, INFO, line-733, 查询征信结果返回数据: {"code":0,"msg":"Success","data":{"pageNo":1,"pageSize":30,"totalCount":1201,"totalPage":41,"list":[{"applyId":"I000021909266631411564","orgId":"75501","name":"通冲","certId":"371522198404098937","customerMgr":"152","status":"1","amount":278000,"loanType":"330","cardinalNumber":6910.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:35:19","reportTime":"2019-09-26 17:35:15","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909261932823294","orgId":"75501","name":"夏侯琳覆","certId":"210212196905251553","customerMgr":"152","status":"3","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:26:33","reportTime":"2019-09-26 17:26:31","companyName":"就欧弟是奇偶","rejectCodes":["033"],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"SD","result":"0","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909267596138926","orgId":"75501","name":"郭刃簇","certId":"510603198705250412","customerMgr":"152","status":"3","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:26:14","reportTime":"2019-09-26 17:26:02","companyName":"北京小桔科技有限公司","rejectCodes":["002","038"],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"1","isHidden":"0"},"helpLoanResults":[{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909265222743392","orgId":"75501","name":"郭刃簇","certId":"510603198705250412","customerMgr":"152","status":"3","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:26:05","reportTime":"2019-09-26 17:26:02","companyName":"就欧弟是奇偶","rejectCodes":["038"],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909265524957546","orgId":"75501","name":"郦荡","certId":"370611197812259657","customerMgr":"152","status":"1","amount":500000,"loanType":"320","cardinalNumber":6132.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:25:30","reportTime":"2019-09-26 17:25:23","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909266514977556","orgId":"75501","name":"沙垂浩","certId":"530721196711124554","customerMgr":"152","status":"1","amount":500000,"loanType":"320","cardinalNumber":93813.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:24:47","reportTime":"2019-09-26 17:24:45","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909263228122983","orgId":"75501","name":"上官讥","certId":"140726196905010175","customerMgr":"152","status":"1","amount":0,"loanType":"470","cardinalNumber":120000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:24:16","reportTime":"2019-09-26 17:24:14","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909269828779557","orgId":"75501","name":"陶倾","certId":"361124198903139675","customerMgr":"152","status":"1","amount":500000,"loanType":"370","cardinalNumber":20370.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:23:59","reportTime":"2019-09-26 17:23:57","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909263582341656","orgId":"75501","name":"尚酒","certId":"150702198308047359","customerMgr":"152","status":"1","amount":500000,"loanType":"320","cardinalNumber":9699.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:23:44","reportTime":"2019-09-26 17:23:41","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909263768279671","orgId":"75501","name":"尤怯","certId":"320900197708063417","customerMgr":"152","status":"1","amount":0,"loanType":"470","cardinalNumber":300000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:23:13","reportTime":"2019-09-26 17:23:08","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909263991281524","orgId":"75501","name":"张谜茸","certId":"54233219780702553X","customerMgr":"152","status":"1","amount":100000,"loanType":"370","cardinalNumber":5585.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:21:25","reportTime":"2019-09-26 17:21:23","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"0","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"0","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909264446296945","orgId":"75501","name":"葛藸凯","certId":"370684197809129550","customerMgr":"152","status":"1","amount":100000,"loanType":"320","cardinalNumber":2372.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:21:07","reportTime":"2019-09-26 17:21:05","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909267331486249","orgId":"75501","name":"双拼","certId":"15050019760620043X","customerMgr":"152","status":"1","amount":500000,"loanType":"330","cardinalNumber":36053.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:20:35","reportTime":"2019-09-26 17:20:31","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909264779456823","orgId":"75501","name":"向迫糠","certId":"130925199106074451","customerMgr":"152","status":"1","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:18:57","reportTime":"2019-09-26 17:18:55","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909264419562291","orgId":"75501","name":"瞿锄弗","certId":"500117199003285796","customerMgr":"152","status":"1","amount":500000,"loanType":"320","cardinalNumber":8007.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:18:31","reportTime":"2019-09-26 17:18:29","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909267574284293","orgId":"75501","name":"鱼萎","certId":"430726198907245830","customerMgr":"152","status":"1","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:18:05","reportTime":"2019-09-26 17:18:02","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909262395593613","orgId":"75501","name":"袁里","certId":"231024198511167939","customerMgr":"152","status":"1","amount":200000,"loanType":"470","cardinalNumber":3000000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:17:37","reportTime":"2019-09-26 17:17:33","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909263725644414","orgId":"75501","name":"蒙隔","certId":"610114198108178796","customerMgr":"152","status":"1","amount":0,"loanType":"470","cardinalNumber":118800.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:17:06","reportTime":"2019-09-26 17:17:04","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909269848935849","orgId":"75501","name":"伏捻拔","certId":"620981198801035158","customerMgr":"152","status":"1","amount":100000,"loanType":"310","cardinalNumber":3098.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:16:39","reportTime":"2019-09-26 17:16:37","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909261927523666","orgId":"75501","name":"有惊","certId":"150726197403148875","customerMgr":"152","status":"1","amount":100000,"loanType":"330","cardinalNumber":3667.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:16:06","reportTime":"2019-09-26 17:16:04","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909269972113451","orgId":"75501","name":"郦稍韶","certId":"542126198804084434","customerMgr":"152","status":"1","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:15:38","reportTime":"2019-09-26 17:15:34","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"0","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"0","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909269973834382","orgId":"75501","name":"权少","certId":"36020019790707461X","customerMgr":"152","status":"1","amount":0,"cardinalNumber":25000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:13:21","reportTime":"2019-09-26 17:13:19","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909265717674427","orgId":"75501","name":"邱辖","certId":"621123197601295376","customerMgr":"152","status":"1","amount":144000,"loanType":"310","cardinalNumber":5000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:12:49","reportTime":"2019-09-26 17:12:47","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909264262159312","orgId":"75501","name":"荆弱","certId":"231226198912317671","customerMgr":"152","status":"1","amount":500000,"loanType":"330","cardinalNumber":12058.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:12:16","reportTime":"2019-09-26 17:12:12","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"0","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909267215285123","orgId":"75501","name":"习宛夯","certId":"371122197107186010","customerMgr":"152","status":"1","amount":0,"cardinalNumber":15000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:10:29","reportTime":"2019-09-26 17:10:27","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"0","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909266791912717","orgId":"75501","name":"聂筒","certId":"441421197612082237","customerMgr":"152","status":"1","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:10:15","reportTime":"2019-09-26 17:10:12","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"0","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"0","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909267937594634","orgId":"75501","name":"白诞","certId":"620600198101123750","customerMgr":"152","status":"1","amount":500000,"loanType":"320","cardinalNumber":21408.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:08:28","reportTime":"2019-09-26 17:08:26","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909264144648272","orgId":"75501","name":"红瀑","certId":"230605198202214597","customerMgr":"152","status":"1","amount":0,"loanType":"470","cardinalNumber":100000.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:08:13","reportTime":"2019-09-26 17:08:11","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909266296474162","orgId":"75501","name":"吉丘","certId":"21090519700220881X","customerMgr":"152","status":"1","amount":0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:05:44","reportTime":"2019-09-26 17:05:25","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"1","remarks":[]},{"name":"NCB","result":"1","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"1","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"},{"applyId":"I000021909268134288364","orgId":"75501","name":"淳于买","certId":"610821198401214911","customerMgr":"152","status":"1","amount":325000,"loanType":"330","cardinalNumber":3926.0,"customerType":"001","loanMode":"01","querySource":"WPT","reportChannel":"LEAGUER","queryDate":"2019-09-26 17:05:33","reportTime":"2019-09-26 17:05:26","companyName":"就欧弟是奇偶","rejectCodes":[],"userTags":{"isSameCompany":"1","isReportValid":"1","isShareholder":"0","isSalary":"0","isHqsm":"0","isHidden":"0"},"helpLoanResults":[{"name":"NJB","result":"1","remarks":[]},{"name":"LFB","result":"1","remarks":[]},{"name":"ZRB","result":"1","remarks":[]},{"name":"SZS","result":"0","remarks":[]},{"name":"NCB","result":"0","remarks":[]},{"name":"HXB","result":"1","remarks":[]},{"name":"SD","result":"1","remarks":[]},{"name":"ZGCB","result":"1","remarks":[]},{"name":"YJF","result":"1","remarks":[]},{"name":"HQC_SZS","result":"0","remarks":[]},{"name":"MTB","result":"1","remarks":[]},{"name":"XGM","result":"1","remarks":[]},{"name":"CDB","result":"1","remarks":[]},{"name":"XWB","result":"1","remarks":[]}],"localAccount":"01","saleChannel":"004"}]}}
+2019-09-26 17:35:31,121, INFO, line-37, 获取征信结果响应数据:: {'data': {'pageSize': 30, 'pageNo': 1, 'totalCount': 1201, 'totalPage': 41, 'list': [{'rejectCodes': [], 'loanMode': '01', 'certId': '371522198404098937', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '通冲', 'queryDate': '2019-09-26 17:35:19', 'querySource': 'WPT', 'cardinalNumber': 6910.0, 'localAccount': '01', 'loanType': '330', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909266631411564', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:35:15', 'amount': 278000, 'orgId': '75501'}, {'rejectCodes': ['033'], 'loanMode': '01', 'certId': '210212196905251553', 'status': '3', 'customerMgr': '152', 'name': '夏侯琳覆', 'queryDate': '2019-09-26 17:26:33', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '0', 'name': 'SD', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909261932823294', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:26:31', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': ['002', '038'], 'loanMode': '01', 'certId': '510603198705250412', 'status': '3', 'customerMgr': '152', 'name': '郭刃簇', 'queryDate': '2019-09-26 17:26:14', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}], 'userTags': {'isHqsm': '1', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '北京小桔科技有限公司', 'applyId': 'I000021909267596138926', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:26:02', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': ['038'], 'loanMode': '01', 'certId': '510603198705250412', 'status': '3', 'customerMgr': '152', 'name': '郭刃簇', 'queryDate': '2019-09-26 17:26:05', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909265222743392', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:26:02', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '370611197812259657', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '郦荡', 'queryDate': '2019-09-26 17:25:30', 'querySource': 'WPT', 'cardinalNumber': 6132.0, 'localAccount': '01', 'loanType': '320', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909265524957546', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:25:23', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '530721196711124554', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '沙垂浩', 'queryDate': '2019-09-26 17:24:47', 'querySource': 'WPT', 'cardinalNumber': 93813.0, 'localAccount': '01', 'loanType': '320', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909266514977556', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:24:45', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '140726196905010175', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '上官讥', 'queryDate': '2019-09-26 17:24:16', 'querySource': 'WPT', 'cardinalNumber': 120000.0, 'localAccount': '01', 'loanType': '470', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909263228122983', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:24:14', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '361124198903139675', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '陶倾', 'queryDate': '2019-09-26 17:23:59', 'querySource': 'WPT', 'cardinalNumber': 20370.0, 'localAccount': '01', 'loanType': '370', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909269828779557', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:23:57', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '150702198308047359', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '尚酒', 'queryDate': '2019-09-26 17:23:44', 'querySource': 'WPT', 'cardinalNumber': 9699.0, 'localAccount': '01', 'loanType': '320', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909263582341656', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:23:41', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '320900197708063417', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '尤怯', 'queryDate': '2019-09-26 17:23:13', 'querySource': 'WPT', 'cardinalNumber': 300000.0, 'localAccount': '01', 'loanType': '470', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909263768279671', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:23:08', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '54233219780702553X', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '张谜茸', 'queryDate': '2019-09-26 17:21:25', 'querySource': 'WPT', 'cardinalNumber': 5585.0, 'localAccount': '01', 'loanType': '370', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '0', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '0', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909263991281524', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:21:23', 'amount': 100000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '370684197809129550', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '葛藸凯', 'queryDate': '2019-09-26 17:21:07', 'querySource': 'WPT', 'cardinalNumber': 2372.0, 'localAccount': '01', 'loanType': '320', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909264446296945', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:21:05', 'amount': 100000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '15050019760620043X', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '双拼', 'queryDate': '2019-09-26 17:20:35', 'querySource': 'WPT', 'cardinalNumber': 36053.0, 'localAccount': '01', 'loanType': '330', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909267331486249', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:20:31', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '130925199106074451', 'status': '1', 'customerMgr': '152', 'name': '向迫糠', 'queryDate': '2019-09-26 17:18:57', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909264779456823', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:18:55', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '500117199003285796', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '瞿锄弗', 'queryDate': '2019-09-26 17:18:31', 'querySource': 'WPT', 'cardinalNumber': 8007.0, 'localAccount': '01', 'loanType': '320', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909264419562291', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:18:29', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '430726198907245830', 'status': '1', 'customerMgr': '152', 'name': '鱼萎', 'queryDate': '2019-09-26 17:18:05', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909267574284293', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:18:02', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '231024198511167939', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '袁里', 'queryDate': '2019-09-26 17:17:37', 'querySource': 'WPT', 'cardinalNumber': 3000000.0, 'localAccount': '01', 'loanType': '470', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909262395593613', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:17:33', 'amount': 200000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '610114198108178796', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '蒙隔', 'queryDate': '2019-09-26 17:17:06', 'querySource': 'WPT', 'cardinalNumber': 118800.0, 'localAccount': '01', 'loanType': '470', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909263725644414', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:17:04', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '620981198801035158', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '伏捻拔', 'queryDate': '2019-09-26 17:16:39', 'querySource': 'WPT', 'cardinalNumber': 3098.0, 'localAccount': '01', 'loanType': '310', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909269848935849', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:16:37', 'amount': 100000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '150726197403148875', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '有惊', 'queryDate': '2019-09-26 17:16:06', 'querySource': 'WPT', 'cardinalNumber': 3667.0, 'localAccount': '01', 'loanType': '330', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909261927523666', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:16:04', 'amount': 100000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '542126198804084434', 'status': '1', 'customerMgr': '152', 'name': '郦稍韶', 'queryDate': '2019-09-26 17:15:38', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '0', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '0', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909269972113451', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:15:34', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '36020019790707461X', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '权少', 'queryDate': '2019-09-26 17:13:21', 'querySource': 'WPT', 'cardinalNumber': 25000.0, 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909269973834382', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:13:19', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '621123197601295376', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '邱辖', 'queryDate': '2019-09-26 17:12:49', 'querySource': 'WPT', 'cardinalNumber': 5000.0, 'localAccount': '01', 'loanType': '310', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909265717674427', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:12:47', 'amount': 144000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '231226198912317671', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '荆弱', 'queryDate': '2019-09-26 17:12:16', 'querySource': 'WPT', 'cardinalNumber': 12058.0, 'localAccount': '01', 'loanType': '330', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '0', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909264262159312', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:12:12', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '371122197107186010', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '习宛夯', 'queryDate': '2019-09-26 17:10:29', 'querySource': 'WPT', 'cardinalNumber': 15000.0, 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '0', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909267215285123', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:10:27', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '441421197612082237', 'status': '1', 'customerMgr': '152', 'name': '聂筒', 'queryDate': '2019-09-26 17:10:15', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '0', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '0', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909266791912717', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:10:12', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '620600198101123750', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '白诞', 'queryDate': '2019-09-26 17:08:28', 'querySource': 'WPT', 'cardinalNumber': 21408.0, 'localAccount': '01', 'loanType': '320', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909267937594634', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:08:26', 'amount': 500000, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '230605198202214597', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '红瀑', 'queryDate': '2019-09-26 17:08:13', 'querySource': 'WPT', 'cardinalNumber': 100000.0, 'localAccount': '01', 'loanType': '470', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909264144648272', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:08:11', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '21090519700220881X', 'status': '1', 'customerMgr': '152', 'name': '吉丘', 'queryDate': '2019-09-26 17:05:44', 'querySource': 'WPT', 'saleChannel': '004', 'localAccount': '01', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '1', 'name': 'SZS', 'remarks': []}, {'result': '1', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '1', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909266296474162', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:05:25', 'amount': 0, 'orgId': '75501'}, {'rejectCodes': [], 'loanMode': '01', 'certId': '610821198401214911', 'status': '1', 'saleChannel': '004', 'customerMgr': '152', 'name': '淳于买', 'queryDate': '2019-09-26 17:05:33', 'querySource': 'WPT', 'cardinalNumber': 3926.0, 'localAccount': '01', 'loanType': '330', 'helpLoanResults': [{'result': '1', 'name': 'NJB', 'remarks': []}, {'result': '1', 'name': 'LFB', 'remarks': []}, {'result': '1', 'name': 'ZRB', 'remarks': []}, {'result': '0', 'name': 'SZS', 'remarks': []}, {'result': '0', 'name': 'NCB', 'remarks': []}, {'result': '1', 'name': 'HXB', 'remarks': []}, {'result': '1', 'name': 'SD', 'remarks': []}, {'result': '1', 'name': 'ZGCB', 'remarks': []}, {'result': '1', 'name': 'YJF', 'remarks': []}, {'result': '0', 'name': 'HQC_SZS', 'remarks': []}, {'result': '1', 'name': 'MTB', 'remarks': []}, {'result': '1', 'name': 'XGM', 'remarks': []}, {'result': '1', 'name': 'CDB', 'remarks': []}, {'result': '1', 'name': 'XWB', 'remarks': []}], 'userTags': {'isHqsm': '0', 'isSameCompany': '1', 'isHidden': '0', 'isReportValid': '1', 'isShareholder': '0', 'isSalary': '0'}, 'companyName': '就欧弟是奇偶', 'applyId': 'I000021909268134288364', 'reportChannel': 'LEAGUER', 'customerType': '001', 'reportTime': '2019-09-26 17:05:26', 'amount': 325000, 'orgId': '75501'}]}, 'msg': 'Success', 'code': 0}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_inquiry_credit: 查询征信报告</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
+        error</a>
+
+    <div id='div_ft2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.2: Traceback (most recent call last):
+  File "D:\WPT_Auto\wpt_interface_test\case_suite\credit_inquiry.py", line 18, in test_inquiry_credit
+    handel_credit = public.CreditInquiry()
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 593, in __init__
+    self.user_info = get_user_auth_info()
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 1076, in get_user_auth_info
+    if response.json():
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python35\site-packages\requests\models.py", line 896, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "E:\Python\path\lib\json\__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "E:\Python\path\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "E:\Python\path\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>image_export.ImageExport:   影像导出 </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_export_image: 导出影像</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        pass</a>
+
+    <div id='div_pt3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.1: 2019-09-26 17:35:31,341, INFO, line-188, 查询申请信息及客户信息:: select t1.apply_id, t2.cert_code from  apply t1,cu_base_info t2
+                   where t1.apply_id = t2.apply_id
+                   and  apply_status = '200' order by t1.create_time desc limit 1;
+2019-09-26 17:35:31,366, INFO, line-38, 影像导出请求数据: {'applyId': 'NA20190926000012', 'certId': '230605197211293392'}
+2019-09-26 17:35:31,385, INFO, line-45, 影像导出响应数据: {"status":"success","msg":"success","code":"000000","data":{"list":[{"customerName":"卓号伶","certCode":"230605197211293392","applyId":"NA20190926000012","businessType":"1101300","loanTerm":36,"operateOrgId":"75501"}]}}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>organization_repair.OrganizationRepair:   机构补件</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_organization_repair: 查询机构补件</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        pass</a>
+
+    <div id='div_pt4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.1: 2019-09-26 17:35:31,387, INFO, line-24, 查询机构补件请求数据: {'belongOrgId': '75501'}
+2019-09-26 17:35:32,505, INFO, line-31, 查询机构补件响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490540565","data":null,"listData":[],"requestNo":null,"success":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>remote_signature.RemoteSignature:   远程面签 </td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',2)">Detail</a></td>
+</tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_current_finish_signature: 当前/已完成面签列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        pass</a>
+
+    <div id='div_pt5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.1: 2019-09-26 17:35:32,505, INFO, line-28, 当前/已完成面签请求数据: {'pageSize': 10, 'pageNo': 1, 'param': {'entryType': 'lasDirectApprove'}}
+2019-09-26 17:35:35,832, INFO, line-35, 当前/已完成面签响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490587931","data":{"count":5629,"todayCount":0,"list":[{"id":115739,"taskId":"155e6850b36542a091878309d5038176","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-24 17:21:19","videoEndTime":"2019-09-24 17:21:51","remark":"fd","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-24\\17-20-37-833_-978767_88.mp4","type":"0","task":{"applyNo":"PA20190924000005","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"周丹婷","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":"01","channelId":null},{"id":115732,"taskId":"887a16257b194fb9914d38b59194e90c","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-16 17:46:10","videoEndTime":"2019-09-16 17:46:38","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-16\\17-46-11-913_-88_97.mp4","type":"1","task":{"applyNo":"PA20190916000003","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"李洋","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115725,"taskId":"10d3baecf94a4c8798782e1fed078aba","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 14:33:46","videoEndTime":"2019-09-12 14:34:24","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-12\\14-33-46-539_-415_35.mp4","type":"1","task":{"applyNo":"PA20190912000003","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"李洋","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115718,"taskId":"b9c2b5cbb5ff4734bbe935abafbf4f53","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 13:45:33","videoEndTime":"2019-09-12 13:47:54","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":null,"type":"1","task":{"applyNo":"PA20190912000002","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"李洋","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115711,"taskId":"8c3835ab382340cba8964deb190e0c23","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 10:23:47","videoEndTime":"2019-09-12 10:24:42","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\520623198605125718\\2019-09-12\\10-23-47-375_-403_15.mp4","type":"1","task":{"applyNo":"PA20190912000001","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"友金秒贷","managerName":"陈勇威","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115704,"taskId":"8c3835ab382340cba8964deb190e0c23","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 10:22:10","videoEndTime":null,"remark":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":null,"type":null,"task":{"applyNo":"PA20190912000001","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"友金秒贷","managerName":"陈勇威","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115697,"taskId":"1710c5f542c3435197cefbc1612bc05c","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-11 13:46:29","videoEndTime":"2019-09-11 13:47:01","remark":"tt","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-11\\13-46-29-725_-380_30.mp4","type":"1","task":{"applyNo":"PA20190911000003","managerId":null,"customerName":"测试八五","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"寿险方案","managerName":"陈勇威","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115690,"taskId":"00760545d4f64f77b732e3a81ac4fb92","operator":"LUZHONG","entryQueueTime":null,"videoStartTime":"2019-08-27 11:18:49","videoEndTime":null,"remark":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":null,"type":null,"task":{"applyNo":"PA20181214000582","managerId":null,"customerName":"测试20181214000582","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房贷客户(36-60)","managerName":"郭婉","outletName":"上海门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115550,"taskId":"f67367c894464182b5835ce77d37dd61","operator":"ZHAOSMB","entryQueueTime":null,"videoStartTime":"2019-08-13 17:44:38","videoEndTime":"2019-08-13 17:44:47","remark":"123 2019-07-29 09:35:47s 2019-08-06 10:42:31 33dddwdqcwefwefwzxcefqwe 2019-08-06 10:45:35","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-08-13\\17-44-38-774_-1093_4.mp4","type":"0","task":{"applyNo":"PA20190729000002","managerId":null,"customerName":"袁雏受","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房贷客户(60个月及以上)","managerName":"王姝月","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115543,"taskId":"f67367c894464182b5835ce77d37dd61","operator":"ZHAOSMB","entryQueueTime":null,"videoStartTime":"2019-08-13 17:22:27","videoEndTime":"2019-08-13 17:25:56","remark":"123 2019-07-29 09:35:47s 2019-08-06 10:42:31 33dddwdqcwefwefwzxcefqwe 2019-08-06 10:45:35","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-08-13\\17-22-28-115_-1089_7.mp4","type":"0","task":{"applyNo":"PA20190729000002","managerId":null,"customerName":"袁雏受","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房贷客户(60个月及以上)","managerName":"王姝月","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null}]},"success":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt5.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_video_task_list: 视频任务列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.2')" >
+        pass</a>
+
+    <div id='div_pt5.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.2: 2019-09-26 17:35:35,834, INFO, line-50, 视频任务列表请求数据: {'pageSize': 10, 'pageNo': 1, 'param': {'entryType': 'lasDirectApprove'}}
+2019-09-26 17:35:35,981, INFO, line-57, 视频任务列表请求数据响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490588082","data":{"count":5629,"todayCount":0,"list":[{"id":115739,"taskId":"155e6850b36542a091878309d5038176","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-24 17:21:19","videoEndTime":"2019-09-24 17:21:51","remark":"fd","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-24\\17-20-37-833_-978767_88.mp4","type":"0","task":{"applyNo":"PA20190924000005","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"周丹婷","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":"01","channelId":null},{"id":115732,"taskId":"887a16257b194fb9914d38b59194e90c","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-16 17:46:10","videoEndTime":"2019-09-16 17:46:38","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-16\\17-46-11-913_-88_97.mp4","type":"1","task":{"applyNo":"PA20190916000003","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"李洋","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115725,"taskId":"10d3baecf94a4c8798782e1fed078aba","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 14:33:46","videoEndTime":"2019-09-12 14:34:24","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-12\\14-33-46-539_-415_35.mp4","type":"1","task":{"applyNo":"PA20190912000003","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"李洋","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115718,"taskId":"b9c2b5cbb5ff4734bbe935abafbf4f53","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 13:45:33","videoEndTime":"2019-09-12 13:47:54","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":null,"type":"1","task":{"applyNo":"PA20190912000002","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房供方案(60个月及以上)","managerName":"李洋","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115711,"taskId":"8c3835ab382340cba8964deb190e0c23","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 10:23:47","videoEndTime":"2019-09-12 10:24:42","remark":"通过","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\520623198605125718\\2019-09-12\\10-23-47-375_-403_15.mp4","type":"1","task":{"applyNo":"PA20190912000001","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"友金秒贷","managerName":"陈勇威","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115704,"taskId":"8c3835ab382340cba8964deb190e0c23","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-12 10:22:10","videoEndTime":null,"remark":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":null,"type":null,"task":{"applyNo":"PA20190912000001","managerId":null,"customerName":"张三","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"友金秒贷","managerName":"陈勇威","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115697,"taskId":"1710c5f542c3435197cefbc1612bc05c","operator":"XIAOWD","entryQueueTime":null,"videoStartTime":"2019-09-11 13:46:29","videoEndTime":"2019-09-11 13:47:01","remark":"tt","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-09-11\\13-46-29-725_-380_30.mp4","type":"1","task":{"applyNo":"PA20190911000003","managerId":null,"customerName":"测试八五","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"寿险方案","managerName":"陈勇威","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115690,"taskId":"00760545d4f64f77b732e3a81ac4fb92","operator":"LUZHONG","entryQueueTime":null,"videoStartTime":"2019-08-27 11:18:49","videoEndTime":null,"remark":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":null,"type":null,"task":{"applyNo":"PA20181214000582","managerId":null,"customerName":"测试20181214000582","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房贷客户(36-60)","managerName":"郭婉","outletName":"上海门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115550,"taskId":"f67367c894464182b5835ce77d37dd61","operator":"ZHAOSMB","entryQueueTime":null,"videoStartTime":"2019-08-13 17:44:38","videoEndTime":"2019-08-13 17:44:47","remark":"123 2019-07-29 09:35:47s 2019-08-06 10:42:31 33dddwdqcwefwefwzxcefqwe 2019-08-06 10:45:35","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-08-13\\17-44-38-774_-1093_4.mp4","type":"0","task":{"applyNo":"PA20190729000002","managerId":null,"customerName":"袁雏受","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房贷客户(60个月及以上)","managerName":"王姝月","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null},{"id":115543,"taskId":"f67367c894464182b5835ce77d37dd61","operator":"ZHAOSMB","entryQueueTime":null,"videoStartTime":"2019-08-13 17:22:27","videoEndTime":"2019-08-13 17:25:56","remark":"123 2019-07-29 09:35:47s 2019-08-06 10:42:31 33dddwdqcwefwefwzxcefqwe 2019-08-06 10:45:35","resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"viewUrl":"D:\\anychat\\2019-08-13\\17-22-28-115_-1089_7.mp4","type":"0","task":{"applyNo":"PA20190729000002","managerId":null,"customerName":"袁雏受","certId":null,"approvedAmount":0.0,"entryDate":null,"businessType":"房贷客户(60个月及以上)","managerName":"王姝月","outletName":"深圳门店","sex":null,"age":0,"workType":null,"entryType":"lasDirectApprove","taskId":null,"status":null,"flags":null,"pcRemark":null,"appRemark":null,"phone":null,"signUserId":null,"fsTaskStatus":null,"surveyScope":null,"videoStatus":null,"lastVideoOperator":null,"lastVideoStartTime":null,"dealRecordList":null,"resultWorkPC":null,"resultHomePC":null,"rejectWorkPC":null,"rejectHomePC":null,"otherWorkPC":null,"otherHomePC":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"createTime":null,"createUser":null,"updateTime":null,"updateUser":null,"imageNo":null},"videoType":null,"online":false,"loginUserId":null,"entryType":null,"entryTypeList":null,"phase":null,"finishCertIdMonitor":null,"finishAddressMonitor":null,"finishWorkMonitor":null,"loanTerm":null,"businessSum":null,"supplier":null,"channelId":null}]},"success":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>repair_matter.RepairMatter:   补件处理</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c6',2)">Detail</a></td>
+</tr>
+
+<tr id='ft6.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_repair_admission: 补件准入</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+        error</a>
+
+    <div id='div_ft6.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft6.1: 2019-09-26 17:35:35,982, INFO, line-34, 随机选择【招联金融】业务品种提交申请: 1101900
+Traceback (most recent call last):
+  File "D:\WPT_Auto\wpt_interface_test\case_suite\repair_matter.py", line 28, in test_repair_admission
+    submit_result = wk.signal()
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 36, in signal
+    response_result = submit(business_type)
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 1183, in submit
+    get_user_info = get_user_auth_info()
+  File "D:\WPT_Auto\wpt_interface_test\fun\public.py", line 1076, in get_user_auth_info
+    if response.json():
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python35\site-packages\requests\models.py", line 896, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "E:\Python\path\lib\json\__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "E:\Python\path\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "E:\Python\path\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt6.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_repair_apply: 补件提交</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.2')" >
+        pass</a>
+
+    <div id='div_pt6.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt6.2: 2019-09-26 17:35:36,206, INFO, line-70, 查询申请单信息:: select apply_id, business_type from apply where  apply_status = '001' and  state = '0050' and  sub_state = '0015' and  operate_org_id = '75501' order by create_time desc limit 1;
+2019-09-26 17:35:36,209, INFO, line-84, 当前查询条件【{'state': '0050', 'operate_org_id': '75501', 'sub_state': '0015', 'apply_status': '001'}】未存在补件数据: None
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>reprieve_loan.ReprieveLoan:   暂缓放款 </td>
+    <td>8</td>
+    <td>8</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c7',8)">Detail</a></td>
+</tr>
+
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_reprieve: 添加暂缓</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.1')" >
+        pass</a>
+
+    <div id='div_pt7.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.1: 2019-09-26 17:35:36,225, INFO, line-72, 查询借款申请信息: select serial_no from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '0' order by create_time desc limit 1;
+2019-09-26 17:35:36,334, INFO, line-76, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '0'}】下查询结果数据: {'serial_no': 'LA20190827000001'}
+2019-09-26 17:35:36,334, INFO, line-86, 新增暂缓请求数据: {'type': '0', 'loanNo': 'LA20190827000001'}
+2019-09-26 17:35:36,559, INFO, line-94, 新增暂缓响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490544622","data":null,"listData":null,"requestNo":null,"success":true}
+2019-09-26 17:35:36,565, INFO, line-72, 查询借款申请信息: select defer_pay_status from fatp_loan_apply where  serial_no = 'LA20190827000001' order by create_time desc limit 1;
+2019-09-26 17:35:36,573, INFO, line-99, 检测资金数据库中暂缓状态是否为0(未暂缓): 0
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancel_reprieve: 取消暂缓</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.2')" >
+        pass</a>
+
+    <div id='div_pt7.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.2: 2019-09-26 17:35:36,578, INFO, line-72, 查询借款申请信息: select * from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '1' order by create_time desc limit 1;
+2019-09-26 17:35:36,701, INFO, line-168, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '1'}】下查询结果数据: {'customer_name': '乜俩湘', 'yylending_contact_status': None, 'rate_float_type': '01', 'crpsprotocol_no': None, 'repay_date': None, 'recommended_rate': 2.0, 'advisory_rate': 0.2, 'apply_date': datetime.date(2019, 8, 17), 'loan_card_id': '6222020434205057210', 'put_out_date': None, 'business_sum': 200000.0, 'customer_id': 'CT20190827000342', 'serial_no': 'LA20190827000003', 'purpose': '01', 'new_repay_flag': 'PHJF', 'loan_term_flag': 'M', 'consulting_rate': 0.166, 'input_date': datetime.date(2019, 8, 27), 'non_finance_g_rate': 3.0, 'pre_status': '1', 'sign_status': None, 'guarantee_fee': 0.33, 'create_time': datetime.datetime(2019, 8, 27, 16, 7), 'apply_properties': '0000000000000010000000000010000200000000', 'batch_no': None, 'input_org_id': '75501', 'update_user': 'ADMIN', 'fatp_loan_apply_id': 1600236, 'over_management_fee': 3.0, 'loan_bank': '000001', 'repay_type': '1', 'main_repay_type': '1', 'loanout_fee_term': '3', 'currency': 'RMB', 'business_type': '1100100', 'dahua_trade_acco': None, 'loan_term': 36, 'pre_poundage_rate': 3.0, 'vouch_type': '005', 'lender_id': None, 'penalty_rate': 0.0, 'update_time': datetime.datetime(2019, 9, 26, 17, 26, 45), 'credit_code': None, 'finance_g_rate': 0.1, 'management_fee': 0.15, 'base_rate': None, 'rz_ratio': None, 'base_rate_type': None, 'assetmanage_rate': 2.153333, 'repayment_id': None, 'send_target': None, 'rate_code': '01', 'finance_m_rate': 0.48, 'customer_type': '002', 'loan_purpose': None, 'finance_g_money': None, 'actual_loan_amount': None, 'org_id': '75501', 'pre_date': datetime.datetime(2019, 8, 17, 23, 59, 59), 'premium_rate': 0.0, 'loan_purpose_type': None, 'repay_period': '1', 'rate_float': 0.0, 'rate_mode': '02', 'contract_serial_no': 'CI20190827000005', 'other_purpose': None, 'loan_type': '120', 'is_finance_guarantee': '1', 'loan_bank_branch': '中国工商银行/102100099996', 'repay_bank_branch': '中国工商银行/102100099996', 'fee': 0.1, 'business_rate': 9.0, 'loan_properties': '10000000000000000000', 'dahua_trade_password': None, 'put_out_status': '0', 'rate_adjust_type': '7', 'once_premium_rate': 0.0, 'create_user': 'ADMIN', 'option_fee_rate': 0.8, 'handling_fee': 0.1, 'put_out_type': '030', 'image_no': 'IM20190827000001', 'repay_bank': '000001', 'defer_pay_status': '1', 'repay_card_id': '6222020434205057210'}
+2019-09-26 17:35:36,702, INFO, line-178, 取消暂缓请求数据: {'type': '0', 'loanNo': 'LA20190827000003'}
+2019-09-26 17:35:36,932, INFO, line-186, 取消暂缓请响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490544991","data":null,"listData":null,"requestNo":null,"success":true}
+2019-09-26 17:35:36,948, INFO, line-72, 查询借款申请信息: select defer_pay_status from fatp_loan_apply where  serial_no = 'LA20190827000003' order by create_time desc limit 1;
+2019-09-26 17:35:36,952, INFO, line-191, 检测资金数据库中暂缓状态是否为0(未暂缓): 0
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancel_stop_apply: 取消终止申请</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.3')" >
+        pass</a>
+
+    <div id='div_pt7.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.3: 2019-09-26 17:35:36,958, INFO, line-72, 查询借款申请信息: select serial_no from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '1' order by create_time desc limit 1;
+2019-09-26 17:35:37,055, INFO, line-255, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '1'}】下未存在有效数据: None
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancel_stop_loan: 取消终止放款</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.4')" >
+        pass</a>
+
+    <div id='div_pt7.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.4: 2019-09-26 17:35:37,085, INFO, line-72, 查询借款申请信息: select serial_no from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '1' order by create_time desc limit 1;
+2019-09-26 17:35:37,189, INFO, line-345, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '1'}】下未存在有效数据: None
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_get_send_info: 批量获取发标信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.5')" >
+        pass</a>
+
+    <div id='div_pt7.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.5: 2019-09-26 17:35:37,252, INFO, line-149, 查询合同及借据信息: select  t2.apply_serial_no from fatp_loan_apply t1,fatp_contract_info t2
+            where t1.contract_serial_no  = t2.serial_no
+            and  put_out_status = '0' and  defer_pay_status = '0' order by t2.create_time desc limit 1;
+2019-09-26 17:35:37,377, INFO, line-39, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '0'}】下查询结果数据: {'apply_serial_no': 'NA20190827000003'}
+2019-09-26 17:35:37,379, INFO, line-48, 批量获取发标信息请求数据: {'applyIdList': ['NA20190827000003']}
+2019-09-26 17:35:37,766, INFO, line-56, 批量获取发标信息响应数据: {"status":"success","msg":"success","code":"000000","data":[{"applyId":"NA20190827000003","certCode":"522632196812193632","applyInfo":{"adjustRateType":"5","applyId":"NA20190827000003","applySource":"NORMAL_INLET","applyStatus":"200","applyType":"NormalApply","approveLevel":"PASS","approveResult":"P","baseRate":null,"baseRateType":null,"branchDirector":"ZHONGFP","businessRate":null,"businessSum":"350000.00","businessType":"1100900","crChannel":null,"crChannelName":null,"currency":"RMB","customerType":"002","departmentId":"1075501004","departmentName":"深圳业务部团队四","familyKnow":null,"imageNo":"IM20190827000001","inputDate":"2019-08-27","inputOrgId":"75501","inputUserName":"ZHAOSMB","insurancePolicy1":null,"insurancePolicy2":null,"insurancePolicy3":null,"interviewCenter":"755001","interviewCenterName":"深圳面签中心","interviewerId":"ZHAOSMB","interviewerName":"赵思明","isCertifition":0,"isRecommendedByOld":0,"isReview":0,"lasSplitObjectNo":null,"loanBank":"000001","loanBankBranch":"中国工商银行/102100099996","loanCardId":"6222020434205057210","loanPurpose":null,"loanTerm":36,"loanTermFlag":"M","loanType":"120","mainReturnType":"1","nbtsEleAccount":null,"officialLevel":null,"operateAssistantUser":"ZENGTAB","operateAssistantUserName":"曾泰安","operateOrgId":"75501","operateOrgName":"深圳门店","operateUserId":"7550157","operateUserName":"刘相国","otherPurpose":null,"prevStateOperator":"virtualuser","properties":"0000000000000010000000000010000200000000","purpose":"01","putOutType":"010","quotaAmount":null,"rateCode":"01","rateFloat":"0.000000","rateFloatType":"01","rateMode":"02","recommendTaskNo":null,"recommender":null,"recommenderNo":null,"recommenderTel":null,"relatedApplyId":null,"relatedCustomerId":null,"relatedLoanNo":null,"remark":null,"repayBank":"000001","repayBankBranch":"中国工商银行/102100099996","repayCardId":"6222020434205057210","returnPeriod":"1","returnType":"1","saleChannel":"002","saleDirector":"XUJGB","sendTarget":"TO_XGM","socialCreditCode":null,"state":"1000","subState":"0001","teamCaptain":"LIUMFC","tradeSum":null,"vouchType":"005"},"customerInfo":{"certType":"Ind01","yjsName":"U2388797167530278917","certIssuedPlace":"深圳","name":"乜俩湘","sex":"1","age":null,"birthday":"1968/12/19","certCode":"522632196812193632","certExpiredDate":"2039-06-29","permanentLocation":"01","localHouseFlag":"1","education":"02","marriage":"20","familyStatus":"1","familyAddProvince":"甘肃省","familyAddCity":"临夏回族自治州","familyAddDistrict":"永靖县","familyAddress":"新寺乡波托菲诺纯水岸七期三单元205室","familyAddFr":"H","familyAddT":"M","familyAddInfo":null,"email":null,"qq":null,"monthIncome":"80000.00","mobilePhone":"13532682034","mobilePhone2":null,"houseAreaCode":null,"housePhone":null,"childFlag":null,"familyAddLongitude":null,"familyAddLatitude":null,"postAddress":null,"customerId":"CT20190827000342","borrowerType":null,"localHouseAddress":null,"localAccount":"01","providentFundCompany":null,"providentFundBase":null,"childNum":0},"workInfo":{"workOrgName":"表蓑葡函侍甜熟戒","workOrgNameRemark":null,"workNature":"20","workBelongIndustry":"A02","workDepartment":"开发","workHeadship":"测试","workPosition":"10","workEmployeeType":"020","workBeginDate":"2018/05","workIndustryDate":"2005/10","workAreaCode":null,"workPhone":"0","workExtensionNumber":null,"workAddProvince":"上海市","workAddCity":"市辖区","workAddDistrict":"杨浦区","workAddress":"大桥街道","workAddFr":"H","workAddT":"H","workAddInfo":null,"stockLot":null,"takingsMonthly":null,"profitMarginMonthly":null,"customerClass":null,"businessUnitName":null,"businessUnitAddP":null,"businessUnitAddC":null,"businessUnitAddD":null,"businessUnitAdd":null,"shareholdingRatio":null,"registeredCapital":null,"employeesNum":null,"mainBusiness":null,"businessAnnualIncome":null,"annualGrossProfit":null,"recent6MonthSaleOrders":null,"recent6MonthTurnover":null,"businessLicenceCode":null,"paiclUpCapital":null,"workAddLatitude":null,"workAddLongitude":null,"businessLocation":null,"businessYear":null},"companyInfo":null,"identityInfo":{"idCode":"522632196812193632","idName":"乜俩湘","idSex":"1","idNation":"汉","idBirthday":"1968-12-19","idAddress":"广东省深圳市南山区讯美科技广场","idIssuedBy":"深圳市公安局","idEffectDate":"2018-08-20","idExpiredDate":"2039-06-29","idRecorder":"ZHAOSMB","idRecorderTime":"2019-08-27T11:58:42.000Z","idSamId":null},"contactInfo":[{"applyId":"NA20190827000003","contactCertId":null,"contactWorkCorp":null,"id":2334900,"name":"柏硷","phone":"0","phoneArea":"","phoneExtensionNum":"","relationship":"0302","remark":null,"type":"01"},{"applyId":"NA20190827000003","contactCertId":null,"contactWorkCorp":null,"id":2334907,"name":"庄摄此","phone":"15366618363","phoneArea":null,"phoneExtensionNum":null,"relationship":"0101","remark":"","type":"02"},{"applyId":"NA20190827000003","contactCertId":null,"contactWorkCorp":null,"id":2334914,"name":"柯践","phone":"17364925641","phoneArea":null,"phoneExtensionNum":null,"relationship":"0202","remark":"","type":"03"},{"applyId":"NA20190827000003","contactCertId":null,"contactWorkCorp":null,"id":2334921,"name":"荣披官","phone":"13617456412","phoneArea":null,"phoneExtensionNum":null,"relationship":"0201","remark":"","type":"03"},{"applyId":"NA20190827000003","contactCertId":null,"contactWorkCorp":null,"id":2334928,"name":"管恨臂","phone":"17361911705","phoneArea":null,"phoneExtensionNum":null,"relationship":"0201","remark":"","type":"03"}],"zkInfo":{"abNormalLoanNum":0,"abNormalMaxAmount":"0.00","abNormalShortestTime":0,"abNormalStatusNum":0,"afterLoanApprTime":2,"applyId":"NA20190827000003","cardSendOrgNum":5,"commercialLoan":0,"count12M":1,"count3M":1,"count6M":1,"creditFlag":1,"creditOverdue12M":0,"creditOverdue24M":0,"creditOverdue6M":0,"creditTotalAmount":"116000.00","creditUsedAmount":"72458.00","djFlag":1,"djMaxTotalAcmount":"37880.00","education":"02","firstLoanTime":"2010-11-23","firstOpenAccount":"2007-07-20","firstProUpdTime":"2008-01-23","guarreViewTime":0,"highLineOfCredit":"41000.00","housingLoan":0,"lastLoanTime":"2014-07-25","lastOpenAccount":"2016-07-13","lastProUpdTime":"2016-07-13","loanAmount":null,"loanFlag":1,"loanLongestAge":105,"loanOrgNum":1,"loanOverdue12M":0,"loanOverdue24M":0,"loanOverdue6M":0,"loanOverdueAmount":"2969.00","marriage":20,"maxCreditApprovalNo":"8","maxOverdueAcmount":"2969.00","monthIncome":null,"otherLoanCount":2,"overdueNum":1,"queryNumLast2M":1,"queryNumLast6M":1,"rece6MUsedLimit":"84408.00","repaymentAvg":"4650.00","reportSerialNo":"14dfa08c774c41e9bc5a48bcfa0100de","reportTime":"2019-08-27T07:56:44.000Z","smallLoanFlag":"0","speShopApprTime":0,"unGuarLoanMonthPay":null,"unSecuredBalance":"31837.00","unSecuredMonthPay":"4650.00","unclearedLoanAmount":"150000.00","unclearedLoanBalance":"31837.00","xdFlag":0,"zdjHighestOverdueNumLast24M":0,"zdjMaxTotalAmount":"0.00","zxQueryDate":null},"checkInfo":{"applyId":"NA20190827000003","checkLoanType":"120","borrower":1,"monthIncome":"36000000.00","multiMonthAmount1":null,"multiMonthAmount2":null,"multiMonthAmount3":null,"monthPay":"13333.70","monthPi":"11146.20","cardinalNumber":null,"incomeBase":"6000000.000000","checkLoanTerm":36,"customerType":"002","checkBusinessSum":"400000.00"},"xwWorkInfo":null,"insuranceInfo":[]}]}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_stop_apply: 终止申请</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.6')" >
+        pass</a>
+
+    <div id='div_pt7.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.6: 2019-09-26 17:35:37,781, INFO, line-72, 查询借款申请信息: select serial_no from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '0' order by create_time desc limit 1;
+2019-09-26 17:35:37,913, INFO, line-213, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '0'}】下查询结果数据: {'serial_no': 'LA20190827000003'}
+2019-09-26 17:35:37,914, INFO, line-223, 终止申请请求数据: {'type': '1', 'loanNo': 'LA20190827000003'}
+2019-09-26 17:35:38,131, INFO, line-231, 终止申请响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490546189","data":null,"listData":null,"requestNo":null,"success":true}
+2019-09-26 17:35:38,138, INFO, line-72, 查询借款申请信息: select defer_pay_status from fatp_loan_apply where  serial_no = 'LA20190827000003' order by create_time desc limit 1;
+2019-09-26 17:35:38,143, INFO, line-236, 检测资金数据库中暂缓状态是否为1(已暂缓): 1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_stop_loan: 终止放款</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.7')" >
+        pass</a>
+
+    <div id='div_pt7.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.7: 2019-09-26 17:35:38,151, INFO, line-72, 查询借款申请信息: select serial_no from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '1' order by create_time desc limit 1;
+2019-09-26 17:35:38,252, INFO, line-303, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '1'}】下查询结果数据: {'serial_no': 'LA20190827000003'}
+2019-09-26 17:35:38,254, INFO, line-313, 终止放款请求数据: {'type': '2', 'loanNo': 'LA20190827000003'}
+2019-09-26 17:35:38,480, INFO, line-321, 终止放款响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490546542","data":null,"listData":null,"requestNo":null,"success":true}
+2019-09-26 17:35:38,485, INFO, line-72, 查询借款申请信息: select defer_pay_status from fatp_loan_apply where  serial_no = 'LA20190827000003' order by create_time desc limit 1;
+2019-09-26 17:35:38,488, INFO, line-326, 检测资金数据库中暂缓状态是否为2(已终止): 2
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_submit_reprieve: 提交暂缓</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.8')" >
+        pass</a>
+
+    <div id='div_pt7.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.8: 2019-09-26 17:35:38,492, INFO, line-72, 查询借款申请信息: select serial_no from fatp_loan_apply where  put_out_status = '0' and  defer_pay_status = '0' order by create_time desc limit 1;
+2019-09-26 17:35:38,595, INFO, line-122, 当前查询条件【{'put_out_status': '0', 'defer_pay_status': '0'}】下查询结果数据: {'serial_no': 'LA20190827000001'}
+2019-09-26 17:35:38,596, INFO, line-132, 提交暂缓请求数据: {'type': '1', 'loanNo': 'LA20190827000001'}
+2019-09-26 17:35:38,808, INFO, line-140, 提交暂缓响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490546868","data":null,"listData":null,"requestNo":null,"success":true}
+2019-09-26 17:35:38,825, INFO, line-72, 查询借款申请信息: select defer_pay_status from fatp_loan_apply where  serial_no = 'LA20190827000001' order by create_time desc limit 1;
+2019-09-26 17:35:38,829, INFO, line-145, 检测资金数据库中暂缓状态是否为1(已暂缓): 1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>schedule_query.ScheduleQuery:   进度查询 </td>
+    <td>4</td>
+    <td>4</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c8',4)">Detail</a></td>
+</tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancel: 取消任务</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.1')" >
+        pass</a>
+
+    <div id='div_pt8.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt8.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt8.1: 2019-09-26 17:35:38,837, INFO, line-70, 查询申请单信息:: select apply_id from apply where  apply_status = '001' and  apply_source = 'B_PROJECT_INLET' and  sub_state = '0001' and  state = '0017' and  prev_state = '0010' and  operate_org_id = '75501' order by create_time desc limit 1;
+2019-09-26 17:35:38,842, INFO, line-114, 取消面签请求数据: {'applyId': 'PA20190925000011', 'operatorId': 'SIJL'}
+2019-09-26 17:35:39,177, INFO, line-121, 取消面签响应数据: {"status":"success","msg":"success","code":"000000","data":{"applyId":"PA20190925000011"}}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt8.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_examine_schedule_detail: 进度详情</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.2')" >
+        pass</a>
+
+    <div id='div_pt8.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt8.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt8.2: 2019-09-26 17:35:39,191, INFO, line-70, 查询申请单信息:: select apply_id from apply where  apply_status = '001' and  operate_org_id = '75501' order by create_time desc limit 1;
+2019-09-26 17:35:39,194, INFO, line-69, 查看进度详情请求数据: {'applyId': 'NA20190926000036', 'operator': 'XIAOWD', 'systemId': '05'}
+2019-09-26 17:35:40,413, INFO, line-79, 查询进度详情响应结果: {"status":"success","msg":"success","code":"000000","data":{"applyId":"NA20190926000036","customerInfoDTO":{"certType":"Ind01","yjsName":"U2411107229262938113","certIssuedPlace":"深圳","name":"陶倾","sex":"1","age":null,"birthday":"1989-03-13","certCode":"361124198903139675","certExpiredDate":"2019-09-26","permanentLocation":"01","localHouseFlag":"1","education":"02","marriage":"10","familyStatus":"1","familyAddProvince":"陕西省","familyAddCity":"咸阳市","familyAddDistrict":"永寿县","familyAddress":"甘井镇波托菲诺纯水岸七期三单元205室","familyAddFr":"H","familyAddT":"M","familyAddInfo":null,"email":null,"qq":null,"monthIncome":"80000.00","mobilePhone":"13530910198","mobilePhone2":null,"houseAreaCode":null,"housePhone":null,"childFlag":null,"familyAddLongitude":"113.976636","familyAddLatitude":"22.548956","postAddress":null,"customerId":"CT20190926000083","borrowerType":null,"localHouseAddress":null,"localAccount":"01","phoneThreeElement":"查询成功无结果","countAge":30},"notCustomerMattersDTO":{"customerType":"002","loanType":"320","saleChannel":"006","crChannel":null,"recommendTaskNo":"NA20190926000036","properties":"0000000000100000000000000010000120000000","recommender":"喻澄","recommenderTel":"13466737242","interviewerId":"ZHAOSMB","interviewCenter":"755001","operateUserId":"75501100","operateAssistantUser":"ZENGTAB","operateOrgId":"75501","inputUserName":"XIAOWD","inputDate":"2019-09-26","remark":null,"teamCaptain":"HUTAO","saleDirector":"XUJGB","branchDirector":"ZHONGFP","departmentId":"1075501005","imageNo":"IM20190926000030","officialLevel":null,"recommenderNo":"0190911000000007","relatedLoanNo":null,"operateUserName":"郑先琴","operateAssistantUserName":"曾泰安","departmentName":"深圳业务部团队五","isCertifition":1,"sendTarget":"TO_YJS","interviewerName":"赵思明","interviewCenterName":"深圳面签中心","operateOrgName":"深圳门店","applyStatus":"001","insurancePolicy1":null,"insurancePolicy2":null,"insurancePolicy3":null,"relatedApplyId":null,"isRecommendedByOld":"0","inputUser":"肖伟端","crChannelName":""},"borrowingMattersDTO":{"businessType":"1100100","businessSum":"303000.00","loanTerm":36,"purpose":"01","otherPurpose":null,"mainReturnType":"1","returnPeriod":"1","familyKnow":null,"repayCardId":"6222027488763194446","repayBank":"000001","repayBankBranch":"中国工商银行/102100099996","loanCardId":"6222027488763194446","loanBank":"000001","loanBankBranch":"中国工商银行/102100099996","applyId":"NA20190926000036","adjustRateType":"5","returnType":"1","vouchType":"005","rateFloatType":"01","rateMode":"02","rateFloat":"0.000000","putOutType":"010","tradeSum":null,"loanPurpose":null,"nbtsEleAccount":null,"socialCreditCode":null,"rateCode":"01","executeRate":"0","relevanceLoanNo":""},"checkingInfoDTO":{"checkEmailStatus":null,"checkEmailHistory":null,"businessSum":"303000.00","loanTerm":36,"checkLoanTerm":36,"checkLoanType":"320","applySource":"NORMAL_INLET","applyType":"NormalApply","properties":"0000000000100000000000000010000120000000","creditSum":"251000.00","creditOverdraft":"198875.00","smallLoanFlag":"0","customerType":"002","isSecondHelpApply":false,"isShowDealOpinion":false,"inputType":"NOTXD","commentFeedback":""},"contactsInfoDTO":[{"applyId":"NA20190926000036","contactCertId":null,"contactWorkCorp":null,"id":2338183,"name":"雍密衡","phone":"0","phoneArea":"0","phoneExtensionNum":"0","relationship":"0302","remark":null,"type":1},{"applyId":"NA20190926000036","contactCertId":null,"contactWorkCorp":null,"id":2338190,"name":"韩索毖","phone":"13557358161","phoneArea":null,"phoneExtensionNum":null,"relationship":"0103","remark":null,"type":2,"twoAuth":"不一致"},{"applyId":"NA20190926000036","contactCertId":null,"contactWorkCorp":null,"id":2338197,"name":"冀蜖","phone":"13450224399","phoneArea":null,"phoneExtensionNum":null,"relationship":"0202","remark":null,"type":3,"twoAuth":""},{"applyId":"NA20190926000036","contactCertId":null,"contactWorkCorp":null,"id":2338204,"name":"蓟烷五","phone":"13170247367","phoneArea":null,"phoneExtensionNum":null,"relationship":"0201","remark":null,"type":3,"twoAuth":""},{"applyId":"NA20190926000036","contactCertId":null,"contactWorkCorp":null,"id":2338211,"name":"车焙烷","phone":"15709593167","phoneArea":null,"phoneExtensionNum":null,"relationship":"0201","remark":null,"type":3,"twoAuth":""}],"enterpriseBorrowingDTO":null,"identityInfoDTO":{"idCode":"361124198903139675","idName":"陶倾","idSex":"1","idNation":"汉","idBirthday":"1989-03-13","idAddress":"深圳","idIssuedBy":"深圳","idEffectDate":"2019-09-26","idExpiredDate":"2019-09-26","idRecorder":"XIAOWD","idRecorderTime":"2019-09-26T09:29:43.000Z","idSamId":null},"flowListInfoDTO":[{"id":3075976,"state":"0010","subState":"0001","stateCount":1,"actionType":"state_change","stepStartTime":"2019-09-26 17:29:43","stepEndTime":"2019-09-26 17:26:03","stepDuration":-220,"actionDetail":"SUBMIT_TASK","createTime":"2019-09-26 17:32:43","operatorName":"肖伟端","operator":"XIAOWD","inputOrg":"75501","assignTime":"2019-09-26 17:29:43","stepVariables":null,"stepDealTime":"2019-09-26T09:29:43.000Z","extraData":null,"transitionType":null,"stateName":"受理录入","actionTypeName":"阶段变更","actionDetailName":"提交任务","phaseNo":"0010","phaseName":"受理录入"},{"id":3075990,"state":"0012","subState":"0001","stateCount":2,"actionType":"state_change","stepStartTime":"2019-09-26 17:26:03","stepEndTime":"2019-09-26 17:26:04","stepDuration":1,"actionDetail":"SYSTEM_AUTOMATIC_RUN","createTime":"2019-09-26 17:32:44","operatorName":"admin","operator":"admin","inputOrg":"1","assignTime":"2019-09-26 17:26:03","stepVariables":"{\"applyInfo\":[{\"kind\":\"E\",\"path\":[\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"},{\"kind\":\"E\",\"path\":[\"path\"],\"lhs\":\"[[\\\"0010\\\",\\\"0001\\\"],[\\\"0012\\\",\\\"0001\\\"]]\",\"rhs\":\"[[\\\"0010\\\",\\\"0001\\\"],[\\\"0012\\\",\\\"0001\\\"],[\\\"0050\\\",\\\"0001\\\"]]\"},{\"kind\":\"E\",\"path\":[\"prevState\"],\"lhs\":\"0010\",\"rhs\":\"0012\"},{\"kind\":\"E\",\"path\":[\"prevStateOperator\"],\"lhs\":\"XIAOWD\",\"rhs\":\"admin\"},{\"kind\":\"E\",\"path\":[\"properties\"],\"lhs\":\"0000000000100000000000000000000100000000\",\"rhs\":\"0000000000100000000000000010000120000000\"},{\"kind\":\"E\",\"path\":[\"startTime\"],\"lhs\":\"2019-09-26T09:29:43.000Z\",\"rhs\":\"2019-09-26T09:29:43.000Z\"},{\"kind\":\"E\",\"path\":[\"state\"],\"lhs\":\"0012\",\"rhs\":\"0050\"},{\"kind\":\"E\",\"path\":[\"stateCount\"],\"lhs\":2,\"rhs\":3},{\"kind\":\"E\",\"path\":[\"stateOperator\"],\"lhs\":\"admin\",\"rhs\":\"virtualuser\"},{\"kind\":\"E\",\"path\":[\"stateOperatorName\"],\"lhs\":\"admin\",\"rhs\":\"virtualuser\"},{\"kind\":\"E\",\"path\":[\"stepStartTime\"],\"lhs\":\"2019-09-26 17:26:03\",\"rhs\":\"2019-09-26 17:26:04\"}],\"opinion\":[{\"kind\":\"E\",\"path\":[\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"},{\"kind\":\"E\",\"path\":[\"stepEndTime\"],\"lhs\":\"2019-09-26T09:32:30.000Z\",\"rhs\":\"2019-09-26T09:32:30.000Z\"},{\"kind\":\"E\",\"path\":[\"stepStartTime\"],\"lhs\":\"2019-09-26T09:29:43.000Z\",\"rhs\":\"2019-09-26T09:29:43.000Z\"}],\"attachments\":[{\"kind\":\"E\",\"path\":[0,\"createTime\"],\"lhs\":\"2019-09-26T09:32:30.000Z\",\"rhs\":\"2019-09-26T09:32:30.000Z\"}],\"customerInfo\":[{\"kind\":\"E\",\"path\":[\"identityInfo\",\"idRecorderTime\"],\"lhs\":\"2019-09-26T09:29:43.000Z\",\"rhs\":\"2019-09-26T09:29:43.000Z\"}],\"contactInfo\":[{\"kind\":\"E\",\"path\":[\"otherContacts\",2,\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"},{\"kind\":\"E\",\"path\":[\"otherContacts\",1,\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"},{\"kind\":\"E\",\"path\":[\"otherContacts\",0,\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"},{\"kind\":\"E\",\"path\":[\"workContact\",\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"},{\"kind\":\"E\",\"path\":[\"familyContact\",0,\"createTime\"],\"lhs\":\"2019-09-26T09:32:31.000Z\",\"rhs\":\"2019-09-26T09:32:31.000Z\"}]}","stepDealTime":"2019-09-26T09:26:03.000Z","extraData":null,"transitionType":null,"stateName":"系统审批","actionTypeName":"阶段变更","actionDetailName":"系统自动流转","phaseNo":"0012","phaseName":"系统审批"},{"id":3075991,"state":"0050","subState":"0001","stateCount":3,"actionType":"","stepStartTime":"2019-09-26 17:26:04","stepEndTime":"","stepDuration":"","actionDetail":"","createTime":"","operatorName":"赵志彬","operator":"ZHAOZB","inputOrg":"1","assignTime":"","stepDealTime":"","stateName":"征信调查","actionTypeName":"","actionDetailName":"","phaseNo":"0050","phaseName":"征信调查"}],"questionInfoDTO":[],"opinionInfoDTO":[{"id":3075969,"state":"0010","actionType":"commit_opinion","stateCount":1,"operator":"XIAOWD","operatorName":"肖伟端","opinionDetail":null,"opinionRejectNo":null,"opinionType":"010","opinionCode":null,"opinionCode2":null,"stepStartTime":"2019-09-26 17:29:43","stepEndTime":"2019-09-26 17:26:03","stepDuration":null,"inputOrg":"75501","subState":"0001","actionDetail":"SUBMIT_TASK","commentFeedback":null,"stepDealTime":"2019-09-26T09:29:43.000Z","transitionType":null,"needSiteSurvey":"0","assignTime":"2019-09-26 17:29:43","stateName":"受理录入","actionTypeName":"提交意见","actionDetailName":"提交任务","phaseNo":"0010","phaseName":"受理录入"},{"id":3075990,"state":"0012","subState":"0001","stateCount":2,"actionDetail":"","actionType":"","operator":"admin","operatorName":"admin","opinionDetail":"","opinionRejectNo":"","opinionType":"","opinionCode":"","opinionCode2":"","assignTime":"2019-09-26 17:26:03","stepDealTime":"2019-09-26T09:26:03.000Z","stepStartTime":"2019-09-26 17:26:03","stepEndTime":"2019-09-26 17:26:04","stepDuration":"","inputOrg":"1","stateName":"系统审批","actionTypeName":"","actionDetailName":"","phaseNo":"0012","phaseName":"系统审批"},{"id":3075991,"state":"0050","subState":"0001","stateCount":3,"actionDetail":"","actionType":"","operator":"ZHAOZB","operatorName":"赵志彬","opinionDetail":"","opinionRejectNo":"","opinionType":"","opinionCode":"","opinionCode2":"","assignTime":"","stepDealTime":"","stepStartTime":"2019-09-26 17:26:04","stepEndTime":"","stepDuration":"","inputOrg":"1","stateName":"征信调查","actionTypeName":"","actionDetailName":"","phaseNo":"0050","phaseName":"征信调查"}],"phoneRecordInfoDTO":[],"surveyPhoneRecordDTO":[],"workInfoDTO":{"workOrgName":"薁靡莉拧过肠艾积","workOrgNameRemark":null,"workNature":"20","workBelongIndustry":"A02","workDepartment":"开发","workHeadship":"测试","workPosition":"10","workEmployeeType":"020","workBeginDate":"2018/05","workIndustryDate":null,"workAreaCode":"0755","workPhone":"85252525","workExtensionNumber":null,"workAddProvince":"安徽省","workAddCity":"宣城市","workAddDistrict":"泾县","workAddress":"云岭镇","workAddFr":"H","workAddT":"H","workAddInfo":null,"stockLot":null,"takingsMonthly":null,"profitMarginMonthly":null,"customerClass":null,"businessUnitName":null,"businessUnitAddP":null,"businessUnitAddC":null,"businessUnitAddD":null,"businessUnitAdd":null,"shareholdingRatio":null,"registeredCapital":null,"employeesNum":null,"mainBusiness":null,"businessAnnualIncome":null,"annualGrossProfit":null,"recent6MonthSaleOrders":null,"recent6MonthTurnover":null,"businessLicenceCode":null,"paiclUpCapital":null,"workAddLatitude":"30.650292","workAddLongitude":"118.231447","businessLocation":null,"businessYear":null},"reportFieldsDTO":{"mobilePhone":"15817445689","companyPhone":"33545205","spouseCerdNum":"511800199109240354","spousePhone":"18928628057","companyName1":"北京中关村科技融资担保有限公司","companyAddress1":"广东省深圳市罗湖区宝安南路振业大厦","companyUpdateDate1":"2017.03.18","companyName2":"众合地产","companyAddress2":"广东深圳罗湖宝安南路振业大厦A座29C","companyUpdateDate2":"2015.06.25","companyName3":"富登小额贷款公司","companyAddress3":"","companyUpdateDate3":"2014.07.17","companyName4":"人人贷","companyAddress4":"广东深圳广东省深圳市罗湖区宝安南路振业大厦A座29楼CD","companyUpdateDate4":"2014.03.06","companyName5":"平安普惠","companyAddress5":"","companyUpdateDate5":"2008.06.01"},"qualityInfoDTO":{"abNormalLoanNum":0,"abNormalMaxAmount":"0.00","abNormalShortestTime":0,"abNormalStatusNum":0,"afterLoanApprTime":34,"applyId":"NA20190926000036","cardSendOrgNum":3,"commercialLoan":1,"count12M":1,"count3M":1,"count6M":1,"createTime":"2019-09-26T09:32:34.000Z","creditFlag":1,"creditOverdue12M":0,"creditOverdue24M":0,"creditOverdue6M":0,"creditTotalAmount":"251000.00","creditUsedAmount":"198875.00","djFlag":1,"djMaxTotalAcmount":"154063.00","education":"11","firstLoanTime":"2004-07-28","firstOpenAccount":"2003-01-16","firstProUpdTime":"2008-06-01","guarreViewTime":0,"highLineOfCredit":"148000.00","housingLoan":1,"id":342490,"inputErrors":null,"lastLoanTime":"2017-03-18","lastOpenAccount":"2014-07-17","lastProUpdTime":"2017-03-18","loanAmount":null,"loanFlag":1,"loanLongestAge":182,"loanOrgNum":3,"loanOverdue12M":0,"loanOverdue24M":0,"loanOverdue6M":0,"loanOverdueAmount":"0.00","marriage":10,"maxCreditApprovalNo":"7","maxOverdueAcmount":"0.00","monthIncome":null,"otherLoanCount":14,"overdueNum":0,"queryNumLast2M":1,"queryNumLast6M":1,"rece6MUsedLimit":"194733.00","remark":null,"repaymentAvg":"37933.00","reportSerialNo":"dfc27ae62871478598bb7c66dea60705","reportTime":"2019-09-26T09:23:57.000Z","smallLoanFlag":"0","speShopApprTime":0,"unGuarLoanMonthPay":null,"unSecuredBalance":"517179.00","unSecuredMonthPay":"26950.00","unclearedLoanAmount":"3470000.00","unclearedLoanBalance":"3167422.00","updateTime":"2019-09-26T09:32:34.000Z","xdFlag":0,"zdjHighestOverdueNumLast24M":0,"zdjMaxTotalAmount":"0.00","zxQueryDate":null},"houseInfoDTO":{"houseNumber":null,"houseType":null,"housePrice":null,"houseAmount":null,"houseAddProvince":null,"houseAddCity":null,"houseAddDistrict":null,"houseAdd":null},"insuranceInfo":[],"lifeInsurance":[],"isCompanyLoan":0,"isSecondHelpApply":false,"xdDiffInfo":null,"stateCount":3,"phaseNo":"0050","businessType":"1100100","properties":"0000000000100000000000000010000120000000","inputType":"NOTXD","applySource":"NORMAL_INLET","isCertifition":1,"applyType":"NormalApply","sendTarget":"TO_YJS","isThroughReview":false}}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt8.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_query_schedule: 查询进度结果</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.3')" >
+        pass</a>
+
+    <div id='div_pt8.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt8.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt8.3: 2019-09-26 17:35:40,414, INFO, line-31, 查询进度请求数据: {'operateOrgId': ['75501'], 'pageSize': 10, 'operator': 'XIAOWD', 'pageNum': 1}
+2019-09-26 17:35:42,742, INFO, line-41, 查询进度响应结果: {"status":"success","msg":"success","code":"000000","data":{"count":49613,"rows":[{"applyId":"AI20141011000043","state":"1000","subState":"0001","stateOperator":"XIONGQQ","operatorName":"熊钦庆","applyStatus":"004","businessType":"1100100","loanType":"120","loanTerm":36,"businessSum":"300000.00","operateUserId":"7550101","crChannel":"755010106","saleChannel":"001","interviewerId":"LIMXD","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":null,"inputOrgId":"75501","stepStartTime":"2014-10-16T09:42:25.000Z","inputDate":"2014-10-11","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"1000","phaseName":"审批通过","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"440321197303130817","interviewerName":"李梦璇","operateUserName":"任有余","operateOrgName":"深圳门店"},{"applyId":"AI20141011000046","state":"2000","subState":"0001","stateOperator":"XIONGWEI","operatorName":"熊伟","applyStatus":"005","businessType":"1100100","loanType":"100","loanTerm":36,"businessSum":"500000.00","operateUserId":"7550102","crChannel":null,"saleChannel":"002","interviewerId":"XUXINB","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501001","inputOrgId":"75501","stepStartTime":"2014-10-15T01:47:39.000Z","inputDate":"2014-10-11","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"2000","phaseName":"审批否决","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"445281197802281316","interviewerName":"许欣","operateUserName":"江懿","operateOrgName":"深圳门店"},{"applyId":"AI20141011000048","state":"1000","subState":"0001","stateOperator":"XIONGQQ","operatorName":"熊钦庆","applyStatus":"004","businessType":"1100100","loanType":"110","loanTerm":36,"businessSum":"500000.00","operateUserId":"7550101","crChannel":null,"saleChannel":"002","interviewerId":"ZHANGJUAN","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":null,"inputOrgId":"75501","stepStartTime":"2014-10-16T08:45:12.000Z","inputDate":"2014-10-11","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"1000","phaseName":"审批通过","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"34082419751206461X","interviewerName":"张娟","operateUserName":"任有余","operateOrgName":"深圳门店"},{"applyId":"AI20141011000052","state":"1000","subState":"0001","stateOperator":"XUXINB","operatorName":"许欣","applyStatus":"004","businessType":"1100100","loanType":"110","loanTerm":36,"businessSum":"500000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"XUXINB","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-20T08:01:42.000Z","inputDate":"2014-10-11","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"1000","phaseName":"审批通过","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"441425196912095479","interviewerName":"许欣","operateUserName":"罗青","operateOrgName":"深圳门店"},{"applyId":"AI20141011000053","state":"1000","subState":"0001","stateOperator":"LIMXD","operatorName":"李梦璇","applyStatus":"004","businessType":"1100100","loanType":"100","loanTerm":36,"businessSum":"390000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"LIMXD","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-20T03:11:28.000Z","inputDate":"2014-10-11","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"1000","phaseName":"审批通过","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"352225197212280019","interviewerName":"李梦璇","operateUserName":"罗青","operateOrgName":"深圳门店"},{"applyId":"AI20141013000006","state":"2000","subState":"0001","stateOperator":"XIONGWEI","operatorName":"熊伟","applyStatus":"005","businessType":"1100100","loanType":"110","loanTerm":36,"businessSum":"150000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"LIMXD","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-15T23:45:45.000Z","inputDate":"2014-10-13","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"2000","phaseName":"审批否决","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"452423197811100018","interviewerName":"李梦璇","operateUserName":"罗青","operateOrgName":"深圳门店"},{"applyId":"AI20141017000001","state":"2000","subState":"0001","stateOperator":"LIMXD","operatorName":"李梦璇","applyStatus":"005","businessType":"1100100","loanType":"100","loanTerm":36,"businessSum":"500000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"LIMXD","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-20T06:44:54.000Z","inputDate":"2014-10-17","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"2000","phaseName":"审批否决","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"44052719610503671X","interviewerName":"李梦璇","operateUserName":"罗青","operateOrgName":"深圳门店"},{"applyId":"AI20141017000002","state":"2000","subState":"0001","stateOperator":"XIAOYING","operatorName":"肖莹","applyStatus":"005","businessType":"1100100","loanType":"120","loanTerm":36,"businessSum":"350000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"XUXINB","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-20T03:51:14.000Z","inputDate":"2014-10-17","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"2000","phaseName":"审批否决","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"512927196710246274","interviewerName":"许欣","operateUserName":"罗青","operateOrgName":"深圳门店"},{"applyId":"AI20141017000003","state":"1000","subState":"0001","stateOperator":"ZHANGJUAN","operatorName":"张娟","applyStatus":"004","businessType":"1100100","loanType":"110","loanTerm":36,"businessSum":"500000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"ZHANGJUAN","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-21T09:12:12.000Z","inputDate":"2014-10-17","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"1000","phaseName":"审批通过","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"441522197704153014","interviewerName":"张娟","operateUserName":"罗青","operateOrgName":"深圳门店"},{"applyId":"AI20141017000004","state":"2000","subState":"0001","stateOperator":"LIMXD","operatorName":"李梦璇","applyStatus":"005","businessType":"1100100","loanType":"100","loanTerm":36,"businessSum":"245000.00","operateUserId":"7550103","crChannel":"755010106","saleChannel":"001","interviewerId":"LIMXD","operateOrgId":"75501","applySource":"YED_ZC","applyType":"Apply","assignTime":null,"departmentId":"1075501002","inputOrgId":"75501","stepStartTime":"2014-10-22T09:10:17.000Z","inputDate":"2014-10-17","isJQZD":0,"isJXHJ":0,"isZJSX":0,"isZXTY":0,"phaseNo":"2000","phaseName":"审批否决","isStraightApprove":false,"isCancelFlag":false,"name":"测试CT201","certCode":"211011196909235511","interviewerName":"李梦璇","operateUserName":"罗青","operateOrgName":"深圳门店"}]}}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt8.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_task_adjust: 任务调整</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.4')" >
+        pass</a>
+
+    <div id='div_pt8.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt8.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt8.4: 2019-09-26 17:35:42,761, INFO, line-70, 查询申请单信息:: select apply_id, operate_user_id from apply where  apply_status = '001' and  state = '0060' and  sub_state = '0016' and  operate_org_id = '75501' order by create_time desc limit 1;
+2019-09-26 17:35:42,772, INFO, line-50, 查询营销人员信息是否有现调权::  select is_scene,user_id from bms_seller where seller_id = '75501108'; 
+2019-09-26 17:35:42,820, INFO, line-79, 查询【深圳业务一部】具有现调权限的营销人员信息: 
+            select t.seller_name,t.user_id,t.seller_id,t.belong_team,t1.department_name,t2.unit_name 
+            from bms_seller  t , bms_department_info t1,bms_business_unit t2
+            where t.belong_team = t1.department_code
+            and t1.unit_code = t2.unit_code
+            and t.`status` = '1'
+            and t2.org_id = '755';
+        
+2019-09-26 17:35:42,821, INFO, line-250, 作业平台任务调整请求数据: {'applyId': 'PA20190925000002', 'adjustToUserId': 'YEXJB', 'operatorId': 'ZHOUDT'}
+2019-09-26 17:35:43,341, INFO, line-258, 作业平台任务调整响应数据: {"status":"success","msg":"success","code":"000000","data":"PA20190925000002"}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>telemarketing_query.TelemarketingQuery:   电销查询</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c9',1)">Detail</a></td>
+</tr>
+
+<tr id='pt9.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_telemarketing_query: 电销查询</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt9.1')" >
+        pass</a>
+
+    <div id='div_pt9.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt9.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt9.1: 2019-09-26 17:35:43,345, INFO, line-29, 电销查询请求数据: {'pageSize': 10, 'pageNo': 1, 'param': {'orgId': '75501', 'isDefault': 1}}
+2019-09-26 17:35:43,491, INFO, line-36, 电销查询响应数据: {"retCode":"000000","retMsg":"success","timeStamp":"1569490551554","data":{"pageNo":1,"pageSize":10,"totalResult":0,"totalPage":0,"count":null,"totalCount":null,"list":[],"retTime":null},"success":true}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>telephone_signing.TelephoneSigning:   电话签约</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c10',2)">Detail</a></td>
+</tr>
+
+<tr id='pt10.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_tel_sign_admission: 电话签约准入</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.1')" >
+        pass</a>
+
+    <div id='div_pt10.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt10.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt10.1: 2019-09-26 17:35:43,505, INFO, line-70, 查询申请单信息:: select apply_id, business_type from apply where  state = '0070' and  sub_state = '0001' and  apply_status = '001' order by create_time desc limit 1;
+2019-09-26 17:35:43,509, INFO, line-35, 当前查询条件下没有待补件的数据: None
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt10.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_tel_sign_apply: 电话签约申请</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.2')" >
+        pass</a>
+
+    <div id='div_pt10.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt10.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt10.2: 2019-09-26 17:35:43,516, INFO, line-70, 查询申请单信息:: select apply_id, business_type, apply_type from apply where  state = '0070' and  sub_state = '0001' and  apply_status = '001' order by create_time desc limit 1;
+2019-09-26 17:35:43,519, INFO, line-111, 当前查询【{'state': '0070', 'sub_state': '0001', 'apply_status': '001'}】下没有待补件的数据: None
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>25</td>
+    <td>21</td>
+    <td>0</td>
+    <td>4</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

@@ -80,19 +80,65 @@
 # print(li)
 # print(2017%4)
 
-li = [4.3, 1.2, 5, 11, 8.444, 5.333]
+# li = [4.3, 1.2, 5, 11, 8.444, 5.333]
+#
+#
+# def bubble_sort(l):
+#     for i in range(len(l) - 1):
+#         exchange = False
+#         for j in range(len(l) - i - 1):
+#             if l[j] > l[j + 1]:
+#                 l[j], l[j + 1] = l[j + 1], l[j]
+#                 exchange = True
+#         if not exchange:
+#             break
+#     return l
+#
+#
+# print(bubble_sort(li))
+
+def sub_sequence1(a,b):
+    i,j = 0,0
+    while i<len(a) and j<len(b):
+        if a[i] == b[j]:
+            i+=1
+            j+=1
+        else:
+            j+=1
+    if i==len(a):
+        return True
+    return False
+
+def sub_sequence(a,b):
+    b = iter(b)
+    return all(i in b for i in a)
+
+# print(sub_sequence([1, 3, 5], [1, 2, 3, 4, 5]))
+# print(sub_sequence([1, 4, 5], [1, 2, 3, 4, 5]))
+# print(sub_sequence([1, 6, 5], [1, 2, 3, 4, 5]))
 
 
-def bubble_sort(l):
-    for i in range(len(l) - 1):
-        exchange = False
-        for j in range(len(l) - i - 1):
-            if l[j] > l[j + 1]:
-                l[j], l[j + 1] = l[j + 1], l[j]
-                exchange = True
-        if not exchange:
-            break
-    return l
 
+def is_subsequence(a, b):
+    b = iter(b)
+    # print(b)
+    #
+    # gen = (i for i in a)
+    # print(gen)
+    #
+    # for i in gen:
+    #     print(i)
+    #
+    # gen = ((i in b) for i in a)
+    # print(gen)
+    #
+    # for i in gen:
+    #     print(i)
 
-print(bubble_sort(li))
+    return all(((i in b) for i in a))
+
+print(is_subsequence([1, 3, 5], [1, 2, 3, 4, 5]))
+# print(is_subsequence([1, 4, 3], [1, 2, 3, 4, 5]))
+
+print('哈哈哈哈')
+
