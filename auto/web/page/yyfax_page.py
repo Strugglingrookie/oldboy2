@@ -16,7 +16,7 @@ class BasePage():
         self.driver = self.d.driver
 
     def add_cookies(self):
-        cookies = '136a3d03-9748-4f83-a54f-9b2a93f979a0=19cd58b8-c7c2-4175-a895-51806a712de7;'
+        cookies = '136a3d03-9748-4f83-a54f-9b2a93f979a0=1e348032-82cd-46e3-b419-4ef8acb912dc;'
         self.d.set_cookies(cookies)
 
     def url(self):
@@ -106,6 +106,6 @@ if __name__ == '__main__':
     page.confirm_password()
     page.known()
     page.agree()
-    page.check_charge()
-    time.sleep(5)
+    page.check_charge('check_charge')
+    time.sleep(15)
     page.quit()

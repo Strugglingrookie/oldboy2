@@ -2,172 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="ui自动化">
-      <change afterPath="$PROJECT_DIR$/auto/web/bases/pyse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/web/page/my_faker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/web/page/yyfax_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/oldboy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oldboy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/web/bases/07image_to_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/bases/07image_to_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/web/lib/pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/lib/pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/converters.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/converters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app02/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app02/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app02/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/app02/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/django_urls/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/django_urls/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/django_urls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/django_urls/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/statics/app01/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/statics/app01/my.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/statics/app01/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/statics/app01/my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/templates/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/03 django路由层/django_urls/templates/timer.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/03 django路由层/django_urls/templates/timer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/.idea/django_views.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/.idea/django_views.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/django_views/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/django_views/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/django_views/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/django_views/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/statics/app01/my.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/statics/app01/my.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/statics/app01/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/statics/app01/my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/04 django视图层/django_views/views_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/.idea/book.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/.idea/book.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/migrations/0002_auto_20190812_0826.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/migrations/0002_auto_20190812_0826.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/book_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/statics/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/statics/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/book/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/book/templates/book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/ajax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/ajax.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/ajax_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/regist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/file.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/file.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/templates/regist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/.idea/django_pages.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/.idea/django_pages.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/django_pages/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/page_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/08 django组件分页器/django_pages/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/.idea/django_forms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/.idea/django_forms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/django_forms/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/myforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/myforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/forms_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/gouzi.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/gouzi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/09 django组件forms/django_forms/templates/multi_forms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/.idea/cookie_session.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/.idea/cookie_session.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cookie_session/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/myforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/cs_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/10 django组件cookie&amp;session/cookie_session/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/.idea/auther.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/.idea/auther.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/myforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auth_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/11 django组件用户认证/auther/auther/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/.idea/middleware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/.idea/middleware.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/migrations/myforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/migrations/myforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/myforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/myforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middle_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middleware/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middleware/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middleware/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middleware/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/12 django组件中间件/middleware/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/myforms.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/myforms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/utils/valid_code_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/utils/valid_code_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/blog_app01/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap-theme.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/bs/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/css/article_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/css/article_detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/css/backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/css/backend.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/css/home_site.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/css/home_site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/kindeditor-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/kindeditor-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/lang/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/anchor/anchor.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/anchor/anchor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/autoheight/autoheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/autoheight/autoheight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/baidumap/baidumap.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/baidumap/baidumap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/baidumap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/baidumap/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/baidumap/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/baidumap/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/clearhtml/clearhtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/clearhtml/clearhtml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/code/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/code/code.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/code/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/code/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/emoticons/emoticons.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/emoticons/emoticons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/filemanager/filemanager.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/filemanager/filemanager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/fixtoolbar/fixtoolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/fixtoolbar/fixtoolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/flash/flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/flash/flash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/image/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/image/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/insertfile/insertfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/insertfile/insertfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/lineheight/lineheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/lineheight/lineheight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/link/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/link/link.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/map/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/map/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/map/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/media/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/media/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/multiimage/multiimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/multiimage/multiimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/pagebreak/pagebreak.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/pagebreak/pagebreak.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/plainpaste/plainpaste.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/plainpaste/plainpaste.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/preview/preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/preview/preview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/quickformat/quickformat.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/quickformat/quickformat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/table/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/table/table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/html/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/html/1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/html/2.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/html/2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/html/3.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/html/3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/template/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/wordpaste/wordpaste.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/plugins/wordpaste/wordpaste.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/themes/default/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/themes/default/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/themes/qq/qq.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/themes/qq/qq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/themes/simple/simple.css" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/blog/kindeditor/themes/simple/simple.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/statics/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/module6/13 BBS&amp;BLOG/blog/templates/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/web/page/yyfax_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/page/yyfax_page.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +122,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/auto/web/lib" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -551,14 +387,7 @@
       <workItem from="1583842708386" duration="2084000" />
       <workItem from="1584102652353" duration="1145000" />
       <workItem from="1584103923963" duration="11921000" />
-      <workItem from="1584760637355" duration="155623000" />
-    </task>
-    <task id="LOCAL-00010" summary="module6">
-      <created>1564897774041</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1564897774041</updated>
+      <workItem from="1584760637355" duration="161043000" />
     </task>
     <task id="LOCAL-00011" summary="module6">
       <created>1564903825892</created>
@@ -896,7 +725,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584761038112</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="ui自动化">
+      <created>1584923568577</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1584923568577</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1035,7 +871,7 @@
     <SUITE FILE_PATH="coverage/oldboy$testing.coverage" NAME="testing Coverage Results" MODIFIED="1582105025699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy$template_method.coverage" NAME="template_method Coverage Results" MODIFIED="1581816631056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/设计模式" />
     <SUITE FILE_PATH="coverage/oldboy$as.coverage" NAME="as Coverage Results" MODIFIED="1582684101366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/atp" />
-    <SUITE FILE_PATH="coverage/oldboy2$yyfax_page.coverage" NAME="yyfax_page Coverage Results" MODIFIED="1584784519899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/page" />
+    <SUITE FILE_PATH="coverage/oldboy2$yyfax_page.coverage" NAME="yyfax_page Coverage Results" MODIFIED="1584925602231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/page" />
     <SUITE FILE_PATH="coverage/oldboy$flask_server.coverage" NAME="flask_server Coverage Results" MODIFIED="1583078203102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/bin" />
     <SUITE FILE_PATH="coverage/oldboy$request_send.coverage" NAME="request_send Coverage Results" MODIFIED="1582870775122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
     <SUITE FILE_PATH="coverage/oldboy$07beautiful_report.coverage" NAME="07beautiful_report Coverage Results" MODIFIED="1582961109711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp" />
