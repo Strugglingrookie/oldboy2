@@ -10,19 +10,23 @@
         .btn {
             margin-top: 5px;
         }
-        .other{
+
+        .other {
             margin-top: 5px;
         }
-        .filter{
+
+        .filter {
             margin-bottom: 30px;
         }
-        .empty{
+
+        .empty {
             text-align: center;
             color: #D0D0D0;
         }
-    th,td{
-        text-align: center;
-    }
+
+        th, td {
+            text-align: center;
+        }
     </style>
 {% endblock style %}
 
@@ -40,7 +44,7 @@
                     <div class="form-group">
                         <div class="form-group other">
                             <label for="">书籍名称</label>
-                            <input type="text" class="form-control"  placeholder="python" name="title">
+                            <input type="text" class="form-control" placeholder="python" name="title">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">查询</button>
@@ -78,8 +82,8 @@
                                 <a href="/app01/book/{{ book.pk }}/delete" class="btn btn-danger">删除</a>
                             </td>
                         </tr>
-                        {% empty %}
-                            <td class="empty" colspan="6">暂无数据!</td>
+                    {% empty %}
+                        <td class="empty" colspan="6">暂无数据!</td>
                     {% endfor %}
 
                     </tbody>

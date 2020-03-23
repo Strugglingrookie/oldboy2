@@ -3,7 +3,6 @@ from django.shortcuts import HttpResponse, redirect
 from middleware import settings
 import time
 
-
 '''
 中间件顾名思义，是介于request与response处理之间的一道处理过程，相对比较轻量级，并且在全局上改变django的输入与输出。
 因为改变的是全局，所以需要谨慎实用，用不好会影响到性能。
@@ -65,6 +64,8 @@ class MdTwo(MiddlewareMixin):
 
 
 ip_pool = {}
+
+
 # Django中间件限制用户每分钟访问次数不超过10次,一般用于反爬
 class IpLimitMiddleWare(MiddlewareMixin):
 

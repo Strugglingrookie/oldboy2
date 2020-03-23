@@ -11,12 +11,11 @@
 
 $(function () {
     $('#btn_reg').click(function () {
-         window.open('/app01/regist',target='_self')
+            window.open('/app01/regist', target = '_self')
         }
-
     );
     $('#btn_login').click(function () {
-        window.open('/app01/login',target='_self')
+            window.open('/app01/login', target = '_self')
         }
     );
 });

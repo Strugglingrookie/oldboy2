@@ -12,9 +12,9 @@ def cookie(request):
             res = redirect('/app01/index')  # 设置响应对象，redirect和render的实质都是HttpResponse的类
             res.set_cookie('user', form.cleaned_data.get('name'))  # set_cookie是HttpResponsea的方法  设置cookie
             res.set_cookie('last_login_time', datetime.datetime.now())
-            res.set_cookie('path_cookie', 'login_path',path='/app01/login')  # path 指定路径下有效
-            res.set_cookie('max_age', '60',max_age=60)  # 只有max_age,  则按秒计算过期时间, 浏览器会存在本地缓存路径, 并自动删除过期cookie
-            res.set_cookie('expires_time', '16:53:40',expires=20)  # expires 指定到生效的时间
+            res.set_cookie('path_cookie', 'login_path', path='/app01/login')  # path 指定路径下有效
+            res.set_cookie('max_age', '60', max_age=60)  # 只有max_age,  则按秒计算过期时间, 浏览器会存在本地缓存路径, 并自动删除过期cookie
+            res.set_cookie('expires_time', '16:53:40', expires=20)  # expires 指定到生效的时间
             # 只有expires, 则按照时间字符串计算过期时间, 浏览器会存在本地缓存路径, 自动删除过期cookie
             # expires格式可以为:  1.时间格式的字符串 : " Wdy, DD-Mth-YY HH:MM:SS GMT "  2.秒数  3.datetime.datetime 对象
             # 若 max_age和 expires 同时存在, 则默认使用 max_age  如果设置的cookie时间小于计算机时间, 浏览器则不提取cookie
@@ -85,11 +85,11 @@ def index(request):
     # res.delete_cookie('user')  # 删除cookies
     print(request.COOKIES)
     '''
-    #sessions
+    # sessions
     # print(request.session['user'])
     # user = request.session['user']  # 获取cookies
     # last_login_time = request.session['last_login_time']
-    user = request.session.get('user') # 这种方法也行，建议这种，没取到不会报错
+    user = request.session.get('user')  # 这种方法也行，建议这种，没取到不会报错
     last_login_time = request.session.get('last_login_time')
     '''
     查找的过程

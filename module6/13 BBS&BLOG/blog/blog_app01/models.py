@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 class UserInfo(AbstractUser):
     # 用户信息
     nid = models.AutoField(primary_key=True)
-    phone_num = models.CharField(max_length=11,null=True,unique=True)
+    phone_num = models.CharField(max_length=11, null=True, unique=True)
     avatar = models.FileField(upload_to='avatars/', default='avatars/default.png')
     create_time = models.DateField(verbose_name='创建时间', auto_now_add=True)
 
@@ -59,7 +59,7 @@ class Article(models.Model):
 
     user = models.ForeignKey(to='UserInfo', to_field='nid', verbose_name='作者', on_delete=models.CASCADE)
     category = models.ForeignKey(to='Category', to_field='nid', verbose_name='分类', null=True, on_delete=models.CASCADE)
-    tags = models.ManyToManyField(to='Tag', through='Article2Tag', through_fields=('article','tag'))
+    tags = models.ManyToManyField(to='Tag', through='Article2Tag', through_fields=('article', 'tag'))
 
     def __str__(self):
         return self.title
@@ -72,7 +72,7 @@ class Article2Tag(models.Model):
     tag = models.ForeignKey(verbose_name='标签', to='Tag', to_field='nid', on_delete=models.CASCADE)
 
     class Meta:
-        unique_together=[
+        unique_together = [
             ('article', 'tag'),
         ]
 
@@ -100,9 +100,7 @@ class Comment(models.Model):
     article = models.ForeignKey(verbose_name='评论文章', to='Article', to_field='nid', null=True, on_delete=models.CASCADE)
     content = models.CharField(max_length=255, verbose_name='评论内容')
     create_time = models.DateField(verbose_name='创建时间', auto_now_add=True)
-    parent_comment = models.ForeignKey('self',null=True, on_delete=models.CASCADE)
+    parent_comment = models.ForeignKey('self', null=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return  self.content
-
-
+        return self.content

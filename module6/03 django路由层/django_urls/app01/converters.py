@@ -4,7 +4,9 @@
 # to_url(self, value) 方法，和 to_python 相反，value是一个具体的Python变量值，返回其字符串，通常用于url反向引用
 class FullYearDigits:
     regex = '[0-9]{4}'
-    def to_python(self,value):
+
+    def to_python(self, value):
         return int(value)
-    def to_url(self,value):
+
+    def to_url(self, value):
         return '%04d' % value

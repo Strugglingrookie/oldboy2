@@ -1,4 +1,4 @@
-from django.urls import path,re_path,include
+from django.urls import path, re_path, include
 from book_app01 import views
 
 urlpatterns = [

@@ -3,9 +3,8 @@ from django.forms import widgets
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
-
-name_widget = widgets.TextInput(attrs={'class':'form-control'})
-pwd_widget = widgets.PasswordInput(attrs={'class':'form-control'})
+name_widget = widgets.TextInput(attrs={'class': 'form-control'})
+pwd_widget = widgets.PasswordInput(attrs={'class': 'form-control'})
 
 
 class Form(forms.Form):
@@ -25,5 +24,3 @@ class Form(forms.Form):
 class LoginForm(forms.Form):
     name = forms.CharField(min_length=4, max_length=16, widget=name_widget, label='用户名')
     pwd = forms.CharField(min_length=4, max_length=16, widget=pwd_widget, label='密码')
-
-

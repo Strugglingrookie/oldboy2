@@ -26,7 +26,7 @@ def regist(request):
             user = None
 
             # 注意创建用户的时候要用create_user方法  用create的话不会对密码进行加密
-            res = User.objects.create_user(username=username,email=email,password=pwd)
+            res = User.objects.create_user(username=username, email=email, password=pwd)
 
             # 注册完成之后 调用 authenticate() 进行认证得到一个  User  对象
             if res:
@@ -55,7 +55,7 @@ def mylogin(request):
             print(form.cleaned_data)
             username = form.cleaned_data.get('name')
             pwd = form.cleaned_data.get('pwd')
-            user = auth.authenticate(username=username,password=pwd)
+            user = auth.authenticate(username=username, password=pwd)
             if user:
                 login(request, user)
                 # next_url 用户请求可能是其他请求重定向过来的，登录完成后，根据next值返回到相应的url
@@ -72,7 +72,7 @@ def mylogin(request):
 def mylogout(request):
     # 接受一个HttpRequest对象，无返回值。调用时，当前请求的session信息会全部清除。该用户即使没有登录，使用该函数也不会报错。
     logout(request)
-    return redirect( '/app01/index/')
+    return redirect('/app01/index/')
 
 
 # 上面通过auth已经实现了简单的登录注册以及首页之间的跳转 但是实际场景存在这样的情况：
@@ -84,17 +84,18 @@ def mylogout(request):
 def secret(request):
     if request.user.is_authenticated:
         my_secret = 'secret'
-        return render(request, 'secret.html',locals())
+        return render(request, 'secret.html', locals())
     else:
         return redirect("%s?next=%s" % (settings.LOGIN_URL, request.path))
 
+
 # 方式二  login_required 装饰器
-#若用户没有登录，则会跳转到django默认的 登录URL '/accounts/login/ ' (这个值可以在settings文件中通过LOGIN_URL进行修改)。
+# 若用户没有登录，则会跳转到django默认的 登录URL '/accounts/login/ ' (这个值可以在settings文件中通过LOGIN_URL进行修改)。
 # 并传递  当前访问url的绝对路径 (登陆成功后，会重定向到该路径)。
 @login_required
 def mimi(request):
     my_secret = 'mimi'
-    return render(request, 'secret.html',locals())
+    return render(request, 'secret.html', locals())
 
 
 # 修改密码

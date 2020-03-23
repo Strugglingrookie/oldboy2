@@ -25,11 +25,11 @@ class Mysql(object):
         try:
             if self.dbname:
                 conn = pymysql.connect(host=self.host, port=self.port, user=self.user,
-                                            password=self.pwd, database=self.dbname, charset=self.charset)
+                                       password=self.pwd, database=self.dbname, charset=self.charset)
                 return conn
             else:
                 conn = pymysql.connect(host=self.host, port=self.port, user=self.user,
-                                            password=self.pwd, charset=self.charset)
+                                       password=self.pwd, charset=self.charset)
                 return conn
         except Exception as e:
             print(e)

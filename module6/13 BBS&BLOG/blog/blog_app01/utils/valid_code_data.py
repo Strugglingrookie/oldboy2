@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 import random, string
 
+
 def get_random_color():
     return (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 
@@ -10,7 +11,6 @@ def get_valid_img(request):
     # 方式一 直接读取一张图片
     # with open(r'%s\avatars\lufei.jg'%settings.MEDIA_ROOT, 'rb') as f:
     #     data = f.read()
-
 
     # 方式二 生成一张随机颜色的图片用 pillow 模块   pip install pillow
     # import random
@@ -22,7 +22,6 @@ def get_valid_img(request):
     # with open('valid_image.png', 'rb') as f:
     #     data = f.read()
 
-
     # 方式三  方式二是在通过磁盘存取，存在一定的io时间，性能较差，改为内存存取
     # import random
     # from PIL import Image
@@ -32,7 +31,6 @@ def get_valid_img(request):
     # f = BytesIO()
     # img.save(f, 'png')
     # data = f.getvalue()
-
 
     # 方式四 上面的只是加了背景图，还没有加校验码
     # from PIL import Image, ImageDraw, ImageFont
@@ -52,7 +50,6 @@ def get_valid_img(request):
     # img.save(f, 'png')
     # data = f.getvalue()
 
-
     # 方式五 加上噪点和噪线
     str_pool = string.ascii_letters + string.digits  # 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
     valid_code_str = random.sample(str_pool, 5)
@@ -65,14 +62,14 @@ def get_valid_img(request):
     for i in range(5):
         draw.text((i * 50 + 22, 5), valid_code_str[i], get_random_color(), font=kumo_font)
 
-    width=270
-    height=40
+    width = 270
+    height = 40
     for i in range(8):
-        x1=random.randint(0,width)
-        x2=random.randint(0,width)
-        y1=random.randint(0,height)
-        y2=random.randint(0,height)
-        draw.line((x1,y1,x2,y2),fill=get_random_color())
+        x1 = random.randint(0, width)
+        x2 = random.randint(0, width)
+        y1 = random.randint(0, height)
+        y2 = random.randint(0, height)
+        draw.line((x1, y1, x2, y2), fill=get_random_color())
 
     for i in range(80):
         draw.point([random.randint(0, width), random.randint(0, height)], fill=get_random_color())

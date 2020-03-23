@@ -1,6 +1,6 @@
 
-.article_info .title{
-   margin-bottom: 20px;
+.article_info .title {
+    margin-bottom: 20px;
 }
 
 #div_digg {
@@ -37,7 +37,7 @@
 }
 
 
-input.author{
+input.author {
     background-image: url("/static/font/icon_form.gif");
     background-repeat: no-repeat;
     border: 1px solid #ccc;
@@ -48,11 +48,11 @@ input.author{
 }
 
 
-.comment_con{
+.comment_con {
     margin-top: 10px;
 }
 
-.comment_item{
+.comment_item {
     margin-left: 20px;
 }
 

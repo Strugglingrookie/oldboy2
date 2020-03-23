@@ -12,7 +12,7 @@ $(function () {
             $.ajax({
                 url: '/app01/check/',
                 type: 'post',
-                contentType:"application/json",
+                contentType: "application/json",
                 data: JSON.stringify(data_dic),
                 success: function (data) {
                     var data_json = JSON.parse(data);

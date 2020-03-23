@@ -1,7 +1,9 @@
+# coding=utf-8
 import time
 import pytesseract
 from PIL import Image, ImageEnhance
-from lib.pyse import Pyse
+
+# from lib.pyse import Pyse
 
 
 # pyse = Pyse("chrome")
@@ -26,10 +28,10 @@ sharp_img = ImageEnhance.Contrast(imageCode).enhance(2.0)
 sharp_img.save("code2.png")  # 保存图像增强，二值化之后的验证码图片
 sharp_img.load()  # 对比度增强
 time.sleep(2)
-print('打印图片的信息',sharp_img)  # 打印图片的信息
+print('打印图片的信息', sharp_img)  # 打印图片的信息
 code = pytesseract.image_to_string(sharp_img).strip()  # 读取验证码
 # # 5、收到验证码，进行输入验证
-print('输出验证码',code)  # 输出验证码
+print('输出验证码', code)  # 输出验证码
 # name.send_keys('60037')  # 给定位账号的输入框中输入值
 # password.send_keys('123456')  # 给定位密码的输入框中输入值
 # code1.send_keys(code)  # 给定位验证码的输入框中输入读取到的验证码

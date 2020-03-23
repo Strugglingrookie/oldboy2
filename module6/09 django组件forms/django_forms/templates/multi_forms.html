@@ -13,7 +13,7 @@
             <form action="" method="post">
                 {% csrf_token %}
                 <label for="">用户名</label>
-                 {# 实例对象加字段名，django自动渲染 #}
+                {# 实例对象加字段名，django自动渲染 #}
                 {{ myform.name }} <span class="pull-right" style="color: red">{{ myform.name.errors.0 }}</span>
                 <label for="">密码</label>
                 {{ myform.pwd }}<span class="pull-right" style="color: red">{{ myform.pwd.errors.0 }}</span>
@@ -30,7 +30,7 @@
             <h3>渲染方式二</h3>
             <form action="" method="post">
                 {% csrf_token %}
-                {% for field in myform  %}
+                {% for field in myform %}
                     <label for="">{{ field.label }}</label>
                     {{ field }} <span class="pull-right" style="color: red">{{ field.errors.0 }}</span>
                 {% endfor %}

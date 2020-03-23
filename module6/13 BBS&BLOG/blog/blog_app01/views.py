@@ -7,15 +7,13 @@ from blog_app01.myforms import UserForms
 from blog_app01.models import UserInfo
 
 
-
-
 def index(request):
     return render(request, 'index.html')
 
 
 def login(request):
     if request.method == 'POST':
-        res = {"user":None, "msg":""}
+        res = {"user": None, "msg": ""}
         name = request.POST.get('name')
         pwd = request.POST.get('pwd')
         valid_code = request.POST.get('valid_code')
@@ -59,8 +57,8 @@ def regist(request):
             # 上面的写法不规范，优化后如下
             extra = {}
             if file_obj:
-                extra = {"avatar":file_obj}
-            UserInfo.objects.create_user(username=username, email=email, password=pwd, phone_num=phone,**extra)
+                extra = {"avatar": file_obj}
+            UserInfo.objects.create_user(username=username, email=email, password=pwd, phone_num=phone, **extra)
 
             res["user"] = form.cleaned_data.get("name")
         else:

@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '6y-h4%y^%+2^@_2y7xyz0fc98faozkvh(xp!)h4)q8n0hsx+ee'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -70,7 +68,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'auther.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -100,7 +97,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -113,7 +109,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -128,11 +123,11 @@ LOGIN_URL = '/app01/login'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'auth',# 要连接的数据库，连接前需要创建好
-        'USER':'root',# 连接数据库的用户名
-        'PASSWORD':'',# 连接数据库的密码
-        'HOST':'127.0.0.1',# 连接主机，默认本级
-        'PORT':3308 #  端口 默认3306
+        'NAME': 'auth',  # 要连接的数据库，连接前需要创建好
+        'USER': 'root',  # 连接数据库的用户名
+        'PASSWORD': '',  # 连接数据库的密码
+        'HOST': '127.0.0.1',  # 连接主机，默认本级
+        'PORT': 3308  # 端口 默认3306
     }
 }
 
@@ -140,16 +135,16 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'console':{
-            'level':'DEBUG',
-            'class':'logging.StreamHandler',
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
         'django.db.backends': {
             'handlers': ['console'],
             'propagate': True,
-            'level':'DEBUG',
+            'level': 'DEBUG',
         },
     }
 }

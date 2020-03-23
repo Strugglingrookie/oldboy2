@@ -2,17 +2,18 @@ from django.forms import widgets
 from django import forms
 from django.core.exceptions import ValidationError
 
+wdg1 = widgets.TextInput(attrs={'class': 'form-control'})  # 可以给input标签加任何属性
+wdg2 = widgets.PasswordInput(attrs={'class': 'form-control'})
 
-wdg1 = widgets.TextInput(attrs={'class':'form-control'})  # 可以给input标签加任何属性
-wdg2 = widgets.PasswordInput(attrs={'class':'form-control'})
+
 class UserForms(forms.Form):  # 创建forms校验对象
-    name = forms.CharField(min_length=4, max_length=8,widget=wdg1, label='姓名') # min_length 校验规则
-    pwd = forms.CharField(min_length=4,widget=wdg2, label='密码')
-    r_pwd = forms.CharField(min_length=4,widget=wdg2, label='确认密码')
+    name = forms.CharField(min_length=4, max_length=8, widget=wdg1, label='姓名')  # min_length 校验规则
+    pwd = forms.CharField(min_length=4, widget=wdg2, label='密码')
+    r_pwd = forms.CharField(min_length=4, widget=wdg2, label='确认密码')
     email = forms.EmailField(widget=wdg1, label='邮箱')
-    tel = forms.CharField(min_length=11, max_length=11,widget=wdg1, label='手机号')
+    tel = forms.CharField(min_length=11, max_length=11, widget=wdg1, label='手机号')
 
-    #局部钩子
+    # 局部钩子
     def clean_name(self):
         val = self.cleaned_data.get('name')
         if not val.isdigit():
@@ -28,4 +29,3 @@ class UserForms(forms.Form):  # 创建forms校验对象
             return self.cleaned_data
         else:
             raise ValidationError('两次密码不一致!')
-

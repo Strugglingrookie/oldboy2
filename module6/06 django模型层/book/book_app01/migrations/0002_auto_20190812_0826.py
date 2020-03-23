@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('book_app01', '0001_initial'),
     ]
@@ -68,7 +67,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
                 ('name', models.CharField(max_length=32)),
-                ('authorDetail', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='book_app01.AuthorDetail')),
+                ('authorDetail',
+                 models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='book_app01.AuthorDetail')),
             ],
         ),
         migrations.AddField(

@@ -18,5 +18,5 @@ from django.urls import path, re_path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path(r'^app01/', include(('ajax_app01.urls','ajax_app01'))),
+    re_path(r'^app01/', include(('ajax_app01.urls', 'ajax_app01'))),
 ]

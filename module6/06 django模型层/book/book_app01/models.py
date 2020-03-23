@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -46,7 +47,7 @@ class Book(models.Model):
     publish = models.ForeignKey(to='Publish', to_field='id', on_delete=models.CASCADE)
 
     # 多对多    自动创建第三张表  book_authors
-    authors = models.ManyToManyField(to='Author',)
+    authors = models.ManyToManyField(to='Author', )
 
     def __str__(self):
         return self.title

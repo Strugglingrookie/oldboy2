@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -8,8 +9,8 @@ class UserDetail(models.Model):
     nickname = models.CharField(max_length=32)
     phone = models.BigIntegerField(null=True)
     age = models.BigIntegerField(null=True)
-    address = models.CharField(max_length=32,null=True)
-    dep = models.CharField(max_length=32,null=True)
+    address = models.CharField(max_length=32, null=True)
+    dep = models.CharField(max_length=32, null=True)
 
 
 class UserInfo(models.Model):

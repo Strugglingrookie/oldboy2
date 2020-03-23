@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '1#h(9u@wj0%p!%&2(@i4^ylc%n46l+fviu8)$+l6-4mkqxi&zm'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -70,7 +68,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -100,7 +97,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -114,7 +110,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
@@ -123,18 +118,18 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'statics')
 ]
 
-AUTH_USER_MODEL="blog_app01.UserInfo"
+AUTH_USER_MODEL = "blog_app01.UserInfo"
 
 LOGIN_URL = '/app01/login'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'blog',# 要连接的数据库，连接前需要创建好
-        'USER':'root',# 连接数据库的用户名
-        'PASSWORD':'root',# 连接数据库的密码
-        'HOST':'127.0.0.1',# 连接主机，默认本级
-        'PORT':3306 #  端口 默认3306
+        'NAME': 'blog',  # 要连接的数据库，连接前需要创建好
+        'USER': 'root',  # 连接数据库的用户名
+        'PASSWORD': 'root',  # 连接数据库的密码
+        'HOST': '127.0.0.1',  # 连接主机，默认本级
+        'PORT': 3306  # 端口 默认3306
     }
 }
 
@@ -142,20 +137,20 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'console':{
-            'level':'DEBUG',
-            'class':'logging.StreamHandler',
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
         'django.db.backends': {
             'handlers': ['console'],
             'propagate': True,
-            'level':'DEBUG',
+            'level': 'DEBUG',
         },
     }
 }
 
 # 与用户上传相关的配置  类似于static 和 statics的关系
-MEDIA_URL="/media/"  # 浏览器可以同static一样，通过media直接访问下面配置目录的media数据
-MEDIA_ROOT=os.path.join(BASE_DIR,"media")
+MEDIA_URL = "/media/"  # 浏览器可以同static一样，通过media直接访问下面配置目录的media数据
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")

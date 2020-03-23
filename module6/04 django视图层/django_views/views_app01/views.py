@@ -1,25 +1,26 @@
-from django.shortcuts import render,redirect,HttpResponse
+from django.shortcuts import render, redirect, HttpResponse
 from views_app01.tools import Mysql
+
 
 # Create your views here.
 
 
 def index(request):
-    return render(request,'index.html',{'word':'嗯哼'})
+    return render(request, 'index.html', {'word': '嗯哼'})
 
 
 # HttpRequest对象
 def login(request):
     # request属性  django将请求报文中的请求行、首部信息、内容主体封装成 HttpRequest 类中的属性
     # body  是post请求参数，一个字符串，代表请求报文的主体。在处理非 HTTP 形式的报文时非常有用，例如：二进制图片、XML,Json等
-    print('request.body:\n',request.body)
+    print('request.body:\n', request.body)
 
     # method 请求方式 get post 等
     method = request.method
-    print('method:\n',method)
+    print('method:\n', method)
 
     # path  一个字符串，表示请求的路径组件（不含域名）
-    print('path:\n',request.path)
+    print('path:\n', request.path)
 
     # encoding   一个字符串，表示提交的数据的编码方式（如果为 None 则表示使用 DEFAULT_CHARSET 的设置，默认为 'utf-8'）
     # 这个属性是可写的，你可以修改它来修改访问表单数据使用的编码
@@ -61,13 +62,12 @@ def login(request):
     # 如果用户当前没有登录，user 将设置为 django.contrib.auth.models.AnonymousUser 的一个实例。你可以通过 is_authenticated() 区分它们
     print('user:\n', request.user)
 
-
     # request方法
     # get_full_path  返回 path，如果可以将加上查询字符串,即get请求后面的查询参数，如：/app01/login/?a=1&b=2。
-    print('get_full_path:\n',request.get_full_path())
+    print('get_full_path:\n', request.get_full_path())
 
     # is_ajax
-    print('is_ajax:\n',request.is_ajax())
+    print('is_ajax:\n', request.is_ajax())
     '''如果请求是通过XMLHttpRequest 发起的，则返回True，方法是检查 HTTP_X_REQUESTED_WITH 相应的首部是否是字符串'XMLHttpRequest'。
 　　大部分现代的 JavaScript 库都会发送这个头部。如果你编写自己的 XMLHttpRequest 调用（在浏览器端），你必须手工设置这个值来让 is_ajax() 可以工作。
 　　如果一个响应需要根据请求是否是通过AJAX 发起的，并且你正在使用某种形式的缓存例如Django 的 cache middleware，
@@ -77,23 +77,23 @@ def login(request):
         # 如果使用 POST 上传文件的话，文件信息将包含在 FILES 属性中。
         # 注意：键值对的值是多个的时候,比如checkbox类型的input标签，select标签，需要用：request.POST.getlist("hobby")
         req_data = request.POST  # 一个类似于字典的对象，如果请求中包含表单数据，则将这些数据封装成 QueryDict 对象。
-        print('request.POST:\n',req_data)
+        print('request.POST:\n', req_data)
         user = req_data.get('user')
         pwd = req_data.get('pwd')
         mysql_check = Mysql('localhost', 3306, 'root', 'root', dbname='oldboy', charset="utf8")
         sql = "select * from user_info WHERE  name=%s and password=%s"
         res = mysql_check.exec_sql(sql, user, pwd)
-        if res and isinstance(res,list):
+        if res and isinstance(res, list):
             return render(request, 'index.html')
         else:
             return HttpResponse('username or password is wrong!')
     else:
-        print('request.GET:\n',request.GET)  # 一个类似于字典的对象，包含 HTTP GET 的所有参数。详情请参考 QueryDict 对象
+        print('request.GET:\n', request.GET)  # 一个类似于字典的对象，包含 HTTP GET 的所有参数。详情请参考 QueryDict 对象
         return render(request, 'login.html')
 
 
 # HttpResponse 对象
-#响应对象主要有三种形式：HttpResponse()    render()    redirect()
+# 响应对象主要有三种形式：HttpResponse()    render()    redirect()
 def regist(request):
     method = request.method
     if method.lower() == 'post':
@@ -104,10 +104,10 @@ def regist(request):
             mysql_check = Mysql('localhost', 3306, 'root', 'root', dbname='oldboy', charset="utf8")
             sql = "select * from user_info WHERE  name=%s"
             res = mysql_check.exec_sql(sql, user)
-            if res and isinstance(res,list):
+            if res and isinstance(res, list):
                 return HttpResponse('username is already exits!')
             insert_sql = 'insert into user_info (name,password) VALUES (%s,%s) '
-            mysql_check.exec_sql(insert_sql, user,pwd)
+            mysql_check.exec_sql(insert_sql, user, pwd)
 
             # redirect() 重定向
             # return redirect("/app01/index")  # 传递要重定向的一个硬编码的URL
@@ -134,4 +134,4 @@ def regist(request):
     '''request： 用于生成响应的请求对象。
     template_name：要使用的模板的完整名称，可选的参数
     context：添加到模板上下文的一个字典。默认是一个空字典。如果字典中的某个值是可调用的，视图将在渲染模板之前调用它。'''
-    return render(request,'register.html',{'word':'hello world!'})
+    return render(request, 'register.html', {'word': 'hello world!'})

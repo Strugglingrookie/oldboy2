@@ -14,11 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,re_path,include
+from django.urls import path, re_path, include
 
 urlpatterns = [
     # 路由分发  app01开头的路径，指定到app01.urls文件，由它去分发
     # re_path(r'^app01/',include('app01.urls')),
-    re_path(r'^app01/',include(('app01.urls','app01'))),  #('app01.urls','app01')中 app01是名称空间
-    re_path(r'^app02/',include(('app02.urls','app02'))),  # 避免不同应用中通用的反向解析路径覆盖 HTML模板在用的时候指定名称空间即可
+    re_path(r'^app01/', include(('app01.urls', 'app01'))),  # ('app01.urls','app01')中 app01是名称空间
+    re_path(r'^app02/', include(('app02.urls', 'app02'))),  # 避免不同应用中通用的反向解析路径覆盖 HTML模板在用的时候指定名称空间即可
 ]

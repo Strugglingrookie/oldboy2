@@ -1,5 +1,6 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 from book_app01.models import *
+
 
 # Create your views here.
 
@@ -51,7 +52,7 @@ def add_book(request):
                 res = Book.objects.create(title=title, price=price, pub_date=date, publish_id=publish_id)
                 res.authors.add(*authors_id_lis)
                 return redirect('/app01/book')
-            opt_res = '书籍【%s】已存在,请修改后提交！'%title
+            opt_res = '书籍【%s】已存在,请修改后提交！' % title
         else:
             opt_res = '输入不能为空,请修改后提交！'
     publish_obj = Publish.objects.all()
@@ -96,4 +97,3 @@ def delete_book(request, num=None):
         book_obj.authors.clear()
         book_obj.delete()
     return redirect('/app01/book')
-

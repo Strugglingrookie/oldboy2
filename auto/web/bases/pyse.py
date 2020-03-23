@@ -71,35 +71,6 @@ class Pyse(object):
             raise NameError(
                 "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
 
-    def element_wait_click(self, css, secs=5):
-        '''
-        Waiting for an element to display.
-
-        Usage:
-        driver.element_wait("css=>#el",10)
-        '''
-        if "=>" not in css:
-            raise NameError("Positioning syntax errors, lack of '=>'.")
-
-        by = css.split("=>")[0]
-        value = css.split("=>")[1]
-
-        if by == "id":
-            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.ID, value)))
-        elif by == "name":
-            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.NAME, value)))
-        elif by == "class":
-            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.CLASS_NAME, value)))
-        elif by == "link_text":
-            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.LINK_TEXT, value)))
-        elif by == "xpath":
-            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.XPATH, value)))
-        elif by == "css":
-            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.CSS_SELECTOR, value)))
-        else:
-            raise NameError(
-                "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
-
     def get_element(self, css):
         '''
         Judge element positioning way, and returns the element.
@@ -130,9 +101,8 @@ class Pyse(object):
     def set_cookies(self,cookies):
         cookie_lis = cookies.split(';')
         for cookie in cookie_lis:
-            if '=' in cookie:
-                key,value = cookie.split('=')
-                self.driver.add_cookie({'name':key,'value':value})
+            key,value = cookie.split('=')
+            self.driver.add_cookies({'name':key,'value':value})
 
     def open(self, url):
         '''
@@ -191,7 +161,7 @@ class Pyse(object):
         Usage:
         driver.click("css=>#el")
         '''
-        self.element_wait_click(css)
+        self.element_wait(css)
         el = self.get_element(css)
         el.click()
 
@@ -415,19 +385,6 @@ class Pyse(object):
         original_windows = self.driver.current_window_handle
         el = self.get_element(css)
         el.click()
-        all_handles = self.driver.window_handles
-        for handle in all_handles:
-            if handle != original_windows:
-                self.driver.switch_to.window(handle)
-
-    def switch_window(self):
-        '''
-        Open the new window and switch the handle to the newly opened window.
-
-        Usage:
-        driver.open_new_window()
-        '''
-        original_windows = self.driver.current_window_handle
         all_handles = self.driver.window_handles
         for handle in all_handles:
             if handle != original_windows:

@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse, redirect
 from django.contrib import auth
 from middle_app01.myforms import LoginForm
 
+
 # Create your views here.
 
 
@@ -14,7 +15,7 @@ def index(request):
 
 
 def secret(request):
-    return render(request, 'secret.html',locals())
+    return render(request, 'secret.html', locals())
 
 
 def login(request):
@@ -39,4 +40,3 @@ def login(request):
     else:
         form = LoginForm()
         return render(request, 'login.html', locals())
-

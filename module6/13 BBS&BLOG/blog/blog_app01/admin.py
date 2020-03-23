@@ -4,6 +4,7 @@ from django.contrib import admin
 
 
 from blog_app01 import models
+
 admin.site.register(models.UserInfo)
 admin.site.register(models.UserBlog)
 admin.site.register(models.Category)
