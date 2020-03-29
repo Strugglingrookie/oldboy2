@@ -97,48 +97,116 @@
 #
 # print(bubble_sort(li))
 
-def sub_sequence1(a,b):
-    i,j = 0,0
-    while i<len(a) and j<len(b):
-        if a[i] == b[j]:
-            i+=1
-            j+=1
-        else:
-            j+=1
-    if i==len(a):
-        return True
-    return False
+# def sub_sequence1(a,b):
+#     i,j = 0,0
+#     while i<len(a) and j<len(b):
+#         if a[i] == b[j]:
+#             i+=1
+#             j+=1
+#         else:
+#             j+=1
+#     if i==len(a):
+#         return True
+#     return False
+#
+# def sub_sequence(a,b):
+#     b = iter(b)
+#     return all(i in b for i in a)
+#
+# # print(sub_sequence([1, 3, 5], [1, 2, 3, 4, 5]))
+# # print(sub_sequence([1, 4, 5], [1, 2, 3, 4, 5]))
+# # print(sub_sequence([1, 6, 5], [1, 2, 3, 4, 5]))
+#
+#
+#
+# def is_subsequence(a, b):
+#     b = iter(b)
+#     # print(b)
+#     #
+#     # gen = (i for i in a)
+#     # print(gen)
+#     #
+#     # for i in gen:
+#     #     print(i)
+#     #
+#     # gen = ((i in b) for i in a)
+#     # print(gen)
+#     #
+#     # for i in gen:
+#     #     print(i)
+#
+#     return all(((i in b) for i in a))
+#
+# print(is_subsequence([1, 3, 5], [1, 2, 3, 4, 5]))
+# # print(is_subsequence([1, 4, 3], [1, 2, 3, 4, 5]))
+#
+# print('哈哈哈哈')
 
-def sub_sequence(a,b):
-    b = iter(b)
-    return all(i in b for i in a)
 
-# print(sub_sequence([1, 3, 5], [1, 2, 3, 4, 5]))
-# print(sub_sequence([1, 4, 5], [1, 2, 3, 4, 5]))
-# print(sub_sequence([1, 6, 5], [1, 2, 3, 4, 5]))
+import requests
 
+def get_userinfo():
+    url = "https://testwechat3005.yylending.com/server"
 
+    # 校验手机号的请求，为了拿到cookies
+    check_data = {
+        "model": "user",
+        "action": "judgeInvestor",
+        "params": {
+            "accountNo": "13103290001"
+        }
+    }
 
-def is_subsequence(a, b):
-    b = iter(b)
-    # print(b)
-    #
-    # gen = (i for i in a)
-    # print(gen)
-    #
-    # for i in gen:
-    #     print(i)
-    #
-    # gen = ((i in b) for i in a)
-    # print(gen)
-    #
-    # for i in gen:
-    #     print(i)
+    # 发送验证按
+    sms_code_data = {
+        "model": "verify",
+        "action": "getSmsCode",
+        "mobile": "13103290001",
+        "type": "1",
+        "operation": "reg",
+        "captcha": "mobile",
+        "smsLogin": "true"
+    }
 
-    return all(((i in b) for i in a))
+    # 登陆
+    login_data = {
+        "model": "user",
+        "action": "smsLogin",
+        "params": {
+            "name": "13103290001",
+            "smsCode": "123456",
+            "userId": "undefined",
+            "channel": "cma",
+            "thirdSource": "",
+            "thirdId": ""
+        }
+    }
 
-print(is_subsequence([1, 3, 5], [1, 2, 3, 4, 5]))
-# print(is_subsequence([1, 4, 3], [1, 2, 3, 4, 5]))
+    # 拿到用户信息
+    info_data = {
+        "model": "application",
+        "action": "getUserInfo",
+        "type": "baseInfo"
+    }
 
-print('哈哈哈哈')
+    # 请求头
+    headers = {"content-type":"application/json;charset=UTF-8"}
+
+    # 手机号验证这个请求，主要是为了拿到cookies，下面三个请求都是基于这个cookies进行的
+    res = requests.request("post",url,json=check_data,headers=headers)
+    cookies = res.cookies
+
+    # 发送验证码
+    requests.request("post", url, json=sms_code_data, headers=headers,cookies=cookies)
+
+    # 登陆
+    requests.request("post", url, json=login_data, headers=headers,cookies=cookies)
+
+    # 拿到用户信息
+    res = requests.request("post", url, json=info_data, headers=headers, cookies=cookies).json()
+
+    return res
+
+print(get_userinfo())
+
 
