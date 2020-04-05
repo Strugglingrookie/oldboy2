@@ -121,17 +121,23 @@ class Pyapp(Pyse):
         value = css.split("=>")[1]
 
         if by == "id":
-            WebDriverWait(self.d, secs, 1).until(EC.presence_of_element_located((MobileBy.ID, value)))
+            WebDriverWait(self.d, secs, 1).until(
+                EC.presence_of_element_located((MobileBy.ID, value)))
         elif by == "name":
-            WebDriverWait(self.d, secs, 1).until(EC.presence_of_element_located((MobileBy.NAME, value)))
+            WebDriverWait(self.d, secs, 1).until(
+                EC.presence_of_element_located((MobileBy.NAME, value)))
         elif by == "class":
-            WebDriverWait(self.d, secs, 1).until(EC.presence_of_element_located((MobileBy.CLASS_NAME, value)))
+            WebDriverWait(self.d, secs, 1).until(
+                EC.presence_of_element_located((MobileBy.CLASS_NAME, value)))
         elif by == "link_text":
-            WebDriverWait(self.d, secs, 1).until(EC.presence_of_element_located((MobileBy.LINK_TEXT, value)))
+            WebDriverWait(self.d, secs, 1).until(
+                EC.presence_of_element_located((MobileBy.LINK_TEXT, value)))
         elif by == "xpath":
-            WebDriverWait(self.d, secs, 1).until(EC.presence_of_element_located((MobileBy.XPATH, value)))
+            WebDriverWait(self.d, secs, 1).until(
+                EC.presence_of_element_located((MobileBy.XPATH, value)))
         elif by == "css":
-            WebDriverWait(self.d, secs, 1).until(EC.presence_of_element_located((MobileBy.CSS_SELECTOR, value)))
+            WebDriverWait(self.d, secs, 1).until(
+                EC.presence_of_element_located((MobileBy.CSS_SELECTOR, value)))
         elif by == "content":
             WebDriverWait(self.d, secs, 1).until(
                 EC.presence_of_element_located((MobileBy.ACCESSIBILITY_ID, value)))
@@ -143,7 +149,8 @@ class Pyapp(Pyse):
                 EC.presence_of_element_located((MobileBy.IOS_PREDICATE, value)))
         else:
             raise NameError(
-                "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
+                "Please enter the correct targeting elements,'id','name','class',"
+                "'link_text','xpath','css'.")
 
     def random_action(self, css):
         if "=>" not in css:
@@ -172,7 +179,8 @@ class Pyapp(Pyse):
                 return EC.visibility_of_element_located((MobileBy.IOS_PREDICATE, value))
             else:
                 raise NameError(
-                    "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
+                    "Please enter the correct targeting elements,'id','name','class',"
+                    "'link_text','xpath','css'.")
         except Exception as e:
             pass
 

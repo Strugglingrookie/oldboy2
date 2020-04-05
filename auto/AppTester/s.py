@@ -3,10 +3,10 @@ import time
 # https://www.cnblogs.com/bluestorm/p/4886662.html
 desired_caps = {}
 desired_caps['platformName'] = 'Android'
-desired_caps['platformVersion'] = '4.4.2'
-desired_caps['deviceName'] = '127.0.0.1:62001'
+desired_caps['platformVersion'] = '5.1.1'
+desired_caps['deviceName'] = 'emulator-5554'
 desired_caps['appPackage'] = 'com.android.browser'
-desired_caps['appActivity'] = '.BrowserActivity'
+desired_caps['appActivity'] = 'com.android.browser.BrowserActivity'
 desired_caps["unicodeKeyboard"] = "True"
 desired_caps["resetKeyboard"] = "True"
 desired_caps["noReset"] = "True"
@@ -15,6 +15,9 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 print(driver.network_connection)
 from appium.webdriver.connectiontype import ConnectionType
 driver.set_network_connection(ConnectionType.ALL_NETWORK_ON)
+ele1 = driver.find_element_by_id('android:id/button1')
+ele1.click()
+time.sleep(2)
 e = driver.find_element_by_id('url')
 e.send_keys('http://ui.imdsx.cn')
 time.sleep(2)

@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="ui自动化">
-      <change afterPath="$PROJECT_DIR$/auto/app/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/app_bases/app_operate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/app_bases/find_element.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/app_bases/huadong.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/app_bases/native_webview.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/app_bases/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/bin/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/lib/pyapp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auto/app/lib/pyse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/AppTester/lib/pyapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/AppTester/lib/pyapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/AppTester/s.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/AppTester/s.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,23 +131,23 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/Study/oldboy2/module6/07 django与ajax/ajax/ajax_app01/models.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auto/web/lib" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/auto/app/lib" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Study\oldboy2\auto\web\lib" />
-      <recent name="E:\Study\oldboy2\auto\web\page" />
-      <recent name="E:\Study\oldboy2\auto\web\bases" />
-      <recent name="E:\Study\oldboy2\auto" />
-      <recent name="D:\oldboy\auto\web\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\oldboy\auto\web\bases" />
       <recent name="D:\oldboy\platform\layuiAdmin" />
       <recent name="D:\oldboy\auto\utp\tools" />
       <recent name="D:\oldboy\auto\utp\unittest_basic" />
       <recent name="D:\oldboy\venv\Lib\site-packages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study\oldboy2\auto\app\lib" />
+      <recent name="E:\Study\oldboy2\auto\web\lib" />
+      <recent name="E:\Study\oldboy2\auto\web\page" />
+      <recent name="E:\Study\oldboy2\auto\web\bases" />
+      <recent name="E:\Study\oldboy2\auto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -153,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.testing">
+  <component name="RunManager" selected="Python.pyapp">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="oldboy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,29 +209,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07image_to_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ajax" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Miniconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/web/bases" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/web/bases/07image_to_code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="my_faker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="app_operate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ajax" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,12 +217,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/web/page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/app" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/web/page/my_faker.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/app_operate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,51 +231,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="person" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ajax" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Miniconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/web/bases" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/web/bases/person.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="book" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Miniconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/testing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="yyfax_page" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="huadong" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ajax" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -296,12 +239,78 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/web/page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/app" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/web/page/yyfax_page.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/huadong.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="native_webview" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="auther" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Miniconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/app" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/native_webview.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pyapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ajax" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/app/lib" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/lib/pyapp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="s" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="auther" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Miniconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/AppTester" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/AppTester/s.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,11 +399,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.testing" />
-        <item itemvalue="Python.yyfax_page" />
-        <item itemvalue="Python.my_faker" />
-        <item itemvalue="Python.person" />
-        <item itemvalue="Python.07image_to_code" />
+        <item itemvalue="Python.pyapp" />
+        <item itemvalue="Python.huadong" />
+        <item itemvalue="Python.app_operate" />
+        <item itemvalue="Python.native_webview" />
+        <item itemvalue="Python.s" />
       </list>
     </recent_temporary>
   </component>
@@ -412,14 +421,10 @@
       <workItem from="1584102652353" duration="1145000" />
       <workItem from="1584103923963" duration="11921000" />
       <workItem from="1584760637355" duration="168214000" />
-      <workItem from="1585378127868" duration="5055000" />
-    </task>
-    <task id="LOCAL-00012" summary="module6">
-      <created>1564922773721</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1564922773721</updated>
+      <workItem from="1585378127868" duration="7602000" />
+      <workItem from="1585972697754" duration="16906000" />
+      <workItem from="1586066518820" duration="5049000" />
+      <workItem from="1586072505482" duration="4636000" />
     </task>
     <task id="LOCAL-00013" summary="module6">
       <created>1564992012785</created>
@@ -757,7 +762,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584953821762</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="ui自动化">
+      <created>1585471870935</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1585471870936</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,11 +895,14 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/oldboy$Unittests_in_test_bug_py.coverage" NAME="Unittests in test_bug.py Coverage Results" MODIFIED="1584266897998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/test_case" />
     <SUITE FILE_PATH="coverage/oldboy$Unittests_for_setUp_tearDown_MyTest.coverage" NAME="Unittests for setUp_tearDown.MyTest Coverage Results" MODIFIED="1582956519528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp" />
+    <SUITE FILE_PATH="coverage/oldboy2$find_element.coverage" NAME="find_element Coverage Results" MODIFIED="1585997999998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app" />
     <SUITE FILE_PATH="coverage/oldboy$02.coverage" NAME="02钢条切割 Coverage Results" MODIFIED="1581749839891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/03算法进阶" />
     <SUITE FILE_PATH="coverage/oldboy$05.coverage" NAME="05欧几里得算法 Coverage Results" MODIFIED="1581768086444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/03算法进阶" />
+    <SUITE FILE_PATH="coverage/oldboy2$s.coverage" NAME="s Coverage Results" MODIFIED="1586062738339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/AppTester" />
     <SUITE FILE_PATH="coverage/oldboy$template_method.coverage" NAME="template_method Coverage Results" MODIFIED="1581816631056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module8/设计模式" />
     <SUITE FILE_PATH="coverage/oldboy$as.coverage" NAME="as Coverage Results" MODIFIED="1582684101366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/atp" />
     <SUITE FILE_PATH="coverage/oldboy$flask_server.coverage" NAME="flask_server Coverage Results" MODIFIED="1583078203102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/bin" />
+    <SUITE FILE_PATH="coverage/oldboy2$app_operate.coverage" NAME="app_operate Coverage Results" MODIFIED="1586071234471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app" />
     <SUITE FILE_PATH="coverage/oldboy$07beautiful_report.coverage" NAME="07beautiful_report Coverage Results" MODIFIED="1582961109711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp" />
     <SUITE FILE_PATH="coverage/oldboy$test_bug.coverage" NAME="test_bug Coverage Results" MODIFIED="1584266934880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/test_case" />
     <SUITE FILE_PATH="coverage/oldboy$setUp_tearDown.coverage" NAME="setUp_tearDown Coverage Results" MODIFIED="1582956537711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp" />
@@ -897,10 +912,12 @@
     <SUITE FILE_PATH="coverage/oldboy$login_test.coverage" NAME="login_test Coverage Results" MODIFIED="1583048615961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/cases" />
     <SUITE FILE_PATH="coverage/oldboy$flast_server.coverage" NAME="flast_server Coverage Results" MODIFIED="1582812246070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto" />
     <SUITE FILE_PATH="coverage/oldboy$mock.coverage" NAME="mock Coverage Results" MODIFIED="1583081834219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/platform/layuiAdmin" />
+    <SUITE FILE_PATH="coverage/oldboy2$huadong.coverage" NAME="huadong Coverage Results" MODIFIED="1586071890000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app" />
     <SUITE FILE_PATH="coverage/oldboy$read_case__1_.coverage" NAME="read_case (1) Coverage Results" MODIFIED="1582809467780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
     <SUITE FILE_PATH="coverage/oldboy2$my_faker.coverage" NAME="my_faker Coverage Results" MODIFIED="1584782401409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/page" />
     <SUITE FILE_PATH="coverage/oldboy$test.coverage" NAME="test Coverage Results" MODIFIED="1583121201293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/oldboy$test_index.coverage" NAME="test_index Coverage Results" MODIFIED="1583077516480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/cases" />
+    <SUITE FILE_PATH="coverage/oldboy2$pyapp.coverage" NAME="pyapp Coverage Results" MODIFIED="1586079714882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/lib" />
     <SUITE FILE_PATH="coverage/oldboy$interface_star.coverage" NAME="interface_star Coverage Results" MODIFIED="1582811015320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/平台/send_red_packages/bin" />
     <SUITE FILE_PATH="coverage/oldboy$read_case.coverage" NAME="read_case Coverage Results" MODIFIED="1582799370055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/atp/lib" />
     <SUITE FILE_PATH="coverage/oldboy2$person.coverage" NAME="person Coverage Results" MODIFIED="1584775323837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/bases" />
@@ -913,10 +930,12 @@
     <SUITE FILE_PATH="coverage/oldboy$testing.coverage" NAME="testing Coverage Results" MODIFIED="1582105025699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy2$yyfax_page.coverage" NAME="yyfax_page Coverage Results" MODIFIED="1584925602231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/page" />
     <SUITE FILE_PATH="coverage/oldboy$request_send.coverage" NAME="request_send Coverage Results" MODIFIED="1582870775122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
+    <SUITE FILE_PATH="coverage/oldboy2$native_webview.coverage" NAME="native_webview Coverage Results" MODIFIED="1586069968206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app" />
     <SUITE FILE_PATH="coverage/oldboy$start.coverage" NAME="start Coverage Results" MODIFIED="1583078331857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/bin" />
     <SUITE FILE_PATH="coverage/oldboy$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1582878760549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp" />
     <SUITE FILE_PATH="coverage/oldboy$base_case.coverage" NAME="base_case Coverage Results" MODIFIED="1583058043278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/cases" />
     <SUITE FILE_PATH="coverage/oldboy2$07image_to_code.coverage" NAME="07image_to_code Coverage Results" MODIFIED="1584771805310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/bases" />
+    <SUITE FILE_PATH="coverage/oldboy2$test.coverage" NAME="test Coverage Results" MODIFIED="1585985879226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app" />
     <SUITE FILE_PATH="coverage/oldboy$parse_response.coverage" NAME="parse_response Coverage Results" MODIFIED="1582943045729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
     <SUITE FILE_PATH="coverage/oldboy$settings.coverage" NAME="settings Coverage Results" MODIFIED="1582714202141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/atp/config" />
     <SUITE FILE_PATH="coverage/oldboy2$testing.coverage" NAME="testing Coverage Results" MODIFIED="1585470947674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
