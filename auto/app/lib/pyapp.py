@@ -49,37 +49,6 @@ class Pyapp(Pyse):
         for i in range(n):
             self.d.swipe(x1,y1,x2,y1,t)
 
-    def get_element(self,css):
-        if "=>" not in css:
-            raise NameError("Positioning syntax errors, lack of '=>'.")
-
-        by = css.split("=>")[0]
-        value = css.split("=>")[1]
-
-        if by == "id":
-            element = self.driver.find_element_by_id(value)
-        elif by == "name":
-            element = self.driver.find_element_by_name(value)
-        elif by == "class":
-            element = self.driver.find_element_by_class_name(value)
-        elif by == "link_text":
-            element = self.driver.find_element_by_link_text(value)
-        elif by == "xpath":
-            element = self.driver.find_element_by_xpath(value)
-        elif by == "css":
-            element = self.driver.find_element_by_css_selector(value)
-        elif by == "content":
-            element = self.driver.find_element_by_accessibility_id(value)
-        elif by == "android":
-            element = self.driver.find_element_by_android_uiautomator(value)
-        elif by == "ios":
-            element = self.driver.find_element_by_ios_predicate(value)
-        else:
-            raise NameError(
-                "Please enter the correct targeting elements,'id','name','class',"
-                "'link_text','xpath','css','content','android','ios'.")
-        return element
-
     def element_wait(self, css, secs=5):
         '''
         Waiting for an element to display.
@@ -124,6 +93,37 @@ class Pyapp(Pyse):
             raise NameError(
                 "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
 
+    def get_element(self,css):
+        if "=>" not in css:
+            raise NameError("Positioning syntax errors, lack of '=>'.")
+
+        by = css.split("=>")[0]
+        value = css.split("=>")[1]
+
+        if by == "id":
+            element = self.driver.find_element_by_id(value)
+        elif by == "name":
+            element = self.driver.find_element_by_name(value)
+        elif by == "class":
+            element = self.driver.find_element_by_class_name(value)
+        elif by == "link_text":
+            element = self.driver.find_element_by_link_text(value)
+        elif by == "xpath":
+            element = self.driver.find_element_by_xpath(value)
+        elif by == "css":
+            element = self.driver.find_element_by_css_selector(value)
+        elif by == "content":
+            element = self.driver.find_element_by_accessibility_id(value)
+        elif by == "android":
+            element = self.driver.find_element_by_android_uiautomator(value)
+        elif by == "ios":
+            element = self.driver.find_element_by_ios_predicate(value)
+        else:
+            raise NameError(
+                "Please enter the correct targeting elements,'id','name','class',"
+                "'link_text','xpath','css','content','android','ios'.")
+        return element
+
     def element_wait_click(self, css, secs=5):
         '''
         Waiting for an element to display.
@@ -153,7 +153,7 @@ class Pyapp(Pyse):
             WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.ACCESSIBILITY_ID, value)))
         elif by == "android":
             WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.ANDROID_UIAUTOMATOR, value)))
-        elif by == "":
+        elif by == "ios":
             WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.IOS_PREDICATE, value)))
         else:
             raise NameError(
@@ -167,7 +167,7 @@ class Pyapp(Pyse):
         Usage:
         driver.click("css=>#el")
         '''
-        self.element_wait(css)
+        self.element_wait_click(css)
         el = self.get_element(css)
         el.click()
 
@@ -233,6 +233,12 @@ class Pyapp(Pyse):
     def is_app_installed(self, package):
         return self.d.is_app_installed(package)
 
+    def remove_app(self,package):
+        self.d.remove_app(package)
+
+    def install_app(self,package):
+        self.d.install_app(package)
+
     def set_value(self, element, value):
         self.d.set_value(element, value)
 
@@ -248,4 +254,3 @@ class Pyapp(Pyse):
             import threading
             self.get_windows_img(APPPICTUREPATH.format(threading.current_thread().getName()) + name + '.jpg')
             return False
-
