@@ -51,7 +51,7 @@ class PHTest(unittest.TestCase):
         inne_urls = {
             'upload_report': '%s/InnerEval/api/pbcc/report/fileUpload'%inner_url,
             'query_credit': '%s/InnerEval/api/pbcc/report/apply'%inner_url,
-            'query_result': '%s/InnerEval/api/credit/result/list'%inner_url
+            'query_result': '%s/InnerEval/api/credit/report/list'%inner_url
         }
         return inne_urls
 

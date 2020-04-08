@@ -33,9 +33,9 @@ class Result(TestResult):
         self.error_count = 0
         self.verbosity = verbosity
 
-        # result is a list of result in 4 tuple
+        # report is a list of report in 4 tuple
         # (
-        #   result code (0: success; 1: fail; 2: error),
+        #   report code (0: success; 1: fail; 2: error),
         #   TestCase object,
         #   Test output (byte string),
         #   stack trace,

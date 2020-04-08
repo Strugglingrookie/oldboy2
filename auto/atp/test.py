@@ -11,7 +11,7 @@ import jsonpath, faker,threading,re
 dic = {
 	"code": 200,
 	"message": "成功!",
-	"result": [
+	"report": [
 		{
 			"sid": "30372629",
 			"text": "活跃一下气氛",
@@ -29,10 +29,10 @@ dic = {
 	]
 }
 #
-# print(dic["result"][0]["video"])
+# print(dic["report"][0]["video"])
 print(jsonpath.jsonpath(dic, '$..%s'%'video')) # 模糊匹配key为video的value，返回的是列表
 # print(jsonpath.jsonpath(dic, '$.student')) # 没有值返回false
-# print(jsonpath.jsonpath(dic, '$.result[0].text'))
+# print(jsonpath.jsonpath(dic, '$.report[0].text'))
 
 
 # faker 生成 phone,card_id,name,email,bankcard_id

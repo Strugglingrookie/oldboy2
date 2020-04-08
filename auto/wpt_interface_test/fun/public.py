@@ -1229,7 +1229,7 @@ def submit(business_type):
 
     handel_credit = CreditInquiry()
     result = handel_credit.query_credit(get_user_info)
-    print('result:',result)
+    print('report:',result)
 
     if business_type == config.business_type['HXB'][0]:
 

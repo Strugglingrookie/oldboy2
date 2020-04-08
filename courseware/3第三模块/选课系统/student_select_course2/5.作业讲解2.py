@@ -112,12 +112,12 @@ def login():
         for line in f:
             usr,pwd,identify = line.strip().split('|')
             if usr == name and pawd == pwd:
-                return {'result':True,'name':name,'id':identify}
+                return {'report':True,'name':name,'id':identify}
         else:
-            return {'result':False,'name':name}
+            return {'report':False,'name':name}
 
 ret = login()
-if ret['result']:
+if ret['report']:
     print('登录成功')
     if hasattr(sys.modules[__name__],ret['id']):
         cls = getattr(sys.modules[__name__],ret['id'])

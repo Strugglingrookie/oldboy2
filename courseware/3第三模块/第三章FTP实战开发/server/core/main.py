@@ -228,7 +228,7 @@ class FTPServer(object):
 
 
     def _ls(self,data):
-        """run dir command and send result to file_client"""
+        """run dir command and send report to file_client"""
         cmd_obj = subprocess.Popen('dir %s' %self.user_current_dir,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         stdout = cmd_obj.stdout.read()
         stderr = cmd_obj.stderr.read()

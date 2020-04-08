@@ -1,0 +1,50 @@
+tester:
+# ----------------通用的配置-------------
+    # appium专用输入法
+    unicodeKeyboard: True
+    # 结束运行后重置为原来的输入法
+    resetKeyboard: True
+    #　是否清楚数据启动
+#    noReset: True
+
+
+# ----------------app------------
+    appPackage: com.android.browser
+    appActivity: .BrowserActivity
+#    appPackage: com.tencent.mobileqq
+#    appActivity: com.tencent.mobileqq.activity.SplashActivity
+
+# ------操作系统-------
+device_type: android
+
+# -----手机---------
+devices:
+  android:
+# Android模拟器1
+    - platformName: Android
+      platformVersion: 5.0.2
+      ip: 127.0.0.1
+      port: 8081
+      udid: emulator-5556
+      deviceName: emulator-5556
+      name: 模拟器1
+
+# Android模拟器2
+    - platformName: Android
+      platformVersion: 5.0.2
+      ip: 127.0.0.199
+      port: 9000
+      udid: emulator-5554
+      deviceName: emulator-5554
+      name: 模拟器2
+
+
+#　夜游神模拟器
+#    - platformName: Android
+#      platformVersion: 4.4.2
+#      ip: 127.0.0.1
+#      port: 1819
+#      udid: 127.0.0.1:62001
+#      deviceName: 127.0.0.1:62001
+#      name: 夜游神
+

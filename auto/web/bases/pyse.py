@@ -291,7 +291,7 @@ class Pyse(object):
 
     def get_display(self, css):
         '''
-        Gets the element to display,The return result is true or false.
+        Gets the element to display,The return report is true or false.
 
         Usage:
         driver.get_display("css=>#el")

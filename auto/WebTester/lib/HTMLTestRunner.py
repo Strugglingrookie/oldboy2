@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 A TestRunner for use with the Python unit testing framework. It
-generates a HTML report to show the result at a glance.
+generates a HTML report to show the report at a glance.
 
 The simplest way to use this is to invoke its main method. E.g.
 
@@ -532,9 +532,9 @@ class _TestResult(TestResult):
         self.error_count = 0
         self.verbosity = verbosity
 
-        # result is a list of result in 4 tuple
+        # report is a list of report in 4 tuple
         # (
-        #   result code (0: success; 1: fail; 2: error),
+        #   report code (0: success; 1: fail; 2: error),
         #   TestCase object,
         #   Test output (byte string),
         #   stack trace,

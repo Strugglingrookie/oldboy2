@@ -20,13 +20,13 @@
 # if __name__ == '__main__':
 #     pool=ThreadPoolExecutor(13)
 #
-#     shit1=pool.submit(la,'alex').result()
+#     shit1=pool.submit(la,'alex').report()
 #     weigh(shit1)
 #
-#     shit2=pool.submit(la,'wupeiqi').result()
+#     shit2=pool.submit(la,'wupeiqi').report()
 #     weigh(shit2)
 #
-#     shit3=pool.submit(la,'yuanhao').result()
+#     shit3=pool.submit(la,'yuanhao').report()
 #     weigh(shit3)
 
 

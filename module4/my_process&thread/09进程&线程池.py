@@ -17,7 +17,7 @@
 # 但不管wait参数为何值，整个程序都会等到所有任务执行完毕
 # submit和map必须在shutdown之前
 #
-# 4、result(timeout=None)
+# 4、report(timeout=None)
 # 取得结果
 #
 # 5、add_done_callback(fn)
@@ -70,11 +70,11 @@ def weigh(res):
 
 if __name__ == "__main__":
     pool = ThreadPoolExecutor(3)
-    res1 = pool.submit(fishing, "xt").result()  # 同步拿结果，拿到结果才继续往下走
+    res1 = pool.submit(fishing, "xt").report()  # 同步拿结果，拿到结果才继续往下走
     weigh(res1)
-    res2 = pool.submit(fishing, "dj").result()
+    res2 = pool.submit(fishing, "dj").report()
     weigh(res2)
-    res3 = pool.submit(fishing, "hh").result()
+    res3 = pool.submit(fishing, "hh").report()
     weigh(res3)
 """
 
@@ -94,7 +94,7 @@ def fishing(name):
 
 
 def weigh(pool_obj):
-    res = pool_obj.result()  # 拿到线程对象的运行结果，因为是线程运行完才会调用weigh，所以马上能拿到结果
+    res = pool_obj.report()  # 拿到线程对象的运行结果，因为是线程运行完才会调用weigh，所以马上能拿到结果
     name = res["name"]
     size = len(res["fish"])
     print("%s 钓到的鱼大小为 %s kg" % (name, size))
