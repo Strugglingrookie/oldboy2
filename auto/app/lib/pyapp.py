@@ -124,6 +124,53 @@ class Pyapp(Pyse):
             raise NameError(
                 "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
 
+    def element_wait_click(self, css, secs=5):
+        '''
+        Waiting for an element to display.
+
+        Usage:
+        driver.element_wait("css=>#el",10)
+        '''
+        if "=>" not in css:
+            raise NameError("Positioning syntax errors, lack of '=>'.")
+
+        by = css.split("=>")[0]
+        value = css.split("=>")[1]
+
+        if by == "id":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.ID, value)))
+        elif by == "name":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.NAME, value)))
+        elif by == "class":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.CLASS_NAME, value)))
+        elif by == "link_text":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.LINK_TEXT, value)))
+        elif by == "xpath":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.XPATH, value)))
+        elif by == "css":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.CSS_SELECTOR, value)))
+        elif by == "content":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.ACCESSIBILITY_ID, value)))
+        elif by == "android":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.ANDROID_UIAUTOMATOR, value)))
+        elif by == "":
+            WebDriverWait(self.driver, secs, 1).until(EC.element_to_be_clickable((By.IOS_PREDICATE, value)))
+        else:
+            raise NameError(
+                "Please enter the correct targeting elements,'id','name','class','link_text','xpath','css'.")
+
+    def click(self, css):
+        '''
+        It can click any text / image can be clicked
+        Connection, check box, radio buttons, and even drop-down box etc..
+
+        Usage:
+        driver.click("css=>#el")
+        '''
+        self.element_wait(css)
+        el = self.get_element(css)
+        el.click()
+
     def key_code(self, code):
         '''
         :param code: 按键码
@@ -201,3 +248,4 @@ class Pyapp(Pyse):
             import threading
             self.get_windows_img(APPPICTUREPATH.format(threading.current_thread().getName()) + name + '.jpg')
             return False
+
