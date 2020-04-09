@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="app 自动化">
-      <change afterPath="$PROJECT_DIR$/auto/app/appCase/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/conf/appController.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/conf/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/lib/HTMLTestAppRunner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/lib/appController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/lib/log_write.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/lib/result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/lib/tool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/log/log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/page/page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto/app/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work/get_work_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/AppTester/lib/HTMLTestAppRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/AppTester/lib/HTMLTestAppRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/AppTester/lib/pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/AppTester/lib/pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/AppTester/lib/result.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/AppTester/lib/result.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/WebTester/lib/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/WebTester/lib/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/WebTester/lib/pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/WebTester/lib/pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/app/lib/pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/lib/pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/atp/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/atp/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/web/bases/06dsx_pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/bases/06dsx_pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/web/bases/pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/bases/pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/web/lib/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/lib/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/web/lib/pyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/lib/pyse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/wpt_interface_test/fun/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/wpt_interface_test/fun/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/3第三模块/第三章FTP实战开发/server/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/3第三模块/第三章FTP实战开发/server/core/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course1/5.作业讲解.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course1/5.作业讲解.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course2/5.作业讲解2.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course2/5.作业讲解2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course3/5.作业讲解2.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course3/5.作业讲解2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course4&amp;5/5.作业讲解2.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/3第三模块/选课系统/student_select_course4&amp;5/5.作业讲解2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/4第四模块/第四模块课件/01网络编程进阶/02 多线程/14 异步调用与回调机制.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/4第四模块/第四模块课件/01网络编程进阶/02 多线程/14 异步调用与回调机制.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/src/ajax/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/src/ajax/load.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/courseware/5第五模块/代码/JQ_code/代码/node_modules/jquery/src/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module4/my_process&amp;thread/09进程&amp;线程池.py" beforeDir="false" afterPath="$PROJECT_DIR$/module4/my_process&amp;thread/09进程&amp;线程池.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5/02Javascript/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module5/02Javascript/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5/03jQuery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module5/03jQuery/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module5/04Bootstrap/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module5/04Bootstrap/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/06 django模型层/django_models/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/06 django模型层/django_models/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/statics/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/admin_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/admin/templatetags/admin_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/geometry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/mutable_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/gis/geos/mutable_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/messages/storage/cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/contrib/messages/storage/cookie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/makemigrations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/makemigrations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/faker/providers/barcode/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/faker/providers/barcode/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/autoRegressionTesting/business/phTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/autoRegressionTesting/business/phTest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.appController">
+  <component name="RunManager" selected="Python.get_work_list">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="oldboy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,6 +243,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="get_work_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ajax" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work/get_work_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="native_webview (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="auther" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,28 +279,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/app_bases/native_webview.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pyapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ajax" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/app/lib" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/lib/pyapp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -437,11 +389,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.get_work_list" />
         <item itemvalue="Python.appController" />
         <item itemvalue="Python.test_pyapp" />
         <item itemvalue="Python.find_element" />
         <item itemvalue="Python.native_webview (1)" />
-        <item itemvalue="Python.pyapp" />
       </list>
     </recent_temporary>
   </component>
@@ -463,14 +415,7 @@
       <workItem from="1585972697754" duration="16906000" />
       <workItem from="1586066518820" duration="5049000" />
       <workItem from="1586072505482" duration="5301000" />
-      <workItem from="1586218650941" duration="28918000" />
-    </task>
-    <task id="LOCAL-00016" summary="module6">
-      <created>1565231707992</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1565231707992</updated>
+      <workItem from="1586218650941" duration="39467000" />
     </task>
     <task id="LOCAL-00017" summary="module6">
       <created>1565231772966</created>
@@ -808,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586344987596</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="app 自动化">
+      <created>1586351227963</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1586351227963</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -956,6 +908,7 @@
     <SUITE FILE_PATH="coverage/oldboy$mock.coverage" NAME="mock Coverage Results" MODIFIED="1583081834219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/platform/layuiAdmin" />
     <SUITE FILE_PATH="coverage/oldboy2$huadong.coverage" NAME="huadong Coverage Results" MODIFIED="1586071890000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app" />
     <SUITE FILE_PATH="coverage/oldboy$read_case__1_.coverage" NAME="read_case (1) Coverage Results" MODIFIED="1582809467780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/atp/lib" />
+    <SUITE FILE_PATH="coverage/oldboy2$get_work_list.coverage" NAME="get_work_list Coverage Results" MODIFIED="1586402926646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work" />
     <SUITE FILE_PATH="coverage/oldboy2$my_faker.coverage" NAME="my_faker Coverage Results" MODIFIED="1584782401409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/web/page" />
     <SUITE FILE_PATH="coverage/oldboy2$appController.coverage" NAME="appController Coverage Results" MODIFIED="1586348061974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/lib" />
     <SUITE FILE_PATH="coverage/oldboy$test.coverage" NAME="test Coverage Results" MODIFIED="1583121201293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
