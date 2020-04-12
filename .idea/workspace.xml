@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="app 自动化">
-      <change afterPath="$PROJECT_DIR$/work/get_work_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/app_bases/test_pyapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/app_bases/test_pyapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/lib/pyapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/lib/pyapp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_work_list">
+  <component name="RunManager" selected="Python.test_pyapp (1)">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="oldboy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,20 +266,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="native_webview (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="auther" />
+    <configuration name="test_pyapp (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ajax" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="D:\Miniconda3\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auto/app/app_bases" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/app_bases/native_webview.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto/app/app_bases/test_pyapp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -389,11 +390,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_pyapp (1)" />
         <item itemvalue="Python.get_work_list" />
         <item itemvalue="Python.appController" />
         <item itemvalue="Python.test_pyapp" />
         <item itemvalue="Python.find_element" />
-        <item itemvalue="Python.native_webview (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -415,14 +416,8 @@
       <workItem from="1585972697754" duration="16906000" />
       <workItem from="1586066518820" duration="5049000" />
       <workItem from="1586072505482" duration="5301000" />
-      <workItem from="1586218650941" duration="39467000" />
-    </task>
-    <task id="LOCAL-00017" summary="module6">
-      <created>1565231772966</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1565231772966</updated>
+      <workItem from="1586218650941" duration="39925000" />
+      <workItem from="1586483682201" duration="5282000" />
     </task>
     <task id="LOCAL-00018" summary="module6">
       <created>1565449256355</created>
@@ -760,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586351227963</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="app 自动化">
+      <created>1586431839698</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1586431839698</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -913,6 +915,7 @@
     <SUITE FILE_PATH="coverage/oldboy2$appController.coverage" NAME="appController Coverage Results" MODIFIED="1586348061974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/lib" />
     <SUITE FILE_PATH="coverage/oldboy$test.coverage" NAME="test Coverage Results" MODIFIED="1583121201293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/oldboy$test_index.coverage" NAME="test_index Coverage Results" MODIFIED="1583077516480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/cases" />
+    <SUITE FILE_PATH="coverage/oldboy2$test_pyapp__1_.coverage" NAME="test_pyapp (1) Coverage Results" MODIFIED="1586663857940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/app_bases" />
     <SUITE FILE_PATH="coverage/oldboy2$pyapp.coverage" NAME="pyapp Coverage Results" MODIFIED="1586079714882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/lib" />
     <SUITE FILE_PATH="coverage/oldboy$interface_star.coverage" NAME="interface_star Coverage Results" MODIFIED="1582811015320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/平台/send_red_packages/bin" />
     <SUITE FILE_PATH="coverage/oldboy$read_case.coverage" NAME="read_case Coverage Results" MODIFIED="1582799370055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/atp/lib" />

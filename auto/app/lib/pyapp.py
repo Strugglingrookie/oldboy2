@@ -49,7 +49,7 @@ class Pyapp(Pyse):
         for i in range(n):
             self.d.swipe(x1,y1,x2,y1,t)
 
-    def element_wait(self, css, secs=5):
+    def element_wait(self, css, secs=10):
         '''
         Waiting for an element to display.
 
@@ -124,7 +124,7 @@ class Pyapp(Pyse):
                 "'link_text','xpath','css','content','android','ios'.")
         return element
 
-    def element_wait_click(self, css, secs=5):
+    def element_wait_click(self, css, secs=10):
         '''
         Waiting for an element to display.
 

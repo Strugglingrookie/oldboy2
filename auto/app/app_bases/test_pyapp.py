@@ -15,10 +15,10 @@ driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 
 pyapp = Pyapp(driver)
 
-# pyapp.click('android=>new UiSelector().resourceId("com.tencent.mobileqq:id/btn_login")')
-# pyapp.type('content=>请输入QQ号码或手机或邮箱','12345678')
-# pyapp.type('content=>密码 安全','87654321')
-# pyapp.click('id=>com.tencent.mobileqq:id/login')
+pyapp.click('android=>new UiSelector().resourceId("com.tencent.mobileqq:id/btn_login")')
+pyapp.type('content=>请输入QQ号码或手机或邮箱','12345678')
+pyapp.type('content=>密码 安全','87654321')
+pyapp.click('id=>com.tencent.mobileqq:id/login')
 
 # print('删除前：',pyapp.is_app_installed('com.tencent.mobileqq'))
 # pyapp.remove_app('com.tencent.mobileqq')
