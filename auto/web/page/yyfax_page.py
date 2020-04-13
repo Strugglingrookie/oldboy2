@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author : XiaoGang
 # @Time   : 2020/3/13 21:27
-# @File   : page.py
+# @File   : thread_page.py
 
 import os,sys,time
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

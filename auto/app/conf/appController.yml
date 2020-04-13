@@ -9,8 +9,8 @@ tester:
 
 
 # ----------------app------------
-    appPackage: com.android.browser
-    appActivity: .BrowserActivity
+    appPackage: com.tencent.mobileqq
+    appActivity: .activity.SplashActivity
 #    appPackage: com.tencent.mobileqq
 #    appActivity: com.tencent.mobileqq.activity.SplashActivity
 
@@ -22,21 +22,21 @@ devices:
   android:
 # Android模拟器1
     - platformName: Android
-      platformVersion: 5.0.2
+      platformVersion: 5.1.1
       ip: 127.0.0.1
-      port: 8081
-      udid: emulator-5556
-      deviceName: emulator-5556
-      name: 模拟器1
-
-# Android模拟器2
-    - platformName: Android
-      platformVersion: 5.0.2
-      ip: 127.0.0.199
-      port: 9000
+      port: 7071
       udid: emulator-5554
       deviceName: emulator-5554
-      name: 模拟器2
+      name: 模拟器1
+
+## Android模拟器2
+#    - platformName: Android
+#      platformVersion: 5.1.1
+#      ip: 127.0.0.1
+#      port: 7072
+#      udid: emulator-5555
+#      deviceName: emulator-5555
+#      name: 模拟器2
 
 
 #　夜游神模拟器

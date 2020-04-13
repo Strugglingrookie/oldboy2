@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author : XiaoGang
 # @Time   : 2020/3/13 21:27
-# @File   : page.py
+# @File   : thread_page.py
 
 
 from lib.pyse import Pyse

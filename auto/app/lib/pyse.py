@@ -355,6 +355,10 @@ class Pyse(object):
         Usage:
         driver.get_windows_img()
         '''
+        import os
+        base_path = os.path.dirname(file_path)
+        if not os.path.exists(base_path):
+            os.makedirs(base_path)
         self.driver.get_screenshot_as_file(file_path)
 
     def wait(self, secs):

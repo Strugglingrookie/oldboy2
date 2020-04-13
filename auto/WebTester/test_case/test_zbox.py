@@ -1,4 +1,4 @@
-from page.page import Page
+from page.thread_page import Page
 import unittest
 
 

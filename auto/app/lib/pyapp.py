@@ -250,7 +250,9 @@ class Pyapp(Pyse):
             self.element_wait(css, secs=5)
             return True
         except Exception as e:
-            from lib.path import APPPICTUREPATH
-            import threading
-            self.get_windows_img(APPPICTUREPATH.format(threading.current_thread().getName()) + name + '.jpg')
+            from conf.settings import APP_PICTUREPATH
+            import threading,os
+            base_path = APP_PICTUREPATH.format(threading.current_thread().getName())
+            file_path = os.path.join(base_path, name + '.png')
+            self.get_windows_img(file_path)
             return False

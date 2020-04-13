@@ -4,7 +4,7 @@
 # @File   : test_bug.py
 
 
-from page.page import Page
+from page.thread_page import Page
 from lib.tools import Tool
 import unittest
 

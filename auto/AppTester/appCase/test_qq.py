@@ -1,5 +1,5 @@
 import unittest
-from page.page import Page
+from page.thread_page import Page
 
 
 class QQDemo(unittest.TestCase):

@@ -45,7 +45,8 @@ APP_PICTUREPATH = os.path.join(BASE_PATH, 'report','app_picture', '{}')
 # 生成报告时的地址
 APP_ERROR = '../report/app_picture/{}/'
 
-LOG_PATH = os.path.join(BASE_PATH, "log", "server.log")
+LOG_DIR = os.path.join(BASE_PATH, "log")
+LOG_PATH = os.path.join(LOG_DIR, "server.log")
 LOG_LEVEL = 'debug'
 logger = Mylog(LOG_PATH, LOG_LEVEL).get_logger()
 
