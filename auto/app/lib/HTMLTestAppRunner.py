@@ -609,7 +609,7 @@ class _TestResult(TestResult):
             sys.stderr.write('F')
 
 
-from lib.logger import logger
+from conf.settings import logger
 
 
 class HTMLTestRunner(Template_mixin):

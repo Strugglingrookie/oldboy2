@@ -20,23 +20,32 @@ device_type: android
 # -----手机---------
 devices:
   android:
+## Android模拟器0
+#    - platformName: Android
+#      platformVersion: 5.1.1
+#      ip: 127.0.0.1
+#      port: 7070
+#      udid: emulator-5554
+#      deviceName: emulator-5554
+#      name: 雷电0
+
 # Android模拟器1
     - platformName: Android
       platformVersion: 5.1.1
       ip: 127.0.0.1
-      port: 7071
-      udid: emulator-5554
-      deviceName: emulator-5554
-      name: 模拟器1
+      port: 7073
+      udid: emulator-5556
+      deviceName: emulator-5556
+      name: 雷电1
 
-## Android模拟器2
-#    - platformName: Android
-#      platformVersion: 5.1.1
-#      ip: 127.0.0.1
-#      port: 7072
-#      udid: emulator-5555
-#      deviceName: emulator-5555
-#      name: 模拟器2
+# Android模拟器2
+    - platformName: Android
+      platformVersion: 5.1.1
+      ip: 127.0.0.1
+      port: 7074
+      udid: emulator-5558
+      deviceName: emulator-5558
+      name: 雷电2
 
 
 #　夜游神模拟器

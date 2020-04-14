@@ -247,7 +247,7 @@ class Pyapp(Pyse):
 
     def wait_and_save_exception(self, css, name):
         try:
-            self.element_wait(css, secs=5)
+            self.element_wait(css, secs=10)
             return True
         except Exception as e:
             from conf.settings import APP_PICTUREPATH

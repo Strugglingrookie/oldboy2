@@ -57,7 +57,7 @@ class Controller():
         '''
         # 每次启动前 清掉上一次还存活的端口
         self.kill_servers()
-        # logger.debug('启动ADB服务！%s' % subprocess.getoutput("adb start-server"))
+        logger.debug('启动ADB服务！%s' % subprocess.getoutput("adb start-server"))
         # 启动的server加入到这个列表，用来等待所有服务启动起来之后才往下运行
         server_threads = []
         for device in self.devices.get(self.device_type):

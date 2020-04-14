@@ -11,7 +11,7 @@ desired_caps['appActivity'] = '.activity.SplashActivity'
 desired_caps["unicodeKeyboard"] = "True"
 desired_caps["resetKeyboard"] = "True"
 desired_caps["noReset"] = "True"
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+driver = webdriver.Remote('http://127.0.0.1:7071/wd/hub', desired_caps)
 
 pyapp = Pyapp(driver)
 

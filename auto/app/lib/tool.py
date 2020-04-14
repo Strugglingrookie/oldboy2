@@ -20,11 +20,15 @@ class Tool(object):
         app_list = os.listdir(app)
         app_picture = []
         for item in app_list:
-            if item.endswith('.jpg'):
+            if item.endswith('.png'):
                 app_picture.append((APP_ERROR.format(name) + item,))
         return app_picture
 
     @staticmethod
     def app_clear(app):
+        '''
+        每次运行之前都需要清除报错截图，不然每次都会加载到测试报告
+        :param app: 错误图片路径
+        '''
         app_list = os.listdir(app)
-        list(map(os.remove, map(lambda file: app + file, app_list)))
+        list(map(os.remove, map(lambda file: os.path.join(app,file), app_list)))
