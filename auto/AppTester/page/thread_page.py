@@ -19,14 +19,30 @@ class BasePage(object):
 
 
 class ThreadPage(BasePage):
-    def url(self):
-        local.pyapp.type('id=>url', 'http://ui.imdsx.cn')
+    def login_btn(self):
+        local.pyapp.click('android=>new UiSelector().resourceId("com.tencent.mobileqq:id/btn_login")')
 
-    def enter(self):
-        local.pyapp.key_code(66)
+    def account(self):
+        local.pyapp.type('content=>请输入QQ号码或手机或邮箱', '12345678')
+
+    def password(self):
+        local.pyapp.type('content=>密码 安全', '87654321')
+
+    def login(self):
+        local.pyapp.click('id=>com.tencent.mobileqq:id/login')
 
     def check(self,name):
         return local.pyapp.wait_and_save_exception('android=>new UiSelector().text("修改手势密码")', name)
+
+    #
+    # def url(self):
+    #     local.pyapp.type('id=>url', 'http://ui.imdsx.cn')
+    #
+    # def enter(self):
+    #     local.pyapp.key_code(66)
+    #
+    # def check(self,name):
+    #     return local.pyapp.wait_and_save_exception('android=>new UiSelector().text("修改手势密码")', name)
 
 class Page(ThreadPage):
     pass

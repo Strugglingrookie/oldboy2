@@ -143,7 +143,8 @@ class Controller():
 
 if __name__ == '__main__':
     c = Controller()
-    c.server_start()
-    c.check_server()
-    c.driver_start()
+    print(c.yml)
+    # c.server_start()
+    # c.check_server()
+    # c.driver_start()
 

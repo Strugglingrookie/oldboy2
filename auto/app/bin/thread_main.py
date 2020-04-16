@@ -51,6 +51,22 @@ class App():
         for t in threads:
             t.join()
 
+    def run_two(self):
+        '''
+        手动启动appium
+        '''
+        threads = []
+        drivers = self.c.driver_start()
+        logger.info('开始执行CASE！当前启动[%s]个DRIVER！' % drivers.qsize())
+        # 根据driver的个数启动对应的case
+        for driver in range((drivers.qsize())):
+            # 根据driver启动多线程跑case，对每个线程通过手机名 命名
+            t = threading.Thread(target=self.case,name=devices_name_queue.get())
+            threads.append(t)
+            t.start()
+        for t in threads:
+            t.join()
+
 
 if __name__ == '__main__':
     App().run()

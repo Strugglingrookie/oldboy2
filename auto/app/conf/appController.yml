@@ -33,7 +33,7 @@ devices:
     - platformName: Android
       platformVersion: 5.1.1
       ip: 127.0.0.1
-      port: 7073
+      port: 7001
       udid: emulator-5556
       deviceName: emulator-5556
       name: 雷电1
@@ -42,7 +42,7 @@ devices:
     - platformName: Android
       platformVersion: 5.1.1
       ip: 127.0.0.1
-      port: 7074
+      port: 7002
       udid: emulator-5558
       deviceName: emulator-5558
       name: 雷电2

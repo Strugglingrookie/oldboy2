@@ -352,3 +352,33 @@
 [2018-05-04 17:03:30,374] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/模拟器2/test_a_thread.jpg',)]
 [2018-05-04 17:03:30,599] [DEBUG] [thread_main.py:case:27] 当前线程的的名字：模拟器1
 [2018-05-04 17:03:30,607] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/模拟器1/test_a_thread.jpg',)]
+[2020-04-15 11:44:38,661] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 10852 (属于 PID 6460 子进程)的进程。
+成功: 已终止 PID 10032 (属于 PID 15856 子进程)的进程。
+[2020-04-15 11:44:39,491] [DEBUG] [appController.py:kill_server:38] 重启ADB服务！
+[2020-04-15 11:44:39,491] [DEBUG] [appController.py:server:56] 每个手机的信息：{'platformName': 'Android', 'log_path': 'E:\\Study\\oldboy2\\auto\\AppTester\\log\\雷电1.log', 'udid': 'emulator-5556', 'platformVersion': '5.1.1', 'port': 7701, 'deviceName': 'emulator-5556', 'ip': '127.0.0.1', 'name': '雷电1'}
+[2020-04-15 11:44:39,492] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 7701 -U emulator-5556 -g E:\Study\oldboy2\auto\AppTester\log\雷电1.log
+[2020-04-15 11:44:41,150] [DEBUG] [appController.py:test_server:76] 端口 [7701] 服务启动失败5秒钟后尝试
+[2020-04-15 11:44:47,028] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:7701         0.0.0.0:0              LISTENING       12308
+[2020-04-15 11:44:47,029] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2020-04-15 11:44:47,029] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:7701/wd/hub
+[2020-04-15 11:45:17,003] [INFO] [thread_main.py:run:44] 开始执行CASE！当前启动[1]个DRIVER！
+[2020-04-15 11:45:39,421] [DEBUG] [thread_main.py:case:27] 当前线程的的名字：雷电1
+[2020-04-15 11:45:39,423] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/雷电1/test_a_thread.jpg',)]
+[2020-04-15 11:46:10,940] [DEBUG] [appController.py:kill_server:37] 执行[KILL SERVER]操作:成功: 已终止 PID 12308 (属于 PID 14148 子进程)的进程。
+[2020-04-15 11:46:11,822] [DEBUG] [appController.py:kill_server:38] 重启ADB服务！
+[2020-04-15 11:46:11,823] [DEBUG] [appController.py:server:56] 每个手机的信息：{'name': '雷电1', 'udid': 'emulator-5556', 'ip': '127.0.0.1', 'platformName': 'Android', 'log_path': 'E:\\Study\\oldboy2\\auto\\AppTester\\log\\雷电1.log', 'port': 7701, 'platformVersion': '5.1.1', 'deviceName': 'emulator-5556'}
+[2020-04-15 11:46:11,823] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 7701 -U emulator-5556 -g E:\Study\oldboy2\auto\AppTester\log\雷电1.log
+[2020-04-15 11:46:11,823] [DEBUG] [appController.py:server:56] 每个手机的信息：{'name': '雷电2', 'udid': 'emulator-5558', 'ip': '127.0.0.1', 'platformName': 'Android', 'log_path': 'E:\\Study\\oldboy2\\auto\\AppTester\\log\\雷电2.log', 'port': 7702, 'platformVersion': '5.1.1', 'deviceName': 'emulator-5558'}
+[2020-04-15 11:46:11,824] [DEBUG] [appController.py:server_command:46] 启动服务执行的命令：appium -a 127.0.0.1 -p 7702 -U emulator-5558 -g E:\Study\oldboy2\auto\AppTester\log\雷电2.log
+[2020-04-15 11:46:14,829] [DEBUG] [appController.py:test_server:76] 端口 [7701] 服务启动失败5秒钟后尝试
+[2020-04-15 11:46:16,421] [DEBUG] [appController.py:test_server:76] 端口 [7702] 服务启动失败5秒钟后尝试
+[2020-04-15 11:46:22,341] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:7701         0.0.0.0:0              LISTENING       13344
+[2020-04-15 11:46:28,240] [DEBUG] [appController.py:test_server:73] 检验服务启动：  TCP    127.0.0.1:7702         0.0.0.0:0              LISTENING       12496
+[2020-04-15 11:46:28,240] [DEBUG] [appController.py:test_server:80] 全部服务启动成功！
+[2020-04-15 11:46:28,240] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:7701/wd/hub
+[2020-04-15 11:46:28,240] [DEBUG] [appController.py:driver_commend:90] 启动的Url：http://127.0.0.1:7702/wd/hub
+[2020-04-15 11:46:43,041] [INFO] [thread_main.py:run:44] 开始执行CASE！当前启动[2]个DRIVER！
+[2020-04-15 11:47:03,856] [DEBUG] [thread_main.py:case:27] 当前线程的的名字：雷电2
+[2020-04-15 11:47:03,857] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] [('../report/app_picture/雷电2/test_a_thread.jpg',)]
+[2020-04-15 11:47:04,311] [DEBUG] [thread_main.py:case:27] 当前线程的的名字：雷电1
+[2020-04-15 11:47:04,313] [DEBUG] [HTMLTestAppRunner.py:_generate_report:751] []
