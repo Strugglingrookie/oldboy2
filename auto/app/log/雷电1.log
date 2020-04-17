@@ -11,24 +11,24 @@ Tried to attach logging to file 'E:\Study\oldboy2\auto\app\log\雷电1.log' but 
 [35m[Appium][39m   udid: emulator-5556
 [35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:7001
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"name":"雷电1","appActivity":".activity.SplashActivity","udid":"emulator-5556","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":"True","log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true},"capabilities":{"firstMatch":[{"appium:appActivity":".activity.SplashActivity","appium:name":"雷电1","appium:log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appium:ip":"127.0.0.1","appium:udid":"emulator-5556","appium:resetKeyboard":true,"appium:appPackage":"com.tencent.mobileqq","appium:deviceName":"emulator-5556","appium:noReset":"True","appium:platformVersion":"5.1.1","appium:port":7001,"platformName":"Android","appium:unicodeKeyboard":true}]}}[39m
-[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"name":"雷电1","appActivity":".activity.SplashActivity","udid":"emulator-5556","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":"True","log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true},null,{"firstMatch":[{"appium:appActivity":".activity.SplashActivity","appium:name":"雷电1","appium:log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appium:ip":"127.0.0.1","appium:udid":"emulator-5556","appium:resetKeyboard":true,"appium:appPackage":"com.tencent.mobileqq","appium:deviceName":"emulator-5556","appium:noReset":"True","appium:platformVersion":"5.1.1","appium:port":7001,"platformName":"Android","appium:unicodeKeyboard":true}]}]
-[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1587106004125 (14:46:44 GMT+0800 (GMT+08:00))
+[35m[HTTP][39m [90m{"desiredCapabilities":{"unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","udid":"emulator-5556","port":7001,"name":"雷电1","noReset":"True","resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1"},"capabilities":{"firstMatch":[{"appium:appPackage":"com.tencent.mobileqq","appium:name":"雷电1","appium:log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appium:udid":"emulator-5556","appium:deviceName":"emulator-5556","appium:noReset":"True","appium:port":7001,"appium:appActivity":".activity.SplashActivity","platformName":"Android","appium:resetKeyboard":true,"appium:ip":"127.0.0.1","appium:unicodeKeyboard":true,"appium:platformVersion":"5.1.1"}]}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","udid":"emulator-5556","port":7001,"name":"雷电1","noReset":"True","resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1"},null,{"firstMatch":[{"appium:appPackage":"com.tencent.mobileqq","appium:name":"雷电1","appium:log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appium:udid":"emulator-5556","appium:deviceName":"emulator-5556","appium:noReset":"True","appium:port":7001,"appium:appActivity":".activity.SplashActivity","platformName":"Android","appium:resetKeyboard":true,"appium:ip":"127.0.0.1","appium:unicodeKeyboard":true,"appium:platformVersion":"5.1.1"}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1587106424477 (14:53:44 GMT+0800 (GMT+08:00))
 [35m[Appium][39m Could not parse W3C capabilities: 'noReset' must be of type boolean
 [35m[Appium][39m Trying to fix W3C capabilities by merging them with JSONWP caps
 [35m[BaseDriver][39m The following capabilities are not standard capabilities and should have an extension prefix:
-[35m[BaseDriver][39m   appActivity
+[35m[BaseDriver][39m   appPackage
 [35m[BaseDriver][39m   name
 [35m[BaseDriver][39m   log_path
-[35m[BaseDriver][39m   ip
 [35m[BaseDriver][39m   udid
-[35m[BaseDriver][39m   resetKeyboard
-[35m[BaseDriver][39m   appPackage
 [35m[BaseDriver][39m   deviceName
 [35m[BaseDriver][39m   noReset
-[35m[BaseDriver][39m   platformVersion
 [35m[BaseDriver][39m   port
+[35m[BaseDriver][39m   appActivity
+[35m[BaseDriver][39m   resetKeyboard
+[35m[BaseDriver][39m   ip
 [35m[BaseDriver][39m   unicodeKeyboard
+[35m[BaseDriver][39m   platformVersion
 [35m[Appium][39m Could not parse fixed W3C capabilities: 'noReset' must be of type boolean. Falling back to JSONWP protocol
 [35m[Appium][39m 
 [35m[Appium][39m ======================================================================
@@ -59,26 +59,26 @@ Tried to attach logging to file 'E:\Study\oldboy2\auto\app\log\雷电1.log' but 
 [35m[Appium][39m Appium v1.17.0 creating new AndroidUiautomator2Driver (v1.46.0) session
 [debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {
 [debug] [35m[BaseDriver][39m   "udid": "emulator-5556",
-[debug] [35m[BaseDriver][39m   "name": "雷电1",
-[debug] [35m[BaseDriver][39m   "appActivity": ".activity.SplashActivity",
-[debug] [35m[BaseDriver][39m   "appPackage": "com.tencent.mobileqq",
-[debug] [35m[BaseDriver][39m   "resetKeyboard": true,
-[debug] [35m[BaseDriver][39m   "ip": "127.0.0.1",
-[debug] [35m[BaseDriver][39m   "platformVersion": "5.1.1",
-[debug] [35m[BaseDriver][39m   "deviceName": "emulator-5556",
-[debug] [35m[BaseDriver][39m   "port": 7001,
-[debug] [35m[BaseDriver][39m   "noReset": "True",
+[debug] [35m[BaseDriver][39m   "unicodeKeyboard": true,
 [debug] [35m[BaseDriver][39m   "log_path": "E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log",
+[debug] [35m[BaseDriver][39m   "appPackage": "com.tencent.mobileqq",
+[debug] [35m[BaseDriver][39m   "port": 7001,
+[debug] [35m[BaseDriver][39m   "name": "雷电1",
+[debug] [35m[BaseDriver][39m   "noReset": "True",
+[debug] [35m[BaseDriver][39m   "resetKeyboard": true,
 [debug] [35m[BaseDriver][39m   "platformName": "Android",
-[debug] [35m[BaseDriver][39m   "unicodeKeyboard": true
+[debug] [35m[BaseDriver][39m   "deviceName": "emulator-5556",
+[debug] [35m[BaseDriver][39m   "ip": "127.0.0.1",
+[debug] [35m[BaseDriver][39m   "appActivity": ".activity.SplashActivity",
+[debug] [35m[BaseDriver][39m   "platformVersion": "5.1.1"
 [debug] [35m[BaseDriver][39m }
 [35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   log_path
+[35m[BaseDriver][39m   port
 [35m[BaseDriver][39m   name
 [35m[BaseDriver][39m   ip
-[35m[BaseDriver][39m   port
-[35m[BaseDriver][39m   log_path
-[35m[BaseDriver][39m Session created with session id: 730f334b-c416-48c6-8c76-5f389474e29d
+[35m[BaseDriver][39m Session created with session id: 073e66ce-154c-48ce-ad9c-41e40a534146
 [35m[UiAutomator2][39m Starting 'com.tencent.mobileqq' directly on the device
 [35m[ADB][39m Found 2 'build-tools' folders under 'E:\Automantic\win\android-sdk-windows' (newest first):
 [35m[ADB][39m     E:/Automantic/win/android-sdk-windows/build-tools/29.0.3
@@ -166,357 +166,357 @@ Tried to attach logging to file 'E:\Study\oldboy2\auto\app\log\雷电1.log' but 
 [debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
 [debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:8201/wd/hub/status] with no body
 [debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"None","value":{"ready":true,"message":"UiAutomator2 Server is ready to accept commands"}}
-[debug] [35m[UiAutomator2][39m The initialization of the instrumentation process took 2076ms
+[debug] [35m[UiAutomator2][39m The initialization of the instrumentation process took 2087ms
 [debug] [35m[WD Proxy][39m Matched '/session' to command name 'createSession'
-[debug] [35m[WD Proxy][39m Proxying [POST /session] to [POST http://127.0.0.1:8201/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5556","name":"雷电1","appActivity":".activity.SplashActivity","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true},"udid":"emulator-5556","name":"雷电1","appActivity":".activity.SplashActivity","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true,"deviceUDID":"emulator-5556"}],"alwaysMatch":{}}}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5556","name":"雷电1","appActivity":".activity.SplashActivity","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true},"udid":"emulator-5556","name":"雷电1","appActivity":".activity.SplashActivity","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":t...
+[debug] [35m[WD Proxy][39m Proxying [POST /session] to [POST http://127.0.0.1:8201/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5556","unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","port":7001,"name":"雷电1","noReset":true,"resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1"},"udid":"emulator-5556","unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","port":7001,"name":"雷电1","noReset":true,"resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1","deviceUDID":"emulator-5556"}],"alwaysMatch":{}}}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5556","unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","port":7001,"name":"雷电1","noReset":true,"resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1"},"udid":"emulator-5556","unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","port":7001,"name":"雷电1","noReset":true,"resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1...
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
-[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/appium/device/info] with no body
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"androidId":"911bef5738045562","manufacturer":"HUAWEI","model":"YAL-AL10","brand":"HUAWEI","apiVersion":"22","platformVersion":"5.1.1","carrierName":"CHINA MOBILE","realDisplaySize":"540x960","displayDensity":240,"networks":[{"type":1,"typeName":"WIFI","subtype":0,"subtypeName":"","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":"\"dlb\"","isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"TRANSPORT_WIFI","networkCapabilities":"NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_INTERNET,NET_CAPABILITY_TRUSTED","linkUpstreamBandwidthKbps":1048576,"linkDownBandwidthKbps":1048576,"signalStrength":null,"networkSpecifier":null,"SSID":null}}],"locale":"zh_CN","timeZone":"Asia\/Shanghai","bluetooth":{"state":"OFF"}}}
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/appium/device/info] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"androidId":"911bef5738045562","manufacturer":"HUAWEI","model":"YAL-AL10","brand":"HUAWEI","apiVersion":"22","platformVersion":"5.1.1","carrierName":"CHINA MOBILE","realDisplaySize":"540x960","displayDensity":240,"networks":[{"type":1,"typeName":"WIFI","subtype":0,"subtypeName":"","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":"\"dlb\"","isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"TRANSPORT_WIFI","networkCapabilities":"NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_INTERNET,NET_CAPABILITY_TRUSTED","linkUpstreamBandwidthKbps":1048576,"linkDownBandwidthKbps":1048576,"signalStrength":null,"networkSpecifier":null,"SSID":null}}],"locale":"zh_CN","timeZone":"Asia\/Shanghai","bluetooth":{"state":"OFF"}}}
 [debug] [35m[ADB][39m Running 'E:\Automantic\win\android-sdk-windows\platform-tools\adb.exe -P 5037 -s emulator-5556 shell dumpsys window'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'com.tencent.mobileqq/.activity.SplashActivity and waiting for 'com.tencent.mobileqq/.activity.SplashActivity'
 [debug] [35m[ADB][39m Running 'E:\Automantic\win\android-sdk-windows\platform-tools\adb.exe -P 5037 -s emulator-5556 shell am start -W -n com.tencent.mobileqq/.activity.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/appium/device/pixel_ratio] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":1.5}
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/appium/device/pixel_ratio] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":1.5}
 [debug] [35m[WD Proxy][39m Matched '/appium/device/system_bars' to command name 'getSystemBars'
-[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/appium/device/system_bars] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"statusBar":38}}
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/appium/device/system_bars] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"statusBar":38}}
 [debug] [35m[WD Proxy][39m Matched '/window/current/size' to command name 'getWindowSize'
-[debug] [35m[WD Proxy][39m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/window/current/size] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"height":960,"width":540}}
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 730f334b-c416-48c6-8c76-5f389474e29d added to master session list
-[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1587106013798 (14:46:53 GMT+0800 (GMT+08:00))
-[debug] [35m[MJSONWP (730f334b)][39m Cached the protocol value 'MJSONWP' for the new session 730f334b-c416-48c6-8c76-5f389474e29d
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5556","name":"雷电1","appActivity":".activity.SplashActivity","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true},"udid":"emulator-5556","name":"雷电1","appActivity":".activity.SplashActivity","appPackage":"com.tencent.mobileqq","resetKeyboard":true,"ip":"127.0.0.1","platformVersion":"5.1.1","deviceName":"emulator-5556","port":7001,"noReset":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","platformName":"Android","unicodeKeyboard":true,"deviceUDID":"emulator-5556","deviceApiLevel":22,"deviceScreenSize":"540x960","deviceScreenDensity":240,"deviceModel":"YAL-AL10","deviceMa...
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m9679 ms - 1226[39m
+[debug] [35m[WD Proxy][39m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/window/current/size] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"height":960,"width":540}}
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 073e66ce-154c-48ce-ad9c-41e40a534146 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1587106434409 (14:53:54 GMT+0800 (GMT+08:00))
+[debug] [35m[MJSONWP (073e66ce)][39m Cached the protocol value 'MJSONWP' for the new session 073e66ce-154c-48ce-ad9c-41e40a534146
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"emulator-5556","unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","port":7001,"name":"雷电1","noReset":true,"resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1"},"udid":"emulator-5556","unicodeKeyboard":true,"log_path":"E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log","appPackage":"com.tencent.mobileqq","port":7001,"name":"雷电1","noReset":true,"resetKeyboard":true,"platformName":"Android","deviceName":"emulator-5556","ip":"127.0.0.1","appActivity":".activity.SplashActivity","platformVersion":"5.1.1","deviceUDID":"emulator-5556","deviceApiLevel":22,"deviceScreenSize":"540x960","deviceScreenDensity":240,"deviceModel":"YAL-AL10","deviceMa...
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m9937 ms - 1226[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"a9995aaa-8544-4479-bc3a-20917fa0155c","element-6066-11e4-a52e-4f735466cecf":"a9995aaa-8544-4479-bc3a-20917fa0155c"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a9995aaa-8544-4479-bc3a-20917fa0155c","ELEMENT":"a9995aaa-8544-4479-bc3a-20917fa0155c"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m58 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"e0035460-0884-4bf7-8e65-924a7ef30201","element-6066-11e4-a52e-4f735466cecf":"e0035460-0884-4bf7-8e65-924a7ef30201"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"e0035460-0884-4bf7-8e65-924a7ef30201","ELEMENT":"e0035460-0884-4bf7-8e65-924a7ef30201"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m74 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a9995aaa-8544-4479-bc3a-20917fa0155c/displayed[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/e0035460-0884-4bf7-8e65-924a7ef30201/displayed[39m
 [35m[HTTP][39m [90m{}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.elementDisplayed() with args: ["a9995aaa-8544-4479-bc3a-20917fa0155c","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/a9995aaa-8544-4479-bc3a-20917fa0155c/attribute/displayed' to command name 'getAttribute'
-[debug] [35m[WD Proxy][39m Proxying [GET /element/a9995aaa-8544-4479-bc3a-20917fa0155c/attribute/displayed] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/a9995aaa-8544-4479-bc3a-20917fa0155c/attribute/displayed] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":"true"}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.elementDisplayed() result: true
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a9995aaa-8544-4479-bc3a-20917fa0155c/displayed [39m[32m200[39m [90m15 ms - 76[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.elementDisplayed() with args: ["e0035460-0884-4bf7-8e65-924a7ef30201","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/e0035460-0884-4bf7-8e65-924a7ef30201/attribute/displayed' to command name 'getAttribute'
+[debug] [35m[WD Proxy][39m Proxying [GET /element/e0035460-0884-4bf7-8e65-924a7ef30201/attribute/displayed] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/e0035460-0884-4bf7-8e65-924a7ef30201/attribute/displayed] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":"true"}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.elementDisplayed() result: true
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/e0035460-0884-4bf7-8e65-924a7ef30201/displayed [39m[32m200[39m [90m44 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a9995aaa-8544-4479-bc3a-20917fa0155c/enabled[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/e0035460-0884-4bf7-8e65-924a7ef30201/enabled[39m
 [35m[HTTP][39m [90m{}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.elementEnabled() with args: ["a9995aaa-8544-4479-bc3a-20917fa0155c","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/a9995aaa-8544-4479-bc3a-20917fa0155c/attribute/enabled' to command name 'getAttribute'
-[debug] [35m[WD Proxy][39m Proxying [GET /element/a9995aaa-8544-4479-bc3a-20917fa0155c/attribute/enabled] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/a9995aaa-8544-4479-bc3a-20917fa0155c/attribute/enabled] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":"true"}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.elementEnabled() result: true
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a9995aaa-8544-4479-bc3a-20917fa0155c/enabled [39m[32m200[39m [90m9 ms - 76[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.elementEnabled() with args: ["e0035460-0884-4bf7-8e65-924a7ef30201","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/e0035460-0884-4bf7-8e65-924a7ef30201/attribute/enabled' to command name 'getAttribute'
+[debug] [35m[WD Proxy][39m Proxying [GET /element/e0035460-0884-4bf7-8e65-924a7ef30201/attribute/enabled] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/e0035460-0884-4bf7-8e65-924a7ef30201/attribute/enabled] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":"true"}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.elementEnabled() result: true
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/e0035460-0884-4bf7-8e65-924a7ef30201/enabled [39m[32m200[39m [90m13 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"221d22f9-8fa8-46eb-8fa6-922ba414a321","element-6066-11e4-a52e-4f735466cecf":"221d22f9-8fa8-46eb-8fa6-922ba414a321"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"221d22f9-8fa8-46eb-8fa6-922ba414a321","ELEMENT":"221d22f9-8fa8-46eb-8fa6-922ba414a321"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m9 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"com.tencent.mobileqq:id/btn_login\")","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"f671baf2-c4fb-4b86-8468-bca182d3a3c0","element-6066-11e4-a52e-4f735466cecf":"f671baf2-c4fb-4b86-8468-bca182d3a3c0"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"f671baf2-c4fb-4b86-8468-bca182d3a3c0","ELEMENT":"f671baf2-c4fb-4b86-8468-bca182d3a3c0"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m13 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/221d22f9-8fa8-46eb-8fa6-922ba414a321/click[39m
-[35m[HTTP][39m [90m{"id":"221d22f9-8fa8-46eb-8fa6-922ba414a321","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.click() with args: ["221d22f9-8fa8-46eb-8fa6-922ba414a321","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/221d22f9-8fa8-46eb-8fa6-922ba414a321/click' to command name 'click'
-[debug] [35m[WD Proxy][39m Proxying [POST /element/221d22f9-8fa8-46eb-8fa6-922ba414a321/click] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/221d22f9-8fa8-46eb-8fa6-922ba414a321/click] with body: {"element":"221d22f9-8fa8-46eb-8fa6-922ba414a321"}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":null}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.click() result: null
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/221d22f9-8fa8-46eb-8fa6-922ba414a321/click [39m[32m200[39m [90m979 ms - 76[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/f671baf2-c4fb-4b86-8468-bca182d3a3c0/click[39m
+[35m[HTTP][39m [90m{"sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","id":"f671baf2-c4fb-4b86-8468-bca182d3a3c0"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.click() with args: ["f671baf2-c4fb-4b86-8468-bca182d3a3c0","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/f671baf2-c4fb-4b86-8468-bca182d3a3c0/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /element/f671baf2-c4fb-4b86-8468-bca182d3a3c0/click] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/f671baf2-c4fb-4b86-8468-bca182d3a3c0/click] with body: {"element":"f671baf2-c4fb-4b86-8468-bca182d3a3c0"}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":null}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.click() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/f671baf2-c4fb-4b86-8468-bca182d3a3c0/click [39m[32m200[39m [90m1097 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"accessibility id","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"请输入QQ号码或手机或邮箱"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","请输入QQ号码或手机或邮箱","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"请输入QQ号码或手机或邮箱","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"accessibility id"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","请输入QQ号码或手机或邮箱","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"accessibility id","selector":"请输入QQ号码或手机或邮箱","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"05de7a18-cced-4ce0-b68a-df9e412c9b46","element-6066-11e4-a52e-4f735466cecf":"05de7a18-cced-4ce0-b68a-df9e412c9b46"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"05de7a18-cced-4ce0-b68a-df9e412c9b46","ELEMENT":"05de7a18-cced-4ce0-b68a-df9e412c9b46"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m19 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"accessibility id","selector":"请输入QQ号码或手机或邮箱","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"ba893925-5469-493c-927b-6538a18ce8dd","element-6066-11e4-a52e-4f735466cecf":"ba893925-5469-493c-927b-6538a18ce8dd"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"ba893925-5469-493c-927b-6538a18ce8dd","ELEMENT":"ba893925-5469-493c-927b-6538a18ce8dd"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m41 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"accessibility id","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"请输入QQ号码或手机或邮箱"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","请输入QQ号码或手机或邮箱","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"请输入QQ号码或手机或邮箱","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"accessibility id"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","请输入QQ号码或手机或邮箱","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"accessibility id","selector":"请输入QQ号码或手机或邮箱","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"a26cf63c-b057-4082-80b3-9fedc7468168","element-6066-11e4-a52e-4f735466cecf":"a26cf63c-b057-4082-80b3-9fedc7468168"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a26cf63c-b057-4082-80b3-9fedc7468168","ELEMENT":"a26cf63c-b057-4082-80b3-9fedc7468168"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m8 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"accessibility id","selector":"请输入QQ号码或手机或邮箱","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0","element-6066-11e4-a52e-4f735466cecf":"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0","ELEMENT":"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m10 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a26cf63c-b057-4082-80b3-9fedc7468168/value[39m
-[35m[HTTP][39m [90m{"text":"3418666179","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":["3","4","1","8","6","6","6","1","7","9"],"id":"a26cf63c-b057-4082-80b3-9fedc7468168"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.setValue() with args: [["3","4","1","8","6","6","6","1","7","9"],"a26cf63c-b057-4082-80b3-9fedc7468168","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/a26cf63c-b057-4082-80b3-9fedc7468168/value' to command name 'setValue'
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0/value[39m
+[35m[HTTP][39m [90m{"value":["3","4","1","8","6","6","6","1","7","9"],"text":"3418666179","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","id":"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.setValue() with args: [["3","4","1","8","6","6","6","1","7","9"],"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0/value' to command name 'setValue'
 [debug] [35m[Protocol Converter][39m Added 'value' property ["3","4","1","8","6","6","6","1","7","9"] to 'setValue' request body
-[debug] [35m[WD Proxy][39m Proxying [POST /element/a26cf63c-b057-4082-80b3-9fedc7468168/value] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/a26cf63c-b057-4082-80b3-9fedc7468168/value] with body: {"elementId":"a26cf63c-b057-4082-80b3-9fedc7468168","text":"3418666179","replace":false,"unicodeKeyboard":true,"value":["3","4","1","8","6","6","6","1","7","9"]}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":null}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.setValue() result: null
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a26cf63c-b057-4082-80b3-9fedc7468168/value [39m[32m200[39m [90m517 ms - 76[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element/69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0/value] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0/value] with body: {"elementId":"69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0","text":"3418666179","replace":false,"unicodeKeyboard":true,"value":["3","4","1","8","6","6","6","1","7","9"]}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":null}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.setValue() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/69c7b9d4-cef3-4d3c-aa5d-1fa2dc6973f0/value [39m[32m200[39m [90m515 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"accessibility id","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"密码 安全"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","密码 安全","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"密码 安全","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"accessibility id"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","密码 安全","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"accessibility id","selector":"密码 安全","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"59122a4b-c83e-48e2-86eb-e784cf1df327","element-6066-11e4-a52e-4f735466cecf":"59122a4b-c83e-48e2-86eb-e784cf1df327"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"59122a4b-c83e-48e2-86eb-e784cf1df327","ELEMENT":"59122a4b-c83e-48e2-86eb-e784cf1df327"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m35 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"accessibility id","selector":"密码 安全","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"1a4ffe43-94e4-4f4e-aefc-00fadaa26adc","element-6066-11e4-a52e-4f735466cecf":"1a4ffe43-94e4-4f4e-aefc-00fadaa26adc"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"1a4ffe43-94e4-4f4e-aefc-00fadaa26adc","ELEMENT":"1a4ffe43-94e4-4f4e-aefc-00fadaa26adc"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m47 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"accessibility id","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"密码 安全"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","密码 安全","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"密码 安全","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"accessibility id"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["accessibility id","密码 安全","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"accessibility id","selector":"密码 安全","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"926b1c5e-341b-4624-a703-4332fd27da97","element-6066-11e4-a52e-4f735466cecf":"926b1c5e-341b-4624-a703-4332fd27da97"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"926b1c5e-341b-4624-a703-4332fd27da97","ELEMENT":"926b1c5e-341b-4624-a703-4332fd27da97"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m563 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"accessibility id","selector":"密码 安全","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a","element-6066-11e4-a52e-4f735466cecf":"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a","ELEMENT":"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m551 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/926b1c5e-341b-4624-a703-4332fd27da97/value[39m
-[35m[HTTP][39m [90m{"text":"3280789xg","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":["3","2","8","0","7","8","9","x","g"],"id":"926b1c5e-341b-4624-a703-4332fd27da97"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.setValue() with args: [["3","2","8","0","7","8","9","x","g"],"926b1c5e-341b-4624-a703-4332fd27da97","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/926b1c5e-341b-4624-a703-4332fd27da97/value' to command name 'setValue'
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5875d1ee-0c7e-4b6a-beb9-a01b94b4979a/value[39m
+[35m[HTTP][39m [90m{"value":["3","2","8","0","7","8","9","x","g"],"text":"3280789xg","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","id":"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.setValue() with args: [["3","2","8","0","7","8","9","x","g"],"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/5875d1ee-0c7e-4b6a-beb9-a01b94b4979a/value' to command name 'setValue'
 [debug] [35m[Protocol Converter][39m Added 'value' property ["3","2","8","0","7","8","9","x","g"] to 'setValue' request body
-[debug] [35m[WD Proxy][39m Proxying [POST /element/926b1c5e-341b-4624-a703-4332fd27da97/value] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/926b1c5e-341b-4624-a703-4332fd27da97/value] with body: {"elementId":"926b1c5e-341b-4624-a703-4332fd27da97","text":"3280789xg","replace":false,"unicodeKeyboard":true,"value":["3","2","8","0","7","8","9","x","g"]}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":null}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.setValue() result: null
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/926b1c5e-341b-4624-a703-4332fd27da97/value [39m[32m200[39m [90m15 ms - 76[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element/5875d1ee-0c7e-4b6a-beb9-a01b94b4979a/value] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/5875d1ee-0c7e-4b6a-beb9-a01b94b4979a/value] with body: {"elementId":"5875d1ee-0c7e-4b6a-beb9-a01b94b4979a","text":"3280789xg","replace":false,"unicodeKeyboard":true,"value":["3","2","8","0","7","8","9","x","g"]}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":null}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.setValue() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5875d1ee-0c7e-4b6a-beb9-a01b94b4979a/value [39m[32m200[39m [90m15 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"id","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"com.tencent.mobileqq:id/login"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["id","com.tencent.mobileqq:id/login","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"com.tencent.mobileqq:id/login","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"id"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["id","com.tencent.mobileqq:id/login","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"id","selector":"com.tencent.mobileqq:id/login","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"a33dae23-1dc0-4830-8bd8-7263582667c4","element-6066-11e4-a52e-4f735466cecf":"a33dae23-1dc0-4830-8bd8-7263582667c4"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a33dae23-1dc0-4830-8bd8-7263582667c4","ELEMENT":"a33dae23-1dc0-4830-8bd8-7263582667c4"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m33 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"id","selector":"com.tencent.mobileqq:id/login","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"5f6321a3-9499-4ef4-a2d0-afdf133bf404","element-6066-11e4-a52e-4f735466cecf":"5f6321a3-9499-4ef4-a2d0-afdf133bf404"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5f6321a3-9499-4ef4-a2d0-afdf133bf404","ELEMENT":"5f6321a3-9499-4ef4-a2d0-afdf133bf404"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m500 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a33dae23-1dc0-4830-8bd8-7263582667c4/displayed[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/displayed[39m
 [35m[HTTP][39m [90m{}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.elementDisplayed() with args: ["a33dae23-1dc0-4830-8bd8-7263582667c4","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/a33dae23-1dc0-4830-8bd8-7263582667c4/attribute/displayed' to command name 'getAttribute'
-[debug] [35m[WD Proxy][39m Proxying [GET /element/a33dae23-1dc0-4830-8bd8-7263582667c4/attribute/displayed] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/a33dae23-1dc0-4830-8bd8-7263582667c4/attribute/displayed] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":"true"}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.elementDisplayed() result: true
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a33dae23-1dc0-4830-8bd8-7263582667c4/displayed [39m[32m200[39m [90m463 ms - 76[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.elementDisplayed() with args: ["5f6321a3-9499-4ef4-a2d0-afdf133bf404","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/attribute/displayed' to command name 'getAttribute'
+[debug] [35m[WD Proxy][39m Proxying [GET /element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/attribute/displayed] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/attribute/displayed] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":"true"}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.elementDisplayed() result: true
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/displayed [39m[32m200[39m [90m8 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a33dae23-1dc0-4830-8bd8-7263582667c4/enabled[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/enabled[39m
 [35m[HTTP][39m [90m{}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.elementEnabled() with args: ["a33dae23-1dc0-4830-8bd8-7263582667c4","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/a33dae23-1dc0-4830-8bd8-7263582667c4/attribute/enabled' to command name 'getAttribute'
-[debug] [35m[WD Proxy][39m Proxying [GET /element/a33dae23-1dc0-4830-8bd8-7263582667c4/attribute/enabled] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/a33dae23-1dc0-4830-8bd8-7263582667c4/attribute/enabled] with body: {}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":"true"}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.elementEnabled() result: true
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/a33dae23-1dc0-4830-8bd8-7263582667c4/enabled [39m[32m200[39m [90m7 ms - 76[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.elementEnabled() with args: ["5f6321a3-9499-4ef4-a2d0-afdf133bf404","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/attribute/enabled' to command name 'getAttribute'
+[debug] [35m[WD Proxy][39m Proxying [GET /element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/attribute/enabled] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/attribute/enabled] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":"true"}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.elementEnabled() result: true
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5f6321a3-9499-4ef4-a2d0-afdf133bf404/enabled [39m[32m200[39m [90m14 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"id","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"com.tencent.mobileqq:id/login"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["id","com.tencent.mobileqq:id/login","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"com.tencent.mobileqq:id/login","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"id"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["id","com.tencent.mobileqq:id/login","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"id","selector":"com.tencent.mobileqq:id/login","context":"","multiple":false}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"ELEMENT":"2659a3e3-674f-4c81-9eb3-872d10f909b2","element-6066-11e4-a52e-4f735466cecf":"2659a3e3-674f-4c81-9eb3-872d10f909b2"}}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"2659a3e3-674f-4c81-9eb3-872d10f909b2","ELEMENT":"2659a3e3-674f-4c81-9eb3-872d10f909b2"}
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[32m200[39m [90m10 ms - 199[39m
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"id","selector":"com.tencent.mobileqq:id/login","context":"","multiple":false}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"ELEMENT":"5080e1ab-b683-4caa-85f7-51f42a9e61df","element-6066-11e4-a52e-4f735466cecf":"5080e1ab-b683-4caa-85f7-51f42a9e61df"}}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5080e1ab-b683-4caa-85f7-51f42a9e61df","ELEMENT":"5080e1ab-b683-4caa-85f7-51f42a9e61df"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[32m200[39m [90m9 ms - 199[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/2659a3e3-674f-4c81-9eb3-872d10f909b2/click[39m
-[35m[HTTP][39m [90m{"id":"2659a3e3-674f-4c81-9eb3-872d10f909b2","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.click() with args: ["2659a3e3-674f-4c81-9eb3-872d10f909b2","730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[WD Proxy][39m Matched '/element/2659a3e3-674f-4c81-9eb3-872d10f909b2/click' to command name 'click'
-[debug] [35m[WD Proxy][39m Proxying [POST /element/2659a3e3-674f-4c81-9eb3-872d10f909b2/click] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element/2659a3e3-674f-4c81-9eb3-872d10f909b2/click] with body: {"element":"2659a3e3-674f-4c81-9eb3-872d10f909b2"}
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":null}
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.click() result: null
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element/2659a3e3-674f-4c81-9eb3-872d10f909b2/click [39m[32m200[39m [90m34 ms - 76[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5080e1ab-b683-4caa-85f7-51f42a9e61df/click[39m
+[35m[HTTP][39m [90m{"sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","id":"5080e1ab-b683-4caa-85f7-51f42a9e61df"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.click() with args: ["5080e1ab-b683-4caa-85f7-51f42a9e61df","073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[WD Proxy][39m Matched '/element/5080e1ab-b683-4caa-85f7-51f42a9e61df/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /element/5080e1ab-b683-4caa-85f7-51f42a9e61df/click] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element/5080e1ab-b683-4caa-85f7-51f42a9e61df/click] with body: {"element":"5080e1ab-b683-4caa-85f7-51f42a9e61df"}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":null}
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.click() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element/5080e1ab-b683-4caa-85f7-51f42a9e61df/click [39m[32m200[39m [90m10 ms - 76[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m119 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m123 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m11 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m13 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m18 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m16 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m11 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m14 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m13 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m25 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m20 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m9 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m11 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m16 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m8 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m26 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m14 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m15 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element[39m
-[35m[HTTP][39m [90m{"using":"-android uiautomator","sessionId":"730f334b-c416-48c6-8c76-5f389474e29d","value":"new UiSelector().text(\"开始验证\")"}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","730f334b-c416-48c6-8c76-5f389474e29d"]
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element[39m
+[35m[HTTP][39m [90m{"value":"new UiSelector().text(\"开始验证\")","sessionId":"073e66ce-154c-48ce-ad9c-41e40a534146","using":"-android uiautomator"}[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().text(\"开始验证\")","073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
 [debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
 [debug] [35m[WD Proxy][39m Matched '/element' to command name 'findElement'
-[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
-[35m[WD Proxy][39m Got response with status 404: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+[debug] [35m[WD Proxy][39m Proxying [POST /element] to [POST http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"开始验证\")","context":"","multiple":false}
+[35m[WD Proxy][39m Got response with status 404: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:78)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:38)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:242)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:51)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
 [debug] [35m[W3C][39m Matched W3C error code 'no such element' to NoSuchElementError
-[debug] [35m[MJSONWP (730f334b)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
-[debug] [35m[MJSONWP (730f334b)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/element [39m[31m500[39m [90m12 ms - 164[39m
+[debug] [35m[MJSONWP (073e66ce)][39m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[debug] [35m[MJSONWP (073e66ce)][39m     at AndroidUiautomator2Driver.findElOrEls (C:\Users\lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\_appium-android-driver@4.27.0@appium-android-driver\lib\commands\find.js:75:11)
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/element [39m[31m500[39m [90m15 ms - 164[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.getScreenshot() with args: ["730f334b-c416-48c6-8c76-5f389474e29d"]
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.getScreenshot() with args: ["073e66ce-154c-48ce-ad9c-41e40a534146"]
 [debug] [35m[WD Proxy][39m Matched '/screenshot' to command name 'getScreenshot'
-[debug] [35m[WD Proxy][39m Proxying [GET /screenshot] to [GET http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e/screenshot] with no body
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":"iVBORw0KGgoAAAANSUhEUgAAAhwAAAPACAIAAADxFzfLAAAAA3NCSVQICAjb4U\/gAAAgAElEQVR4\nnOzdeUAUZeMH8GdmT2C5YbkEURBBxIvwPhPv2zTTMit9s\/N9KzMrM7XMvDr0fcsKj8o0LU2UEi9U\nPBBEURA8QO5zuWE5lr3m98f83nmnBdYFBzX7fv7anZ2dfUCc7z43tXLlSgIAACAE+kEXAAAAHh0I\nFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASD\nUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAw\nCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAE\ng1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABA\nMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAA\nBINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAA\nQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUA\nAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQA\nAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIF\nAAAEg1ABAADBIFQAAEAwCB...
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAhwAAAPACAIAAADxFzfLAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeUAUZeMH8GdmT2C5YbkEURBBxIvwPhPv2zTTMit9s/N9KzMrM7XMvDr0fcsKj8o0LU2UEi9U\nPBBEURA8QO5zuWE5lr3m98f83nmnBdYFBzX7fv7anZ2dfUCc7z43tXLlSgIAACAE+kEXAAAAHh0I\nFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASD\nUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAw\nCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAE\ng1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABA\nMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAA\nBINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAA\nQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUA\nAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQA\nAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIF\nAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBU\nAABAMA...
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d/screenshot [39m[32m200[39m [90m170 ms - 129206[39m
+[debug] [35m[WD Proxy][39m Proxying [GET /screenshot] to [GET http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789/screenshot] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":"iVBORw0KGgoAAAANSUhEUgAAAhwAAAPACAIAAADxFzfLAAAAA3NCSVQICAjb4U\/gAAAgAElEQVR4\nnOzdeUAUZeMH8GdmT2C5YbkEURBBxIvwPhPv2zTTMit9s\/N9KzMrM7XMvDr0fcsKj8o0LU2UEi9U\nPBBEURA8QO5zuWE5lr3m98f83nmnBdYFBzX7fv7anZ2dfUCc7z43tXLlSgIAACAE+kEXAAAAHh0I\nFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASD\nUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAw\nCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAE\ng1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABA\nMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAA\nBINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAA\nQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUA\nAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQA\nAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIF\nAAAEg1ABAADBIFQAAEAwCB...
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAAAhwAAAPACAIAAADxFzfLAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4\nnOzdeUAUZeMH8GdmT2C5YbkEURBBxIvwPhPv2zTTMit9s/N9KzMrM7XMvDr0fcsKj8o0LU2UEi9U\nPBBEURA8QO5zuWE5lr3m98f83nmnBdYFBzX7fv7anZ2dfUCc7z43tXLlSgIAACAE+kEXAAAAHh0I\nFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASD\nUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAw\nCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAE\ng1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABA\nMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAA\nBINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAA\nQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQAAEAwCBUAABAMQgUA\nAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIFAAAEg1ABAADBIFQA\nAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBUAABAMAgVAAAQDEIF\nAAAEg1ABAADBIFQAAEAwCBUAABAMQgUAAASDUAEAAMEgVAAAQDAIFQAAEAxCBQAABINQAQAAwSBU\nAABAMA...
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146/screenshot [39m[32m200[39m [90m176 ms - 129206[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146[39m
 [35m[HTTP][39m [90m{}[39m
-[debug] [35m[MJSONWP (730f334b)][39m Calling AppiumDriver.deleteSession() with args: ["730f334b-c416-48c6-8c76-5f389474e29d"]
-[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1587106036857 (14:47:16 GMT+0800 (GMT+08:00))
-[35m[Appium][39m Removing session 730f334b-c416-48c6-8c76-5f389474e29d from our master session list
+[debug] [35m[MJSONWP (073e66ce)][39m Calling AppiumDriver.deleteSession() with args: ["073e66ce-154c-48ce-ad9c-41e40a534146"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1587106458040 (14:54:18 GMT+0800 (GMT+08:00))
+[35m[Appium][39m Removing session 073e66ce-154c-48ce-ad9c-41e40a534146 from our master session list
 [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
 [debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
 [debug] [35m[WD Proxy][39m Matched '/' to command name 'deleteSession'
-[debug] [35m[WD Proxy][39m Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/wd/hub/session/21daff49-d459-4981-9171-dbe34e01043e] with no body
-[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"21daff49-d459-4981-9171-dbe34e01043e","value":null}
+[debug] [35m[WD Proxy][39m Proxying [DELETE /] to [DELETE http://127.0.0.1:8201/wd/hub/session/0445119f-8294-4362-8b7f-9235e8d67789] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"0445119f-8294-4362-8b7f-9235e8d67789","value":null}
 [debug] [35m[UiAutomator2][39m Resetting IME to 'io.appium.settings/.UnicodeIME'
 [debug] [35m[ADB][39m Running 'E:\Automantic\win\android-sdk-windows\platform-tools\adb.exe -P 5037 -s emulator-5556 shell ime set io.appium.settings/.UnicodeIME'
 [debug] [35m[Instrumentation][39m .
 [debug] [35m[ADB][39m Running 'E:\Automantic\win\android-sdk-windows\platform-tools\adb.exe -P 5037 -s emulator-5556 shell am force-stop com.tencent.mobileqq'
-[debug] [35m[Instrumentation][39m Time: 27.313
+[debug] [35m[Instrumentation][39m Time: 28.067
 [debug] [35m[Instrumentation][39m 
 [debug] [35m[Instrumentation][39m OK (1 test)
 [debug] [35m[Instrumentation][39m The process has exited with code 0
 [debug] [35m[Logcat][39m Stopping logcat capture
 [debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 
 [debug] [35m[ADB][39m Running 'E:\Automantic\win\android-sdk-windows\platform-tools\adb.exe -P 5037 -s emulator-5556 forward --remove tcp\:8201'
-[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1587106038552 (14:47:18 GMT+0800 (GMT+08:00))
-[debug] [35m[MJSONWP (730f334b)][39m Received response: null
-[debug] [35m[MJSONWP (730f334b)][39m But deleting session, so not returning
-[debug] [35m[MJSONWP (730f334b)][39m Responding to client with driver.deleteSession() result: null
-[debug] [35m[MJSONWP (730f334b)][39m Destroying socket connection
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/730f334b-c416-48c6-8c76-5f389474e29d [39m[32m200[39m [90m1697 ms - 76[39m
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1587106459755 (14:54:19 GMT+0800 (GMT+08:00))
+[debug] [35m[MJSONWP (073e66ce)][39m Received response: null
+[debug] [35m[MJSONWP (073e66ce)][39m But deleting session, so not returning
+[debug] [35m[MJSONWP (073e66ce)][39m Responding to client with driver.deleteSession() result: null
+[debug] [35m[MJSONWP (073e66ce)][39m Destroying socket connection
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/073e66ce-154c-48ce-ad9c-41e40a534146 [39m[32m200[39m [90m1716 ms - 76[39m
 [35m[HTTP][39m [90m[39m

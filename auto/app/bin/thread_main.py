@@ -1,3 +1,8 @@
+import sys, os
+
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, BASE_PATH)
+
 from lib.appController import Controller, devices_name_queue
 from appCase.test_thread_login import ThreadDemo
 from conf.settings import logger,APP_REPORT

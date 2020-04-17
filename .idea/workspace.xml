@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0572ff78-85ea-4994-aa7c-a5f86cac2eae" name="Default" comment="app 自动化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/app/appCase/test_thread_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/appCase/test_thread_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/app/app_bases/test_pyapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/app_bases/test_pyapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/app/bin/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/auto/app/bin/thread_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/bin/thread_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/app/conf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/conf/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/app/lib/appController.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/lib/appController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/log/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/log/server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/log/雷电1.log" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/log/雷电1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/log/雷电2.log" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/log/雷电2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto/app/page/thread_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/page/thread_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auto/app/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/report/html_report/雷电1-20200417144718.html" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/report/html_report/雷电1-20200417145419.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/app/report/html_report/雷电2-20200417144711.html" beforeDir="false" afterPath="$PROJECT_DIR$/auto/app/report/html_report/雷电2-20200417145412.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/web/bin/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/web/bin/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/ajax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module6/07 django与ajax/ajax/.idea/ajax.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -430,14 +432,7 @@
       <workItem from="1586066518820" duration="5049000" />
       <workItem from="1586072505482" duration="5301000" />
       <workItem from="1586218650941" duration="39925000" />
-      <workItem from="1586483682201" duration="68924000" />
-    </task>
-    <task id="LOCAL-00022" summary="module6">
-      <created>1565571120643</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1565571120643</updated>
+      <workItem from="1586483682201" duration="70117000" />
     </task>
     <task id="LOCAL-00023" summary="module6">
       <created>1565615179199</created>
@@ -775,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587023317865</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="app 自动化">
+      <created>1587106143924</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1587106143924</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -931,7 +933,7 @@
     <SUITE FILE_PATH="coverage/oldboy$test.coverage" NAME="test Coverage Results" MODIFIED="1583121201293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/oldboy$test_index.coverage" NAME="test_index Coverage Results" MODIFIED="1583077516480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/utp/cases" />
     <SUITE FILE_PATH="coverage/oldboy2$test_pyapp__1_.coverage" NAME="test_pyapp (1) Coverage Results" MODIFIED="1587095412090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/app_bases" />
-    <SUITE FILE_PATH="coverage/oldboy2$thread_main.coverage" NAME="thread_main Coverage Results" MODIFIED="1587105987472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/bin" />
+    <SUITE FILE_PATH="coverage/oldboy2$thread_main.coverage" NAME="thread_main Coverage Results" MODIFIED="1587106410614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/bin" />
     <SUITE FILE_PATH="coverage/oldboy2$thread_main__1_.coverage" NAME="thread_main (1) Coverage Results" MODIFIED="1586922368927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/AppTester/bin" />
     <SUITE FILE_PATH="coverage/oldboy2$pyapp.coverage" NAME="pyapp Coverage Results" MODIFIED="1586079714882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto/app/lib" />
     <SUITE FILE_PATH="coverage/oldboy$interface_star.coverage" NAME="interface_star Coverage Results" MODIFIED="1582811015320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/work/平台/send_red_packages/bin" />

@@ -4,7 +4,12 @@
 # @File   : main.py
 
 
-import unittest,time,os
+import sys, os
+
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, BASE_PATH)
+
+import unittest,time
 from config.settings import CASE_PATH,REPORT_PATH
 from lib.HTMLTestRunner import HTMLTestRunner
 
