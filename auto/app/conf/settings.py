@@ -30,17 +30,11 @@ CS = ["3418666179@qq.com", "waznyyy@163.com"]
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-CASE_PATH = os.path.join(BASE_PATH, "test_case")
-
-REPORT_PATH = os.path.join(BASE_PATH, "report")
-
-WEB_PICTURE_PATH = os.path.join(REPORT_PATH,'picture')
-
 APP_PATH = os.path.join(BASE_PATH, 'conf', 'appController.yml')
 
-APP_REPORT = os.path.join(BASE_PATH, 'report', '{}')
+APP_REPORT = os.path.join(BASE_PATH, 'report','html_report', '{}')
 
-APP_PICTUREPATH = os.path.join(BASE_PATH, 'report','app_picture', '{}')
+APP_PICTUREPATH = os.path.join(BASE_PATH, 'report','error_pictures', '{}')
 
 # 生成报告时的地址
 APP_ERROR = '../report/app_picture/{}/'

@@ -5,6 +5,7 @@ from lib.result import Result
 from lib import HTMLTestAppRunner
 import threading
 import unittest
+import time
 
 
 local = threading.local()
@@ -15,22 +16,23 @@ class App():
 
     def case(self):
         # 通过导入测试类来实现生成测试集
-        suite = unittest.TestLoader().loadTestsFromTestCase(ThreadDemo)
+        local.suite = unittest.TestLoader().loadTestsFromTestCase(ThreadDemo)
 
         # 生成空的结果集，用来存执行结果
         local.result = Result()
 
         # 运行case，并更新结果集，如执行状态
-        res = suite.run(local.result)
+        local.res = local.suite.run(local.result)
 
         # 将结果通过测试手机名称进行区分
         logger.debug('当前线程的的名字：%s' % threading.current_thread().getName())
         # 当前线程的名称就是当前手机的名字
-        result = {threading.current_thread().getName():res}
+        result = {threading.current_thread().getName():local.res}
 
         for deviceName,result in result.items():
+            report_name = deviceName + '-' + time.strftime('%Y%m%d%H%M%S')
             html = HTMLTestAppRunner.HTMLTestRunner(
-                stream=open(APP_REPORT.format('{}.html'.format(deviceName)),'wb'),
+                stream=open(APP_REPORT.format('{}.html'.format(report_name)),'wb'),
                 verbosity=2,title='Test'
             )
             # 这个方法就是生成报告的主要函数
@@ -53,7 +55,7 @@ class App():
 
     def run_two(self):
         '''
-        手动启动appium
+        已经启动好 appium
         '''
         threads = []
         drivers = self.c.driver_start()
@@ -70,3 +72,4 @@ class App():
 
 if __name__ == '__main__':
     App().run()
+    # App().run_two()

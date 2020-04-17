@@ -14,8 +14,7 @@ local = threading.local()
 drivers_queue = queue.Queue()
 # 存放手机设备名称队列
 devices_name_queue = queue.Queue()
-# 查看当前手机配置
-# logger.debug(Tool().app_data)
+
 
 class Controller():
     def __init__(self):
@@ -36,20 +35,21 @@ class Controller():
         每次运行之前杀掉之前所有的服务
         adb如果重启  夜游神将不会被查到
         """
-        logger.debug('执行[KILL SERVER]操作:%s' % subprocess.getoutput("taskkill /F /IM node.exe /t"))
-        logger.debug('关闭ADB服务！%s' % subprocess.run(["adb","kill-server"],stdout=subprocess.PIPE).stdout)
+        logger.debug('执行[KILL SERVER]操作:%s'
+                     % subprocess.getoutput("taskkill /F /IM node.exe /t"))
+        logger.debug('关闭ADB服务！%s' % subprocess.run(
+            ["adb","kill-server"],stdout=subprocess.PIPE).stdout)
 
     def server_start_command(self, **kwargs):
         '''
         根据kwargs中ip、端口等信息 启动appium服务
         '''
-        command = 'appium -a {ip} -p {port} -U {deviceName} -g {log}'.format(ip=kwargs.get('ip'),
-                                                                             port=kwargs.get('port'),
-                                                                             deviceName=kwargs.get(
-                                                                                 'deviceName'),
-                                                                             log=kwargs.get('log_path'))
+        command = 'appium -a {ip} -p {port} -U {deviceName} -g {log}'.format(
+            ip=kwargs.get('ip'),port=kwargs.get('port'),
+            deviceName=kwargs.get('deviceName'),log=kwargs.get('log_path'))
         logger.debug('启动服务执行的命令：%s' % command)
-        subprocess.Popen(command, stdout=open(kwargs.get('log_path'), 'a+'), stderr=subprocess.PIPE, shell=True)
+        subprocess.Popen(command, stdout=open(kwargs.get('log_path'), 'a+'),
+                         stderr=subprocess.PIPE, shell=True)
 
     def server_start(self):
         '''
@@ -110,12 +110,14 @@ class Controller():
         ip = local.desired_caps.get('ip')
         url = 'http://{ip}:{port}/wd/hub'.format(port=port,ip=ip)
         logger.debug('url:%s 开始启动'%url)
-        driver = webdriver.Remote(url, local.desired_caps)
+        local.driver = webdriver.Remote(url, local.desired_caps)
         logger.debug('url:%s 启动成功' % url)
         # 通过消息对列传递driver驱动
-        drivers_queue.put(driver)
+        drivers_queue.put(local.driver)
+        logger.debug('driver 为 %s 成功push到队列'%local.driver)
         # 存放手机名称的对列(用于后续对线程名进行区分)
         devices_name_queue.put(local.desired_caps.get('name'))
+        logger.debug('driver名字 %s 成功push到队列' % local.desired_caps.get('name'))
         # 创建错误图片存放的路径
         app_picture_path = APP_PICTUREPATH.format(local.desired_caps.get('name'))
         # 如果存在则清除目录下的所有内容
@@ -131,12 +133,14 @@ class Controller():
         for device_app in self.devices.get(self.device_type):
             # 将测试的app信息增加到 手机的配置文件中
             device_app.update(self.app)
-            # 多线程启动
+            # 多线程启动，注意这里只是开启了线程，并没有启动
             t = threading.Thread(target=self.driver_start_command, kwargs=device_app)
             driver_threads.append(t)
+        for t in driver_threads:
+            # 必须在这里启动并join，多线程启动driver会发生覆盖现象
+            # 导致只会有一个线程运行成功
             t.start()
-        for i in driver_threads:
-            i.join()
+            t.join()
         # 所有driver启动成功后 返回driver的mq
         return drivers_queue
 

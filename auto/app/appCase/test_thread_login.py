@@ -1,5 +1,6 @@
 import unittest
 from page.thread_page import Page
+from conf.settings import logger
 
 
 class ThreadDemo(unittest.TestCase):

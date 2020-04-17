@@ -2,7 +2,7 @@
 ***
 
 ###程序说明：
-    基于python unittest appium selenium pyse pyapp htmltestrunner
+    基于python unittest selenium appium pyse pyapp htmltestrunner
     设计总体思想page object，将每个页面抽象成对象，页面里每一个功能点抽象成函数
     优点：
     1 page obj 思想使得 case和元素解耦，利于维护
@@ -11,8 +11,8 @@
     4 二次开发 htmltestrunner ，增加用例执行失败的页面截图
     5 多线程同一个case 同时运行多个手机
     6 yaml 文件夹控制手机的配置信息
-    7 通过代码实现appium的服务器自启
-    8 
+    7 通过代码实现appium的服务器自启,adb自启
+    8 根据yml配置启动对应device数量的线程数，并发运行case，每个device生成一个测试报告
     
 ###实现功能如下：  
     1、继承unittest编写测试用例
@@ -24,10 +24,14 @@
     安装命令：
         pip install selenium
         pip install unittest
+        pip install Appium_Python_Client
                      
 ###程序运行：
     # 单线程运行
     python bin/main.py
+    
+    # 多线程运行
+    python bin/thread_main.py
     
     
 ###程序结构：

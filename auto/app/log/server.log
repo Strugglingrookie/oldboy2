@@ -1,0 +1,25 @@
+2020-04-17 14:46:30,027 - MainThread_10848 DEBUG appController.kill_servers:39 - 执行[KILL SERVER]操作:成功: 已终止 PID 2272 (属于 PID 12188 子进程)的进程。
+成功: 已终止 PID 18920 (属于 PID 6936 子进程)的进程。
+2020-04-17 14:46:30,752 - MainThread_10848 DEBUG appController.kill_servers:41 - 关闭ADB服务！b''
+2020-04-17 14:46:32,311 - MainThread_10848 DEBUG appController.server_start:60 - 启动ADB服务！* daemon not running; starting now at tcp:5037
+* daemon started successfully
+2020-04-17 14:46:32,311 - MainThread_10848 DEBUG appController.server_start:67 - 每个手机的信息：{'ip': '127.0.0.1', 'platformVersion': '5.1.1', 'port': 7001, 'deviceName': 'emulator-5556', 'udid': 'emulator-5556', 'name': '雷电1', 'platformName': 'Android', 'log_path': 'E:\\Study\\oldboy2\\auto\\app\\log\\雷电1.log'}
+2020-04-17 14:46:32,312 - Thread-1_4852 DEBUG appController.server_start_command:50 - 启动服务执行的命令：appium -a 127.0.0.1 -p 7001 -U emulator-5556 -g E:\Study\oldboy2\auto\app\log\雷电1.log
+2020-04-17 14:46:32,312 - MainThread_10848 DEBUG appController.server_start:67 - 每个手机的信息：{'ip': '127.0.0.1', 'platformVersion': '5.1.1', 'port': 7002, 'deviceName': 'emulator-5558', 'udid': 'emulator-5558', 'name': '雷电2', 'platformName': 'Android', 'log_path': 'E:\\Study\\oldboy2\\auto\\app\\log\\雷电2.log'}
+2020-04-17 14:46:32,312 - Thread-2_19688 DEBUG appController.server_start_command:50 - 启动服务执行的命令：appium -a 127.0.0.1 -p 7002 -U emulator-5558 -g E:\Study\oldboy2\auto\app\log\雷电2.log
+2020-04-17 14:46:38,138 - MainThread_10848 DEBUG appController.check_server:89 - 检验appium服务启动：  TCP    10.127.1.14:61253      43.247.88.81:7001      ESTABLISHED     12812
+2020-04-17 14:46:44,083 - MainThread_10848 DEBUG appController.check_server:89 - 检验appium服务启动：  TCP    127.0.0.1:7002         0.0.0.0:0              LISTENING       16024
+2020-04-17 14:46:44,084 - MainThread_10848 DEBUG appController.check_server:96 - 全部appium服务启动成功！
+2020-04-17 14:46:44,084 - Thread-3_10992 DEBUG appController.driver_start_command:112 - url:http://127.0.0.1:7001/wd/hub 开始启动
+2020-04-17 14:46:53,803 - Thread-3_10992 DEBUG appController.driver_start_command:114 - url:http://127.0.0.1:7001/wd/hub 启动成功
+2020-04-17 14:46:53,804 - Thread-3_10992 DEBUG appController.driver_start_command:117 - driver 为 <appium.webdriver.webdriver.WebDriver (session="730f334b-c416-48c6-8c76-5f389474e29d")> 成功push到队列
+2020-04-17 14:46:53,805 - Thread-3_10992 DEBUG appController.driver_start_command:120 - driver名字 雷电1 成功push到队列
+2020-04-17 14:46:53,808 - Thread-4_12860 DEBUG appController.driver_start_command:112 - url:http://127.0.0.1:7002/wd/hub 开始启动
+2020-04-17 14:47:03,604 - Thread-4_12860 DEBUG appController.driver_start_command:114 - url:http://127.0.0.1:7002/wd/hub 启动成功
+2020-04-17 14:47:03,604 - Thread-4_12860 DEBUG appController.driver_start_command:117 - driver 为 <appium.webdriver.webdriver.WebDriver (session="76fd9469-4955-462d-8a19-991a3ecdd40e")> 成功push到队列
+2020-04-17 14:47:03,604 - Thread-4_12860 DEBUG appController.driver_start_command:120 - driver名字 雷电2 成功push到队列
+2020-04-17 14:47:03,608 - MainThread_10848 INFO thread_main.run:46 - 开始执行CASE！当前启动[2]个DRIVER！
+2020-04-17 14:47:11,303 - 雷电2_12524 DEBUG thread_main.case:28 - 当前线程的的名字：雷电2
+2020-04-17 14:47:11,335 - 雷电2_12524 DEBUG HTMLTestAppRunner._generate_report:751 - []
+2020-04-17 14:47:18,556 - 雷电1_14192 DEBUG thread_main.case:28 - 当前线程的的名字：雷电1
+2020-04-17 14:47:18,576 - 雷电1_14192 DEBUG HTMLTestAppRunner._generate_report:751 - [('../report/app_picture/雷电1/test_a_login.png',)]

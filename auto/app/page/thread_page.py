@@ -26,16 +26,16 @@ class ThreadPage(BasePage):
         local.pyapp.click('android=>new UiSelector().resourceId("com.tencent.mobileqq:id/btn_login")')
 
     def account(self):
-        local.pyapp.type('content=>请输入QQ号码或手机或邮箱', '12345678')
+        local.pyapp.type('content=>请输入QQ号码或手机或邮箱', '3418666179')
 
     def password(self):
-        local.pyapp.type('content=>密码 安全', '87654321')
+        local.pyapp.type('content=>密码 安全', '3280789xg')
 
     def login(self):
         local.pyapp.click('id=>com.tencent.mobileqq:id/login')
 
     def check(self,name):
-        return local.pyapp.wait_and_save_exception('android=>new UiSelector().text("修改手势密码")', name)
+        return local.pyapp.wait_and_save_exception('android=>new UiSelector().text("开始验证")', name)
 
 class Page(ThreadPage):
     pass
