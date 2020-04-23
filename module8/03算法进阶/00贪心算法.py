@@ -30,7 +30,7 @@ def change(l, n):
     return tmp, n
 
 
-print(change(lis, 274))
+# print(change(lis, 274))
 # ([2, 1, 1, 0, 4], 0)
 
 '''
@@ -67,7 +67,7 @@ def fractional_backpack(goods, w):
     return total_prize, m
 
 
-print(fractional_backpack(goods, 40))
+# print(fractional_backpack(goods, 40))
 # (200.0, [1, 1, 0.3333333333333333])
 
 '''
@@ -76,7 +76,7 @@ print(fractional_backpack(goods, 40))
 如何拼接可以使得到的整数最⼤?
 例:32,94,128,1286,6,71可以拼接出的最⼤整数为 94716321286128
 '''
-li = [32, 94, 128, 1286, 6, 71]
+li = [32, 128, 94, 1286, 6, 71]
 
 
 def number_join(li):
@@ -123,4 +123,4 @@ def activity_selection(a):
     return res
 
 
-print(activity_selection(activities))
+# print(activity_selection(activities))

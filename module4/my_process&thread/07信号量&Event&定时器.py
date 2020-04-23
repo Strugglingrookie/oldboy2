@@ -10,14 +10,17 @@
 # 计数器不能小于0；当计数器为0时，acquire()将阻塞线程直到其他线程调用release()。
 '''
 from threading import Thread, Semaphore, current_thread
-import time, random
+import time,datetime
 se = Semaphore(3)  # 最多只能同时占用3次
 
 
 def toilet():
-    with se:  # 用法同文件操作，将打开和关闭合并在with语法里。  等价于  se.acquire()  se.release()
-        print("%s go in" % current_thread().getName())
-        time.sleep(random.randint(1, 3))
+    # 用法同文件操作，将打开和关闭合并在with语法里。  等价于  se.acquire()  se.release()
+    with se:
+        thread_name = current_thread().getName()
+        now = datetime.datetime.now()
+        print("%s go in，%s: " % (thread_name,now),end='\n')
+        time.sleep(3)
 
 
 if __name__ == "__main__":
@@ -39,18 +42,18 @@ e = Event()
 
 def student(name):
     print("%s is learning" % name)
-    e.wait(3)  # 一直等event.set()，最多等3秒
+    e.wait(10)  # 一直等event.set()，最多等10秒
     print("%s is playing" % name)
 
 def teacher(name):
     print("%s is teaching" % name)
-    time.sleep(6)
+    time.sleep(2)
     print("%s said class over!" % name)
     e.set()
 
 
 if __name__ == "__main__":
-    for i in range(10):
+    for i in range(3):
         s = Thread(target=student, args=(i,))
         s.start()
     t = Thread(target=teacher,args=('teacher',))
@@ -59,7 +62,7 @@ if __name__ == "__main__":
 
 
 # 定时器  定时执行任务
-'''
+
 from threading import Timer
 
 
@@ -105,4 +108,5 @@ class Code:
 
 obj=Code()
 obj.check()
-'''
+
+

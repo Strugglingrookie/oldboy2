@@ -14,8 +14,9 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../../.." />
-    <orderEntry type="jdk" jdkName="Python 3.5" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (oldboy) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="django_pages" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
